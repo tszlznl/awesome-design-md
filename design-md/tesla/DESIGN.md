@@ -1,286 +1,286 @@
-# Design System Inspiration of Tesla
+# 特斯拉的设计系统灵感
 
-## 1. Visual Theme & Atmosphere
+## 1.视觉主题和氛围
 
-Tesla's website is an exercise in radical subtraction — a digital showroom where the product is everything and the interface is almost nothing. The page opens with a full-viewport hero that fills the entire screen with cinematic car photography: three vehicles arranged on polished concrete against a hazy cityscape sky, with a single model name floating above in translucent white type. There are no decorative borders, no gradients, no patterns, no shadows. The UI exists only to provide just enough navigational structure to get out of the way. Every pixel that isn't product imagery is white space, and that restraint is the design system's most powerful statement.
+特斯拉的网站是一次彻底的减法——一个数字展厅，其中产品就是一切，而界面几乎什么都不是。页面打开时是一个全视口英雄，整个屏幕上充满了电影汽车摄影：三辆车排列在抛光混凝土上，映衬着朦胧的城市景观天空，单个型号名称以半透明白色字体漂浮在上面。没有装饰边框，没有渐变，没有图案，没有阴影。 UI 的存在只是为了提供足够的导航结构来避免干扰。除产品图像之外的每个像素都是空白，这种限制是设计系统最有力的声明。
 
-The color philosophy is almost ascetic: a single blue (`#3E6AE1`) for primary calls to action, three shades of dark gray for text hierarchy, and white for everything else. The entire emotional weight is carried by photography — sprawling landscape shots, studio-lit vehicle profiles, and atmospheric environmental compositions that stretch edge-to-edge across each viewport-height section. The UI chrome dissolves into the imagery. The navigation bar floats above the hero with no visible background, border, or shadow — the TESLA wordmark and five navigation labels simply exist in the space, trusting the content beneath them to provide sufficient contrast.
+颜色哲学几乎是禁欲主义的：单一蓝色（“#3E6AE1”）用于主要号召性用语，三种深灰色用于文本层次结构，白色用于其他所有内容。整个情感重量都由摄影承载——广阔的风景镜头、工作室照明的车辆轮廓以及在每个视口高度部分从边到边延伸的大气环境构图。 UI 镶边融入图像中。导航栏漂浮在英雄上方，没有可见的背景、边框或阴影 - TESLA 文字标记和五个导航标签仅存在于空间中，相信它们下方的内容可以提供足够的对比度。
 
-Typography recently transitioned from Gotham to Universal Sans — a custom family split into "Display" for headlines and "Text" for body/UI elements — unifying the website, mobile app, and in-car software into a single typographic voice. The Display variant renders hero titles at 40px weight 500, while the Text variant handles everything from navigation (14px/500) to body copy (14px/400). The font carries a geometric precision with slightly humanist terminals that feels engineered rather than designed — exactly matching Tesla's brand identity of technology that doesn't need to announce itself. There are no text shadows, no text gradients, no decorative type treatments. Every letterform earns its place through clarity alone.
+排版最近从 Gotham 过渡到 Universal Sans——一个自定义系列，分为标题的“显示”和正文/UI 元素的“文本”——将网站、移动应用程序和车载软件统一为单一的排版声音。显示变体以 40px 粗细 500 渲染英雄标题，而文本变体则处理从导航 (14px/500) 到正文副本 (14px/400) 的所有内容。该字体具有几何精度，带有略带人文主义色彩的终端，感觉是经过精心设计的，而不是设计的——完全符合特斯拉无需自我宣传的技术品牌形象。没有文本阴影，没有文本渐变，没有装饰类型处理。每一种字母形式都仅通过清晰度而赢得一席之地。
 
-**Key Characteristics:**
-- Full-viewport hero sections (100vh) dominated by cinematic car photography with minimal overlay UI
-- Near-zero UI decoration: no shadows, no gradients, no borders, no patterns anywhere on the page
-- Single accent color — Electric Blue (`#3E6AE1`) — used exclusively for primary CTA buttons
-- Universal Sans font family (Display + Text) unifying web, app, and in-car interfaces
-- Photography-first presentation where product imagery carries all emotional weight
-- Frosted-glass navigation concept with transparent/white nav that floats over hero content
-- 0.33s cubic-bezier transitions as the universal timing for all interactive state changes
-- Carousel-driven hero with dot indicators and edge arrow navigation for multiple vehicle showcases
-- "Ask a Question" persistent chatbot bar anchored to the viewport bottom
+**主要特征：**
+- 全视口英雄部分 (100vh) 以电影汽车摄影为主，具有最小的覆盖 UI
+- 近乎零的 UI 装饰：页面上任何地方都没有阴影、没有渐变、没有边框、没有图案
+- 单一强调色 — 电蓝色 (`#3E6AE1`) — 专门用于主要 CTA 按钮
+- Universal Sans 字体系列（显示 + 文本）统一网络、应用程序和车载界面
+- 以摄影为先的演示，产品图像承载着所有的情感分量
+- 磨砂玻璃导航概念，透明/白色导航漂浮在英雄内容上
+- 0.33s 三次贝塞尔曲线转换作为所有交互状态变化的通用计时
+- 轮播驱动的英雄，带有点指示器和边缘箭头导航，可用于多个车辆展示
+- “提问”持久聊天机器人栏固定在视口底部
 
-## 2. Color Palette & Roles
+## 2. 调色板和角色
 
-### Primary
-- **Electric Blue** (`#3E6AE1`): Primary CTA button background — a confident, mid-saturation blue (rgb 62, 106, 225) that stands alone as the only chromatic color in the entire interface. Used exclusively for "Order Now" and other primary action buttons
-- **Pure White** (`#FFFFFF`): Dominant background color for all surfaces, panels, navigation, and secondary button fills — the canvas that lets photography breathe
+### 小学
+- **电蓝色** (`#3E6AE1`)：主要 CTA 按钮背景 — 一种自信的中饱和度蓝色 (rgb 62、106、225)，作为整个界面中唯一的彩色。专门用于“立即订购”和其他主要操作按钮
+- **纯白色** (`#FFFFFF`)：所有表面、面板、导航和辅助按钮填充的主要背景颜色 - 让摄影呼吸的画布
 
-### Secondary & Accent
-- **Promo Blue** (`#3E6AE1`): Blue also serves for promotional text ("0% APR Available") displayed over hero imagery in the same hue as the CTA — creating a visual link between incentive messaging and action
-- No secondary accent colors exist. Tesla deliberately avoids color variety to maintain extreme visual discipline
+### 次要和口音
+- **促销蓝色** (`#3E6AE1`)：蓝色还用于促销文字（“0% APR可用”），以与 CTA 相同的色调显示在英雄图像上 — 在激励消息和行动之间创建视觉联系
+- 不存在次要强调色。特斯拉刻意避免颜色变化，以保持严格的视觉纪律
 
-### Surface & Background
-- **White Canvas** (`#FFFFFF`): Page background, navigation panel, dropdown menus, and all surface containers
-- **Light Ash** (`#F4F4F4`): Subtle alternate surface for section differentiation — barely perceptible shift from pure white (rgb 244, 244, 244)
-- **Carbon Dark** (`#171A20`): Dark surface color for hero text overlays and potential dark-mode contexts (rgb 23, 26, 32) — a warm near-black with a blue undertone
-- **Frosted Glass** (`rgba(255, 255, 255, 0.75)`): Semi-transparent white for navigation backdrop-filter effects on scroll
+### 表面和背景
+- **白色画布** (`#FFFFFF`)：页面背景、导航面板、下拉菜单和所有表面容器
+- **浅灰** (`#F4F4F4`)：用于区分部分的微妙替代表面 - 几乎察觉不到纯白色的变化（rgb 244、244、244）
+- **Carbon Dark** (`#171A20`)：用于英雄文本叠加和潜在的深色模式上下文的深色表面颜色 (rgb 23、26、32) — 带有蓝色底色的温暖近乎黑色
+- **磨砂玻璃** (`rgba(255, 255, 255, 0.75)`)：半透明白色，用于滚动时的导航背景滤镜效果
 
-### Neutrals & Text
-- **Carbon Dark** (`#171A20`): Primary heading and navigation text — the darkest text value (rgb 23, 26, 32), used for model names, nav labels, and hero titles on light backgrounds
-- **Graphite** (`#393C41`): Body text and secondary content (rgb 57, 60, 65) — the default paragraph color, slightly warmer than pure gray
-- **Pewter** (`#5C5E62`): Tertiary text for sub-links, secondary navigation links like "Learn" and "Order" (rgb 92, 94, 98)
-- **Silver Fog** (`#8E8E8E`): Placeholder text in input fields and disabled states (rgb 142, 142, 142)
-- **Cloud Gray** (`#EEEEEE`): Light borders and divider lines (rgb 238, 238, 238)
-- **Pale Silver** (`#D0D1D2`): Subtle UI borders and delineation (rgb 208, 209, 210)
+### 中性色和文字
+- **Carbon Dark** (`#171A20`)：主标题和导航文本 — 最暗的文本值 (rgb 23、26、32)，用于浅色背景上的模型名称、导航标签和英雄标题
+- **Graphite** (`#393C41`)：正文和次要内容 (rgb 57, 60, 65) — 默认段落颜色，比纯灰色稍暖
+- **Pewter** (`#5C5E62`)：子链接的第三级文本，二级导航链接，例如“学习”和“订购”（rgb 92、94、98）
+- **银雾** (`#8E8E8E`)：输入字段和禁用状态中的占位符文本（rgb 142、142、142）
+- **云灰色** (`#EEEEEE`)：浅色边框和分隔线 (rgb 238, 238, 238)
+- **淡银色** (`#D0D1D2`)：微妙的 UI 边框和轮廓（rgb 208、209、210）
 
-### Semantic & Accent
-- Tesla's marketing site avoids semantic color coding (no green/red/yellow status indicators). Error, success, and warning states follow standard browser defaults in form contexts
-- The blue CTA (`#3E6AE1`) serves as the sole interactive color signal
+### 语义和口音
+- 特斯拉的营销网站避免语义颜色编码（没有绿色/红色/黄色状态指示器）。错误、成功和警告状态遵循表单上下文中的标准浏览器默认值
+- 蓝色 CTA (`#3E6AE1`) 作为唯一的交互式颜色信号
 
-### Gradient System
-- No gradients are used anywhere in the interface
-- Depth is achieved entirely through photography, whitespace, and the binary contrast between full-bleed imagery and clean white surfaces
-- The navigation achieves layering through opacity (frosted glass effect) rather than gradient or shadow
+### 渐变系统
+- 界面中的任何地方都没有使用渐变
+- 深度完全通过摄影、留白以及全出血图像和干净的白色表面之间的二元对比度来实现
+- 导航通过不透明度（磨砂玻璃效果）而不是渐变或阴影实现分层
 
-## 3. Typography Rules
+## 3. 版式规则
 
-### Font Family
-- **Display**: `Universal Sans Display`, -apple-system, Arial, sans-serif — used for hero titles and large model names. A geometric sans-serif with precisely engineered proportions, recently replacing Gotham to unify Tesla's digital ecosystem (website, mobile app, vehicle interface)
-- **Text/UI**: `Universal Sans Text`, -apple-system, Arial, sans-serif — used for navigation, body copy, buttons, and all UI text. Optimized for legibility at smaller sizes with slightly wider proportions than the Display variant
-- **No OpenType features** detected — typography is completely unembellished
-- **No italic variants** observed on the marketing site
+### 字体系列
+- **显示**：`Universal Sans Display`、-apple-system、Arial、sans-serif — 用于英雄标题和大型号名称。具有精确设计比例的几何无衬线字体，最近取代 Gotham 来统一特斯拉的数字生态系统（网站、移动应用程序、车辆界面）
+- **文本/UI**：`Universal Sans Text`、-apple-system、Arial、sans-serif — 用于导航、正文、按钮和所有 UI 文本。针对较小尺寸的易读性进行了优化，比例比显示版本稍宽
+- **未检测到 OpenType 功能** — 版式完全未经修饰
+- **在营销网站上观察到没有斜体变体**
 
-### Hierarchy
+### 层次结构
 
-| Role | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|--------|-------------|----------------|-------|
-| Hero Title | 40px (2.50rem) | 500 | 48px (1.20) | normal | Universal Sans Display, white on dark hero imagery |
-| Product Name | 17px (1.06rem) | 500 | 20px (1.18) | normal | Universal Sans Text, model names in nav panel and cards |
-| Nav Item | 14px (0.88rem) | 500 | 16.8px (1.20) | normal | Universal Sans Text, primary navigation labels |
-| Body Text | 14px (0.88rem) | 400 | 20px (1.43) | normal | Universal Sans Text, paragraph and descriptive content |
-| Button Label | 14px (0.88rem) | 500 | 16.8px (1.20) | normal | Universal Sans Text, CTA button text |
-| Sub-link | 14px (0.88rem) | 400 | 20px (1.43) | normal | Tertiary links (Learn, Order, Experience) |
-| Promo Text | 22px (1.38rem) | 400 | 20px (0.91) | normal | White promotional text on hero ("0% APR Available") |
-| Category Label | 16px (est.) | 500 | — | normal | White text labels on category cards ("Sport Sedan") |
+|角色 |尺寸|重量 |行高|字母间距 |笔记|
+|------|------|--------|-------------|----------------|--------|
+|英雄称号 | 40 像素（2.50 雷姆）| 500 | 500 48 像素 (1.20) |正常 |通用 Sans Display，深色英雄图像上的白色 |
+|产品名称 | 17 像素（1.06 雷姆）| 500 | 500 20 像素 (1.18) |正常 |导航面板和卡片中的通用 Sans 文本、型号名称 |
+|导航项目 | 14 像素（0.88 雷姆）| 500 | 500 16.8 像素 (1.20) |正常 |通用 Sans Text，主导航标签 |
+|正文 | 14 像素（0.88 雷姆）| 400 | 20 像素 (1.43) |正常 | Universal Sans 文本、段落和描述性内容 |
+|按钮标签| 14 像素（0.88 雷姆）| 500 | 500 16.8 像素 (1.20) |正常 |通用 Sans 文本，CTA 按钮文本 |
+|子链接| 14 像素（0.88 雷姆）| 400 | 20 像素 (1.43) |正常 |三级链接（学习、订购、体验）|
+|促销文字| 22 像素（1.38 雷姆）| 400 | 20 像素 (0.91) |正常 |英雄上的白色促销文字（“可用年利率 0%”）|
+|类别标签| 16 像素（预计）| 500 | 500 — |正常 |类别卡上的白色文本标签（“运动轿车”）|
 
-### Principles
-- **"Normal" letter-spacing everywhere**: Unlike most modern tech brands that use negative tracking for headlines, Tesla uses default letter-spacing at every level. This reflects a philosophy that the typeface should speak for itself without manipulation
-- **Weight restraint**: Only two weights appear — 500 (medium) for headings/UI and 400 (regular) for body. No bold (700), no light (300). The system avoids typographic drama
-- **Unified font sizing**: Most UI text clusters at 14px with only hero titles (40px) and promo text (22px) breaking away. This extreme uniformity creates a sense of engineered consistency
-- **Display vs Text split**: The two-variant system (Display for hero, Text for UI) creates subtle optical correction without visible stylistic difference — they appear as the same typeface at different sizes
-- **No text transforms**: No uppercase text appears in the main navigation or CTAs — the lowercase approach reinforces Tesla's understated confidence
+### 原则
+- **到处都是“正常”字母间距**：与大多数使用负面跟踪标题的现代科技品牌不同，特斯拉在每个级别都使用默认字母间距。这反映了一种理念，即字体应该不言而喻地说话
+- **权重限制**：仅显示两个权重 - 标题/UI 为 500（中等），正文为 400（常规）。无粗体 (700)，无浅色 (300)。该系统避免了印刷的戏剧性
+- **统一字体大小**：大多数 UI 文本集中在 14 像素，只有英雄标题 (40 像素) 和促销文本 (22 像素)。这种极端的一致性创造了一种工程一致性的感觉
+- **显示与文本分割**：两种变体系统（英雄显示，UI 文本）创建微妙的光学校正，没有明显的风格差异 - 它们在不同尺寸下显示为相同的字体
+- **无文本转换**：主导航或 CTA 中不会出现大写文本 — 小写方法增强了 Tesla 低调的自信
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
-All buttons use barely-rounded rectangles (4px border-radius) — creating a sharp, technical aesthetic that mirrors the precision of the vehicles.
+### 按钮
+所有按钮都使用几乎圆角的矩形（4px 边框半径）——创造出一种锐利的技术美感，反映了车辆的精度。
 
-**Primary CTA** — The main action button:
-- Default: bg `#3E6AE1` (Electric Blue), text `#FFFFFF`, fontSize 14px, fontWeight 500, padding 4px with inner content centering, borderRadius 4px, minHeight 40px, width 200px
-- Border: 3px solid transparent (reserves space for focus/active border animation)
-- Box Shadow: `rgba(0,0,0,0) 0px 0px 0px 2px inset` (invisible at rest, animates to visible on focus)
-- Transition: `border-color 0.33s, background-color 0.33s, color 0.33s, box-shadow 0.25s`
-- Hover: subtle darkening of blue background
-- Used for: "Order Now" calls to action
+**主要 CTA** — 主要操作按钮：
+- 默认：背景`#3E6AE1`（电蓝色），文本`#FFFFFF`，fontSize 14px，fontWeight 500，填充4px，内部内容居中，borderRadius 4px，minHeight 40px，宽度200px
+- 边框：3px 实心透明（为焦点/活动边框动画保留空间）
+- 框阴影：`rgba(0,0,0,0) 0px 0px 0px 2px inset`（静止时不可见，动画在焦点上可见）
+- 过渡：`边框颜色 0.33s，背景颜色 0.33s，颜色 0.33s，框阴影 0.25s`
+- 悬停：蓝色背景微妙变暗
+- 用于：“立即订购”号召性用语
 
-**Secondary CTA** — The alternative action button:
-- Default: bg `#FFFFFF`, text `#393C41` (Graphite), same dimensions and border pattern as primary
-- Transition: identical timing to primary (0.33s)
-- Used for: "View Inventory" alongside primary CTA
+**辅助 CTA** — 替代操作按钮：
+- 默认：背景`#FFFFFF`，文本`#393C41`（石墨），与主尺寸和边框图案相同
+- 转换：与主要时间相同（0.33 秒）
+- 用于：与主要 CTA 一起“查看库存”
 
-**Nav Button** — Top navigation items:
-- Default: bg transparent, text `#171A20` (Carbon Dark), fontSize 14px, fontWeight 500, borderRadius 4px, padding 4px 16px, minHeight 32px
-- Transition: `color 0.33s, background-color 0.33s`
-- Active/expanded: subtle background highlight
-- Used for: "Vehicles", "Energy", "Charging", "Discover", "Shop"
+**导航按钮** — 顶部导航项：
+- 默认：bg透明，文本`#171A20`（碳黑），fontSize 14px，fontWeight 500，borderRadius 4px，padding 4px 16px，minHeight 32px
+- 过渡：`颜色 0.33s，背景色 0.33s`
+- 活动/扩展：微妙的背景突出显示
+- 用于：“车辆”、“能源”、“充电”、“发现”、“商店”
 
-**Text Link** — In-content actions:
-- Default: text `#5C5E62` (Pewter), fontSize 14px, fontWeight 400, no background, no border
-- Hover: underline decoration with box-shadow transition
-- Transition: `box-shadow 0.33s cubic-bezier(0.5, 0, 0, 0.75), color 0.33s`
-- Used for: "Learn", "Order", "Experience", "New", "Pre-Owned" links in dropdown panel
+**文本链接** — 内容内操作：
+- 默认：文本`#5C5E62`（白镴），字体大小14px，字体粗细400，无背景，无边框
+- 悬停：带有框阴影过渡的下划线装饰
+- 过渡：`box-shadow 0.33s 立方贝塞尔曲线(0.5, 0, 0, 0.75)，颜色 0.33s`
+- 用于：下拉面板中的“学习”、“订单”、“体验”、“新”、“二手”链接
 
-### Cards & Containers
+### 卡片和容器
 
-**Vehicle Card** (Navigation panel):
-- Background: transparent (inherits panel white)
-- Border: none
-- Shadow: none
-- Content: vehicle image (transparent PNG) + model name centered below + two text links
-- Layout: 3-column grid within the dropdown panel
-- No hover animation on the card itself — interaction is via the text links beneath
+**车辆卡**（导航面板）：
+- 背景：透明（继承面板白色）
+- 边框：无
+- 阴影：无
+- 内容：车辆图片（透明PNG）+下方居中的车型名称+两个文本链接
+- 布局：下拉面板内的 3 列网格
+- 卡本身没有悬停动画 - 通过下面的文本链接进行交互
 
-**Category Card** (Homepage lower section):
-- Background: full-bleed landscape photography
-- Border radius: approximately 12px (subtly rounded)
-- Overflow: hidden (clips image to rounded corners)
-- Text: white label in top-left corner ("Sport Sedan", "Midsize SUV")
-- Size: large format, approximately 2:1 aspect ratio
-- No shadow, no border, no overlay gradient — text relies on image darkness for contrast
+**类别卡**（主页下部）：
+- 背景：全出血风景摄影
+- 边框半径：大约 12 像素（略圆）
+- 溢出：隐藏（将图像剪辑为圆角）
+- 文字：左上角白色标签（“运动轿车”、“中型 SUV”）
+- 尺寸：大画幅，长宽比约为 2:1
+- 无阴影、无边框、无叠加渐变 — 文本依靠图像暗度来实现对比度
 
-### Inputs & Forms
-- Background: transparent
-- Text color: `#171A20` (Carbon Dark)
-- Placeholder color: `#8E8E8E` (Silver Fog)
-- Border: minimal, inherits from browser defaults
-- Font: Universal Sans Text, 14px
-- The "Ask a Question" chatbot input bar sits at the viewport bottom with a clean white background and subtle border
+### 输入和表格
+- 背景：透明
+- 文字颜色：`#171A20`（碳黑）
+- 占位符颜色：`#8E8E8E`（银雾）
+- 边框：最小，继承浏览器默认值
+- 字体：Universal Sans Text，14px
+- “提问”聊天机器人输入栏位于视口底部，具有干净的白色背景和微妙的边框
 
-### Navigation
-- **Desktop**: Centered horizontal nav with TESLA wordmark (spaced uppercase letters) on the left, five category buttons center-aligned, and three icon buttons (help, globe/language, account) on the right
-- **Background**: White (transitions from transparent over dark hero to opaque white on scroll via class toggle `tds-site-header--white-background`)
-- **Dropdown panel**: Full-width white panel with 3-column vehicle grid + right sidebar text links, no shadow, no border — appears seamlessly below the nav
-- **Sticky behavior**: `sticky-without-slide` class — stays at top without slide-in animation
-- **Mobile**: Hamburger collapse pattern
-- **No visible separator** between nav and content — the nav blends with the hero
+### 导航
+- **桌面**：居中水平导航，左侧带有 TESLA 字标（间隔大写字母），五个类别按钮居中对齐，三个图标按钮（帮助、地球仪/语言、帐户）位于右侧
+- **背景**：白色（通过类切换“tds-site-header--white-background”从透明的深色英雄过渡到滚动上的不透明白色）
+- **下拉面板**：全宽白色面板，带有 3 列车辆网格 + 右侧边栏文本链接，无阴影，无边框 — 无缝显示在导航下方
+- **粘性行为**：`sticky-without-slide`类 - 保持在顶部，没有滑入动画
+- **移动**：汉堡塌陷模式
+- **导航和内容之间没有可见的分隔符** - 导航与英雄融合
 
-### Image Treatment
-- **Hero**: Full-viewport (100vh) sections with cinematic photography — edge-to-edge, no padding, no margin
-- **Vehicle images**: Transparent PNG renders on white background in dropdown panel, studio-quality 3/4 angle shots
-- **Category cards**: Landscape photography with approximately 2:1 ratio, rounded corners (12px)
-- **Carousel**: Auto-advancing with dot indicators (3 dots) and left/right arrow navigation on edges
-- **Lazy loading**: Below-fold sections use lazy loading, rendering as blank white until scrolled into view
+### 图像处理
+- **Hero**：采用电影摄影的全视口 (100vh) 部分 — 边到边、无填充、无边距
+- **车辆图像**：透明 PNG 在下拉面板中的白色背景上渲染，工作室品质的 3/4 角度照片
+- **类别卡**：风景摄影，比例约为 2:1，圆角 (12px)
+- **轮播**：自动前进，带有点指示器（3 个点）和边缘上的左/右箭头导航
+- **延迟加载**：下方折叠部分使用延迟加载，呈现为空白白色，直到滚动到视图中
 
-### Persistent Chat Bar
-- Anchored to viewport bottom, visible across all sections
-- White background with subtle border
-- Contains: chat icon + "Ask a Question" label + placeholder text ("What's Dog Mode?") + send icon + "Schedule a Drive Today" secondary CTA
-- Schedule CTA has a teal/blue icon accent
+### 持久聊天栏
+- 固定在视口底部，所有部分都可见
+- 白色背景，带有微妙的边框
+- 包含：聊天图标 +“提问”标签 + 占位符文本（“什么是狗模式？”）+ 发送图标 +“安排今天开车”辅助 CTA
+- 附表 CTA 具有青色/蓝色图标强调
 
-## 5. Layout Principles
+## 5.布局原则
 
-### Spacing System
-- **Base unit**: 8px
-- **Common values**: 8px (0.5rem), 16px (1rem), 21.44px (1.34rem)
-- **Button padding**: 4px (minimal outer) with content centering via flexbox, 4px 16px for nav items
-- **Section padding**: Full-viewport sections with content centered vertically
-- **Card gap**: approximately 16px between category cards
+### 间距系统
+- **基本单位**：8px
+- **常用值**：8px (0.5rem)、16px (1rem)、21.44px (1.34rem)
+- **按钮填充**：4px（最小外部），内容通过 Flexbox 居中，导航项目 4px 16px
+- **部分填充**：内容垂直居中的全视口部分
+- **卡片间隙**：类别卡片之间大约 16 像素
 
-### Grid & Container
-- **Max width**: approximately 1383px (full viewport width used for most content)
-- **Hero**: Full-bleed, edge-to-edge, 100vh sections
-- **Navigation panel**: 3-column grid for vehicle cards with right-aligned text sidebar (~70/30 split)
-- **Category cards**: 2-up horizontal layout (large left card + smaller right card)
+### 网格和容器
+- **最大宽度**：大约 1383px（大多数内容使用的完整视口宽度）
+- **Hero**：全出血、边到边、100vh 部分
+- **导航面板**：用于车辆卡的 3 列网格，带有右对齐文本侧边栏（~70/30 分割）
+- **类别卡**：2-up 水平布局（左大卡 + 右小卡）
 
-### Whitespace Philosophy
-Tesla uses whitespace as a luxury signal. The generous vertical spacing between sections (each section is a full viewport height) means you can only see one "message" at a time — one car, one model name, one CTA pair. This creates a gallery-like browsing experience where each scroll is a deliberate transition, not a continuous feed. White space is not empty — it's the frame that elevates each vehicle to the status of art piece.
+### 空白哲学
+特斯拉使用空白作为奢华信号。各部分之间的垂直间距较大（每个部分都是整个视口高度），这意味着您一次只能看到一条“消息” - 一辆汽车、一个型号名称、一对 CTA。这创造了一种类似画廊的浏览体验，其中每个滚动都是有意的过渡，而不是连续的提要。空白并不是空的——而是框架将每辆车提升到了艺术品的地位。
 
-### Border Radius Scale
-| Value | Context |
-|-------|---------|
-| 0px | Most elements — sharp edges are the default |
-| 4px | Buttons (primary, secondary, nav items) — barely perceptible rounding |
-| ~12px | Category cards — noticeable but restrained rounding on larger surfaces |
-| 50% | Carousel dot indicators — perfect circles |
+### 边界半径比例
+|价值|背景 |
+|--------|---------|
+| 0 像素 |大多数元素 - 锐边是默认的 |
+| 4 像素 |按钮（主要、次要、导航项）——几乎难以察觉的四舍五入 |
+| 〜12 像素 |类别卡 - 在较大的表面上明显但受限的圆角 |
+| 50% |轮播点指示器 — 完美的圆 |
 
-## 6. Depth & Elevation
+## 6. 深度和高度
 
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Level 0 (Flat) | No shadow, no border | Default state for all elements — cards, panels, buttons at rest |
-| Level 1 (Frost) | `rgba(255,255,255,0.75)` backdrop | Navigation bar on scroll — frosted glass transparency |
-| Level 2 (Overlay) | `rgba(128,128,128,0.65)` | Modal overlays and region/cookie popups |
-| Level 3 (Subtle) | `rgba(0,0,0,0.05)` | Minimal shadow hints on rare hover states |
+|水平|治疗 |使用 |
+|--------|------------|-----|
+| 0 级（平）|无阴影，无边框 |所有元素的默认状态 — 卡片、面板、静止按钮 |
+| 1 级（霜冻）| `rgba(255,255,255,0.75)` 背景 |滚动导航栏 — 磨砂玻璃透明度 |
+| 2 级（覆盖）| `rgba(128,128,128,0.65)` |模态叠加和区域/cookie 弹出窗口 |
+| 3 级（微妙）| `rgba(0,0,0,0.05)` |罕见悬停状态的最小阴影提示
 
-### Shadow Philosophy
-Tesla's approach to elevation is essentially "none." The site avoids box-shadows entirely in its primary interface. Depth is communicated through three alternative strategies:
-1. **Z-index layering**: The sticky navigation sits above hero content through positioning, not shadow
-2. **Opacity-based transparency**: The frosted glass nav and overlay modals use background-color opacity rather than shadow to indicate layering
-3. **Photography-as-depth**: The full-bleed images create their own visual depth through perspective, lighting, and composition — making UI shadows redundant
+### 影子哲学
+特斯拉的海拔方法本质上是“无”。该网站在其主界面中完全避免了盒子阴影。深度是通过三种替代策略来传达的：
+1. **Z-index 分层**：粘性导航通过定位而不是阴影位于英雄内容之上
+2. **基于不透明度的透明度**：磨砂玻璃导航和叠加模式使用背景颜色不透明度而不是阴影来指示分层
+3. **摄影作为深度**：全屏图像通过透视、照明和构图创建自己的视觉深度 - 使 UI 阴影变得多余
 
-### Decorative Depth
-- No gradients, glows, or atmospheric effects on UI elements
-- The hero imagery itself provides all visual richness — sunset skies, reflected light on car surfaces, ground shadows from studio lighting
-- The carousel arrow buttons use a semi-transparent white background to float above the hero imagery without disrupting it
+### 装饰深度
+- UI 元素上没有渐变、发光或大气效果
+- 英雄图像本身提供了所有视觉丰富性 - 日落的天空、汽车表面的反射光、工作室照明的地面阴影
+- 轮播箭头按钮使用半透明的白色背景漂浮在英雄图像上方，而不会破坏它
 
-## 7. Do's and Don'ts
+## 7. 该做和不该做的事情
 
-### Do
-- Let photography dominate every screen — the product IS the design
-- Use Electric Blue (`#3E6AE1`) exclusively for primary CTAs — never for decorative purposes
-- Maintain viewport-height sections for major content blocks — one message per screen
-- Keep typography at weight 400-500 only — no bold, no light, no extremes
-- Use 4px border-radius for all interactive elements — precision over playfulness
-- Trust whitespace as a luxury signal — never fill available space just because it's empty
-- Keep all transitions at 0.33s — consistency in motion is as important as consistency in color
-- Use transparent PNG vehicle imagery on white backgrounds for product showcases
-- Center CTAs horizontally below model names — the vertical rhythm is model → subtitle → buttons
-- Maintain the Display/Text font split — Display for hero-scale text only, Text for everything else
+### 做
+- 让摄影主宰每个屏幕——产品就是设计
+- 仅将电蓝色 (`#3E6AE1`) 用于主要 CTA — 切勿用于装饰目的
+- 维护主要内容块的视口高度部分 - 每个屏幕一条消息
+- 将排版控制在粗细 400-500 之间 — 无粗体、无浅色、无极端
+- 对所有交互元素使用 4px 边框半径 — 精确性高于趣味性
+- 相信空白是一种奢侈的信号——永远不要仅仅因为可用空间是空的就填充它
+- 将所有过渡保持在 0.33 秒 — 运动的一致性与颜色的一致性同样重要
+- 在白色背景上使用透明 PNG 车辆图像进行产品展示
+- CTA 水平居中于模型名称下方 — 垂直节奏为模型 → 副标题 → 按钮
+- 保持显示/文本字体分割 - 仅显示英雄比例文本，文本显示其他所有内容
 
-### Don't
-- Add shadows to any element — elevation through shadow contradicts the flat, gallery aesthetic
-- Use more than one chromatic color besides the blue CTA — the palette is intentionally monochrome-plus-one
-- Apply gradients, patterns, or decorative backgrounds to surfaces — white and photography are the only backgrounds
-- Use text larger than 40px on the web — the typography is deliberately restrained even at hero scale
-- Add borders to cards or containers — separation is achieved through spacing, not lines
-- Use uppercase text transforms — Tesla's confidence is expressed through lowercase calm
-- Introduce rounded-pill buttons or large border-radii — the 4px radius is deliberate and precise
-- Override the Universal Sans family with other typefaces — cross-platform consistency is a core brand value
-- Add hover animations with scale/translate transforms — Tesla's interactions are color-only (background and border transitions)
-- Clutter the viewport with multiple CTAs — every screen should have at most two action buttons
+### 不要
+- 向任何元素添加阴影 - 通过阴影的立面与平面、画廊的美感相矛盾
+- 除了蓝色 CTA 之外，使用多种彩色 - 调色板有意为单色加一
+- 将渐变、图案或装饰背景应用到表面 - 白色和摄影是唯一的背景
+- 在网络上使用大于 40 像素的文本 — 即使在英雄比例下，排版也被刻意限制
+- 为卡片或容器添加边框 - 通过间距而不是线条实现分隔
+- 使用大写文本转换——特斯拉的自信通过小写平静表达
+- 引入圆形药丸按钮或大边框半径 - 4px 半径是经过深思熟虑且精确的
+- 用其他字体覆盖 Universal Sans 系列——跨平台一致性是核心品牌价值
+- 添加具有缩放/平移变换的悬停动画 - Tesla 的交互仅包含颜色（背景和边框过渡）
+- 多个 CTA 使视口变得混乱 - 每个屏幕最多应有两个操作按钮
 
-## 8. Responsive Behavior
+## 8. 响应行为
 
-### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <768px | Single-column layout, hamburger nav replaces horizontal labels, hero text scales to ~28px, CTA buttons stack vertically, category cards become full-width |
-| Tablet | 768-1024px | 2-column nav panel, hero maintains full-viewport height, CTAs remain side-by-side, reduced horizontal padding |
-| Desktop | 1024-1440px | Full horizontal nav, 3-column vehicle grid in dropdown, hero at 40px, side-by-side CTAs at 200px/160px width |
-| Large Desktop | >1440px | Content remains centered, hero photography scales to fill wider viewports, max-width container for nav panel content |
+### 断点
+|名称 |宽度|关键变化|
+|------|--------|-------------|
+|手机 | <768 像素 |单列布局、汉堡包导航取代水平标签、英雄文本缩放至约 28 像素、CTA 按钮垂直堆叠、类别卡变为全宽 |
+|平板电脑| 768-1024 像素 | 2 列导航面板，英雄保持全视口高度，CTA 保持并排，减少水平填充 |
+|桌面| 1024-1440 像素 |全水平导航、下拉菜单中的 3 列车辆网格、英雄为 40 像素、并排 CTA 为 200 像素/160 像素宽度 |
+|大型桌面 | >1440 像素 |内容保持居中，英雄摄影缩放以填充更宽的视口，导航面板内容的最大宽度容器|
 
-### Touch Targets
-- Primary CTA buttons: 200px × 40px minimum (well above 44×44px WCAG requirement)
-- Nav buttons: minimum 32px height with 4px 16px padding — adequate touch targets
-- Carousel arrows: ~44px square white semi-transparent buttons at viewport edges
-- Text links ("Learn", "Order"): 14px text with adequate line-height spacing for touch
+### 触摸目标
+- 主要 CTA 按钮：最小 200 像素 × 40 像素（远高于 44 × 44 像素 WCAG 要求）
+- 导航按钮：最小 32 像素高度，4 像素 16 像素填充 — 足够的触摸目标
+- 轮播箭头：视口边缘有约 44 像素的方形白色半透明按钮
+- 文本链接（“学习”、“订购”）：14 像素文本，具有足够的行高间距以供触摸
 
-### Collapsing Strategy
-- **Navigation**: Horizontal category buttons (Vehicles, Energy, Charging, Discover, Shop) collapse to a hamburger/drawer menu on mobile
-- **Hero CTA pair**: Side-by-side buttons on desktop stack vertically on mobile
-- **Category cards**: 2-up horizontal layout collapses to single-column full-width on mobile
-- **Vehicle grid**: 3-column grid in desktop nav panel becomes 2-column on tablet, single-column on mobile
-- **Spacing**: Section vertical padding remains generous (viewport-height sections) but horizontal padding reduces
+### 崩溃策略
+- **导航**：水平类别按钮（车辆、能源、充电、发现、商店）在移动设备上折叠为汉堡包/抽屉菜单
+- **英雄 CTA 对**：桌面上的并排按钮垂直堆叠在移动设备上
+- **类别卡**：2-up 水平布局在移动设备上折叠为单列全宽
+- **车辆网格**：桌面导航面板中的 3 列网格在平板电脑上变为 2 列，在移动设备上变为单列
+- **间距**：部分垂直填充保持慷慨（视口高度部分），但水平填充减少
 
-### Image Behavior
-- Hero images are fully responsive and fill the entire viewport at every breakpoint
-- Vehicle carousel images use `object-fit: cover` to maintain cinematic composition across widths
-- Transparent PNG vehicle images in the nav panel scale proportionally within their grid cells
-- Category card images maintain their landscape ratio and clip via `overflow: hidden` with border-radius
+### 图像行为
+- 英雄图像完全响应并在每个断点处填充整个视口
+- 车辆轮播图像使用“object-fit: cover”来保持跨宽度的电影构图
+- 导航面板中的透明 PNG 车辆图像在其网格单元内按比例缩放
+- 类别卡图像通过带有边框半径的“溢出：隐藏”保持其横向比例和剪辑
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
-- Primary CTA: "Electric Blue (#3E6AE1)"
-- Background: "Pure White (#FFFFFF)"
-- Heading text: "Carbon Dark (#171A20)"
-- Body text: "Graphite (#393C41)"
-- Tertiary text: "Pewter (#5C5E62)"
-- Placeholder: "Silver Fog (#8E8E8E)"
-- Alternate surface: "Light Ash (#F4F4F4)"
-- Dark surface: "Carbon Dark (#171A20)"
+### 快速颜色参考
+- 主要 CTA：“电蓝色 (#3E6AE1)”
+- 背景：“纯白色（#FFFFFF）”
+- 标题文本：“碳黑 (#171A20)”
+- 正文：“石墨 (#393C41)”
+- 第三级文本：“白镴 (#5C5E62)”
+- 占位符：“银雾 (#8E8E8E)”
+- 替代表面：“浅灰 (#F4F4F4)”
+- 深色表面：“碳黑 (#171A20)”
 
-### Example Component Prompts
-- "Create a hero section with a full-viewport background image, centered 'Model Y' title in Universal Sans Display at 40px weight 500 in white, a subtitle line below, and two buttons side by side: a primary Electric Blue (#3E6AE1) 'Order Now' button and a secondary white 'View Inventory' button, both with 4px border-radius and 40px height"
-- "Design a navigation bar with a spaced-letter wordmark on the left, five text buttons (14px, weight 500, Carbon Dark #171A20) centered, and three icon buttons on the right, all on a white background with no shadow or border"
-- "Build a vehicle card grid with 3 columns, each card showing a transparent-background car image above a model name (17px, weight 500, Carbon Dark) and two text links (14px, weight 400, Pewter #5C5E62) labeled 'Learn' and 'Order', on a pure white surface with no borders or shadows"
-- "Create a category card with full-bleed landscape photography, 12px border-radius, overflow hidden, and a white text label ('Sport Sedan') positioned in the top-left corner with no overlay gradient"
-- "Design a persistent bottom bar with a chat input ('Ask a Question' placeholder), a send icon, and a secondary CTA ('Schedule a Drive Today') with a teal icon, anchored to the viewport bottom on a white background"
+### 组件提示示例
+- “创建一个带有全视口背景图像的英雄部分，在 Universal Sans Display 中以 40 像素粗细 500 的白色居中显示“Model Y”标题，下方有一个字幕行，并排有两个按钮：一个主要的电蓝色 (#3E6AE1)“立即订购”按钮和一个次要的白色“查看库存”按钮，两者的边框半径均为 4 像素，高度为 40 像素”
+- “设计一个导航栏，左侧有一个间隔字母文字标记，五个文本按钮（14 像素，粗细 500，Carbon Dark #171A20）居中，三个图标按钮位于右侧，全部位于白色背景上，没有阴影或边框”
+- “构建一个 3 列的车辆卡网格，每张卡在模型名称（17 像素，重量 500，Carbon Dark）上方显示透明背景汽车图像，并在纯白色表面上显示两个标记为“学习”和“订购”的文本链接（14 像素，重量 400，Pewter #5C5E62），没有边框或阴影”
+- “创建一个类别卡，其中包含全出血风景摄影、12 像素边框半径、隐藏溢出，以及位于左上角且没有叠加渐变的白色文本标签（‘运动轿车’）”
+- “设计一个带有聊天输入（‘提问’占位符）、一个发送图标和一个带有青色图标的辅助 CTA（‘安排今天开车’）的持久底部栏，锚定在白色背景上的视口底部”
 
-### Iteration Guide
-When refining existing screens generated with this design system:
-1. Focus on ONE component at a time — Tesla's system is so minimal that each element must be pixel-perfect
-2. Reference specific color names and hex codes from this document — there are only 6-7 colors in the entire system
-3. Use natural language descriptions, not CSS values — "barely rounded corners" not "border-radius: 4px"
-4. Describe the desired "feel" alongside specific measurements — "gallery-like silence between sections" communicates the whitespace philosophy better than "margin-bottom: 100vh"
-5. Always verify that photography is doing the emotional heavy-lifting — if the UI itself feels "designed," it's too much
+### 迭代指南
+当优化使用此设计系统生成的现有屏幕时：
+1. 一次专注于一个组件——特斯拉的系统非常小，每个元素都必须是像素完美的
+2. 参考本文档中的具体颜色名称和十六进制代码——整个系统只有6-7种颜色
+3.使用自然语言描述，而不是CSS值——“几乎圆角”而不是“边框半径：4px”
+4. 描述所需的“感觉”以及具体的测量——“各部分之间像画廊一样的沉默”比“margin-bottom: 100vh”更好地传达了空白哲学
+5. 始终验证摄影是否承担了情感上的重担——如果用户界面本身感觉是“设计的”，那就太多了

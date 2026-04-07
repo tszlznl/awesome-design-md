@@ -1,28 +1,28 @@
-# Contributing to Awesome Design MD
+# 贡献指南 (Awesome Design MD)
 
-Thanks for contributing.
+感谢您的贡献。
 
-This repository is a curated collection of DESIGN.md files extracted from popular websites. Each file captures a site's complete visual language in a format any AI agent can read.
+本仓库是一个精选的 DESIGN.md 文件集合，这些文件提取自热门网站。每个文件都以任何 AI 智能体都能读取的格式捕获了一个网站的完整视觉语言。
 
-## How to Contribute
+## 如何贡献
 
-### Request a New Site
+### 请求一个新站点
 
-To request a DESIGN.md for a website, [open an issue](https://github.com/VoltAgent/awesome-design-md/issues/new?template=design-md-request.yml) with the website URL.
+如需为某个网站请求 DESIGN.md，请[提交一个 Issue](https://github.com/VoltAgent/awesome-design-md/issues/new?template=design-md-request.yml) 并附上网站 URL。
 
-We receive many requests, and maintainer bandwidth is limited. Sponsor-backed requests are prioritized, consider supporting the project via [GitHub Sponsors](https://github.com/sponsors/VoltAgent) if you'd like faster turnaround.
+我们收到了许多请求，而维护者的精力有限。赞助支持的请求将被优先处理，如果您希望更快获得结果，请考虑通过 [GitHub Sponsors](https://github.com/sponsors/VoltAgent) 支持本项目。
 
-### Improve an Existing DESIGN.md
+### 改进现有的 DESIGN.md
 
-If you notice issues with an existing file:
+如果您发现现有文件存在问题：
 
-1. **Open an issue first** to describe what you'd like to change and get feedback from maintainers
-2. Open the site's `DESIGN.md`
-3. Compare against the live site
-4. Fix incorrect hex values, missing tokens, or weak descriptions
-5. Update the `preview.html` and `preview-dark.html` if your changes affect displayed tokens
-6. Open a PR with before/after rationale
+1. **首先提交一个 Issue** 描述您想要更改的内容并获取维护者的反馈
+2. 打开该站点的 `DESIGN.md`
+3. 与实时站点进行对比
+4. 修复不正确的十六进制值、缺失的 token 或薄弱的描述
+5. 如果您的更改影响了显示的 token，请更新 `preview.html` 和 `preview-dark.html`
+6. 提交一个带有修改前后对比说明的 PR
 
-## License
+## 许可证
 
-By contributing, you agree your contributions are provided under the repository license terms.
+通过参与贡献，您同意您的贡献将在本仓库许可证条款下提供。

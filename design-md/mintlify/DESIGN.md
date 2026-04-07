@@ -1,326 +1,326 @@
-# Design System Inspiration of Mintlify
+# Mintlify 的设计系统灵感
 
-## 1. Visual Theme & Atmosphere
+## 1.视觉主题和氛围
 
-Mintlify's website is a study in documentation-as-product design — a white, airy, information-rich surface that treats clarity as its highest aesthetic value. The page opens with a luminous white (`#ffffff`) background, near-black (`#0d0d0d`) text, and a signature green brand accent (`#18E299`) that signals freshness and intelligence without dominating the palette. The overall mood is calm, confident, and engineered for legibility — a design system that whispers "we care about your developer experience" in every pixel.
+Mintlify 的网站是对文档即产品设计的研究——白色、通风、信息丰富的表面，将清晰度视为其最高的美学价值。该页面以发光的白色（“#ffffff”）背景、近乎黑色（“#0d0d0d”）文本和标志性绿色品牌口音（“#18E299”）打开，在不占据调色板的情况下标志着新鲜度和智慧。整体氛围是平静、自信的，并且是为了易读性而设计的——这个设计系统在每个像素中低语着“我们关心你的开发者体验”。
 
-The Inter font family carries the entire typographic load. At display sizes (40–64px), it uses tight negative letter-spacing (-0.8px to -1.28px) and semibold weight (600), creating headlines that feel focused and compressed like well-written documentation headers. Body text at 16–18px with 150% line-height provides generous reading comfort. Geist Mono appears exclusively for code and technical labels — uppercase, tracked-out, small — the voice of the terminal inside the marketing page.
+Inter 字体系列承担了整个印刷负载。在显示尺寸 (40–64px) 下，它使用紧密的负字母间距（-0.8px 到 -1.28px）和半粗体粗细 (600)，创建的标题感觉集中且压缩，就像编写良好的文档标题一样。正文文本尺寸为 16–18 像素，行高为 150%，可提供宽敞的阅读舒适度。 Geist Mono 专门用于代码和技术标签 - 大写、追踪、小写 - 营销页面内终端的声音。
 
-What distinguishes Mintlify from other documentation platforms is its atmospheric gradient hero. A soft, cloud-like green-to-white gradient wash behind the hero content creates a sense of ethereal intelligence — documentation that floats above the noise. Below the hero, the page settles into a disciplined alternation of white sections separated by subtle 5% opacity borders. Cards use generous padding (24px+) with large radii (16px–24px) and whisper-thin borders, creating containers that feel open rather than boxed.
+Mintlify 与其他文档平台的区别在于它的大气梯度英雄。英雄内容背后柔和的云状绿白渐变效果营造出一种飘逸智能的感觉——文档漂浮在噪音之上。在英雄下方，页面呈现出严格交替的白色部分，并由微妙的 5% 不透明度边框分隔开。卡片使用宽大的填充 (24px+) 和大半径 (16px–24px) 和极细的边框，创建感觉开放而不是盒装的容器。
 
-**Key Characteristics:**
-- Inter with tight negative tracking at display sizes (-0.8px to -1.28px) — compressed yet readable
-- Geist Mono for code labels: uppercase, 12px, tracked-out, the terminal voice
-- Brand green (`#18E299`) used sparingly — CTAs, hover states, focus rings, and accent touches
-- Atmospheric gradient hero with cloud-like green-white wash
-- Ultra-round corners: 16px for containers, 24px for featured cards, full-round (9999px) for buttons and pills
-- Subtle 5% opacity borders (`rgba(0,0,0,0.05)`) creating barely-there separation
-- 8px base spacing system with generous section padding (48px–96px)
-- Clean white canvas — no gray backgrounds, no color sections, depth through borders and whitespace alone
+**主要特征：**
+- Inter 在显示尺寸（-0.8px 至 -1.28px）下具有严格的负跟踪 — 压缩但可读
+- Geist Mono 用于代码标签：大写、12px、tracked-out、终端语音
+- 谨慎使用品牌绿色 (`#18E299`) — CTA、悬停状态、对焦环和强调触摸
+- 大气渐变英雄，云朵般的绿白水洗
+- 超圆角：容器为 16 像素，特色卡片为 24 像素，按钮和药丸为全圆 (9999 像素)
+- 微妙的 5% 不透明度边框 (`rgba(0,0,0,0.05)`) 创造几乎没有的分离
+- 8px 基础间距系统，具有宽敞的部分填充 (48px–96px)
+- 干净的白色画布 - 没有灰色背景，没有颜色部分，只有边框和空白的深度
 
-## 2. Color Palette & Roles
+## 2. 调色板和角色
 
-### Primary
-- **Near Black** (`#0d0d0d`): Primary text, headings, dark surfaces. Not pure black — the micro-softness improves reading comfort.
-- **Pure White** (`#ffffff`): Page background, card surfaces, input backgrounds.
-- **Brand Green** (`#18E299`): The signature accent — CTAs, links on hover, focus rings, brand identity.
+### 小学
+- **近黑色** (`#0d0d0d`)：主要文本、标题、深色表面。不是纯黑色——微柔软度提高了阅读舒适度。
+- **纯白色** (`#ffffff`)：页面背景、卡片表面、输入背景。
+- **品牌绿色** (`#18E299`)：标志性口音 — CTA、悬停链接、聚焦环、品牌标识。
 
-### Secondary Accents
-- **Brand Green Light** (`#d4fae8`): Tinted green surface for badges, hover states, subtle backgrounds.
-- **Brand Green Deep** (`#0fa76e`): Darker green for text on light-green badges, hover states on brand elements.
-- **Warm Amber** (`#c37d0d`): Warning states, caution badges — `--twoslash-warn-bg`.
-- **Soft Blue** (`#3772cf`): Tag backgrounds, informational annotations — `--twoslash-tag-bg`.
-- **Error Red** (`#d45656`): Error states, destructive actions — `--twoslash-error-bg`.
+### 次要口音
+- **品牌绿光** (`#d4fae8`)：徽章、悬停状态、微妙背景的绿色表面。
+- **品牌深绿色** (`#0fa76e`)：浅绿色徽章上的文本为深绿色，品牌元素上的悬停状态。
+- **暖琥珀色** (`#c37d0d`)：警告状态，警告徽章 — `--twoslash-warn-bg`。
+- **软蓝色** (`#3772cf`)：标签背景、信息注释 — `--twoslash-tag-bg`。
+- **红色错误** (`#d45656`)：错误状态，破坏性操作 — `--twoslash-error-bg`。
 
-### Neutral Scale
-- **Gray 900** (`#0d0d0d`): Primary heading text, nav links.
-- **Gray 700** (`#333333`): Secondary text, descriptions, body copy.
-- **Gray 500** (`#666666`): Tertiary text, muted labels.
-- **Gray 400** (`#888888`): Placeholder text, disabled states, code annotations.
-- **Gray 200** (`#e5e5e5`): Borders, dividers, card outlines.
-- **Gray 100** (`#f5f5f5`): Subtle surface backgrounds, hover states.
-- **Gray 50** (`#fafafa`): Near-white surface tint.
+### 中性尺度
+- **灰色 900** (`#0d0d0d`)：主标题文本、导航链接。
+- **Gray 700** (`#333333`)：辅助文本、描述、正文。
+- **灰色 500** (`#666666`)：第三级文本，静音标签。
+- **Gray 400** (`#888888`)：占位符文本、禁用状态、代码注释。
+- **灰色 200** (`#e5e5e5`)：边框、分隔线、卡片轮廓。
+- **灰色 100** (`#f5f5f5`)：微妙的表面背景，悬停状态。
+- **灰色 50** (`#fafafa`)：接近白色的表面色调。
 
-### Interactive
-- **Link Default** (`#0d0d0d`): Links match text color, relying on underline/context.
-- **Link Hover** (`#18E299`): Brand green on hover — `var(--color-brand)`.
-- **Focus Ring** (`#18E299`): Brand green focus outline for inputs and interactive elements.
+### 互动
+- **链接默认** (`#0d0d0d`)：链接根据下划线/上下文匹配文本颜色。
+- **链接悬停** (`#18E299`)：悬停时品牌为绿色 — `var(--color-brand)`。
+- **焦点环** (`#18E299`)：用于输入和交互元素的品牌绿色焦点轮廓。
 
-### Surface & Overlay
-- **Card Background** (`#ffffff`): White cards on white background, separated by borders.
-- **Border Subtle** (`rgba(0,0,0,0.05)`): 5% black opacity borders — the primary separation mechanism.
-- **Border Medium** (`rgba(0,0,0,0.08)`): Slightly stronger borders for interactive elements.
-- **Input Border Focus** (`var(--color-brand)`): Green ring on focused inputs.
+### 表面和覆盖层
+- **卡片背景** (`#ffffff`)：白色背景上的白色卡片，由边框分隔。
+- **Border Subtle** (`rgba(0,0,0,0.05)`)：5% 黑色不透明度边框 — 主要分离机制。
+- **中边框** (`rgba(0,0,0,0.08)`)：交互元素的边框稍强。
+- **输入边框焦点** (`var(--color-brand)`)：聚焦输入上的绿环。
 
-### Shadows & Depth
-- **Card Shadow** (`rgba(0,0,0,0.03) 0px 2px 4px`): Barely-there ambient shadow for subtle lift.
-- **Button Shadow** (`rgba(0,0,0,0.06) 0px 1px 2px`): Micro-shadow for button depth.
-- **No heavy shadows**: Mintlify relies on borders, not shadows, for depth.
+### 阴影和深度
+- **卡片阴影** (`rgba(0,0,0,0.03) 0px 2px 4px`)：几乎没有环境阴影，可实现微妙的提升。
+- **按钮阴影** (`rgba(0,0,0,0.06) 0px 1px 2px`)：按钮深度的微阴影。
+- **没有重阴影**：Mintlify 依靠边框而不是阴影来获得深度。
 
-## 3. Typography Rules
+## 3. 版式规则
 
-### Font Family
-- **Primary**: `Inter`, with fallback: `Inter Fallback, system-ui, -apple-system, sans-serif`
-- **Monospace**: `Geist Mono`, with fallback: `Geist Mono Fallback, ui-monospace, SFMono-Regular, monospace`
+### 字体系列
+- **主要**：`Inter`，带后备：`Inter Fallback，system-ui，-apple-system，sans-serif`
+- **Monospace**：`Geist Mono`，带后备：`Geist Mono Fallback、ui-monospace、SFMono-Regular、monospace`
 
-### Hierarchy
+### 层次结构
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|------|--------|-------------|----------------|-------|
-| Display Hero | Inter | 64px (4.00rem) | 600 | 1.15 (tight) | -1.28px | Maximum impact, hero headlines |
-| Section Heading | Inter | 40px (2.50rem) | 600 | 1.10 (tight) | -0.8px | Feature section titles |
-| Sub-heading | Inter | 24px (1.50rem) | 500 | 1.30 (tight) | -0.24px | Card headings, sub-sections |
-| Card Title | Inter | 20px (1.25rem) | 600 | 1.30 (tight) | -0.2px | Feature card titles |
-| Card Title Light | Inter | 20px (1.25rem) | 500 | 1.30 (tight) | -0.2px | Secondary card headings |
-| Body Large | Inter | 18px (1.13rem) | 400 | 1.50 | normal | Hero descriptions, introductions |
-| Body | Inter | 16px (1.00rem) | 400 | 1.50 | normal | Standard reading text |
-| Body Medium | Inter | 16px (1.00rem) | 500 | 1.50 | normal | Navigation, emphasized text |
-| Button | Inter | 15px (0.94rem) | 500 | 1.50 | normal | Button labels |
-| Link | Inter | 14px (0.88rem) | 500 | 1.50 | normal | Navigation links, small CTAs |
-| Caption | Inter | 14px (0.88rem) | 400–500 | 1.50–1.71 | normal | Metadata, descriptions |
-| Label Uppercase | Inter | 13px (0.81rem) | 500 | 1.50 | 0.65px | `text-transform: uppercase`, section labels |
-| Small | Inter | 13px (0.81rem) | 400–500 | 1.50 | -0.26px | Small body text |
-| Mono Code | Geist Mono | 12px (0.75rem) | 500 | 1.50 | 0.6px | `text-transform: uppercase`, technical labels |
-| Mono Badge | Geist Mono | 12px (0.75rem) | 600 | 1.50 | 0.6px | `text-transform: uppercase`, status badges |
-| Mono Micro | Geist Mono | 10px (0.63rem) | 500 | 1.50 | normal | `text-transform: uppercase`, tiny labels |
+|角色 |字体|尺寸|重量 |行高|字母间距 |笔记|
+|------|------|------|--------|-------------|----------------|--------|
+|显示英雄 |国际米兰| 64 像素（4.00 雷姆）| 600 | 1.15（紧）| -1.28 像素 |最大影响力，英雄头条|
+|章节标题 |国际米兰| 40 像素（2.50 雷姆）| 600 | 1.10（紧）| -0.8 像素 |专题章节标题 |
+|副标题|国际米兰| 24 像素（1.50 雷姆）| 500 | 500 1.30（紧）| -0.24 像素 |卡片标题、小节 |
+|卡片标题 |国际米兰| 20 像素（1.25 雷姆）| 600 | 1.30（紧）| -0.2 像素 |特色卡标题 |
+|卡片标题灯 |国际米兰| 20 像素（1.25 雷姆）| 500 | 500 1.30（紧）| -0.2 像素 |次要卡片标题 |
+|机身大 |国际米兰| 18 像素（1.13 雷姆）| 400 | 1.50 | 1.50正常 |英雄描述、介绍|
+|身体|国际米兰| 16 像素（1.00 雷姆）| 400 | 1.50 | 1.50正常 |标准阅读文本|
+|身体中等|国际米兰| 16 像素（1.00 雷姆）| 500 | 500 1.50 | 1.50正常 |导航，强调文本|
+|按钮|国际米兰| 15 像素（0.94 雷姆）| 500 | 500 1.50 | 1.50正常 |按钮标签|
+|链接 |国际米兰| 14 像素（0.88 雷姆）| 500 | 500 1.50 | 1.50正常 |导航链接、小型 CTA |
+|标题|国际米兰| 14 像素（0.88 雷姆）| 400–500 | 1.50–1.71 |正常 |元数据、描述 |
+|标签大写|国际米兰| 13 像素（0.81 雷姆）| 500 | 500 1.50 | 1.50 0.65 像素 | `文本转换：大写`，部分标签 |
+|小|国际米兰| 13 像素（0.81 雷姆）| 400–500 | 1.50 | 1.50 -0.26 像素 |小正文 |
+|单声道代码 | Geist 单声道 | 12 像素（0.75 雷姆）| 500 | 500 1.50 | 1.50 0.6 像素 | `文本转换：大写`，技术标签 |
+|单色徽章| Geist 单声道 | 12 像素（0.75 雷姆）| 600 | 1.50 | 1.50 0.6 像素 | `文本转换：大写`，状态徽章 |
+|单声道微| Geist 单声道 | 10 像素（0.63 雷姆）| 500 | 500 1.50 | 1.50正常 | `文本转换：大写`，小标签 |
 
-### Principles
-- **Tight tracking at display sizes**: Inter at 40–64px uses -0.8px to -1.28px letter-spacing. This compression creates headlines that feel deliberate and space-efficient — documentation headings, not billboard copy.
-- **Relaxed reading at body sizes**: 16–18px body text uses normal tracking with 150% line-height, creating generous reading lanes. Documentation demands comfort.
-- **Two-font system**: Inter for all human-readable content, Geist Mono exclusively for technical/code contexts. The boundary is strict — no mixing.
-- **Uppercase as hierarchy signal**: Section labels and technical tags use uppercase + positive tracking (0.6px–0.65px) as a clear visual delimiter between content types.
-- **Three weights**: 400 (body/reading), 500 (UI/navigation/emphasis), 600 (headings/titles). No bold (700) in the system.
+### 原则
+- **显示尺寸上的紧密跟踪**：Inter 在 40–64 像素时使用 -0.8 像素到 -1.28 像素字母间距。这种压缩创建的标题让人感觉是经过深思熟虑且节省空间的——文档标题，而不是广告牌副本。
+- **以正文尺寸轻松阅读**：16–18 像素正文使用 150% 行高的正常跟踪，创建宽敞的阅读通道。文档需要舒适。
+- **双字体系统**：Inter 用于所有人类可读的内容，Geist Mono 专门用于技术/代码上下文。界限很严格——不能混合。
+- **大写作为层次结构信号**：部分标签和技术标签使用大写+正跟踪（0.6px–0.65px）作为内容类型之间清晰的视觉分隔符。
+- **三个权重**：400（正文/阅读）、500（UI/导航/强调）、600（标题/标题）。系统中没有粗体（700）。
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
-**Primary Brand (Full-round)**
-- Background: `#0d0d0d` (near-black)
-- Text: `#ffffff`
-- Padding: 8px 24px
-- Radius: 9999px (full pill)
-- Font: Inter 15px weight 500
-- Shadow: `rgba(0,0,0,0.06) 0px 1px 2px`
-- Hover: opacity 0.9
-- Use: Primary CTA ("Get Started", "Start Building")
+**主要品牌（全轮）**
+- 背景：`#0d0d0d`（近黑色）
+- 文本：`#ffffff`
+- 内边距：8 像素 24 像素
+- 半径：9999px（全丸）
+- 字体：Inter 15px 粗细 500
+- 阴影：`rgba(0,0,0,0.06) 0px 1px 2px`
+- 悬停：不透明度 0.9
+- 使用：主要 CTA（“开始”、“开始构建”）
 
-**Secondary / Ghost (Full-round)**
-- Background: `#ffffff`
-- Text: `#0d0d0d`
-- Padding: 4.5px 12px
-- Radius: 9999px (full pill)
-- Border: `1px solid rgba(0,0,0,0.08)`
-- Font: Inter 15px weight 500
-- Hover: opacity 0.9
-- Use: Secondary actions ("Request Demo", "View Docs")
+**中学/幽灵（整轮）**
+- 背景：`#ffffff`
+- 文本：`#0d0d0d`
+- 内边距：4.5 像素 12 像素
+- 半径：9999px（全丸）
+- 边框：`1px 实心 rgba(0,0,0,0.08)`
+- 字体：Inter 15px 粗细 500
+- 悬停：不透明度 0.9
+- 使用：辅助操作（“请求演示”、“查看文档”）
 
-**Transparent / Nav Button**
-- Background: transparent
-- Text: `#0d0d0d`
-- Padding: 5px 6px
-- Radius: 8px
-- Border: none or `1px solid rgba(0,0,0,0.05)`
-- Use: Navigation items, icon buttons
+**透明/导航按钮**
+- 背景：透明
+- 文本：`#0d0d0d`
+- 内边距：5 像素 6 像素
+- 半径：8px
+- 边框：无或“1px 实心 rgba(0,0,0,0.05)”
+- 使用：导航项、图标按钮
 
-**Brand Accent Button**
-- Background: `#18E299`
-- Text: `#0d0d0d`
-- Padding: 8px 24px
-- Radius: 9999px
-- Use: Special promotional CTAs
+**品牌特色按钮**
+- 背景：`#18E299`
+- 文本：`#0d0d0d`
+- 内边距：8 像素 24 像素
+- 半径：9999px
+- 用途：特别促销 CTA
 
-### Cards & Containers
+### 卡片和容器
 
-**Standard Card**
-- Background: `#ffffff`
-- Border: `1px solid rgba(0,0,0,0.05)`
-- Radius: 16px
-- Padding: 24px
-- Shadow: `rgba(0,0,0,0.03) 0px 2px 4px`
-- Hover: subtle border darkening to `rgba(0,0,0,0.08)`
+**标准卡**
+- 背景：`#ffffff`
+- 边框：`1px 实心 rgba(0,0,0,0.05)`
+- 半径：16px
+- 内边距：24px
+- 阴影：`rgba(0,0,0,0.03) 0px 2px 4px`
+- 悬停：微妙的边框变暗为“rgba(0,0,0,0.08)”
 
-**Featured Card**
-- Background: `#ffffff`
-- Border: `1px solid rgba(0,0,0,0.05)`
-- Radius: 24px
-- Padding: 32px
-- Inner content areas may have their own 16px radius containers
+**特色卡**
+- 背景：`#ffffff`
+- 边框：`1px 实心 rgba(0,0,0,0.05)`
+- 半径：24px
+- 内边距：32px
+- 内部内容区域可能有自己的 16px 半径容器
 
-**Logo/Trust Card**
-- Background: `#fafafa` or `#ffffff`
-- Border: `1px solid rgba(0,0,0,0.05)`
-- Radius: 16px
-- Centered logo/icon with consistent sizing
+**标志/信托卡**
+- 背景：`#fafafa` 或 `#ffffff`
+- 边框：`1px 实心 rgba(0,0,0,0.05)`
+- 半径：16px
+- 居中的徽标/图标，尺寸一致
 
-### Inputs & Forms
+### 输入和表格
 
-**Email Input**
-- Background: transparent or `#ffffff`
-- Text: `#0d0d0d`
-- Padding: 0px 12px (height controlled by line-height)
-- Border: `1px solid rgba(0,0,0,0.08)`
-- Radius: 9999px (full pill, matching buttons)
-- Focus: `1px solid var(--color-brand)` + `outline: 1px solid var(--color-brand)`
-- Placeholder: `#888888`
+**电子邮件输入**
+- 背景：透明或“#ffffff”
+- 文本：`#0d0d0d`
+- 内边距：0px 12px（高度由行高控制）
+- 边框：`1px 实心 rgba(0,0,0,0.08)`
+- 半径：9999px（完整药丸，匹配按钮）
+- 焦点：`1px 实心变量（--color-brand）` + `轮廓：1px 实心变量（--color-brand）`
+- 占位符：`#888888`
 
-### Navigation
-- Clean horizontal nav on white, sticky with backdrop blur
-- Brand logotype left-aligned
-- Links: Inter 14–15px weight 500, `#0d0d0d` text
-- Hover: color shifts to brand green `var(--color-brand)`
-- CTA: dark pill button right-aligned ("Get Started")
-- Mobile: hamburger menu collapse at 768px
+### 导航
+- 白色上干净的水平导航，带有背景模糊的粘性
+- 品牌标识左对齐
+- 链接：Inter 14–15px 粗细 500，`#0d0d0d` 文本
+- 悬停：颜色变为品牌绿色“var(--color-brand)”
+- CTA：深色药丸按钮右对齐（“开始”）
+- 移动设备：汉堡菜单在 768px 处折叠
 
-### Image Treatment
-- Product screenshots with subtle 1px borders
-- Rounded containers: 16px–24px radius
-- Atmospheric gradient backgrounds behind hero images
-- Cloud/sky imagery with soft green tinting
+### 图像处理
+- 产品屏幕截图带有微妙的 1px 边框
+- 圆形容器：半径 16px–24px
+- 英雄图像背后的大气渐变背景
+- 具有柔和绿色色调的云/天空图像
 
-### Distinctive Components
+### 独特的组件
 
-**Atmospheric Hero**
-- Full-width gradient wash: soft green-to-white cloud-like gradient
-- Centered headline with tight tracking
-- Subtitle in muted gray
-- Dual CTA buttons (dark primary + ghost secondary)
-- The gradient creates a sense of elevation and intelligence
+**大气英雄**
+全宽渐变水洗：柔和的绿白云状渐变
+- 标题居中，跟踪紧密
+- 柔和的灰色字幕
+- 双 CTA 按钮（深色主按钮 + 幽灵辅助按钮）
+- 渐变营造出海拔感和智慧感
 
-**Trust Bar / Logo Grid**
-- "Loved by your favorite companies" section
-- Company logos in muted grayscale
-- Grid or horizontal layout with consistent sizing
-- Subtle border separation between logos
+**信任栏/徽标网格**
+- “深受您喜爱的公司喜爱”部分
+- 柔和灰度的公司徽标
+- 网格或水平布局，大小一致
+- 徽标之间的微妙边框分离
 
-**Feature Cards with Icons**
-- Icon or illustration at top
-- Title at 20px weight 600
-- Description at 14–16px in gray
-- Consistent padding and border treatment
-- Grid layout: 2–3 columns on desktop
+**带有图标的功能卡**
+- 顶部的图标或插图
+- 标题为 20px 粗细为 600
+- 14–16 像素处的描述为灰色
+一致的填充和边框处理
+- 网格布局：桌面上 2-3 列
 
-**CTA Footer Section**
-- Dark or gradient background
-- Large headline: "Make documentation your winning advantage"
-- Email input with pill styling
-- Brand green accent on CTAs
+**CTA 页脚部分**
+- 深色或渐变背景
+- 大标题：“让文档成为你的制胜优势”
+- 带有药丸样式的电子邮件输入
+- CTA 上的品牌绿色强调
 
-## 5. Layout Principles
+## 5.布局原则
 
-### Spacing System
-- Base unit: 8px
-- Scale: 2px, 4px, 5px, 6px, 7px, 8px, 10px, 12px, 16px, 24px, 32px, 48px, 64px
-- Section padding: 48px–96px vertical
-- Card padding: 24px–32px
-- Component gaps: 8px–16px
+### 间距系统
+- 基本单位：8px
+- 比例：2 像素、4 像素、5 像素、6 像素、7 像素、8 像素、10 像素、12 像素、16 像素、24 像素、32 像素、48 像素、64 像素
+- 部分填充：垂直 48 像素–96 像素
+- 卡片填充：24px–32px
+- 组件间隙：8px–16px
 
-### Grid & Container
-- Max content width: approximately 1200px
-- Hero: centered single-column with generous top padding (96px+)
-- Feature sections: 2–3 column CSS Grid for cards
-- Full-width sections with contained content
-- Consistent horizontal padding: 24px (mobile) to 32px (desktop)
+### 网格和容器
+- 最大内容宽度：约 1200px
+- Hero：居中单列，顶部填充充足（96px+）
+- 功能部分：2–3 列 CSS 网格卡片
+- 包含内容的全角部分
+- 一致的水平内边距：24 像素（移动设备）至 32 像素（桌面设备）
 
-### Whitespace Philosophy
-- **Documentation-grade breathing room**: Every element has generous surrounding whitespace. Mintlify sells documentation, so the marketing page itself demonstrates reading comfort.
-- **Sections as chapters**: Each feature section is a self-contained unit with 48px–96px vertical padding, creating clear "chapter breaks."
-- **Content density is low**: Unlike developer tools that pack the page, Mintlify uses 1–2 key messages per section with supporting imagery.
+### 空白哲学
+- **文档级呼吸空间**：每个元素都有大量的周围空白。 Mintlify 销售文档，因此营销页面本身就展示了阅读的舒适度。
+- **部分作为章节**：每个功能部分都是一个独立的单元，具有 48px–96px 垂直填充，创建清晰的“章节分隔符”。
+- **内容密度低**：与打包页面的开发人员工具不同，Mintlify 每个部分使用 1-2 个关键消息以及支持图像。
 
-### Border Radius Scale
-- Small (4px): Inline code, small tags, tooltips
-- Medium (8px): Nav buttons, transparent buttons, small containers
-- Standard (16px): Cards, content containers, image wrappers
-- Large (24px): Featured cards, hero containers, section panels
-- Full Pill (9999px): Buttons, inputs, badges, pills — the signature shape
+### 边界半径比例
+- 小 (4px)：内联代码、小标签、工具提示
+- 中（8px）：导航按钮、透明按钮、小容器
+- 标准 (16px)：卡片、内容容器、图像包装器
+- 大 (24px)：特色卡片、英雄容器、部分面板
+- 完整药丸 (9999px)：按钮、输入、徽章、药丸 — 标志性形状
 
-## 6. Depth & Elevation
+## 6. 深度和高度
 
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Flat (Level 0) | No shadow, no border | Page background, text blocks |
-| Subtle Border (Level 1) | `1px solid rgba(0,0,0,0.05)` | Standard card borders, dividers |
-| Medium Border (Level 1b) | `1px solid rgba(0,0,0,0.08)` | Interactive elements, input borders |
-| Ambient Shadow (Level 2) | `rgba(0,0,0,0.03) 0px 2px 4px` | Cards with subtle lift |
-| Button Shadow (Level 2b) | `rgba(0,0,0,0.06) 0px 1px 2px` | Button micro-depth |
-| Focus Ring (Accessibility) | `1px solid #18E299` outline | Focused inputs, active interactive elements |
+|水平|治疗 |使用 |
+|--------|------------|-----|
+|公寓（0 级）|无阴影，无边框|页面背景、文本块|
+|微妙的边界（1 级）| `1px 实心 rgba(0,0,0,0.05)` |标准卡片边框、分隔线|
+|中边框（1b 级）| `1px 实心 rgba(0,0,0,0.08)` |交互元素、输入边框|
+|环境阴影（2 级）| `rgba(0,0,0,0.03) 0px 2px 4px` |具有微妙提升的卡片|
+|按钮阴影（2b 级）| `rgba(0,0,0,0.06) 0 像素 1 像素 2 像素` |按钮微深度|
+|对焦环（辅助功能）| `1px 实心 #18E299` 轮廓 |聚焦投入，活跃互动元素 |
 
-**Shadow Philosophy**: Mintlify barely uses shadows. The depth system is almost entirely border-driven — ultra-subtle 5% opacity borders create separation without visual weight. When shadows appear, they're atmospheric whispers (`0.03 opacity, 2px blur, 4px spread`) that add the barest sense of lift. This restraint keeps the page feeling flat and paper-like — appropriate for a documentation company whose product is about clarity and readability.
+**阴影哲学**：Mintlify 几乎不使用阴影。深度系统几乎完全由边框驱动——超微妙的 5% 不透明度边框在没有视觉重量的情况下创造了分离。当阴影出现时，它们是大气低语（“0.03 不透明度，2 像素模糊，4 像素扩散”），增加了最轻微的升力感。这种限制使页面感觉平坦且像纸一样——适合产品注重清晰度和可读性的文档公司。
 
-### Decorative Depth
-- Hero gradient: atmospheric green-white cloud gradient behind hero content
-- No background color alternation — white on white throughout
-- Depth comes from border opacity variation (5% → 8%) and whitespace
+### 装饰深度
+- 英雄渐变：英雄内容背后大气的绿白云渐变
+- 无背景颜色交替 — 整个白底白字
+- 深度来自边框不透明度变化 (5% → 8%) 和空白
 
-## 7. Dark Mode
+## 7. 深色模式
 
-### Color Inversions
-- **Background**: `#0d0d0d` (near-black)
-- **Text Primary**: `#ededed` (near-white)
-- **Text Secondary**: `#a0a0a0` (muted gray)
-- **Brand Green**: `#18E299` (unchanged — the green works on both backgrounds)
-- **Border**: `rgba(255,255,255,0.08)` (white at 8% opacity)
-- **Card Background**: `#141414` (slightly lighter than page)
-- **Shadow**: `rgba(0,0,0,0.4) 0px 2px 4px` (stronger shadow for contrast)
+### 颜色反转
+- **背景**：`#0d0d0d`（近黑色）
+- **主要文本**：`#ededed`（近白色）
+- **第二文本**：`#a0a0a0`（柔和的灰色）
+- **品牌绿色**：`#18E299`（不变 - 绿色在两种背景上均有效）
+- **边框**：`rgba(255,255,255,0.08)`（白色，不透明度为 8%）
+- **卡片背景**：`#141414`（比页面稍浅）
+- **阴影**：`rgba(0,0,0,0.4) 0px 2px 4px`（更强的对比度阴影）
 
-### Key Adjustments
-- Buttons invert: white background dark text becomes dark background light text
-- Badge backgrounds shift to deeper tones with lighter text
-- Focus ring remains brand green
-- Hero gradient shifts to dark-tinted green atmospheric wash
+### 关键调整
+- 按钮反转：白色背景深色文本变为深色背景浅色文本
+- 徽章背景变成更深的色调和更浅的文字
+- 对焦环保持品牌绿色
+- 英雄渐变转向深绿色大气水洗
 
-## 8. Responsive Behavior
+## 8. 响应行为
 
-### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <768px | Single column, stacked layout, hamburger nav |
-| Tablet | 768–1024px | Two-column grids begin, expanded padding |
-| Desktop | >1024px | Full layout, 3-column grids, maximum content width |
+### 断点
+|名称 |宽度|关键变化|
+|------|--------|-------------|
+|手机 | <768 像素 |单栏、堆叠式布局、汉堡式导航 |
+|平板电脑| 768–1024 像素 |两列网格开始，扩展填充 |
+|桌面| >1024 像素 |完整布局，3 列网格，最大内容宽度 |
 
-### Touch Targets
-- Buttons with full-pill shape have comfortable 8px+ vertical padding
-- Navigation links spaced with adequate 16px+ gaps
-- Mobile menu provides full-width tap targets
+### 触摸目标
+- 全药丸形状的按钮具有舒适的 8px+ 垂直填充
+- 导航链接之间有足够的 16px+ 间隙
+- 移动菜单提供全角点击目标
 
-### Collapsing Strategy
-- Hero: 64px → 40px headline, maintains tight tracking proportionally
-- Navigation: horizontal links + CTA → hamburger menu at 768px
-- Feature cards: 3-column → 2-column → single column stacked
-- Section spacing: 96px → 48px on mobile
-- Footer: multi-column → stacked single column
-- Trust bar: grid → horizontal scroll or stacked
+### 崩溃策略
+- 英雄：64px → 40px 标题，按比例保持紧密跟踪
+- 导航：水平链接 + CTA → 768px 的汉堡菜单
+- 功能卡：3 列 → 2 列 → 单列堆叠
+- 部分间距：96px → 48px（移动设备）
+- 页脚：多列→堆叠单列
+- 信任栏：网格→水平滚动或堆叠
 
-### Image Behavior
-- Product screenshots maintain aspect ratio with responsive containers
-- Hero gradient simplifies on mobile
-- Full-width sections maintain edge-to-edge treatment
+### 图像行为
+- 产品屏幕截图通过响应式容器保持纵横比
+- 英雄渐变在移动设备上得到简化
+- 全宽部分保持边到边处理
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
-- Primary CTA: Near Black (`#0d0d0d`)
-- Background: Pure White (`#ffffff`)
-- Heading text: Near Black (`#0d0d0d`)
-- Body text: Gray 700 (`#333333`)
-- Border: `rgba(0,0,0,0.05)` (5% opacity)
-- Brand accent: Green (`#18E299`)
-- Link hover: Brand Green (`#18E299`)
-- Focus ring: Brand Green (`#18E299`)
+### 快速颜色参考
+- 主要 CTA：近黑色 (`#0d0d0d`)
+- 背景：纯白色（`#ffffff`）
+- 标题文本：近黑色 (`#0d0d0d`)
+- 正文：灰色 700 (`#333333`)
+- 边框：`rgba(0,0,0,0.05)`（5% 不透明度）
+- 品牌口音：绿色 (`#18E299`)
+- 链接悬停：品牌绿色（`#18E299`）
+- 聚焦环：Brand Green (`#18E299`)
 
-### Example Component Prompts
-- "Create a hero section on white background with atmospheric green-white gradient wash. Headline at 64px Inter weight 600, line-height 1.15, letter-spacing -1.28px, color #0d0d0d. Subtitle at 18px Inter weight 400, line-height 1.50, color #666666. Dark pill CTA (#0d0d0d, 9999px radius, 8px 24px padding) and ghost pill button (white, 1px solid rgba(0,0,0,0.08), 9999px radius)."
-- "Design a card: white background, 1px solid rgba(0,0,0,0.05) border, 16px radius, 24px padding, shadow rgba(0,0,0,0.03) 0px 2px 4px. Title at 20px Inter weight 600, letter-spacing -0.2px. Body at 14px weight 400, #666666."
-- "Build a pill badge: #d4fae8 background, #0fa76e text, 9999px radius, 4px 12px padding, 13px Inter weight 500, uppercase."
-- "Create navigation: white sticky header with backdrop-filter blur(12px). Inter 15px weight 500 for links, #0d0d0d text. Dark pill CTA 'Get Started' right-aligned, 9999px radius. Bottom border: 1px solid rgba(0,0,0,0.05)."
-- "Design a trust section showing company logos in muted gray. Grid layout with 16px radius containers, 1px border at 5% opacity. Label above: 'Loved by your favorite companies' at 13px Inter weight 500, uppercase, tracking 0.65px."
+### 组件提示示例
+- “在白色背景上创建一个带有大气绿白渐变效果的英雄部分。标题为 64px 字重 600，行高 1.15，字母间距 -1.28px，颜色 #0d0d0d。副标题为 18px 字重 400，行高 1.50，颜色 #666666。暗丸 CTA（#0d0d0d，半径 9999px， 8px 24px 填充）和幽灵药丸按钮（白色，1px 实心 rgba(0,0,0,0.08)，9999px 半径）。
+- “设计一张卡片：白色背景，1px实心rgba(0,0,0,0.05)边框，16px半径，24px填充，阴影rgba(0,0,0,0.03) 0px 2px 4px。标题为20px字重600，字母间距-0.2px。正文为14px字重400，#666666。 ”
+- “构建一个药丸徽章：#d4fae8 背景，#0fa76e 文本，9999 像素半径，4 像素 12 像素填充，13 像素字重 500，大写。 ”
+- “创建导航：带有背景滤镜模糊的白色粘性标题（12px）。链接的 Inter 15px 权重 500，#0d0d0d 文本。深色药丸 CTA '入门'右对齐，9999px 半径。底部边框：1px 实心 rgba(0,0,0,0.05)。 ”
+- “设计一个信任部分，以柔和的灰色显示公司徽标。具有 16 像素半径容器的网格布局，1 像素边框，不透明度为 5%。上面的标签：‘深受您喜爱的公司喜爱’，13 像素，字重 500，大写，跟踪 0.65 像素。 ”
 
-### Iteration Guide
-1. Always use full-pill radius (9999px) for buttons and inputs — this is Mintlify's signature shape
-2. Keep borders at 5% opacity (`rgba(0,0,0,0.05)`) — stronger borders break the airy feeling
-3. Letter-spacing scales with font size: -1.28px at 64px, -0.8px at 40px, -0.24px at 24px, normal at 16px
-4. Three weights only: 400 (read), 500 (interact), 600 (announce)
-5. Brand green (`#18E299`) is used sparingly — CTAs and hover states only, never for decorative fills
-6. Geist Mono uppercase for technical labels, Inter for everything else
-7. Section padding is generous: 64px–96px on desktop, 48px on mobile
-8. No gray background sections — white throughout, separation through borders and whitespace
+### 迭代指南
+1. 按钮和输入始终使用全圆半径 (9999px) — 这是 Mintlify 的标志性形状
+2. 保持边框为 5% 不透明度 (`rgba(0,0,0,0.05)`) — 更强的边框打破了空灵的感觉
+3.字母间距随字体大小变化：64px时-1.28px、40px时-0.8px、24px时-0.24px、16px时正常
+4. 只有三个权重：400（阅读）、500（互动）、600（宣布）
+5. 谨慎使用品牌绿色 (`#18E299`) — 仅 CTA 和悬停状态，绝不用于装饰性填充
+6. Geist Mono 大写表示技术标签，Inter 表示其他所有内容
+7. 部分填充足够大：桌面上 64px–96px，移动设备上 48px
+8. 没有灰色背景部分——通体白色，通过边框和空白分隔

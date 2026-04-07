@@ -1,92 +1,92 @@
-# Design System Inspiration of Webflow
+# Webflow的设计系统灵感
 
-## 1. Visual Theme & Atmosphere
+## 1.视觉主题和氛围
 
-Webflow's website is a visually rich, tool-forward platform that communicates "design without code" through clean white surfaces, the signature Webflow Blue (`#146ef5`), and a rich secondary color palette (purple, pink, green, orange, yellow, red). The custom WF Visual Sans Variable font creates a confident, precise typographic system with weight 600 for display and 500 for body.
+Webflow 的网站是一个视觉效果丰富的工具前向平台，通过干净的白色表面、标志性的 Webflow Blue (#146ef5`) 和丰富的辅助调色板（紫色、粉色、绿色、橙色、黄色、红色）传达“无代码设计”。定制的 WF Visual Sans Variable 字体创建了一个自信、精确的印刷系统，显示粗细为 600，正文粗细为 500。
 
-**Key Characteristics:**
-- White canvas with near-black (`#080808`) text
-- Webflow Blue (`#146ef5`) as primary brand + interactive color
-- WF Visual Sans Variable — custom variable font with weight 500–600
-- Rich secondary palette: purple `#7a3dff`, pink `#ed52cb`, green `#00d722`, orange `#ff6b00`, yellow `#ffae13`, red `#ee1d36`
-- Conservative 4px–8px border-radius — sharp, not rounded
-- Multi-layer shadow stacks (5-layer cascading shadows)
-- Uppercase labels: 10px–15px, weight 500–600, wide letter-spacing (0.6px–1.5px)
-- translate(6px) hover animation on buttons
+**主要特征：**
+- 白色画布，带有近乎黑色的 (`#080808`) 文本
+- Webflow Blue (`#146ef5`) 作为主要品牌 + 互动颜色
+- WF Visual Sans Variable — 自定义可变字体，粗细为 500–600
+- 丰富的辅助调色板：紫色`#7a3dff`，粉色`#ed52cb`，绿色`#00d722`，橙色`#ff6b00`，黄色`#ffae13`，红色`#ee1d36`
+- 保守的 4px–8px 边框半径 — 锐利，不圆润
+- 多层阴影堆栈（5层层叠阴影）
+- 大写标签：10px–15px，字重 500–600，宽字母间距 (0.6px–1.5px)
+- 翻译（6px）按钮上的悬停动画
 
-## 2. Color Palette & Roles
+## 2. 调色板和角色
 
-### Primary
-- **Near Black** (`#080808`): Primary text
-- **Webflow Blue** (`#146ef5`): `--_color---primary--webflow-blue`, primary CTA and links
-- **Blue 400** (`#3b89ff`): `--_color---primary--blue-400`, lighter interactive blue
-- **Blue 300** (`#006acc`): `--_color---blue-300`, darker blue variant
-- **Button Hover Blue** (`#0055d4`): `--mkto-embed-color-button-hover`
+### 小学
+- **近黑色** (`#080808`)：主要文本
+- **Webflow Blue** (`#146ef5`)：`--_color---primary--webflow-blue`，主要 CTA 和链接
+- **蓝色 400** (`#3b89ff`)：`--_color---primary--blue-400`，较浅的交互式蓝色
+- **蓝色 300** (`#006acc`)：`--_color---blue-300`，深蓝色变体
+- **按钮悬停蓝色** (`#0055d4`): `--mkto-embed-color-button-hover`
 
-### Secondary Accents
-- **Purple** (`#7a3dff`): `--_color---secondary--purple`
-- **Pink** (`#ed52cb`): `--_color---secondary--pink`
-- **Green** (`#00d722`): `--_color---secondary--green`
-- **Orange** (`#ff6b00`): `--_color---secondary--orange`
-- **Yellow** (`#ffae13`): `--_color---secondary--yellow`
-- **Red** (`#ee1d36`): `--_color---secondary--red`
+### 次要口音
+- **紫色** (`#7a3dff`): `--_颜色---次要--紫色`
+- **粉色** (`#ed52cb`): `--_颜色---次要--粉色`
+- **绿色** (`#00d722`): `--_颜色---次要--绿色`
+- **橙色** (`#ff6b00`): `--_颜色---次要--橙色`
+- **黄色** (`#ffae13`): `--_颜色---次要--黄色`
+- **红色** (`#ee1d36`): `--_颜色---次要--红色`
 
-### Neutral
-- **Gray 800** (`#222222`): Dark secondary text
-- **Gray 700** (`#363636`): Mid text
-- **Gray 300** (`#ababab`): Muted text, placeholder
-- **Mid Gray** (`#5a5a5a`): Link text
-- **Border Gray** (`#d8d8d8`): Borders, dividers
-- **Border Hover** (`#898989`): Hover border
+### 中性
+- **灰色 800** (`#222222`)：深色辅助文本
+- **灰色 700** (`#363636`)：中间文本
+- **灰色 300** (`#ababab`)：静音文本、占位符
+- **中灰色** (`#5a5a5a`)：链接文本
+- **边框灰色** (`#d8d8d8`)：边框、分隔线
+- **边框悬停** (`#898989`)：悬停边框
 
-### Shadows
-- **5-layer cascade**: `rgba(0,0,0,0) 0px 84px 24px, rgba(0,0,0,0.01) 0px 54px 22px, rgba(0,0,0,0.04) 0px 30px 18px, rgba(0,0,0,0.08) 0px 13px 13px, rgba(0,0,0,0.09) 0px 3px 7px`
+### 阴影
+- **5层级联**：`rgba(0,0,0,0) 0px 84px 24px, rgba(0,0,0,0.01) 0px 54px 22px, rgba(0,0,0,0.04) 0px 30px 18px, rgba(0,0,0,0.08) 0px 13px 13px, rgba(0,0,0,0.09) 0px 3px 7px`
 
-## 3. Typography Rules
+## 3. 版式规则
 
-### Font: `WF Visual Sans Variable`, fallback: `Arial`
+### 字体：`WF Visual Sans Variable`，后备：`Arial`
 
-| Role | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|--------|-------------|----------------|-------|
-| Display Hero | 80px | 600 | 1.04 | -0.8px | |
-| Section Heading | 56px | 600 | 1.04 | normal | |
-| Sub-heading | 32px | 500 | 1.30 | normal | |
-| Feature Title | 24px | 500–600 | 1.30 | normal | |
-| Body | 20px | 400–500 | 1.40–1.50 | normal | |
-| Body Standard | 16px | 400–500 | 1.60 | -0.16px | |
-| Button | 16px | 500 | 1.60 | -0.16px | |
-| Uppercase Label | 15px | 500 | 1.30 | 1.5px | uppercase |
-| Caption | 14px | 400–500 | 1.40–1.60 | normal | |
-| Badge Uppercase | 12.8px | 550 | 1.20 | normal | uppercase |
-| Micro Uppercase | 10px | 500–600 | 1.30 | 1px | uppercase |
-| Code: Inconsolata (companion monospace font)
+|角色 |尺寸|重量 |行高|字母间距 |笔记|
+|------|------|--------|-------------|----------------|--------|
+|显示英雄 | 80 像素 | 600 | 1.04 | 1.04 -0.8 像素 | |
+|章节标题 | 56 像素 | 600 | 1.04 | 1.04正常 | |
+|副标题| 32 像素 | 500 | 500 1.30 | 1.30正常 | |
+|专题标题 | 24 像素 | 500–600 | 1.30 | 1.30正常 | |
+|身体| 20 像素 | 400–500 | 1.40–1.50 |正常 | |
+|车身标准| 16 像素 | 400–500 | 1.60 | 1.60 -0.16 像素 | |
+|按钮| 16 像素 | 500 | 500 1.60 | 1.60 -0.16 像素 | |
+|大写标签 | 15 像素 | 500 | 500 1.30 | 1.30 1.5 像素 |大写 |
+|标题| 14 像素 | 400–500 | 1.40–1.60 |正常 | |
+|徽章大写| 12.8 像素 | 550 | 550 1.20 | 1.20正常 |大写 |
+|微型大写| 10 像素 | 500–600 | 1.30 | 1.30 1 像素 |大写 |
+|代码：Inconsolata（配套等宽字体）
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
-- Transparent: text `#080808`, translate(6px) on hover
-- White circle: 50% radius, white bg
-- Blue badge: `#146ef5` bg, 4px radius, weight 550
+### 按钮
+- 透明：文本“#080808”，悬停时翻译（6px）
+- 白色圆圈：50% 半径，白色背景
+- 蓝色徽章：`#146ef5`背景，4px半径，重量550
 
-### Cards: `1px solid #d8d8d8`, 4px–8px radius
-### Badges: Blue-tinted bg at 10% opacity, 4px radius
+### 卡片：`1px 实心 #d8d8d8`，4px–8px 半径
+### 徽章：蓝色背景，不透明度 10%，半径 4 像素
 
-## 5. Layout
-- Spacing: fractional scale (1px, 2.4px, 3.2px, 4px, 5.6px, 6px, 7.2px, 8px, 9.6px, 12px, 16px, 24px)
-- Radius: 2px, 4px, 8px, 50% — conservative, sharp
-- Breakpoints: 479px, 768px, 992px
+## 5. 布局
+- 间距：分数比例（1px、2.4px、3.2px、4px、5.6px、6px、7.2px、8px、9.6px、12px、16px、24px）
+- 半径：2px、4px、8px、50% — 保守、锐利
+- 断点：479px、768px、992px
 
-## 6. Depth: 5-layer cascading shadow system
+## 6.深度：5层层叠阴影系统
 
-## 7. Do's and Don'ts
-- Do: Use WF Visual Sans Variable at 500–600. Blue (#146ef5) for CTAs. 4px radius. translate(6px) hover.
-- Don't: Round beyond 8px for functional elements. Use secondary colors on primary CTAs.
+## 7. 该做和不该做的事情
+- 执行：使用 WF Visual Sans Variable 在 500–600。蓝色 (#146ef5) 代表 CTA。 4 像素半径。翻译（6px）悬停。
+- 不要：对于功能元素，舍入超过 8 像素。在主要 CTA 上使用辅助颜色。
 
-## 8. Responsive: 479px, 768px, 992px
+## 8.响应式：479px、768px、992px
 
-## 9. Agent Prompt Guide
-- Text: Near Black (`#080808`)
-- CTA: Webflow Blue (`#146ef5`)
-- Background: White (`#ffffff`)
-- Border: `#d8d8d8`
-- Secondary: Purple `#7a3dff`, Pink `#ed52cb`, Green `#00d722`
+## 9. 代理提示指南
+- 文本：近黑色 (`#080808`)
+- CTA：Webflow 蓝色 (`#146ef5`)
+- 背景：白色（`#ffffff`）
+- 边框：`#d8d8d8`
+- 次要：紫色`#7a3dff`，粉色`#ed52cb`，绿色`#00d722`

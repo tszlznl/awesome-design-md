@@ -1,293 +1,293 @@
-# Design System Inspiration of NVIDIA
+# NVIDIA的设计系统灵感
 
-## 1. Visual Theme & Atmosphere
+## 1.视觉主题和氛围
 
-NVIDIA's website is a high-contrast, technology-forward experience that communicates raw computational power through design restraint. The page is built on a stark black (`#000000`) and white (`#ffffff`) foundation, punctuated by NVIDIA's signature green (`#76b900`) -- a color so specific it functions as a brand fingerprint. This is not the lush green of nature; it's the electric, lime-shifted green of GPU-rendered light, a color that sits between chartreuse and kelly green and immediately signals "NVIDIA" to anyone in technology.
+NVIDIA 的网站提供高对比度、技术领先的体验，通过设计限制传达原始计算能力。该页面以纯黑 (#000000) 和白色 (#ffffff) 为基础，中间点缀着 NVIDIA 标志性的绿色 (#76b900)，这种颜色非常特殊，可以作为品牌指纹。这不是大自然的郁郁葱葱；它是 GPU 渲染光的电光绿，这种颜色介于黄绿色和黄绿色之间，可以立即向技术领域的任何人发出“NVIDIA”的信号。
 
-The custom NVIDIA-EMEA font family (with Arial and Helvetica fallbacks) creates a clean, industrial typographic voice. Headings at 36px bold with tight 1.25 line-height create dense, authoritative blocks of text. The font lacks the geometric playfulness of Silicon Valley sans-serifs -- it's European, pragmatic, and engineering-focused. Body text runs at 15-16px, comfortable for reading but not generous, maintaining the sense that screen real estate is optimized like GPU memory.
+定制的 NVIDIA-EMEA 字体系列（带有 Arial 和 Helvetica 后备）创建了干净的工业印刷声音。 36 像素粗体标题和 1.25 行高可创建密集、权威的文本块。这种字体缺乏硅谷无衬线字体的几何趣味——它是欧洲的、务实的、以工程为中心的。正文文本的宽度为 15-16 像素，阅读舒适但不显得过大，保持了屏幕空间像 GPU 内存一样进行优化的感觉。
 
-What distinguishes NVIDIA's design from other dark-background tech sites is the disciplined use of the green accent. The `#76b900` appears in borders (`2px solid #76b900`), link underlines (`underline 2px rgb(118, 185, 0)`), and CTAs -- but never as backgrounds or large surface areas on the main content. The green is a signal, not a surface. Combined with a deep shadow system (`rgba(0, 0, 0, 0.3) 0px 0px 5px`) and minimal border radius (1-2px), the overall effect is of precision engineering hardware rendered in pixels.
+NVIDIA 的设计与其他深色背景技术网站的区别在于对绿色强调的严格使用。 “#76b900”出现在边框（“2px 实线 #76b900”）、链接下划线（“下划线 2px rgb(118, 185, 0)”）和 CTA 中，但绝不会作为主要内容的背景或大面积区域。绿色是一个信号，而不是一个表面。结合深度阴影系统（`rgba(0, 0, 0, 0.3) 0px 0px 5px`）和最小边框半径（1-2px），整体效果是以像素渲染的精密工程硬件。
 
-**Key Characteristics:**
-- NVIDIA Green (`#76b900`) as pure accent -- borders, underlines, and interactive highlights only
-- Black (`#000000`) dominant background with white (`#ffffff`) text on dark sections
-- NVIDIA-EMEA custom font with Arial/Helvetica fallback -- industrial, European, clean
-- Tight line-heights (1.25 for headings) creating dense, authoritative text blocks
-- Minimal border radius (1-2px) -- sharp, engineered corners throughout
-- Green-bordered buttons (`2px solid #76b900`) as primary interactive pattern
-- Font Awesome 6 Pro/Sharp icon system at weight 900 for sharp iconography
-- Multi-framework architecture (PrimeReact, Fluent UI, Element Plus) enabling rich interactive components
+**主要特征：**
+- NVIDIA Green (`#76b900`) 作为纯粹的强调——仅限边框、下划线和交互式突出显示
+- 黑色 (`#000000`) 主导背景，深色部分带有白色 (`#ffffff`) 文本
+- 具有 Arial/Helvetica 后备功能的 NVIDIA-EMEA 自定义字体——工业、欧洲、干净
+- 严格的行高（标题为 1.25）创建密集、权威的文本块
+- 最小边框半径（1-2 像素）——整个尖角均经过精心设计
+- 绿色边框按钮（`2pxsolid #76b900`）作为主要交互模式
+- Font Awesome 6 Pro/Sharp 图标系统重量为 900，可实现清晰的图像
+- 多框架架构（PrimeReact、Fluent UI、Element Plus）支持丰富的交互组件
 
-## 2. Color Palette & Roles
+## 2. 调色板和角色
 
-### Primary Brand
-- **NVIDIA Green** (`#76b900`): The signature -- borders, link underlines, CTA outlines, active indicators. Never used as large surface fills.
-- **True Black** (`#000000`): Primary page background, text on light surfaces, dominant tone.
-- **Pure White** (`#ffffff`): Text on dark backgrounds, light section backgrounds, card surfaces.
+### 主要品牌
+- **NVIDIA Green** (`#76b900`)：签名 - 边框、链接下划线、CTA 轮廓、活动指示器。切勿用作大表面填充。
+- **纯黑** (`#000000`)：主页面背景、浅色表面上的文本、主色调。
+- **纯白色** (`#ffffff`)：深色背景、浅色部分背景、卡片表面上的文本。
 
-### Extended Brand Palette
-- **NVIDIA Green Light** (`#bff230`): Bright lime accent for highlights and hover states.
-- **Orange 400** (`#df6500`): Warm accent for alerts, featured badges, or energy-related contexts.
-- **Yellow 300** (`#ef9100`): Secondary warm accent, product category highlights.
-- **Yellow 050** (`#feeeb2`): Light warm surface for callout backgrounds.
+### 扩展品牌调色板
+- **NVIDIA Green Light** (`#bff230`)：明亮的石灰强调突出显示和悬停状态。
+- **橙色 400** (`#df6500`)：用于提醒、特色徽章或能源相关上下文的温暖口音。
+- **黄色 300** (`#ef9100`)：次要温暖口音，产品类别亮点。
+- **黄色 050** (`#feeeb2`)：用于标注背景的浅色温暖表面。
 
-### Status & Semantic
-- **Red 500** (`#e52020`): Error states, destructive actions, critical alerts.
-- **Red 800** (`#650b0b`): Deep red for severe warning backgrounds.
-- **Green 500** (`#3f8500`): Success states, positive indicators (darker than brand green).
-- **Blue 700** (`#0046a4`): Informational accents, link hover alternative.
+### 状态和语义
+- **红色 500** (`#e52020`)：错误状态、破坏性操作、严重警报。
+- **红色 800** (`#650b0b`)：深红色，用于严重警告背景。
+- **绿色 500** (`#3f8500`)：成功状态，积极指标（比品牌绿色更深）。
+- **蓝色 700** (`#0046a4`)：信息重音，链接悬停替代方案。
 
-### Decorative
-- **Purple 800** (`#4d1368`): Deep purple for gradient ends, premium/AI contexts.
-- **Purple 100** (`#f9d4ff`): Light purple surface tint.
-- **Fuchsia 700** (`#8c1c55`): Rich accent for special promotions or featured content.
+### 装饰
+- **紫色 800** (`#4d1368`)：深紫色用于渐变末端、高级/AI 环境。
+- **紫色 100** (`#f9d4ff`)：浅紫色表面色调。
+- **Fuchsia 700** (`#8c1c55`)：用于特殊促销或特色内容的浓郁口音。
 
-### Neutral Scale
-- **Gray 300** (`#a7a7a7`): Muted text, disabled labels.
-- **Gray 400** (`#898989`): Secondary text, metadata.
-- **Gray 500** (`#757575`): Tertiary text, placeholders, footers.
-- **Gray Border** (`#5e5e5e`): Subtle borders, divider lines.
-- **Near Black** (`#1a1a1a`): Dark surfaces, card backgrounds on black pages.
+### 中性尺度
+- **灰色 300** (`#a7a7a7`)：静音文本，禁用标签。
+- **Gray 400** (`#898989`)：辅助文本，元数据。
+- **Gray 500** (`#757575`)：第三级文本、占位符、页脚。
+- **灰色边框** (`#5e5e5e`)：微妙的边框，分隔线。
+- **近黑色** (`#1a1a1a`)：深色表面，黑色页面上的卡片背景。
 
-### Interactive States
-- **Link Default (dark bg)** (`#ffffff`): White links on dark backgrounds.
-- **Link Default (light bg)** (`#000000`): Black links with green underline on light backgrounds.
-- **Link Hover** (`#3860be`): Blue shift on hover across all link variants.
-- **Button Hover** (`#1eaedb`): Teal highlight for button hover states.
-- **Button Active** (`#007fff`): Bright blue for active/pressed button states.
-- **Focus Ring** (`#000000 solid 2px`): Black outline for keyboard focus.
+### 互动状态
+- **链接默认（深色背景）** (`#ffffff`)：深色背景上的白色链接。
+- **链接默认（浅色背景）** (`#000000`)：浅色背景上带有绿色下划线的黑色链接。
+- **链接悬停** (`#3860be`)：所有链接变体上悬停时发生蓝移。
+- **按钮悬停** (`#1eaedb`)：按钮悬停状态的青色突出显示。
+- **按钮活动** (`#007fff`)：亮蓝色表示活动/按下的按钮状态。
+- **聚焦环**（`#000000solid 2px`）：键盘焦点的黑色轮廓。
 
-### Shadows & Depth
-- **Card Shadow** (`rgba(0, 0, 0, 0.3) 0px 0px 5px 0px`): Subtle ambient shadow for elevated cards.
+### 阴影和深度
+- **卡片阴影** (`rgba(0, 0, 0, 0.3) 0px 0px 5px 0px`)：高架卡片的微妙环境阴影。
 
-## 3. Typography Rules
+## 3. 版式规则
 
-### Font Family
-- **Primary**: `NVIDIA-EMEA`, with fallbacks: `Arial, Helvetica, sans-serif`
-- **Icon Font**: `Font Awesome 6 Pro` (weight 900 for solid icons, 700 for regular)
-- **Icon Sharp**: `Font Awesome 6 Sharp` (weight 300 for light icons, 400 for regular)
+### 字体系列
+- **主要**：“NVIDIA-EMEA”，备用：“Arial、Helvetica、sans-serif”
+- **图标字体**：`Font Awesome 6 Pro`（实体图标粗细为 900，常规图标粗细为 700）
+- **Icon Sharp**：“Font Awesome 6 Sharp”（浅色图标的粗细为 300，常规图标的粗细为 400）
 
-### Hierarchy
+### 层次结构
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|------|--------|-------------|----------------|-------|
-| Display Hero | NVIDIA-EMEA | 36px (2.25rem) | 700 | 1.25 (tight) | normal | Maximum impact headlines |
-| Section Heading | NVIDIA-EMEA | 24px (1.50rem) | 700 | 1.25 (tight) | normal | Section titles, card headings |
-| Sub-heading | NVIDIA-EMEA | 22px (1.38rem) | 400 | 1.75 (relaxed) | normal | Feature descriptions, subtitles |
-| Card Title | NVIDIA-EMEA | 20px (1.25rem) | 700 | 1.25 (tight) | normal | Card and module headings |
-| Body Large | NVIDIA-EMEA | 18px (1.13rem) | 700 | 1.67 (relaxed) | normal | Emphasized body, lead paragraphs |
-| Body | NVIDIA-EMEA | 16px (1.00rem) | 400 | 1.50 | normal | Standard reading text |
-| Body Bold | NVIDIA-EMEA | 16px (1.00rem) | 700 | 1.50 | normal | Strong labels, nav items |
-| Body Small | NVIDIA-EMEA | 15px (0.94rem) | 400 | 1.67 (relaxed) | normal | Secondary content, descriptions |
-| Body Small Bold | NVIDIA-EMEA | 15px (0.94rem) | 700 | 1.50 | normal | Emphasized secondary content |
-| Button Large | NVIDIA-EMEA | 18px (1.13rem) | 700 | 1.25 (tight) | normal | Primary CTA buttons |
-| Button | NVIDIA-EMEA | 16px (1.00rem) | 700 | 1.25 (tight) | normal | Standard buttons |
-| Button Compact | NVIDIA-EMEA | 14.4px (0.90rem) | 700 | 1.00 (tight) | 0.144px | Small/compact buttons |
-| Link | NVIDIA-EMEA | 14px (0.88rem) | 700 | 1.43 | normal | Navigation links |
-| Link Uppercase | NVIDIA-EMEA | 14px (0.88rem) | 700 | 1.43 | normal | `text-transform: uppercase`, nav labels |
-| Caption | NVIDIA-EMEA | 14px (0.88rem) | 600 | 1.50 | normal | Metadata, timestamps |
-| Caption Small | NVIDIA-EMEA | 12px (0.75rem) | 400 | 1.25 (tight) | normal | Fine print, legal |
-| Micro Label | NVIDIA-EMEA | 10px (0.63rem) | 700 | 1.50 | normal | `text-transform: uppercase`, tiny badges |
-| Micro | NVIDIA-EMEA | 11px (0.69rem) | 700 | 1.00 (tight) | normal | Smallest UI text |
+|角色 |字体|尺寸|重量 |行高|字母间距 |笔记|
+|------|------|------|--------|-------------|----------------|--------|
+|显示英雄 | NVIDIA-欧洲、中东和非洲 | 36 像素（2.25 雷姆）| 700 | 1.25（紧）|正常 |影响力最大的头条新闻 |
+|章节标题 | NVIDIA-欧洲、中东和非洲 | 24 像素（1.50 雷姆）| 700 | 1.25（紧）|正常 |章节标题、卡片标题 |
+|副标题| NVIDIA-欧洲、中东和非洲 | 22 像素（1.38 雷姆）| 400 | 1.75（宽松）|正常 |功能描述、字幕 |
+|卡片标题 | NVIDIA-欧洲、中东和非洲 | 20 像素（1.25 雷姆）| 700 | 1.25（紧）|正常 |卡和模块标题 |
+|机身大 | NVIDIA-欧洲、中东和非洲 | 18 像素（1.13 雷姆）| 700 | 1.67（宽松）|正常 |强调正文，引出段落|
+|身体| NVIDIA-欧洲、中东和非洲 | 16 像素（1.00 雷姆）| 400 | 1.50 | 1.50正常 |标准阅读文本|
+|身体粗体| NVIDIA-欧洲、中东和非洲 | 16 像素（1.00 雷姆）| 700 | 1.50 | 1.50正常 |强大的标签，导航项目|
+|身材小| NVIDIA-欧洲、中东和非洲 | 15 像素（0.94 雷姆）| 400 | 1.67（宽松）|正常 |次要内容、描述 |
+|身体小粗体| NVIDIA-欧洲、中东和非洲 | 15 像素（0.94 雷姆）| 700 | 1.50 | 1.50正常 |强调次要内容 |
+|按钮大| NVIDIA-欧洲、中东和非洲 | 18 像素（1.13 雷姆）| 700 | 1.25（紧）|正常 |主 CTA 按钮 |
+|按钮| NVIDIA-欧洲、中东和非洲 | 16 像素（1.00 雷姆）| 700 | 1.25（紧）|正常 |标准按钮|
+|紧凑型按钮| NVIDIA-欧洲、中东和非洲 | 14.4 像素（0.90 雷姆）| 700 | 1.00（紧）| 0.144 像素 |小/紧凑按钮|
+|链接 | NVIDIA-欧洲、中东和非洲 | 14 像素（0.88 雷姆）| 700 | 1.43 | 1.43正常 |导航链接|
+|链接大写| NVIDIA-欧洲、中东和非洲 | 14 像素（0.88 雷姆）| 700 | 1.43 | 1.43正常 | `文本转换：大写`，导航标签 |
+|标题| NVIDIA-欧洲、中东和非洲 | 14 像素（0.88 雷姆）| 600 | 1.50 | 1.50正常 |元数据、时间戳 |
+|小标题 | NVIDIA-欧洲、中东和非洲 | 12 像素（0.75 雷姆）| 400 | 1.25（紧）|正常 |精美印刷，合法 |
+|微标签| NVIDIA-欧洲、中东和非洲 | 10 像素（0.63 雷姆）| 700 | 1.50 | 1.50正常 | `文本转换：大写`，小徽章 |
+|微| NVIDIA-欧洲、中东和非洲 | 11 像素 (0.69 雷姆) | 700 | 1.00（紧）|正常 |最小的 UI 文本 |
 
-### Principles
-- **Bold as the default voice**: NVIDIA leans heavily on weight 700 for headings, buttons, links, and labels. The 400 weight is reserved for body text and descriptions -- everything else is bold, projecting confidence and authority.
-- **Tight headings, relaxed body**: Heading line-height is consistently 1.25 (tight), while body text relaxes to 1.50-1.67. This contrast creates visual density at the top of content blocks and comfortable readability in paragraphs.
-- **Uppercase for navigation**: Link labels use `text-transform: uppercase` with weight 700, creating a navigation voice that reads like hardware specification labels.
-- **No decorative tracking**: Letter-spacing is normal throughout, except for compact buttons (0.144px). The font itself carries the industrial character without manipulation.
+### 原则
+- **粗体作为默认声音**：NVIDIA 在标题、按钮、链接和标签方面严重依赖粗细 700。 400 的粗细是为正文和描述保留的——其他一切都是粗体，体现出自信和权威。
+- **标题紧，正文放松**：标题行高始终为 1.25（紧），而正文则放松为 1.50-1.67。这种对比在内容块的顶部创造了视觉密度，并在段落中创造了舒适的可读性。
+- **大写用于导航**：链接标签使用权重为 700 的“text-transform: uppercase”，创建读起来像硬件规格标签一样的导航语音。
+- **无装饰性跟踪**：字母间距始终正常，紧凑按钮 (0.144px) 除外。字体本身就带有未经修饰的工业特征。
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
-**Primary (Green Border)**
-- Background: `transparent`
-- Text: `#000000`
-- Padding: 11px 13px
-- Border: `2px solid #76b900`
-- Radius: 2px
-- Font: 16px weight 700
-- Hover: background `#1eaedb`, text `#ffffff`
-- Active: background `#007fff`, text `#ffffff`, border `1px solid #003eff`, scale(1)
-- Focus: background `#1eaedb`, text `#ffffff`, outline `#000000 solid 2px`, opacity 0.9
-- Use: Primary CTA ("Learn More", "Explore Solutions")
+**小学（绿色边框）**
+- 背景：`透明`
+- 文本：`#000000`
+- 内边距：11 像素 13 像素
+- 边框：`2px 实线#76b900`
+- 半径：2px
+- 字体：16px 粗细 700
+- 悬停：背景“#1eaedb”，文本“#ffffff”
+- 活动：背景`#007fff`，文本`#ffffff`，边框`1px实体#003eff`，比例(1)
+- 焦点：背景`#1eaedb`，文本`#ffffff`，轮廓`#000000solid 2px`，不透明度0.9
+- 使用：主要 CTA（“了解更多”、“探索解决方案”）
 
-**Secondary (Green Border Thin)**
-- Background: transparent
-- Border: `1px solid #76b900`
-- Radius: 2px
-- Use: Secondary actions, alternative CTAs
+**中学（绿色边框细）**
+- 背景：透明
+- 边框：`1px 实线#76b900`
+- 半径：2px
+- 使用：次要行动、替代 CTA
 
-**Compact / Inline**
-- Font: 14.4px weight 700
-- Letter-spacing: 0.144px
-- Line-height: 1.00
-- Use: Inline CTAs, compact navigation
+**紧凑/内联**
+- 字体：14.4px 粗细 700
+- 字母间距：0.144px
+- 行高：1.00
+- 使用：内联 CTA、紧凑导航
 
-### Cards & Containers
-- Background: `#ffffff` (light) or `#1a1a1a` (dark sections)
-- Border: none (clean edges) or `1px solid #5e5e5e`
-- Radius: 2px
-- Shadow: `rgba(0, 0, 0, 0.3) 0px 0px 5px 0px` for elevated cards
-- Hover: shadow intensification
-- Padding: 16-24px internal
+### 卡片和容器
+- 背景：“#ffffff”（浅色）或“#1a1a1a”（深色部分）
+- 边框：无（干净的边缘）或“1px 实线#5e5e5e”
+- 半径：2px
+- 阴影：提升卡的“rgba(0, 0, 0, 0.3) 0px 0px 5px 0px”
+- 悬停：阴影强化
+- 内边距：16-24px 内部
 
-### Links
-- **On Dark Background**: `#ffffff`, no underline, hover shifts to `#3860be`
-- **On Light Background**: `#000000` or `#1a1a1a`, underline `2px solid #76b900`, hover shifts to `#3860be`, underline removed
-- **Green Links**: `#76b900`, hover shifts to `#3860be`
-- **Muted Links**: `#666666`, hover shifts to `#3860be`
+### 链接
+- **在深色背景上**：`#ffffff`，无下划线，悬停切换到`#3860be`
+- **在浅色背景上**：`#000000`或`#1a1a1a`，下划线`2pxsolid #76b900`，悬停移动到`#3860be`，下划线被删除
+- **绿色链接**：`#76b900`，悬停移动到`#3860be`
+- **静音链接**：`#666666`，悬停切换到`#3860be`
 
-### Navigation
-- Dark black background (`#000000`)
-- Logo left-aligned, prominent NVIDIA wordmark
-- Links: NVIDIA-EMEA 14px weight 700 uppercase, `#ffffff`
-- Hover: color shift, no underline change
-- Mega-menu dropdowns for product categories
-- Sticky on scroll with backdrop
+### 导航
+- 深黑色背景（`#000000`）
+- 徽标左对齐，突出的 NVIDIA 文字标记
+- 链接：NVIDIA-EMEA 14px 粗细 700 大写，`#ffffff`
+- 悬停：颜色偏移，下划线无变化
+- 产品类别的巨型菜单下拉菜单
+- 粘在带有背景的滚动条上
 
-### Image Treatment
-- Product/GPU renders as hero images, often full-width
-- Screenshot images with subtle shadow for depth
-- Green gradient overlays on dark hero sections
-- Circular avatar containers with 50% radius
+### 图像处理
+- 产品/GPU 渲染为英雄图像，通常是全角
+- 带有微妙阴影的屏幕截图图像以增强深度
+- 绿色渐变覆盖在黑暗的英雄部分
+- 半径为 50% 的圆形头像容器
 
-### Distinctive Components
+### 独特的组件
 
-**Product Cards**
-- Clean white or dark card with minimal radius (2px)
-- Green accent border or underline on title
-- Bold heading + lighter description pattern
-- CTA with green border at bottom
+**产品卡**
+- 干净的白色或深色卡片，半径最小（2px）
+- 标题上有绿色强调边框或下划线
+- 粗体标题+更简洁的描述模式
+- 底部带有绿色边框的 CTA
 
-**Tech Spec Tables**
-- Industrial grid layouts
-- Alternating row backgrounds (subtle gray shift)
-- Bold labels, regular values
-- Green highlights for key metrics
+**技术规格表**
+- 工业网格布局
+- 交替行背景（微妙的灰移）
+- 粗体标签、常规值
+- 关键指标的绿色突出显示
 
-**Cookie/Consent Banner**
-- Fixed bottom positioning
-- Rounded buttons (2px radius)
-- Gray border treatments
+**Cookie/同意横幅**
+- 固定底部定位
+- 圆形按钮（2px 半径）
+- 灰色边框处理
 
-## 5. Layout Principles
+## 5.布局原则
 
-### Spacing System
-- Base unit: 8px
-- Scale: 1px, 2px, 3px, 4px, 5px, 6px, 7px, 8px, 9px, 10px, 11px, 12px, 13px, 15px
-- Primary padding values: 8px, 11px, 13px, 16px, 24px, 32px
-- Section spacing: 48-80px vertical padding
+### 间距系统
+- 基本单位：8px
+- 比例：1 像素、2 像素、3 像素、4 像素、5 像素、6 像素、7 像素、8 像素、9 像素、10 像素、11 像素、12 像素、13 像素、15 像素
+- 主要内边距值：8px、11px、13px、16px、24px、32px
+- 部分间距：48-80px 垂直填充
 
-### Grid & Container
-- Max content width: approximately 1200px (contained)
-- Full-width hero sections with contained text
-- Feature sections: 2-3 column grids for product cards
-- Single-column for article/blog content
-- Sidebar layouts for documentation
+### 网格和容器
+- 最大内容宽度：约1200px（包含）
+- 包含文本的全角英雄部分
+- 功能部分：产品卡的 2-3 列网格
+- 文章/博客内容的单栏
+- 文档的侧边栏布局
 
-### Whitespace Philosophy
-- **Purposeful density**: NVIDIA uses tighter spacing than typical SaaS sites, reflecting the density of technical content. White space exists to separate concepts, not to create luxury emptiness.
-- **Section rhythm**: Dark sections alternate with white sections, using background color (not just spacing) to separate content blocks.
-- **Card density**: Product cards sit close together with 16-20px gaps, creating a catalog feel rather than a gallery feel.
+### 空白哲学
+- **有目的的密度**：NVIDIA 使用比典型 SaaS 站点更紧密的间距，反映了技术内容的密度。空白的存在是为了分隔概念，而不是为了创造奢华的空虚感。
+- **部分节奏**：深色部分与白色部分交替，使用背景颜色（不仅仅是间距）来分隔内容块。
+- **卡片密度**：产品卡片紧密排列，间距为 16-20 像素，营造出目录的感觉，而不是画廊的感觉。
 
-### Border Radius Scale
-- Micro (1px): Inline spans, tiny elements
-- Standard (2px): Buttons, cards, containers, inputs -- the default for nearly everything
-- Circle (50%): Avatar images, circular tab indicators
+### 边界半径比例
+- Micro (1px)：内联跨度、微小元素
+- 标准 (2px)：按钮、卡片、容器、输入——几乎所有内容的默认设置
+- 圆形 (50%)：头像图像、圆形选项卡指示器
 
-## 6. Depth & Elevation
+## 6. 深度和高度
 
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Flat (Level 0) | No shadow | Page backgrounds, inline text |
-| Subtle (Level 1) | `rgba(0,0,0,0.3) 0px 0px 5px 0px` | Standard cards, modals |
-| Border (Level 1b) | `1px solid #5e5e5e` | Content dividers, section borders |
-| Green accent (Level 2) | `2px solid #76b900` | Active elements, CTAs, selected items |
-| Focus (Accessibility) | `2px solid #000000` outline | Keyboard focus ring |
+|水平|治疗 |使用 |
+|--------|------------|-----|
+|公寓（0 级）|没有影子|页面背景、内嵌文本|
+|微妙（1 级）| `rgba(0,0,0,0.3) 0px 0px 5px 0px` |标准卡、模态卡|
+|边界（1b 级）| `1px 实心 #5e5e5e` |内容分隔线、部分边框 |
+|绿色口音（2 级）| `2px 实心 #76b900` |活动元素、CTA、所选项目 |
+|焦点（辅助功能）| `2px 实心 #000000` 轮廓 |键盘对焦环|
 
-**Shadow Philosophy**: NVIDIA's depth system is minimal and utilitarian. There is essentially one shadow value -- a 5px ambient blur at 30% opacity -- used sparingly for cards and modals. The primary depth signal is not shadow but _color contrast_: black backgrounds next to white sections, green borders on black surfaces. This creates hardware-like visual layering where depth comes from material difference, not simulated light.
+**影子哲学**：NVIDIA 的深度系统是极简且实用的。本质上有一个阴影值——不透明度为 30% 的 5 像素环境模糊——很少用于卡片和模态。主要深度信号不是阴影，而是_颜色对比度_：白色部分旁边的黑色背景，黑色表面上的绿色边框。这创建了类似硬件的视觉分层，其中深度来自材料差异，而不是模拟光。
 
-### Decorative Depth
-- Green gradient washes behind hero content
-- Dark-to-darker gradients (black to near-black) for section transitions
-- No glassmorphism or blur effects -- clarity over atmosphere
+### 装饰深度
+- 绿色渐变洗在英雄内容后面
+- 部分过渡的深色到深色渐变（黑色到接近黑色）
+- 无玻璃变形或模糊效果——大气清晰
 
-## 7. Responsive Behavior
+## 7. 响应行为
 
-### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile Small | <375px | Compact single column, reduced padding |
-| Mobile | 375-425px | Standard mobile layout |
-| Mobile Large | 425-600px | Wider mobile, some 2-col hints |
-| Tablet Small | 600-768px | 2-column grids begin |
-| Tablet | 768-1024px | Full card grids, expanded nav |
-| Desktop | 1024-1350px | Standard desktop layout |
-| Large Desktop | >1350px | Maximum content width, generous margins |
+### 断点
+|名称 |宽度|关键变化|
+|------|--------|-------------|
+|移动小| <375 像素 |紧凑的单列，减少填充|
+|手机 | 375-425 像素 |标准移动布局|
+|移动大| 425-600 像素 |更广泛的移动，一些 2 栏提示 |
+|小型平板电脑 | 600-768 像素 | 2 列网格开始 |
+|平板电脑| 768-1024 像素 |全卡片网格，扩展导航 |
+|桌面| 1024-1350 像素 |标准桌面布局|
+|大型桌面 | >1350 像素 |最大内容宽度，宽裕的边距 |
 
-### Touch Targets
-- Buttons use 11px 13px padding for comfortable tap targets
-- Navigation links at 14px uppercase with adequate spacing
-- Green-bordered buttons provide high-contrast touch targets on dark backgrounds
-- Mobile: hamburger menu collapse with full-screen overlay
+### 触摸目标
+- 按钮使用 11px 13px 填充以实现舒适的点击目标
+- 导航链接为 14px 大写且有足够的间距
+- 绿色边框按钮在深色背景上提供高对比度触摸目标
+- 移动设备：汉堡菜单折叠并带有全屏覆盖
 
-### Collapsing Strategy
-- Hero: 36px heading scales down proportionally
-- Navigation: full horizontal nav collapses to hamburger menu at ~1024px
-- Product cards: 3-column to 2-column to single column stacked
-- Footer: multi-column grid collapses to single stacked column
-- Section spacing: 64-80px reduces to 32-48px on mobile
-- Images: maintain aspect ratio, scale to container width
+### 崩溃策略
+- 英雄：36px 标题按比例缩小
+- 导航：完整水平导航折叠为汉堡菜单，约为 1024 像素
+- 产品卡：3 列至 2 列至单列堆叠
+- 页脚：多列网格折叠为单堆叠列
+- 部分间距：移动设备上的 64-80 像素减少至 32-48 像素
+- 图像：保持纵横比，缩放到容器宽度
 
-### Image Behavior
-- GPU/product renders maintain high resolution at all sizes
-- Hero images scale proportionally with viewport
-- Card images use consistent aspect ratios
-- Full-bleed dark sections maintain edge-to-edge treatment
+### 图像行为
+- GPU/产品渲染在所有尺寸下均保持高分辨率
+- 英雄图像与视口成比例缩放
+- 卡片图像使用一致的长宽比
+- 全出血深色部分保持边到边处理
 
-## 8. Responsive Behavior (Extended)
+## 8.响应行为（扩展）
 
-### Typography Scaling
-- Display 36px scales to ~24px on mobile
-- Section headings 24px scale to ~20px on mobile
-- Body text maintains 15-16px across all breakpoints
-- Button text maintains 16px for consistent tap targets
+### 版式缩放
+- 在移动设备上显示 36 像素缩放至 ~24 像素
+- 移动设备上的章节标题从 24 像素缩放至约 20 像素
+- 正文在所有断点上保持 15-16 像素
+- 按钮文本保持 16 像素，以实现一致的点击目标
 
-### Dark/Light Section Strategy
-- Dark sections (black bg, white text) alternate with light sections (white bg, black text)
-- The green accent remains consistent across both surface types
-- On dark: links are white, underlines are green
-- On light: links are black, underlines are green
-- This alternation creates natural scroll rhythm and content grouping
+### 暗/亮区策略
+- 深色部分（黑色背景，白色文本）与浅色部分（白色背景，黑色文本）交替
+- 两种表面类型的绿色强调保持一致
+- 深色：链接为白色，下划线为绿色
+- 亮起：链接为黑色，下划线为绿色
+- 这种交替创造了自然的滚动节奏和内容分组
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
-- Primary accent: NVIDIA Green (`#76b900`)
-- Background dark: True Black (`#000000`)
-- Background light: Pure White (`#ffffff`)
-- Heading text (dark bg): White (`#ffffff`)
-- Heading text (light bg): Black (`#000000`)
-- Body text (light bg): Black (`#000000`) or Near Black (`#1a1a1a`)
-- Body text (dark bg): White (`#ffffff`) or Gray 300 (`#a7a7a7`)
-- Link hover: Blue (`#3860be`)
-- Border accent: `2px solid #76b900`
-- Button hover: Teal (`#1eaedb`)
+### 快速颜色参考
+- 主要口音：NVIDIA Green (`#76b900`)
+- 深色背景：纯黑 (`#000000`)
+- 背景光：纯白色（`#ffffff`）
+- 标题文本（深色背景）：白色（`#ffffff`）
+- 标题文本（浅色背景）：黑色（`#000000`）
+- 正文（浅色背景）：黑色 (`#000000`) 或近黑色 (`#1a1a1a`)
+- 正文（深色背景）：白色 (`#ffffff`) 或灰色 300 (`#a7a7a7`)
+- 链接悬停：蓝色（`#3860be`）
+- 边框重音：`2pxsolid #76b900`
+- 按钮悬停：青色 (`#1eaedb`)
 
-### Example Component Prompts
-- "Create a hero section on black background. Headline at 36px NVIDIA-EMEA weight 700, line-height 1.25, color #ffffff. Subtitle at 18px weight 400, line-height 1.67, color #a7a7a7. CTA button with transparent background, 2px solid #76b900 border, 2px radius, 11px 13px padding, text #ffffff. Hover: background #1eaedb, text white."
-- "Design a product card: white background, 2px border-radius, box-shadow rgba(0,0,0,0.3) 0px 0px 5px. Title at 20px NVIDIA-EMEA weight 700, line-height 1.25, color #000000. Body at 15px weight 400, line-height 1.67, color #757575. Green underline accent on title: border-bottom 2px solid #76b900."
-- "Build a navigation bar: #000000 background, sticky top. NVIDIA logo left-aligned. Links at 14px NVIDIA-EMEA weight 700 uppercase, color #ffffff. Hover: color #3860be. Green-bordered CTA button right-aligned."
-- "Create a dark feature section: #000000 background. Section label at 14px weight 700 uppercase, color #76b900. Heading at 24px weight 700, color #ffffff. Description at 16px weight 400, color #a7a7a7. Three product cards in a row with 20px gap."
-- "Design a footer: #000000 background. Multi-column layout with link groups. Links at 14px weight 400, color #a7a7a7. Hover: color #76b900. Bottom bar with legal text at 12px, color #757575."
+### 组件提示示例
+- “在黑色背景上创建一个英雄部分。标题为 36 像素 NVIDIA-EMEA 粗细 700，行高 1.25，颜色 #ffffff。副标题为 18 像素粗细 400，行高 1.67，颜色 #a7a7a7。带有透明背景的 CTA 按钮，2 像素实线 #76b900 边框，2 像素半径，11 像素 13 像素填充，文本#ffffff。悬停：背景#1eaedb，文本白色。”
+-“设计产品卡：白色背景，2px边框半径，盒阴影rgba(0,0,0,0.3) 0px 0px 5px。标题为20px NVIDIA-EMEA权重700，行高1.25，颜色#000000。主体为15px权重400，行高1.67，颜色#757575。绿色下划线强调标题：边框底部 2px 实心#76b900。”
+- “构建导航栏：#000000 背景，粘性顶部。NVIDIA 徽标左对齐。链接为 14 像素 NVIDIA-EMEA 字重 700 大写，颜色 #ffffff。悬停：颜色 #3860be。绿边 CTA 按钮右对齐。”
+- “创建一个深色功能部分：#000000 背景。部分标签为 14px 粗细 700 大写，颜色 #76b900。标题为 24px 粗细 700，颜色 #ffffff。说明为 16px 粗细 400，颜色 #a7a7a7。连续三张产品卡，间隔 20px。”
+- “设计页脚：#000000 背景。带有链接组的多列布局。链接为 14 像素，粗细为 400，颜色为 #a7a7a7。悬停：颜色为 #76b900。底部栏带有法律文本，为 12 像素，颜色为#757575。”
 
-### Iteration Guide
-1. Always use `#76b900` as accent, never as a background fill -- it's a signal color for borders, underlines, and highlights
-2. Buttons are transparent with green borders by default -- filled backgrounds appear only on hover/active states
-3. Weight 700 is the dominant voice for all interactive and heading elements; 400 is only for body paragraphs
-4. Border radius is 2px for everything -- this sharp, minimal rounding is core to the industrial aesthetic
-5. Dark sections use white text; light sections use black text -- green accent works identically on both
-6. Link hover is always `#3860be` (blue) regardless of the link's default color
-7. Line-height 1.25 for headings, 1.50-1.67 for body text -- maintain this contrast for visual hierarchy
-8. Navigation uses uppercase 14px bold -- this hardware-label typography is part of the brand voice
+### 迭代指南
+1. 始终使用“#76b900”作为重音，切勿用作背景填充——它是边框、下划线和突出显示的信号颜色
+2. 默认情况下，按钮是透明的，带有绿色边框——填充背景仅出现在悬停/活动状态下
+3.权重700是所有交互和标题元素的主导声音； 400 仅适用于正文段落
+4. 所有内容的边框半径均为 2 像素——这种锐利、最小的圆角是工业美学的核心
+5.深色部分使用白色文字；浅色部分使用黑色文本——绿色强调在两者上的效果相同
+6. 无论链接的默认颜色如何，链接悬停始终为“#3860be”（蓝色）
+7. 标题的行高为 1.25，正文的行高为 1.50-1.67——保持视觉层次结构的对比度
+8. 导航使用大写 14px 粗体——这种硬件标签排版是品牌声音的一部分

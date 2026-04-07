@@ -1,252 +1,252 @@
-# Design System Inspiration of Superhuman
+# 超人的设计系统灵感
 
-## 1. Visual Theme & Atmosphere
+## 1.视觉主题和氛围
 
-Superhuman's website feels like opening a luxury envelope — predominantly white, immaculately clean, with a single dramatic gesture of color that commands attention. The hero section is a cinematic purple gradient, a deep twilight wash of `#1b1938` that evokes the moment just before dawn, overlaid with confident white typography. Below this dramatic entrance, the rest of the site is almost entirely white canvas with dark charcoal text, creating a stark but refined reading experience.
+Super human 的网站感觉就像打开一个奢华的信封——主要是白色，一尘不染，只有一种戏剧性的色彩来吸引人们的注意。英雄部分是电影般的紫色渐变，“#1b1938”的深暮色水洗，让人想起黎明前的那一刻，上面覆盖着自信的白色字体。在这个引人注目的入口下方，网站的其余部分几乎完全是白色画布，带有深色木炭文本，创造了一种鲜明但精致的阅读体验。
 
-The typography is the true signature: Super Sans VF, a custom variable font with unconventional weight stops (460, 540, 600, 700) that sit between traditional font weight categories. Weight 460 — slightly heavier than regular but lighter than medium — is the workhorse, creating text that feels more confident than typical 400-weight but never aggressive. The tight line-heights (0.96 on display text) compress headlines into dense, powerful blocks, while generous 1.50 line-height on body text provides airy readability. This tension between compressed power and breathing room defines the Superhuman typographic voice.
+排版是真正的签名：Super Sans VF，一种自定义可变字体，具有非传统的粗细停止（460、540、600、700），位于传统字体粗细类别之间。 460 重量（比普通重量稍重，但比中等重量轻）是主力，创建的文本比典型的 400 重量更自信，但绝不具有攻击性。紧凑的行高（显示文本为 0.96）将标题压缩为密集而有力的块，而正文文本的 1.50 行高则提供了轻松的可读性。压缩的力量和呼吸空间之间的这种张力定义了超人的印刷声音。
 
-The design philosophy is maximum confidence through minimum decoration. Warm cream buttons (`#e9e5dd`) instead of bright CTAs, a near-absence of borders and shadows, and lavender purple (`#cbb7fb`) as the sole accent color. It's a productivity tool that markets itself like a luxury brand — every pixel earns its place, nothing is merely decorative. The brand naming convention extends to colors: the primary purple is called "Mysteria," straddling blue and purple with deliberate ambiguity.
+设计理念是通过最少的装饰获得最大的自信。温暖的奶油色按钮（“#e9e5dd”）代替了明亮的 CTA，几乎没有边框和阴影，薰衣草紫色（“#cbb7fb”）作为唯一的强调色。它是一种生产力工具，像奢侈品牌一样推销自己——每个像素都赢得了自己的位置，没有什么仅仅是装饰性的。品牌命名惯例延伸到颜色：原色紫色被称为“Mysteria”，横跨蓝色和紫色，故意含糊不清。
 
-**Key Characteristics:**
-- Deep purple gradient hero (`#1b1938`) contrasting against a predominantly white content body
-- Super Sans VF variable font with non-standard weight stops (460, 540, 600, 700) — sits between conventional weight categories
-- Ultra-tight display line-height (0.96) creating compressed, powerful headlines
-- Warm Cream (`#e9e5dd`) buttons instead of bright/saturated CTAs — understated luxury
-- Lavender Purple (`#cbb7fb`) as the singular accent color — a soft, approachable purple
-- Minimal border-radius scale: only 8px and 16px — no micro-rounding, no pill shapes
-- Product screenshots dominate the content — the UI sells itself with minimal surrounding decoration
+**主要特征：**
+- 深紫色渐变英雄（`#1b1938`）与以白色为主的内容主体形成对比
+- Super Sans VF 可变字体，具有非标准粗细停止点（460、540、600、700）——位于传统粗细类别之间
+- 超紧显示行高 (0.96) 创建压缩、强大的标题
+- 温暖的奶油色 (`#e9e5dd`) 按钮代替明亮/饱和的 CTA — 低调的奢华
+- 薰衣草紫 (`#cbb7fb`) 作为独特的强调色 — 柔和、平易近人的紫色
+- 最小边框半径比例：仅 8 像素和 16 像素 — 无微圆角，无药丸形状
+- 产品屏幕截图占据了内容的主导地位——用户界面以最少的周围装饰来推销自己
 
-## 2. Color Palette & Roles
+## 2. 调色板和角色
 
-### Primary
-- **Mysteria Purple** (`#1b1938`): Hero gradient background, deep purple that straddles blue-purple — the darkest expression of the brand
-- **Lavender Glow** (`#cbb7fb`): Primary accent and highlight color — soft purple used for emphasis, decorative elements, and interactive highlights
-- **Charcoal Ink** (`#292827`): Primary text and heading color on light surfaces — warm near-black with faint brown undertone
+### 小学
+- **神秘紫色**（`#1b1938`）：英雄渐变背景，深紫色横跨蓝紫色——品牌最黑暗的表达
+- **薰衣草辉光** (`#cbb7fb`)：主要强调色和突出显示颜色 - 柔和的紫色用于强调、装饰元素和互动突出显示
+- **木炭墨水** (`#292827`)：浅色表面上的主要文本和标题颜色 — 温暖的近乎黑色，带有微弱的棕色底色
 
-### Secondary & Accent
-- **Amethyst Link** (`#714cb6`): Underlined link text — mid-range purple that connects to the brand palette while signaling interactivity
-- **Translucent White** (`color(srgb 1 1 1 / 0.95)`): Hero overlay text — near-white at 95% opacity for depth layering on dark surfaces
-- **Misted White** (`color(srgb 1 1 1 / 0.8)`): Secondary text on dark surfaces — 80% opacity white for hierarchy on the hero gradient
+### 次要和口音
+- **紫水晶链接** (`#714cb6`)：带下划线的链接文本 - 中紫色，连接到品牌调色板，同时表示交互性
+- **半透明白色**（`color(srgb 1 1 1 / 0.95)`）：英雄叠加文本 - 接近白色，不透明度为 95%，可在深色表面上实现深度分层
+- **Misted White** (`color(srgb 1 1 1 / 0.8)`)：深色表面上的辅助文本 - 80% 不透明度白色，用于英雄渐变上的层次结构
 
-### Surface & Background
-- **Pure White** (`#ffffff`): Primary page background — the dominant canvas color for all content sections
-- **Warm Cream** (`#e9e5dd`): Button background — a warm, neutral cream that avoids the coldness of pure gray
-- **Parchment Border** (`#dcd7d3`): Card and divider borders — warm light gray with slight pink undertone
+### 表面和背景
+- **纯白色** (`#ffffff`)：主页面背景 — 所有内容部分的主要画布颜色
+- **暖奶油色** (`#e9e5dd`)：按钮背景 — 温暖、中性的奶油色，避免纯灰色的寒冷
+- **羊皮纸边框** (`#dcd7d3`)：卡片和分隔线边框 — 暖浅灰色，略带粉红色底色
 
-### Neutrals & Text
-- **Charcoal Ink** (`#292827`): Primary heading and body text on white surfaces
-- **Amethyst Link** (`#714cb6`): In-content links with underline decoration
-- **Translucent White 95%** (`color(srgb 1 1 1 / 0.95)`): Primary text on dark/purple surfaces
-- **Translucent White 80%** (`color(srgb 1 1 1 / 0.8)`): Secondary text on dark/purple surfaces
+### 中性色和文字
+- **木炭墨水** (`#292827`)：白色表面上的主标题和正文文本
+- **紫水晶链接** (`#714cb6`)：带有下划线装饰的内容链接
+- **半透明白色 95%** (`颜色(srgb 1 1 1 / 0.95)`)：深色/紫色表面上的主要文本
+- **半透明白色 80%** (`color(srgb 1 1 1 / 0.8)`)：深色/紫色表面上的辅助文本
 
-### Semantic & Accent
-- Superhuman operates with extreme color restraint — Lavender Glow (`#cbb7fb`) is the only true accent
-- Interactive states are communicated through opacity shifts and underline decorations rather than color changes
-- The warm cream button palette avoids any saturated semantic colors (no red errors, green success visible on marketing)
+### 语义和口音
+- 超人以极端的色彩限制进行操作 - 薰衣草光 (`#cbb7fb`) 是唯一真正的口音
+- 交互状态通过不透明度变化和下划线装饰而不是颜色变化来传达
+- 温暖的奶油色按钮调色板避免任何饱和的语义颜色（没有红色错误，营销上可见绿色成功）
 
-### Gradient System
-- **Hero Gradient**: Deep purple gradient starting from `#1b1938`, transitioning through purple-to-twilight tones across the hero section — the most dramatic visual element on the entire site
-- **Content Transition**: The gradient dissolves into the white content area, creating a cinematic curtain-lift effect as the user scrolls
-- No other gradients on the marketing site — the hero gradient is a singular dramatic gesture
+### 渐变系统
+- **英雄渐变**：从“#1b1938”开始的深紫色渐变，在整个英雄部分通过紫色到暮光色调过渡——整个网站上最引人注目的视觉元素
+- **内容过渡**：渐变融入白色内容区域，在用户滚动时创建电影般的幕布升起效果
+- 营销网站上没有其他渐变 - 英雄渐变是一种独特的戏剧性姿态
 
-## 3. Typography Rules
+## 3. 版式规则
 
-### Font Family
-- **Display & Body**: `Super Sans VF` — custom variable font with non-standard weight axis. Fallbacks: `system-ui, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue`
-- **Product UI** (referenced in brand): `Messina Sans` / `Messina Serif` / `Messina Mono` from Luzi Type — used in the product itself for sans-serif-to-serif transitions
+### 字体系列
+- **显示和正文**：`Super Sans VF` — 具有非标准粗细轴的自定义可变字体。后备：`system-ui、-apple-system、Segoe UI、Roboto、Oxygen、Ubuntu、Cantarell、Fira Sans、Droid Sans、Helvetica Neue`
+- **产品 UI**（品牌中引用）：来自 Luzi Type 的 `Messina Sans` / `Messina Serif` / `Messina Mono` — 用于产品本身，用于无衬线到衬线的过渡
 
-### Hierarchy
+### 层次结构
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|------|--------|-------------|----------------|-------|
-| Display Hero | Super Sans VF | 64px | 540 | 0.96 | 0px | Maximum compression, powerful block headlines |
-| Section Display | Super Sans VF | 48px | 460 | 0.96 | -1.32px | Lighter weight for section introductions |
-| Section Heading | Super Sans VF | 48px | 460 | 0.96 | 0px | Alternate section heading without tracking |
-| Feature Title | Super Sans VF | 28px | 540 | 1.14 | -0.63px | Feature block headlines, tighter |
-| Sub-heading Large | Super Sans VF | 26px | 460 | 1.30 | 0px | Content sub-sections |
-| Card Heading | Super Sans VF | 22px | 460 | 0.76 | -0.315px | Card title with extreme compression |
-| Body Heading | Super Sans VF | 20px | 460 | 1.20 | 0px | Bold content intros |
-| Body Heading Alt | Super Sans VF | 20px | 460 | 1.10 | -0.55px | Tighter variant for emphasis |
-| Body Heading Relaxed | Super Sans VF | 20px | 460 | 1.25 | -0.4px | More breathing room variant |
-| Emphasis Body | Super Sans VF | 18px | 540 | 1.50 | -0.135px | Medium-weight body for callouts |
-| Body | Super Sans VF | 16px | 460 | 1.50 | 0px | Standard reading text — generous line-height |
-| Button / UI Bold | Super Sans VF | 16px | 700 | 1.00 | 0px | Bold UI elements |
-| Button / UI Semi | Super Sans VF | 16px | 600 | 1.00 | 0px | Semi-bold navigation and labels |
-| Nav Link | Super Sans VF | 16px | 460 | 1.20 | 0px | Navigation items |
-| Caption | Super Sans VF | 14px | 500 | 1.20 | -0.315px | Small labels, metadata |
-| Caption Semi | Super Sans VF | 14px | 600 | 1.29 | 0px | Emphasized small text |
-| Caption Body | Super Sans VF | 14px | 460 | 1.50 | 0px | Small body text |
-| Micro Label | Super Sans VF | 12px | 700 | 1.50 | 0px | Smallest text — badges, tags |
+|角色 |字体|尺寸|重量 |行高|字母间距 |笔记|
+|------|------|------|--------|-------------|----------------|--------|
+|显示英雄 |超级 Sans VF | 64 像素 | 540 | 540 0.96 | 0.96 0 像素 |最大压缩，强大的区块头条|
+|部分显示 |超级 Sans VF | 48 像素 | 460 | 460 0.96 | 0.96 -1.32 像素 |章节介绍的重量更轻|
+|章节标题 |超级 Sans VF | 48 像素 | 460 | 460 0.96 | 0.96 0 像素 |没有跟踪的备用部分标题 |
+|专题标题 |超级 Sans VF | 28 像素 | 540 | 540 1.14 | 1.14 -0.63 像素 |专题块头条新闻，更紧 |
+|副标题大|超级 Sans VF | 26 像素 | 460 | 460 1.30 | 1.30 0 像素 |内容小节 |
+|卡片标题|超级 Sans VF | 22 像素 | 460 | 460 0.76 | 0.76 -0.315 像素 |极度压缩的卡片标题 |
+|正文标题 |超级 Sans VF | 20 像素 | 460 | 460 1.20 | 1.20 0 像素 |大胆的内容介绍|
+|正文标题 Alt |超级 Sans VF | 20 像素 | 460 | 460 1.10 | 1.10 -0.55 像素 |强调的更紧变体 |
+|身体标题放松|超级 Sans VF | 20 像素 | 460 | 460 1.25 | 1.25 -0.4 像素 |更多呼吸空间变体|
+|强调身体|超级 Sans VF | 18 像素 | 540 | 540 1.50 | 1.50 -0.135 像素 |中等重量的机身，适合标注|
+|身体|超级 Sans VF | 16 像素 | 460 | 460 1.50 | 1.50 0 像素 |标准阅读文本——宽大的行高|
+|按钮/UI 粗体 |超级 Sans VF | 16 像素 | 700 | 1.00 | 0 像素 |大胆的 UI 元素 |
+|按钮 / UI 半 |超级 Sans VF | 16 像素 | 600 | 1.00 | 0 像素 |半粗体导航和标签|
+|导航链接 |超级 Sans VF | 16 像素 | 460 | 460 1.20 | 1.20 0 像素 |导航项目|
+|标题|超级 Sans VF | 14 像素 | 500 | 500 1.20 | 1.20 -0.315 像素 |小标签、元数据 |
+|半字幕|超级 Sans VF | 14 像素 | 600 | 1.29 | 1.29 0 像素 |强调小文字|
+|标题正文 |超级 Sans VF | 14 像素 | 460 | 460 1.50 | 1.50 0 像素 |小正文 |
+|微标签|超级 Sans VF | 12 像素 | 700 | 1.50 | 1.50 0 像素 |最小的文字 — 徽章、标签 |
 
-### Principles
-- **Non-standard weight axis**: Weights 460 and 540 are deliberately between conventional Regular (400) and Medium (500), creating a typographic texture that feels subtly "off" in a confident way — slightly heavier than expected, never quite bold
-- **Extreme display compression**: Display headlines at 0.96 line-height collapse lines nearly on top of each other, creating dense typographic blocks that feel architectural
-- **Body generosity**: In contrast, body text at 1.50 line-height is extremely spacious, ensuring comfortable reading after the dense headline impact
-- **Selective negative tracking**: Letter-spacing is applied surgically — -1.32px on 48px headings, -0.63px on 28px features, but 0px on body text. The larger the text, the tighter the tracking
-- **Variable font efficiency**: A single font file serves all weight variations (460–700), enabling smooth weight transitions and micro-adjustments
+### 原则
+- **非标准粗细轴**：粗细 460 和 540 故意介于常规常规 (400) 和中型 (500) 之间，创造出一种印刷纹理，以一种自信的方式微妙地“偏离”——比预期稍重，但从来都不是很大胆
+- **极端显示压缩**：以 0.96 行高的折叠线显示标题，几乎彼此重叠，创建具有建筑感的密集印刷块
+- **正文慷慨**：相比之下，1.50行高的正文极其宽敞，确保在密集的标题冲击后阅读舒适
+- **选择性负跟踪**：字母间距经过手术应用 - 48 像素标题上为 -1.32 像素，28 像素功能上为 -0.63 像素，但正文上为 0 像素。文本越大，跟踪越紧密
+- **可变字体效率**：单个字体文件可满足所有粗细变化 (460–700)，从而实现平滑的粗细过渡和微调
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
-- **Warm Cream Primary**: `#e9e5dd` background, Charcoal Ink (`#292827`) text, subtle rounded corners (8px radius), no visible border. The signature CTA — warm, muted, luxurious rather than aggressive
-- **Dark Primary** (on light sections): `#292827` background with white text, 8px radius — inverse of the warm cream for contrast sections
-- **Ghost / Text Link**: No background, underline decoration, Amethyst Link (`#714cb6`) or Charcoal Ink color depending on context
-- **Hero CTA**: Warm Cream on the dark purple gradient — the cream color pops dramatically against `#1b1938`
-- **Hover**: Subtle opacity or brightness shift — no dramatic color transformations
+### 按钮
+- **暖奶油色主色**：`#e9e5dd` 背景，木炭墨水 (`#292827`) 文本，微妙的圆角（8 像素半径），无可见边框。标志性的 CTA——温暖、柔和、奢华而不是咄咄逼人
+- **深色主色**（在浅色部分）：带有白色文本的“#292827”背景，半径 8 像素 — 对比部分的暖奶油色的反面
+- **幽灵/文本链接**：无背景、下划线装饰、紫水晶链接 (`#714cb6`) 或木炭墨水颜色，具体取决于上下文
+- **Hero CTA**：深紫色渐变上的暖奶油色 - 奶油色与“#1b1938”形成鲜明对比
+- **悬停**：轻微的不透明度或亮度变化 - 没有显着的颜色变换
 
-### Cards & Containers
-- **Content Card**: White background, Parchment Border (`#dcd7d3`) 1px border, 16px border-radius — clean and minimal
-- **Dark Surface Card**: `#292827` border on dark sections, maintaining warm-neutral tone
-- **Hero Surface**: Semi-transparent white border (`rgba(255, 255, 255, 0.2)`) on purple gradient — ghostly containment
-- **Product Screenshot Cards**: Large product UI images with clean edges, minimal framing — the product itself is the visual
-- **Hover**: Minimal state changes — consistency and calm over flashy interactions
+### 卡片和容器
+- **内容卡**：白色背景，羊皮纸边框 (`#dcd7d3`) 1px 边框，16px 边框半径 — 干净且最小
+- **深色表面卡**：深色部分有`#292827`边框，保持暖中性色调
+- **英雄表面**：紫色渐变上的半透明白色边框（`rgba(255, 255, 255, 0.2)`） — 幽灵般的遏制
+- **产品屏幕截图卡**：具有清晰边缘、最小框架的大型产品 UI 图像 - 产品本身就是视觉效果
+- **悬停**：最小的状态变化 - 华而不实的交互中的一致性和平静
 
-### Inputs & Forms
-- Minimal form presence on the marketing site — Superhuman funnels users directly to signup
-- Dark-bordered inputs with Charcoal Ink borders and warm-toned placeholder text
-- Focus: Border emphasis increase, likely shifting from Parchment Border to Charcoal Ink
+### 输入和表格
+- 营销网站上的最小形式存在 - Super human 引导用户直接注册
+- 带有木炭墨水边框和暖色调占位符文本的深色边框输入
+- 焦点：边框重点增加，可能从羊皮纸边框转向木炭墨水
 
-### Navigation
-- **Top nav**: Clean white background on content sections, transparent on hero gradient
-- **Nav links**: Super Sans VF at 16px, weight 460/600 for hierarchy
-- **CTA button**: Warm Cream (`#e9e5dd`) pill in the nav — subtle, not attention-grabbing
-- **Sticky behavior**: Nav remains fixed on scroll with background transition
-- **Mobile**: Collapses to hamburger menu with simplified layout
+### 导航
+- **顶部导航**：内容部分的干净白色背景，英雄渐变透明
+- **导航链接**：Super Sans VF 为 16 像素，层次结构粗细为 460/600
+- **CTA 按钮**：导航中的暖霜 (`#e9e5dd`) 药丸 — 微妙，不引人注目
+- **粘性行为**：导航保持固定在滚动上并具有背景过渡
+- **移动**：折叠为汉堡菜单，布局简化
 
-### Image Treatment
-- **Product screenshots**: Large, dominant product UI images showing the email interface — the product is the hero
-- **Lifestyle photography**: A single dramatic image (silhouette against purple/red gradient) in the hero area — cinematic and editorial
-- **Full-width presentation**: Screenshots span full container width with subtle shadow or no border
-- **Aspect ratios**: Wide landscape ratios (roughly 16:9) for product screenshots
-- **Color integration**: Screenshots are carefully color-graded to harmonize with the purple-to-white page flow
+### 图像处理
+- **产品屏幕截图**：显示电子邮件界面的大型、占主导地位的产品 UI 图像 - 产品是英雄
+- **生活方式摄影**：英雄区域中的单个戏剧性图像（紫色/红色渐变的剪影） - 电影和社论
+- **全角演示**：屏幕截图跨越整个容器宽度，带有微妙的阴影或无边框
+- **长宽比**：产品屏幕截图的宽横向比例（大约 16:9）
+- **颜色整合**：屏幕截图经过仔细的颜色分级，以与紫色到白色的页面流程协调一致
 
-### Testimonial / Social Proof
-- "Your Superhuman suite" section with product feature grid
-- Feature descriptions paired with product screenshots — proof through demonstration rather than quotes
-- Clean grid layout with consistent card sizing
+### 感言/社会证明
+- 带有产品功能网格的“您的超人套件”部分
+- 功能描述与产品屏幕截图相结合——通过演示而不是引用来证明
+- 干净的网格布局，卡片尺寸一致
 
-## 5. Layout Principles
+## 5.布局原则
 
-### Spacing System
-- **Base unit**: 8px
-- **Scale**: 2px, 4px, 6px, 8px, 12px, 16px, 18px, 20px, 24px, 28px, 32px, 36px, 40px, 48px, 56px
-- **Section padding**: 48px–80px vertical between major sections
-- **Card padding**: 16px–32px internal spacing
-- **Component gaps**: 8px–16px between related elements
+### 间距系统
+- **基本单位**：8px
+- **比例**：2 像素、4 像素、6 像素、8 像素、12 像素、16 像素、18 像素、20 像素、24 像素、28 像素、32 像素、36 像素、40 像素、48 像素、56 像素
+- **部分填充**：主要部分之间垂直 48 像素–80 像素
+- **卡片填充**：16px–32px 内部间距
+- **组件间隙**：相关元素之间的 8px–16px
 
-### Grid & Container
-- **Max width**: ~1200px content container, centered
-- **Column patterns**: Full-width hero, centered single-column for key messaging, 2-3 column grid for feature cards
-- **Feature grid**: Even column distribution for "Your Superhuman suite" product showcase
+### 网格和容器
+- **最大宽度**：~1200px 内容容器，居中
+- **列模式**：全角英雄，居中单列用于关键消息传递，2-3 列网格用于功能卡
+- **功能网格**：“您的超人套件”产品展示的均匀列分布
 
-### Whitespace Philosophy
-- **Confident emptiness**: Generous whitespace between sections signals premium positioning — every element has room to breathe
-- **Product as content**: Large product screenshots fill space that lesser sites would fill with marketing copy
-- **Progressive density**: The hero is spacious and cinematic, content sections become denser with feature grids, then opens up again for CTAs
+### 空白哲学
+- **自信的空虚**：各部分之间的大量空白标志着优质定位 - 每个元素都有呼吸的空间
+- **产品即内容**：大型产品屏幕截图填充了较小网站用营销文案填充的空间
+- **渐进密度**：英雄宽敞且具有电影感，内容部分通过功能网格变得更加密集，然后再次为 CTA 开放
 
-### Border Radius Scale
-- **8px**: Buttons, inline elements (`span`, `button`, `div`) — the universal small radius
-- **16px**: Cards, links, larger containers (`a`, card elements) — the universal large radius
-- Only two radii in the entire system — radical simplicity. No micro-rounding (2px), no pill shapes (50px+)
+### 边界半径比例
+- **8px**：按钮、内联元素（`span`、`button`、`div`）——通用小半径
+- **16px**：卡片、链接、较大的容器（`a`、卡片元素）-通用大半径
+- 整个系统只有两个半径——极其简单。无微圆角 (2px)，无药丸形状 (50px+)
 
-## 6. Depth & Elevation
+## 6. 深度和高度
 
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Level 0 (Flat) | No shadow, white background | Primary page canvas, most content surfaces |
-| Level 1 (Border) | `1px solid #dcd7d3` (Parchment Border) | Card containment, section dividers |
-| Level 2 (Dark Border) | `1px solid #292827` | Header elements, dark section separators |
-| Level 3 (Glow) | Subtle shadow (from 6 shadow definitions detected) | Product screenshot containers, elevated cards |
-| Level 4 (Hero Depth) | `rgba(255, 255, 255, 0.2)` transparent border | Elements on the dark purple gradient hero |
+|水平|治疗 |使用 |
+|--------|------------|-----|
+| 0 级（平）|无阴影，白色背景|主页面画布，大部分内容表面 |
+| 1 级（边界）| `1px 实心#dcd7d3`（羊皮纸边框）|卡片收纳、分区分隔|
+| 2 级（深色边框）| `1px 实心 #292827` |标题元素、深色部分分隔符 |
+| 3 级（发光）|微妙的阴影（从检测到的 6 个阴影定义中）|产品屏幕截图容器、提升卡 |
+| 4 级（英雄深度）| `rgba(255, 255, 255, 0.2)` 透明边框 |元素上的深紫色渐变英雄|
 
-### Shadow Philosophy
-Superhuman's elevation system is remarkably restrained on the marketing site. Depth is primarily communicated through:
-- **Border containment**: Warm-toned borders (`#dcd7d3`) at 1px create gentle separation
-- **Color contrast**: The hero gradient creates massive depth through color shift rather than shadows
-- **Product screenshots**: Screenshots themselves create depth by showing a layered UI within the flat page
-- **Opacity layering**: Semi-transparent whites on the hero gradient create atmospheric depth layers
+### 影子哲学
+Super human 的海拔系统在营销网站上受到了明显的限制。深度主要通过以下方式传达：
+- **边界遏制**：1 像素处的暖色调边框 (`#dcd7d3`) 创建温和的分离
+- **颜色对比度**：英雄渐变通过颜色偏移而不是阴影创建巨大的深度
+- **产品屏幕截图**：屏幕截图本身通过在平面页面中显示分层 UI 来创造深度
+- **不透明度分层**：英雄渐变上的半透明白色创建大气深度层
 
-### Decorative Depth
-- **Hero gradient**: The `#1b1938` → white gradient transition is the primary depth device — a cinematic curtain effect
-- **Lavender accents**: `#cbb7fb` Lavender Glow elements float above the dark gradient, creating a stellar/atmospheric effect
-- **No glassmorphism**: Despite the translucent borders, there are no blur/frosted-glass effects
-- **Photography depth**: The hero silhouette image creates natural atmospheric depth without artificial CSS
+### 装饰深度
+- **英雄渐变**：`#1b1938` → 白色渐变过渡是主要的深度设备 - 电影幕布效果
+- **薰衣草色调**：`#cbb7fb` 薰衣草发光元素漂浮在深色渐变上方，营造出恒星/大气效果
+- **无玻璃形态**：尽管有半透明边框，但没有模糊/毛玻璃效果
+- **摄影深度**：英雄剪影图像创造自然大气的深度，无需人工CSS
 
-## 7. Do's and Don'ts
+## 7. 该做和不该做的事情
 
-### Do
-- Use Super Sans VF at weight 460 as the default — it's slightly heavier than regular, which is the brand's typographic signature
-- Keep display headlines at 0.96 line-height — the compression is intentional and powerful
-- Use Warm Cream (`#e9e5dd`) for primary buttons — not white, not gray, specifically warm cream
-- Limit border-radius to 8px (small) and 16px (large) — the binary radius system is deliberate
-- Apply negative letter-spacing on headlines only (-0.63px to -1.32px) — body text stays at 0px
-- Use Lavender Glow (`#cbb7fb`) as the only accent color — it's the sole color departure from the neutral palette
-- Let product screenshots be the primary visual content — the UI sells itself
-- Maintain the dramatic hero gradient as a singular gesture — the rest of the page is white
+### 做
+- 默认使用粗细为 460 的 Super Sans VF — 它比普通字体稍重，这是该品牌的印刷标志
+- 将显示标题保持在 0.96 行高 — 压缩是有意且强大的
+- 使用暖奶油色（`#e9e5dd`）作为主要按钮——不是白色，不是灰色，特别是暖奶油色
+- 将边框半径限制为 8px（小）和 16px（大）——二进制半径系统是经过深思熟虑的
+- 仅在标题上应用负字母间距（-0.63px 到 -1.32px）——正文保持在 0px
+- 使用薰衣草辉光 (`#cbb7fb`) 作为唯一的强调色 — 这是唯一偏离中性调色板的颜色
+- 让产品屏幕截图成为主要视觉内容——UI 自我推销
+- 保持戏剧性的英雄渐变作为一个单一的手势 - 页面的其余部分是白色的
 
-### Don't
-- Use conventional font weights (400, 500, 600) — Superhuman's 460 and 540 are deliberately between standard stops
-- Add bright or saturated CTA colors (blue, green, red) — buttons are intentionally muted in Warm Cream or Charcoal
-- Introduce additional accent colors beyond Lavender Glow — the palette is deliberately restrained to one accent
-- Apply shadows generously — depth comes from borders, color contrast, and photography, not box-shadows
-- Use tight line-height on body text — display is compressed (0.96) but body is generous (1.50)
-- Add decorative elements, icons, or illustrations — Superhuman relies on product UI and minimal typography
-- Create pill-shaped buttons — the system uses 8px radius, not rounded pills
-- Use pure black (`#000000`) for text — Charcoal Ink (`#292827`) is warmer and softer
+### 不要
+- 使用传统的字体粗细（400、500、600）——Super human 的 460 和 540 故意位于标准停止之间
+- 添加明亮或饱和的 CTA 颜色（蓝色、绿色、红色） - 按钮故意采用暖奶油色或木炭色静音
+- 除了薰衣草紫光之外，引入额外的强调色——调色板被故意限制为一种强调色
+- 大量应用阴影——深度来自边框、色彩对比度和摄影，而不是盒子阴影
+- 在正文上使用紧凑的行高 - 显示被压缩 (0.96)，但正文很宽大 (1.50)
+- 添加装饰元素、图标或插图 - Superhuman 依赖于产品 UI 和最小的排版
+- 创建药丸形状的按钮 - 系统使用 8px 半径，而不是圆形药丸
+- 使用纯黑色（`#000000`）作为文本 - 木炭墨水（`#292827`）更温暖、更柔和
 
-## 8. Responsive Behavior
+## 8. 响应行为
 
-### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <768px | Single column, hero text reduces to ~36px, stacked feature cards, hamburger nav |
-| Tablet | 768px–1024px | 2-column feature grid begins, hero text ~48px, nav partially visible |
-| Desktop | 1024px–1440px | Full layout, 64px hero display, multi-column feature grid, full nav |
-| Large Desktop | >1440px | Max-width container centered, generous side margins |
+### 断点
+|名称 |宽度|关键变化|
+|------|--------|-------------|
+|手机 | <768 像素 |单列，英雄文本减少到约 36 像素，堆叠功能卡，汉堡导航 |
+|平板电脑| 768 像素–1024 像素 | 2 列特征网格开始，英雄文本 ~48px，导航部分可见 |
+|桌面| 1024 像素–1440 像素 |完整布局、64px 英雄显示、多列功能网格、完整导航 |
+|大型桌面 | >1440 像素 |最大宽度容器居中，侧边距宽大 |
 
-### Touch Targets
-- Buttons: 8px radius with comfortable padding — meets touch target guidelines
-- Nav links: 16px text with adequate surrounding padding
-- Mobile CTAs: Full-width Warm Cream buttons for easy thumb reach
-- Links: Underline decoration provides clear tap affordance
+### 触摸目标
+- 按钮：8 像素半径，具有舒适的填充 — 符合触摸目标准则
+- 导航链接：16px 文本，周围有足够的填充
+- 移动 CTA：全宽 Warm Cream 按钮，方便拇指触及
+- 链接：下划线装饰提供清晰的水龙头可供性
 
-### Collapsing Strategy
-- **Navigation**: Full horizontal nav → hamburger menu on mobile
-- **Hero text**: 64px display → 48px → ~36px across breakpoints
-- **Feature grid**: Multi-column product showcase → 2-column → single stacked column
-- **Product screenshots**: Scale within containers, maintaining landscape ratios
-- **Section spacing**: Reduces proportionally — generous desktop margins compress on mobile
+### 崩溃策略
+- **导航**：完整水平导航 → 移动设备上的汉堡菜单
+- **英雄文本**：64px 显示 → 48px → 跨断点 ~36px
+- **功能网格**：多栏产品展示→2栏→单堆叠栏
+- **产品屏幕截图**：在容器内缩放，保持横向比例
+- **部分间距**：按比例减少 - 桌面版边距在移动设备上压缩
 
-### Image Behavior
-- Product screenshots scale responsively while maintaining aspect ratios
-- Hero silhouette image crops or scales — maintains dramatic composition
-- No art direction changes — same compositions across all breakpoints
-- Lazy loading likely on below-fold product screenshots
+### 图像行为
+- 产品屏幕截图可响应缩放，同时保持纵横比
+- 英雄剪影图像裁剪或缩放 - 保持戏剧性的构图
+- 艺术方向没有变化——所有断点的构图相同
+- 下屏产品屏幕截图上可能存在延迟加载
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
-- Hero Background: Mysteria Purple (`#1b1938`)
-- Primary Text (light bg): Charcoal Ink (`#292827`)
-- Primary Text (dark bg): Translucent White (`color(srgb 1 1 1 / 0.95)` — use `rgba(255,255,255,0.95)`)
-- Accent: Lavender Glow (`#cbb7fb`)
-- Button Background: Warm Cream (`#e9e5dd`)
-- Border: Parchment Border (`#dcd7d3`)
-- Link: Amethyst Link (`#714cb6`)
-- Page Background: Pure White (`#ffffff`)
+### 快速颜色参考
+- 英雄背景：神秘紫 (`#1b1938`)
+- 主要文本（浅色背景）：木炭墨水（`#292827`）
+- 主要文本（深色背景）：半透明白色（`color(srgb 1 1 1 / 0.95)` — 使用 `rgba(255,255,255,0.95)`）
+- 口音：薰衣草紫光 (`#cbb7fb`)
+- 按钮背景：温暖的奶油色（`#e9e5dd`）
+- 边框：羊皮纸边框 (`#dcd7d3`)
+- 链接：紫水晶链接 (`#714cb6`)
+- 页面背景：纯白色（`#ffffff`）
 
-### Example Component Prompts
-- "Create a hero section with deep purple gradient background (#1b1938), 64px Super Sans heading at weight 540, line-height 0.96, white text at 95% opacity, and a warm cream button (#e9e5dd, 8px radius, #292827 text)"
-- "Design a feature card with white background, 1px #dcd7d3 border, 16px radius, 20px Super Sans heading at weight 460, and 16px body text at weight 460 with 1.50 line-height in #292827"
-- "Build a navigation bar with white background, Super Sans links at 16px weight 460, a warm cream CTA button (#e9e5dd, 8px radius), sticky positioning"
-- "Create a product showcase section with centered 48px heading (weight 460, -1.32px letter-spacing, #292827), a large product screenshot below, on white background"
-- "Design an accent badge using Lavender Glow (#cbb7fb) background, 8px radius, 12px bold text (weight 700), for category labels"
+### 组件提示示例
+- “创建一个带有深紫色渐变背景 (#1b1938)、64px Super Sans 标题、粗细为 540、行高 0.96、白色文本、不透明度为 95% 和温暖的奶油色按钮 (#e9e5dd、8px 半径、#292827 文本) 的英雄部分”
+- “在 #292827 中设计一个白色背景、1px #dcd7d3 边框、16px 半径、20px Super Sans 标题、粗细 460 和 16px 正文、粗细 460、行高 1.50 的功能卡”
+- “构建一个白色背景的导航栏，Super Sans 链接，16px 粗细 460，温暖的奶油色 CTA 按钮（#e9e5dd，8px 半径），粘性定位”
+- “创建一个产品展示部分，标题居中 48 像素（粗细 460，-1.32 像素字母间距，#292827），下面是白色背景的大产品屏幕截图”
+- “使用薰衣草发光 (#cbb7fb) 背景、8 像素半径、12 像素粗体文本（粗细 700）设计重音徽章，用于类别标签”
 
-### Iteration Guide
-When refining existing screens generated with this design system:
-1. Verify font weight is 460 (not 400 or 500) for body and 540 for display — the non-standard weights are essential
-2. Check that display line-height is 0.96 — if headlines look too spaced, they're wrong
-3. Ensure buttons use Warm Cream (#e9e5dd) not pure white or gray — the warmth is subtle but critical
-4. Confirm the only accent color is Lavender Glow (#cbb7fb) — no other hues should appear
-5. The overall tone should feel like a luxury product presentation — minimal, confident, with one dramatic color gesture in the hero
+### 迭代指南
+当优化使用此设计系统生成的现有屏幕时：
+1. 验证正文的字体粗细为 460（不是 400 或 500），显示的字体粗细为 540 — 非标准粗细是必不可少的
+2. 检查显示行高是否为 0.96 — 如果标题看起来间距太大，则说明是错误的
+3. 确保按钮使用暖奶油色 (#e9e5dd)，而不是纯白色或灰色 — 温暖感微妙但至关重要
+4. 确认唯一的强调色是薰衣草色 (#cbb7fb) — 不应出现其他色调
+5. 整体基调应该感觉像是一场奢侈品展示——简约、自信，主角有一种戏剧性的色彩姿态

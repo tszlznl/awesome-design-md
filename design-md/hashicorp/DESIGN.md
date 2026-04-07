@@ -1,278 +1,278 @@
-# Design System Inspiration of HashiCorp
+# HashiCorp 的设计系统灵感
 
-## 1. Visual Theme & Atmosphere
+## 1.视觉主题和氛围
 
-HashiCorp's website is enterprise infrastructure made tangible — a design system that must communicate the complexity of cloud infrastructure management while remaining approachable. The visual language splits between two modes: a clean white light-mode for informational sections and a dramatic dark-mode (`#15181e`, `#0d0e12`) for hero areas and product showcases, creating a day/night duality that mirrors the "build in light, deploy in dark" developer workflow.
+HashiCorp 的网站是有形的企业基础设施 - 一个设计系统，必须传达云基础设施管理的复杂性，同时保持平易近人。视觉语言分为两种模式：用于信息部分的干净白光模式和用于英雄区域和产品展示的戏剧性黑暗模式（“#15181e”、“#0d0e12”），创建了昼夜二元性，反映了“在光明中构建，在黑暗中部署”开发人员工作流程。
 
-The typography is anchored by a custom brand font (HashiCorp Sans, loaded as `__hashicorpSans_96f0ca`) that carries substantial weight — literally. Headings use 600–700 weights with tight line-heights (1.17–1.19), creating dense, authoritative text blocks that communicate enterprise confidence. The hero headline at 82px weight 600 with OpenType `"kern"` enabled is not decorative — it's infrastructure-grade typography.
+版式以自定义品牌字体（HashiCorp Sans，加载为“__hashicorpSans_96f0ca”）为基础，字面上具有很大的分量。标题使用 600-700 的粗细和严格的行高 (1.17-1.19)，创建密集、权威的文本块来传达企业信心。启用 OpenType“kern”的 82px 粗细 600 的英雄标题不是装饰性的 - 它是基础设施级的排版。
 
-What distinguishes HashiCorp is its multi-product color system. Each product in the portfolio has its own brand color — Terraform purple (`#7b42bc`), Vault yellow (`#ffcf25`), Waypoint teal (`#14c6cb`), Vagrant blue (`#1868f2`) — and these colors appear throughout as accent tokens via a CSS custom property system (`--mds-color-*`). This creates a design system within a design system: the parent brand is black-and-white with blue accents, while each child product injects its own chromatic identity.
+HashiCorp 的独特之处在于其多产品色彩系统。产品组合中的每个产品都有自己的品牌颜色 - Terraform 紫色 (`#7b42bc`)、Vault 黄色 (`#ffcf25`)、Waypoint 青色 (`#14c6cb`)、Vagrant 蓝色 (`#1868f2`) - 这些颜色通过 CSS 自定义属性系统 (`--mds-color-*`) 作为重音标记出现。这在设计系统中创建了一个设计系统：母品牌是黑白的，带有蓝色的点缀，而每个子产品都注入了自己的色彩特征。
 
-The component system uses the `mds` (Markdown Design System) prefix, indicating a systematic, token-driven approach where colors, spacing, and states are all managed through CSS variables. Shadows are remarkably subtle — dual-layer micro-shadows using `rgba(97, 104, 117, 0.05)` that are nearly invisible but provide just enough depth to separate interactive surfaces from the background.
+组件系统使用“mds”（Markdown 设计系统）前缀，表示一种系统的、标记驱动的方法，其中颜色、间距和状态都通过 CSS 变量进行管理。阴影非常微妙 - 使用“rgba(97, 104, 117, 0.05)”的双层微阴影几乎不可见，但提供了足够的深度来将交互表面与背景分开。
 
-**Key Characteristics:**
-- Dual-mode: clean white sections + dramatic dark (`#15181e`) hero/product areas
-- Custom HashiCorp Sans font with 600–700 weights and `"kern"` feature
-- Multi-product color system via `--mds-color-*` CSS custom properties
-- Product brand colors: Terraform purple, Vault yellow, Waypoint teal, Vagrant blue
-- Uppercase letter-spaced captions (13px, weight 600, 1.3px letter-spacing)
-- Micro-shadows: dual-layer at 0.05 opacity — depth through whisper, not shout
-- Token-driven `mds` component system with semantic variable names
-- Tight border radius: 2px–8px, nothing pill-shaped or circular
-- System-ui fallback stack for secondary text
+**主要特征：**
+- 双模式：干净的白色部分 + 戏剧性的黑暗 (`#15181e`) 英雄/产品区域
+- 自定义 HashiCorp Sans 字体，具有 600–700 粗细和“kern”功能
+- 通过 `--mds-color-*` CSS 自定义属性的多产品颜色系统
+- 产品品牌颜色：Terraform 紫色、Vault 黄色、Waypoint 青色、Vagrant 蓝色
+- 大写字母间距标题（13 像素，粗细 600，1.3 像素字母间距）
+- 微阴影：不透明度为 0.05 的双层 — 通过耳语而不是喊叫来实现深度
+- 具有语义变量名称的令牌驱动的“mds”组件系统
+- 严格的边框半径：2px–8px，没有药丸状或圆形
+- 辅助文本的系统 UI 后备堆栈
 
-## 2. Color Palette & Roles
+## 2. 调色板和角色
 
-### Brand Primary
-- **Black** (`#000000`): Primary brand color, text on light surfaces, `--mds-color-hcp-brand`
-- **Dark Charcoal** (`#15181e`): Dark mode backgrounds, hero sections
-- **Near Black** (`#0d0e12`): Deepest dark mode surface, form inputs on dark
+### 品牌主要
+- **黑色** (`#000000`)：主要品牌颜色，浅色表面上的文字，`--mds-color-hcp-brand`
+- **深色木炭** (`#15181e`)：深色模式背景、英雄部分
+- **近黑色** (`#0d0e12`)：最深的深色模式表面，在深色上形成输入
 
-### Neutral Scale
-- **Light Gray** (`#f1f2f3`): Light backgrounds, subtle surfaces
-- **Mid Gray** (`#d5d7db`): Borders, button text on dark
-- **Cool Gray** (`#b2b6bd`): Border accents (at 0.1–0.4 opacity)
-- **Dark Gray** (`#656a76`): Helper text, secondary labels, `--mds-form-helper-text-color`
-- **Charcoal** (`#3b3d45`): Secondary text on light, button borders
-- **Near White** (`#efeff1`): Primary text on dark surfaces
+### 中性尺度
+- **浅灰色** (`#f1f2f3`)：浅色背景，微妙的表面
+- **中灰色** (`#d5d7db`)：边框、深色按钮文本
+- **冷灰色** (`#b2b6bd`)：边框强调色（不透明度为 0.1–0.4）
+- **深灰色** (`#656a76`)：辅助文本、辅助标签、`--mds-form-helper-text-color`
+- **木炭** (`#3b3d45`)：浅色、按钮边框上的辅助文本
+- **近白色** (`#efeff1`)：深色表面上的主要文本
 
-### Product Brand Colors
-- **Terraform Purple** (`#7b42bc`): `--mds-color-terraform-button-background`
-- **Vault Yellow** (`#ffcf25`): `--mds-color-vault-button-background`
-- **Waypoint Teal** (`#14c6cb`): `--mds-color-waypoint-button-background-focus`
-- **Waypoint Teal Hover** (`#12b6bb`): `--mds-color-waypoint-button-background-hover`
-- **Vagrant Blue** (`#1868f2`): `--mds-color-vagrant-brand`
-- **Purple Accent** (`#911ced`): `--mds-color-palette-purple-300`
-- **Visited Purple** (`#a737ff`): `--mds-color-foreground-action-visited`
+### 产品品牌颜色
+- **Terraform Purple** (`#7b42bc`): `--mds-color-terraform-b​​utton-background`
+- **Vault 黄色** (`#ffcf25`): `--mds-color-vault-button-background`
+- **航点青色** (`#14c6cb`): `--mds-color-waypoint-button-background-focus`
+- **航点青色悬停** (`#12b6bb`): `--mds-color-waypoint-button-background-hover`
+- **流浪蓝**（`#1868f2`）：`--mds-color-vagrant-brand`
+- **紫色口音** (`#911ced`): `--mds-color-palette-purple-300`
+- **访问紫色** (`#a737ff`): `--mds-color-foreground-action-visited`
 
-### Semantic Colors
-- **Action Blue** (`#1060ff`): Primary action links on dark
-- **Link Blue** (`#2264d6`): Primary links on light
-- **Bright Blue** (`#2b89ff`): Active links, hover accent
-- **Amber** (`#bb5a00`): `--mds-color-palette-amber-200`, warning states
-- **Amber Light** (`#fbeabf`): `--mds-color-palette-amber-100`, warning backgrounds
-- **Vault Faint Yellow** (`#fff9cf`): `--mds-color-vault-radar-gradient-faint-stop`
-- **Orange** (`#a9722e`): `--mds-color-unified-core-orange-6`
-- **Red** (`#731e25`): `--mds-color-unified-core-red-7`, error states
-- **Navy** (`#101a59`): `--mds-color-unified-core-blue-7`
+### 语义颜色
+- **蓝色操作** (`#1060ff`)：黑暗中的主要操作链接
+- **蓝色链接** (`#2264d6`)：主链接亮起
+- **亮蓝色** (`#2b89ff`)：活动链接，悬停重音
+- **琥珀色** (`#bb5a00`)：`--mds-color-palette-amber-200`，警告状态
+- **琥珀色灯** (`#fbeabf`)：`--mds-color-palette-amber-100`，警告背景
+- **Vault 淡黄色** (`#fff9cf`): `--mds-color-vault-radar-gradient-faint-stop`
+- **橙色** (`#a9722e`): `--mds-color-unified-core-orange-6`
+- **红色** (`#731e25`)：`--mds-color-unified-core-red-7`，错误状态
+- **海军** (`#101a59`): `--mds-color-unified-core-blue-7`
 
-### Shadows
-- **Micro Shadow** (`rgba(97, 104, 117, 0.05) 0px 1px 1px, rgba(97, 104, 117, 0.05) 0px 2px 2px`): Default card/button elevation
-- **Focus Outline**: `3px solid var(--mds-color-focus-action-external)` — systematic focus ring
+### 阴影
+- **微阴影** (`rgba(97, 104, 117, 0.05) 0px 1px 1px, rgba(97, 104, 117, 0.05) 0px 2px 2px`): 默认卡片/按钮高度
+- **焦点轮廓**：`3px 实心变量（--mds-color-focus-action-external）` — 系统对焦环
 
-## 3. Typography Rules
+## 3. 版式规则
 
-### Font Families
-- **Primary Brand**: `__hashicorpSans_96f0ca` (HashiCorp Sans), with fallback: `__hashicorpSans_Fallback_96f0ca`
-- **System UI**: `system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial`
+### 字体系列
+- **主要品牌**：`__hashicorpSans_96f0ca` (HashiCorp Sans)，后备：`__hashicorpSans_Fallback_96f0ca`
+- **系统 UI**：`system-ui、-apple-system、BlinkMacSystemFont、Segoe UI、Helvetica、Arial`
 
-### Hierarchy
+### 层次结构
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|------|--------|-------------|----------------|-------|
-| Display Hero | HashiCorp Sans | 82px (5.13rem) | 600 | 1.17 (tight) | normal | `"kern"` enabled |
-| Section Heading | HashiCorp Sans | 52px (3.25rem) | 600 | 1.19 (tight) | normal | `"kern"` enabled |
-| Feature Heading | HashiCorp Sans | 42px (2.63rem) | 700 | 1.19 (tight) | -0.42px | Negative tracking |
-| Sub-heading | HashiCorp Sans | 34px (2.13rem) | 600–700 | 1.18 (tight) | normal | Feature blocks |
-| Card Title | HashiCorp Sans | 26px (1.63rem) | 700 | 1.19 (tight) | normal | Card and panel headings |
-| Small Title | HashiCorp Sans | 19px (1.19rem) | 700 | 1.21 (tight) | normal | Compact headings |
-| Body Emphasis | HashiCorp Sans | 17px (1.06rem) | 600–700 | 1.18–1.35 | normal | Bold body text |
-| Body Large | system-ui | 20px (1.25rem) | 400–600 | 1.50 | normal | Hero descriptions |
-| Body | system-ui | 16px (1.00rem) | 400–500 | 1.63–1.69 (relaxed) | normal | Standard body text |
-| Nav Link | system-ui | 15px (0.94rem) | 500 | 1.60 (relaxed) | normal | Navigation items |
-| Small Body | system-ui | 14px (0.88rem) | 400–500 | 1.29–1.71 | normal | Secondary content |
-| Caption | system-ui | 13px (0.81rem) | 400–500 | 1.23–1.69 | normal | Metadata, footer links |
-| Uppercase Label | HashiCorp Sans | 13px (0.81rem) | 600 | 1.69 (relaxed) | 1.3px | `text-transform: uppercase` |
+|角色 |字体|尺寸|重量 |行高|字母间距 |笔记|
+|------|------|------|--------|-------------|----------------|--------|
+|显示英雄 | HashiCorp Sans | HashiCorp Sans 82 像素（5.13 雷姆）| 600 | 1.17（紧）|正常 | `"kern"` 已启用 |
+|章节标题 | HashiCorp Sans | HashiCorp Sans 52 像素（3.25 雷姆）| 600 | 1.19（紧）|正常 | `"kern"` 已启用 |
+|专题标题| HashiCorp Sans | HashiCorp Sans 42 像素（2.63 雷姆）| 700 | 1.19（紧）| -0.42 像素 |负追踪 |
+|副标题| HashiCorp Sans | HashiCorp Sans 34 像素（2.13 雷姆）| 600–700 | 1.18（紧）|正常 |功能块 |
+|卡片标题 | HashiCorp Sans | HashiCorp Sans 26 像素（1.63 雷姆）| 700 | 1.19（紧）|正常 |卡片和面板标题 |
+|小标题 | HashiCorp Sans | HashiCorp Sans 19 像素 (1.19 雷姆) | 700 | 1.21（紧）|正常 |紧凑的标题 |
+|身体重点| HashiCorp Sans | HashiCorp Sans 17 像素（1.06 雷姆）| 600–700 | 1.18–1.35 |正常 |粗体正文 |
+|机身大 |系统用户界面 | 20 像素（1.25 雷姆）| 400–600 | 1.50 | 1.50正常 |英雄描述|
+|身体|系统用户界面 | 16 像素（1.00 雷姆）| 400–500 | 1.63–1.69（宽松）|正常 |标准正文 |
+|导航链接 |系统用户界面 | 15 像素（0.94 雷姆）| 500 | 500 1.60（宽松）|正常 |导航项目|
+|小巧的身材|系统用户界面 | 14 像素（0.88 雷姆）| 400–500 | 1.29–1.71 |正常 |次要内容 |
+|标题|系统用户界面 | 13 像素（0.81 雷姆）| 400–500 | 1.23–1.69 |正常 |元数据、页脚链接 |
+|大写标签 | HashiCorp Sans | HashiCorp Sans 13 像素（0.81 雷姆）| 600 | 1.69（宽松）| 1.3 像素 | `文本转换：大写` |
 
-### Principles
-- **Brand/System split**: HashiCorp Sans for headings and brand-critical text; system-ui for body, navigation, and functional text. The brand font carries the weight, system-ui carries the words.
-- **Kern always on**: All HashiCorp Sans text enables OpenType `"kern"` — letterfitting is non-negotiable.
-- **Tight headings**: Every heading uses 1.17–1.21 line-height, creating dense, stacked text blocks that feel infrastructural — solid, load-bearing.
-- **Relaxed body**: Body text uses 1.50–1.69 line-height (notably generous), creating comfortable reading rhythm beneath the dense headings.
-- **Uppercase labels as wayfinding**: 13px uppercase with 1.3px letter-spacing serves as the systematic category/section marker — always HashiCorp Sans weight 600.
+### 原则
+- **品牌/系统分割**：HashiCorp Sans 用于标题和品牌关键文本；用于正文、导航和功能文本的 system-ui。品牌字体承载重量，system-ui 承载文字。
+- **Kern 始终开启**：所有 HashiCorp Sans 文本都启用 OpenType“kern”——字母调整是不可协商的。
+- **紧凑的标题**：每个标题都使用 1.17-1.21 行高，创建密集、堆叠的文本块，给人一种基础设施的感觉——坚固、承重。
+- **宽松的正文**：正文使用 1.50–1.69 的行高（特别宽大），在密集的标题下营造舒适的阅读节奏。
+- **大写标签作为寻路**：13px 大写字母和 1.3px 字母间距用作系统类别/部分标记 - 始终为 HashiCorp Sans 粗细 600。
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
-**Primary Dark**
-- Background: `#15181e`
-- Text: `#d5d7db`
-- Padding: 9px 9px 9px 15px (asymmetric, more left padding)
-- Radius: 5px
-- Border: `1px solid rgba(178, 182, 189, 0.4)`
-- Shadow: `rgba(97, 104, 117, 0.05) 0px 1px 1px, rgba(97, 104, 117, 0.05) 0px 2px 2px`
-- Focus: `3px solid var(--mds-color-focus-action-external)`
-- Hover: uses `--mds-color-surface-interactive` token
+**原色深色**
+- 背景：`#15181e`
+- 文本：`#d5d7db`
+- 内边距：9px 9px 9px 15px（不对称，更多左内边距）
+- 半径：5px
+- 边框：`1px 实心 rgba(178, 182, 189, 0.4)`
+- 阴影：`rgba(97, 104, 117, 0.05) 0px 1px 1px, rgba(97, 104, 117, 0.05) 0px 2px 2px`
+- 焦点：`3px 实心变量（--mds-color-focus-action-external）`
+- 悬停：使用“--mds-color-surface-interactive”标记
 
-**Secondary White**
-- Background: `#ffffff`
-- Text: `#3b3d45`
-- Padding: 8px 12px
-- Radius: 4px
-- Hover: `--mds-color-surface-interactive` + low-shadow elevation
-- Focus: `3px solid transparent` outline
-- Clean, minimal appearance
+**次白**
+- 背景：`#ffffff`
+- 文本：`#3b3d45`
+- 内边距：8 像素 12 像素
+- 半径：4px
+- 悬停：`--mds-color-surface-interactive` + 低阴影高度
+- 焦点：“3px实心透明”轮廓
+- 干净、简约的外观
 
-**Product-Colored Buttons**
-- Terraform: background `#7b42bc`
-- Vault: background `#ffcf25` (dark text)
-- Waypoint: background `#14c6cb`, hover `#12b6bb`
-- Each product button follows the same structural pattern but uses its brand color
+**产品颜色按钮**
+- Terraform：背景`#7b42bc`
+- Vault：背景`#ffcf25`（深色文本）
+- 路径点：背景`#14c6cb`，悬停`#12b6bb`
+- 每个产品按钮都遵循相同的结构模式，但使用其品牌颜色
 
-### Badges / Pills
-- Background: `#42225b` (deep purple)
-- Text: `#efeff1`
-- Padding: 3px 7px
-- Radius: 5px
-- Border: `1px solid rgb(180, 87, 255)`
-- Font: 16px
+### 徽章/药丸
+- 背景：`#42225b`（深紫色）
+- 文本：`#effeff1`
+- 内边距：3 像素 7 像素
+- 半径：5px
+- 边框：`1px 实心 rgb(180, 87, 255)`
+- 字体：16 像素
 
-### Inputs
+### 输入
 
-**Text Input (Dark Mode)**
-- Background: `#0d0e12`
-- Text: `#efeff1`
-- Border: `1px solid rgb(97, 104, 117)`
-- Padding: 11px
-- Radius: 5px
-- Focus: `3px solid var(--mds-color-focus-action-external)` outline
+**文本输入（深色模式）**
+- 背景：`#0d0e12`
+- 文本：`#effeff1`
+- 边框：`1px 实心 rgb(97, 104, 117)`
+- 内边距：11px
+- 半径：5px
+- 焦点：`3px 实心 var(--mds-color-focus-action-external)` 轮廓
 
-**Checkbox**
-- Background: `#0d0e12`
-- Border: `1px solid rgb(97, 104, 117)`
-- Radius: 3px
+**复选框**
+- 背景：`#0d0e12`
+- 边框：`1px 实心 rgb(97, 104, 117)`
+- 半径：3px
 
-### Links
-- **Action Blue on Light**: `#2264d6`, hover → blue-600 variable, underline on hover
-- **Action Blue on Dark**: `#1060ff` or `#2b89ff`, underline on hover
-- **White on Dark**: `#ffffff`, transparent underline → visible underline on hover
-- **Neutral on Light**: `#3b3d45`, transparent underline → visible underline on hover
-- **Light on Dark**: `#efeff1`, similar hover pattern
-- All links use `var(--wpl-blue-600)` as hover color
+### 链接
+- **动作蓝色亮灯**：`#2264d6`，悬停 → blue-600 变量，悬停时下划线
+- **动作蓝色在黑暗**：`#1060ff`或`#2b89ff`，悬停时下划线
+- **黑底白字**：`#ffffff`，透明下划线 → 悬停时可见下划线
+- **中性光**：`#3b3d45`，透明下划线 → 悬停时可见下划线
+- **亮于暗**：`#effeff1`，类似的悬停模式
+- 所有链接都使用 `var(--wpl-blue-600)` 作为悬停颜色
 
-### Cards & Containers
-- Light mode: white background, micro-shadow elevation
-- Dark mode: `#15181e` or darker surfaces
-- Radius: 8px for cards and containers
-- Product showcase cards with gradient borders or accent lighting
+### 卡片和容器
+- 灯光模式：白色背景，微阴影仰角
+- 深色模式：“#15181e”或较暗的表面
+- 半径：卡片和容器为 8px
+- 带有渐变边框或重点照明的产品展示卡
 
-### Navigation
-- Clean horizontal nav with mega-menu dropdowns
-- HashiCorp logo left-aligned
-- system-ui 15px weight 500 for links
-- Product categories organized by lifecycle management group
-- "Get started" and "Contact us" CTAs in header
-- Dark mode variant for hero sections
+### 导航
+- 带有大型菜单下拉菜单的简洁水平导航
+- HashiCorp 徽标左对齐
+- system-ui 15px 链接权重 500
+- 由生命周期管理小组组织的产品类别
+- 标题中的“开始”和“联系我们”CTA
+- 英雄部分的黑暗模式变体
 
-## 5. Layout Principles
+## 5.布局原则
 
-### Spacing System
-- Base unit: 8px
-- Scale: 2px, 3px, 4px, 6px, 7px, 8px, 9px, 11px, 12px, 16px, 20px, 24px, 32px, 40px, 48px
+### 间距系统
+- 基本单位：8px
+- 比例：2 像素、3 像素、4 像素、6 像素、7 像素、8 像素、9 像素、11 像素、12 像素、16 像素、20 像素、24 像素、32 像素、40 像素、48 像素
 
-### Grid & Container
-- Max content width: ~1150px (xl breakpoint)
-- Full-width dark hero sections with contained content
-- Card grids: 2–3 column layouts
-- Generous horizontal padding at desktop scale
+### 网格和容器
+- 最大内容宽度：~1150px（xl 断点）
+- 包含内容的全角黑暗英雄部分
+- 卡片网格：2–3 列布局
+- 桌面规模的宽大水平填充
 
-### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile Small | <375px | Tight single column |
-| Mobile | 375–480px | Standard mobile |
-| Small Tablet | 480–600px | Minor adjustments |
-| Tablet | 600–768px | 2-column grids begin |
-| Small Desktop | 768–992px | Full nav visible |
-| Desktop | 992–1120px | Standard layout |
-| Large Desktop | 1120–1440px | Max-width content |
-| Ultra-wide | >1440px | Centered, generous margins |
+### 断点
+|名称 |宽度|关键变化|
+|------|--------|-------------|
+|移动小| <375 像素 |紧单柱|
+|手机 | 375–480 像素 |标准移动|
+|小型平板电脑| 480–600 像素 |小幅调整|
+|平板电脑| 600–768 像素 | 2 列网格开始 |
+|小型桌面| 768–992 像素 |完整导航可见 |
+|桌面| 992–1120 像素 |标准布局 |
+|大型桌面 | 1120–1440 像素 |最大宽度内容 |
+|超广角| >1440 像素 |居中、宽边距 |
 
-### Whitespace Philosophy
-- **Enterprise breathing room**: Generous vertical spacing between sections (48px–80px+) communicates stability and seriousness.
-- **Dense headings, spacious body**: Tight line-height headings sit above relaxed body text, creating visual "weight at the top" of each section.
-- **Dark as canvas**: Dark hero sections use extra vertical padding to let 3D illustrations and gradients breathe.
+### 空白哲学
+- **企业呼吸空间**：各部分之间宽敞的垂直间距（48px–80px+）传达了稳定性和严肃性。
+- **密集的标题，宽敞的正文**：紧密的行高标题位于宽松的正文之上，在每个部分中创造视觉上的“顶部重量”。
+- **深色如画布**：深色英雄部分使用额外的垂直填充，让 3D 插图和渐变呼吸。
 
-### Border Radius Scale
-- Minimal (2px): Links, small inline elements
-- Subtle (3px): Checkboxes, small inputs
-- Standard (4px): Secondary buttons
-- Comfortable (5px): Primary buttons, badges, inputs
-- Card (8px): Cards, containers, images
+### 边界半径比例
+- 最小（2px）：链接、小内联元素
+- 微妙（3px）：复选框，小输入
+- 标准 (4px)：辅助按钮
+- 舒适 (5px)：主要按钮、徽章、输入
+- 卡片 (8px)：卡片、容器、图像
 
-## 6. Depth & Elevation
+## 6. 深度和高度
 
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Flat (Level 0) | No shadow | Default surfaces, text blocks |
-| Whisper (Level 1) | `rgba(97, 104, 117, 0.05) 0px 1px 1px, rgba(97, 104, 117, 0.05) 0px 2px 2px` | Cards, buttons, interactive surfaces |
-| Focus (Level 2) | `3px solid var(--mds-color-focus-action-external)` outline | Focus rings — color-matched to context |
+|水平|治疗 |使用 |
+|--------|------------|-----|
+|公寓（0 级）|没有影子|默认表面、文本块|
+|耳语（1 级）| `rgba(97, 104, 117, 0.05) 0px 1px 1px, rgba(97, 104, 117, 0.05) 0px 2px 2px` |卡片、按钮、交互界面|
+|焦点（2 级）| `3px 实心 var(--mds-color-focus-action-external)` 轮廓 |对焦环 — 颜色与环境相匹配 |
 
-**Shadow Philosophy**: HashiCorp uses arguably the subtlest shadow system in modern web design. The dual-layer shadows at 5% opacity are nearly invisible — they exist not to create visual depth but to signal interactivity. If you can see the shadow, it's too strong. This restraint communicates the enterprise value of stability — nothing floats, nothing is uncertain.
+**影子哲学**：HashiCorp 可以说是现代网页设计中最微妙的影子系统。不透明度为 5% 的双层阴影几乎是看不见的——它们的存在不是为了创造视觉深度，而是为了传达交互性。如果你能看到影子，那就太强了。这种克制传达了企业稳定的价值观——没有什么是浮动的，没有什么是不确定的。
 
-## 7. Do's and Don'ts
+## 7. 该做和不该做的事情
 
-### Do
-- Use HashiCorp Sans for headings and brand text, system-ui for body and UI text
-- Enable `"kern"` on all HashiCorp Sans text
-- Use product brand colors ONLY for their respective products (Terraform = purple, Vault = yellow, etc.)
-- Apply uppercase labels at 13px weight 600 with 1.3px letter-spacing for section markers
-- Keep shadows at the "whisper" level (0.05 opacity dual-layer)
-- Use the `--mds-color-*` token system for consistent color application
-- Maintain the tight-heading / relaxed-body rhythm (1.17–1.21 vs 1.50–1.69 line-heights)
-- Use `3px solid` focus outlines for accessibility
+### 做
+- 使用 HashiCorp Sans 作为标题和品牌文本，使用 system-ui 作为正文和 UI 文本
+- 在所有 HashiCorp Sans 文本上启用“kern”
+- 仅对各自的产品使用产品品牌颜色（Terraform = 紫色，Vault = 黄色等）
+- 以 13 像素粗细 600 应用大写标签，部分标记的字母间距为 1.3 像素
+- 将阴影保持在“耳语”级别（双层不透明度 0.05）
+- 使用“--mds-color-*”令牌系统来实现一致的颜色应用
+- 保持头紧/身体放松的节奏（1.17–1.21 vs 1.50–1.69 线高）
+- 使用“3pxsolid”焦点轮廓以实现可访问性
 
-### Don't
-- Don't use product brand colors outside their product context (no Terraform purple on Vault content)
-- Don't increase shadow opacity above 0.1 — the whisper level is intentional
-- Don't use pill-shaped buttons (>8px radius) — the sharp, minimal radius is structural
-- Don't skip the `"kern"` feature on headings — the font requires it
-- Don't use HashiCorp Sans for small body text — it's designed for 17px+ heading use
-- Don't mix product colors in the same component — each product has one color
-- Don't use pure black (`#000000`) for dark backgrounds — use `#15181e` or `#0d0e12`
-- Don't forget the asymmetric button padding — 9px 9px 9px 15px is intentional
+### 不要
+- 不要在产品上下文之外使用产品品牌颜色（Vault 内容上不得使用 Terraform 紫色）
+- 不要将阴影不透明度增加到 0.1 以上 - 耳语级别是故意的
+- 不要使用药丸形状的按钮（>8px半径）——尖锐、最小的半径是结构性的
+- 不要跳过标题上的“kern”功能——字体需要它
+- 不要将 HashiCorp Sans 用于小正文文本 — 它是为 17px+ 标题使用而设计的
+- 不要在同一组件中混合产品颜色 - 每个产品都有一种颜色
+- 不要将纯黑色 (`#000000`) 用于深色背景 — 使用 `#15181e` 或 `#0d0e12`
+- 不要忘记不对称的按钮填充 - 9px 9px 9px 15px 是故意的
 
-## 8. Responsive Behavior
+## 8. 响应行为
 
-### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <768px | Single column, hamburger nav, stacked CTAs |
-| Tablet | 768–992px | 2-column grids, nav begins expanding |
-| Desktop | 992–1150px | Full layout, mega-menu nav |
-| Large | >1150px | Max-width centered, generous margins |
+### 断点
+|名称 |宽度|关键变化|
+|------|--------|-------------|
+|手机 | <768 像素 |单栏、汉堡式导航、堆叠 CTA |
+|平板电脑| 768–992 像素 | 2 列网格，导航开始扩展 |
+|桌面| 992–1150 像素 |完整布局，大型菜单导航 |
+|大| >1150 像素 |最大宽度居中、宽边距 |
 
-### Collapsing Strategy
-- Hero: 82px → 52px → 42px heading sizes
-- Navigation: mega-menu → hamburger
-- Product cards: 3-column → 2-column → stacked
-- Dark sections maintain full-width but compress padding
-- Buttons: inline → full-width stacked on mobile
+### 崩溃策略
+- 英雄：82px → 52px → 42px 标题大小
+- 导航：超级菜单→汉堡包
+- 产品卡：3 列 → 2 列 → 堆叠
+- 深色部分保持全宽但压缩填充
+- 按钮：内联 → 全角堆叠在移动设备上
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
-- Light bg: `#ffffff`, `#f1f2f3`
-- Dark bg: `#15181e`, `#0d0e12`
-- Text light: `#000000`, `#3b3d45`
-- Text dark: `#efeff1`, `#d5d7db`
-- Links: `#2264d6` (light), `#1060ff` (dark), `#2b89ff` (active)
-- Helper text: `#656a76`
-- Borders: `rgba(178, 182, 189, 0.4)`, `rgb(97, 104, 117)`
-- Focus: `3px solid` product-appropriate color
+### 快速颜色参考
+- 浅色背景：`#ffffff`、`#f1f2f3`
+- 黑暗背景：`#15181e`，`#0d0e12`
+- 文本灯：`#000000`，`#3b3d45`
+- 深色文本：`#efeff1`、`#d5d7db`
+- 链接：`#2264d6`（浅色）、`#1060ff`（深色）、`#2b89ff`（活动）
+- 帮助文本：`#656a76`
+- 边框：`rgba(178, 182, 189, 0.4)`, `rgb(97, 104, 117)`
+- 焦点：“3px 实心”适合产品的颜色
 
-### Example Component Prompts
-- "Create a hero on dark background (#15181e). Headline at 82px HashiCorp Sans weight 600, line-height 1.17, kern enabled, white text. Sub-text at 20px system-ui weight 400, line-height 1.50, #d5d7db text. Two buttons: primary dark (#15181e, 5px radius, 9px 15px padding) and secondary white (#ffffff, 4px radius, 8px 12px padding)."
-- "Design a product card: white background, 8px radius, dual-layer shadow at rgba(97,104,117,0.05). Title at 26px HashiCorp Sans weight 700, body at 16px system-ui weight 400 line-height 1.63."
-- "Build an uppercase section label: 13px HashiCorp Sans weight 600, line-height 1.69, letter-spacing 1.3px, text-transform uppercase, #656a76 color."
-- "Create a product-specific CTA button: Terraform → #7b42bc background, Vault → #ffcf25 with dark text, Waypoint → #14c6cb. All: 5px radius, 500 weight text, 16px system-ui."
-- "Design a dark form: #0d0e12 input background, #efeff1 text, 1px solid rgb(97,104,117) border, 5px radius, 11px padding. Focus: 3px solid accent-color outline."
+### 组件提示示例
+- “在深色背景上创建一个英雄（#15181e）。标题为 82px HashiCorp Sans，粗细为 600，行高为 1.17，字距启用，白色文本。子文本为 20px，system-ui 粗细为 400，行高为 1.50，#d5d7db 文本。两个按钮：原色深色（#15181e，5px 半径，9px 15px）填充）和辅助白色（#ffffff，4px半径，8px 12px填充）。”
+- “设计一张产品卡：白色背景，8px半径，双层阴影为rgba(97,104,117,0.05)。标题为26px HashiCorp Sans字重700，正文为16px system-ui字重400行高1.63。”
+- “构建一个大写部分标签：13px HashiCorp Sans 粗细 600，行高 1.69，字母间距 1.3px，文本转换大写，#656a76 颜色。”
+- “创建特定于产品的 CTA 按钮：Terraform → #7b42bc 背景、Vault → 带深色文本的 #ffcf25、Waypoint → #14c6cb。全部：5 像素半径、500 粗细文本、16 像素系统用户界面。”
+- “设计一个深色表单：#0d0e12 输入背景、#efeff1 文本、1 像素实心 rgb(97,104,117) 边框、5 像素半径、11 像素填充。焦点：3 像素实心强调色轮廓。”
 
-### Iteration Guide
-1. Always start with the mode decision: light (white) for informational, dark (#15181e) for hero/product
-2. HashiCorp Sans for headings only (17px+), system-ui for everything else
-3. Shadows are at whisper level (0.05 opacity) — if visible, reduce
-4. Product colors are sacred — each product owns exactly one color
-5. Focus rings are always 3px solid, color-matched to product context
-6. Uppercase labels are the systematic wayfinding pattern — 13px, 600, 1.3px tracking
+### 迭代指南
+1. 始终从模式决定开始：浅色（白色）用于信息，深色（#15181e）用于英雄/产品
+2. HashiCorp Sans 仅用于标题（17px+），system-ui 用于其他所有内容
+3. 阴影处于耳语级别（0.05 不透明度）——如果可见，则减少
+4. 产品颜色是神圣的——每件产品都只有一种颜色
+5. 对焦环始终为 3px 实心，颜色与产品背景相匹配
+6. 大写标签是系统的寻路模式——13px、600、1.3px 跟踪

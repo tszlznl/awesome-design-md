@@ -1,256 +1,256 @@
-# Design System Inspiration of PostHog
+# PostHog 的设计系统灵感
 
-## 1. Visual Theme & Atmosphere
+## 1.视觉主题和氛围
 
-PostHog's website feels like a startup's internal wiki that escaped into the wild — warm, irreverent, and deliberately anti-corporate. The background isn't the expected crisp white or dark void of developer tools; it's a warm, sage-tinted cream (`#fdfdf8`) that gives every surface a handmade, paper-like quality. Colors lean into earthy olive greens and muted sage rather than the conventional blues and purples of the SaaS world. It's as if someone designed a developer analytics platform inside a cozy garden shed.
+PostHog 的网站感觉就像一家初创公司的内部维基百科，但它却逃到了野外——热情、不敬、故意反企业。背景并不是开发人员工具中预期的纯白色或黑色背景；而是背景。它是一种温暖的鼠尾草色奶油色 (`#fdfdf8`)，赋予每个表面手工制作的纸质质感。颜色倾向于朴实的橄榄绿和柔和的鼠尾草色，而不是 SaaS 世界中传统的蓝色和紫色。这就好像有人在舒适的花园小屋内设计了一个开发人员分析平台。
 
-The personality is the star: hand-drawn hedgehog illustrations, quirky action figures, and playful imagery replace the stock photography and abstract gradients typical of B2B SaaS. IBM Plex Sans Variable serves as the typographic foundation — a font with genuine technical credibility (created by IBM, widely used in developer contexts) deployed here with bold weights (700, 800) on headings and generous line-heights on body text. The typography says "we're serious engineers" while everything around it says "but we don't take ourselves too seriously."
+个性是亮点：手绘刺猬插图、古怪的动作人物和有趣的图像取代了 B2B SaaS 典型的图库摄影和抽象渐变。 IBM Plex Sans Variable 充当印刷基础 — 一种具有真正技术可信度的字体（由 IBM 创建，在开发人员环境中广泛使用），在标题上采用粗体字重（700、800），在正文上采用宽大的行高。字体上写着“我们是认真的工程师”，而周围的一切都在说“但我们并没有太认真地对待自己”。
 
-The interaction design carries the same spirit: hover states flash PostHog Orange (`#F54E00`) text — a hidden brand color that doesn't appear at rest but surprises on interaction. Dark near-black buttons (`#1e1f23`) use opacity reduction on hover rather than color shifts, and active states scale slightly. The border system uses sage-tinted grays (`#bfc1b7`) that harmonize with the olive text palette. Built on Tailwind CSS with Radix UI and shadcn/ui primitives, the technical foundation is modern and component-driven, but the visual output is stubbornly unique.
+交互设计也秉承了同样的精神：悬停状态下会闪烁 PostHog Orange (#F54E00`) 文本——一种隐藏的品牌颜色，在静止时不会出现，但在交互时会带来惊喜。深色近乎黑色的按钮（“#1e1f23”）在悬停时使用不透明度降低而不是颜色偏移，并且活动状态会稍微缩放。边框系统使用鼠尾草色调的灰色（“#bfc1b7”），与橄榄色文本调色板相协调。基于带有 Radix UI 和 shadcn/ui 原语的 Tailwind CSS 构建，技术基础是现代的、组件驱动的，但视觉输出却是独一无二的。
 
-**Key Characteristics:**
-- Warm sage/olive color palette instead of conventional blues — earthy and approachable
-- IBM Plex Sans Variable font at bold weights (700/800) for headings with generous 1.50+ line-heights
-- Hidden brand orange (`#F54E00`) that only appears on hover interactions — a delightful surprise
-- Hand-drawn hedgehog illustrations and playful imagery — deliberately anti-corporate
-- Sage-tinted borders (`#bfc1b7`) and backgrounds (`#eeefe9`) creating a unified warm-green system
-- Dark near-black CTAs (`#1e1f23`) with opacity-based hover states
-- Content-heavy editorial layout — the site reads like a magazine, not a typical landing page
-- Tailwind CSS + Radix UI + shadcn/ui component architecture
+**主要特征：**
+- 温暖的鼠尾草/橄榄色调色板，而不是传统的蓝色——朴实且平易近人
+- IBM Plex Sans Variable 字体采用粗体 (700/800)，适用于行高超过 1.50 的标题
+- 隐藏的品牌橙色（`#F54E00`）仅出现在悬停交互上 - 一个令人愉快的惊喜
+- 手绘刺猬插图和有趣的图像——故意反企业
+- 鼠尾草色边框 (`#bfc1b7`) 和背景 (`#eeefe9`) 创建统一的暖绿色系统
+- 深色近乎黑色的 CTA (`#1e1f23`) 具有基于不透明度的悬停状态
+- 内容丰富的编辑布局 - 该网站读起来像一本杂志，而不是典型的登陆页面
+- Tailwind CSS + Radix UI + shadcn/ui 组件架构
 
-## 2. Color Palette & Roles
+## 2. 调色板和角色
 
-### Primary
-- **Olive Ink** (`#4d4f46`): Primary text color — a distinctive olive-gray that gives all text a warm, earthy tone
-- **Deep Olive** (`#23251d`): Link text and high-emphasis headings — near-black with green undertone
-- **PostHog Orange** (`#F54E00`): Hidden brand accent — appears only on hover states, a vibrant orange that surprises
+### 小学
+- **橄榄色墨水** (`#4d4f46`)：主要文本颜色 - 独特的橄榄灰色，为所有文本赋予温暖、朴实的色调
+- **深橄榄色** (`#23251d`)：链接文本和高强调标题 — 接近黑色，带有绿色底色
+- **PostHog Orange** (`#F54E00`)：隐藏的品牌口音 - 仅出现在悬停状态下，充满活力的橙色令人惊喜
 
-### Secondary & Accent
-- **Amber Gold** (`#F7A501`): Secondary hover accent on dark buttons — warm gold that pairs with the orange
-- **Gold Border** (`#b17816`): Special button borders — an amber-gold for featured CTAs
-- **Focus Blue** (`#3b82f6`): Focus ring color (Tailwind default) — the only blue in the system, reserved for accessibility
+### 次要和口音
+- **琥珀金** (`#F7A501`)：深色按钮上的二次悬停强调 — 与橙色搭配的暖金色
+- **金色边框** (`#b17816`)：特殊按钮边框 — 琥珀金色，用于特色 CTA
+- **焦点蓝色** (`#3b82f6`)：焦点环颜色（Tailwind 默认）- 系统中唯一的蓝色，保留用于辅助功能
 
-### Surface & Background
-- **Warm Parchment** (`#fdfdf8`): Primary page background — warm near-white with yellow-green undertone
-- **Sage Cream** (`#eeefe9`): Input backgrounds, secondary surfaces — light sage tint
-- **Light Sage** (`#e5e7e0`): Button backgrounds, tertiary surfaces — muted sage-green
-- **Warm Tan** (`#d4c9b8`): Featured button backgrounds — warm tan/khaki for emphasis
-- **Hover White** (`#f4f4f4`): Universal hover background state
+### 表面和背景
+- **温暖的羊皮纸** (`#fdfdf8`)：主页面背景 — 温暖的近白色，带有黄绿色底色
+- **鼠尾草奶油色** (`#eeefe9`)：输入背景、辅助表面 — 浅鼠尾草色调
+- **Light Sage** (`#e5e7e0`)：按钮背景，第三表面 - 柔和的鼠尾草绿色
+- **暖棕褐色** (`#d4c9b8`)：特色按钮背景 — 暖棕褐色/卡其色用于强调
+- **悬停白色** (`#f4f4f4`)：通用悬停背景状态
 
-### Neutrals & Text
-- **Olive Ink** (`#4d4f46`): Primary body and UI text
-- **Muted Olive** (`#65675e`): Secondary text, button labels on light backgrounds
-- **Sage Placeholder** (`#9ea096`): Placeholder text, disabled states — warm sage-green
-- **Sage Border** (`#bfc1b7`): Primary border color — olive-tinted gray for all borders
-- **Light Border** (`#b6b7af`): Secondary border, toolbar borders — slightly darker sage
+### 中性色和文字
+- **Olive Ink** (`#4d4f46`)：主要正文和 UI 文本
+- **柔和的橄榄色** (`#65675e`)：浅色背景上的辅助文本、按钮标签
+- **鼠尾草占位符** (`#9ea096`)：占位符文本，禁用状态 — 温暖的鼠尾草绿
+- **鼠尾草边框** (`#bfc1b7`)：主要边框颜色 - 所有边框均为橄榄色灰色
+- **浅色边框** (`#b6b7af`)：辅助边框，工具栏边框 - 稍暗的鼠尾草
 
-### Semantic & Accent
-- **PostHog Orange** (`#F54E00`): Hover text accent — signals interactivity and brand personality
-- **Amber Gold** (`#F7A501`): Dark button hover accent — warmth signal
-- **Focus Blue** (`#3b82f6` at 50% opacity): Keyboard focus rings — accessibility-only color
-- **Dark Text** (`#111827`): High-contrast link text — near-black for important links
+### 语义和口音
+- **PostHog Orange** (`#F54E00`)：悬停文本重音 — 表示互动性和品牌个性
+- **琥珀金** (`#F7A501`)：深色按钮悬停强调 — 温暖信号
+- **焦点蓝色**（`#3b82f6`，不透明度为 50%）：键盘焦点环 - 仅可访问性颜色
+- **深色文本** (`#111827`)：高对比度链接文本 — 重要链接接近黑色
 
-### Gradient System
-- No gradients on the marketing site — PostHog's visual language is deliberately flat and warm
-- Depth is achieved through layered surfaces and border containment, not color transitions
+### 渐变系统
+- 营销网站上没有渐变——PostHog 的视觉语言故意平坦而温暖
+- 深度是通过分层表面和边界遏制来实现的，而不是颜色过渡
 
-## 3. Typography Rules
+## 3. 版式规则
 
-### Font Family
-- **Display & Body**: `IBM Plex Sans Variable` — variable font (100–700+ weight range). Fallbacks: `IBM Plex Sans, -apple-system, system-ui, Avenir Next, Avenir, Segoe UI, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Arial`
-- **Monospace**: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New` — system monospace stack
-- **Code Display**: `Source Code Pro` — with fallbacks: `Menlo, Consolas, Monaco`
+### 字体系列
+- **显示和正文**：`IBM Plex Sans Variable` — 可变字体（100–700+ 粗细范围）。后备：“IBM Plex Sans、-apple-system、system-ui、Avenir Next、Avenir、Segoe UI、Helvetica Neue、Helvetica、Ubuntu、Roboto、Noto、Arial”
+- **Monospace**：`ui-monospace、SFMono-Regular、Menlo、Monaco、Consolas、Liberation Mono、Courier New` — 系统等宽堆栈
+- **代码显示**：`Source Code Pro` — 带有后备：`Menlo、Consolas、Monaco`
 
-### Hierarchy
+### 层次结构
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|------|--------|-------------|----------------|-------|
-| Display Hero | IBM Plex Sans Variable | 30px | 800 | 1.20 | -0.75px | Extra-bold, tight, maximum impact |
-| Section Heading | IBM Plex Sans Variable | 36px | 700 | 1.50 | 0px | Large but generous line-height |
-| Feature Heading | IBM Plex Sans Variable | 24px | 700 | 1.33 | 0px | Feature section titles |
-| Card Heading | IBM Plex Sans Variable | 21.4px | 700 | 1.40 | -0.54px | Slightly unusual size (scaled) |
-| Sub-heading | IBM Plex Sans Variable | 20px | 700 | 1.40 | -0.5px | Content sub-sections |
-| Sub-heading Uppercase | IBM Plex Sans Variable | 20px | 700 | 1.40 | 0px | Uppercase transform for labels |
-| Body Emphasis | IBM Plex Sans Variable | 19.3px | 600 | 1.56 | -0.48px | Semi-bold callout text |
-| Label Uppercase | IBM Plex Sans Variable | 18px | 700 | 1.50 | 0px | Uppercase category labels |
-| Body Semi | IBM Plex Sans Variable | 18px | 600 | 1.56 | 0px | Semi-bold body text |
-| Body | IBM Plex Sans Variable | 16px | 400 | 1.50 | 0px | Standard reading text |
-| Body Medium | IBM Plex Sans Variable | 16px | 500 | 1.50 | 0px | Medium-weight body |
-| Body Relaxed | IBM Plex Sans Variable | 15px | 400 | 1.71 | 0px | Relaxed line-height for long reads |
-| Nav / UI | IBM Plex Sans Variable | 15px | 600 | 1.50 | 0px | Navigation and UI labels |
-| Caption | IBM Plex Sans Variable | 14px | 400–700 | 1.43 | 0px | Small text, various weights |
-| Small Label | IBM Plex Sans Variable | 13px | 500–700 | 1.00–1.50 | 0px | Tags, badges, micro labels |
-| Micro | IBM Plex Sans Variable | 12px | 400–700 | 1.33 | 0px | Smallest text, some uppercase |
-| Code | Source Code Pro | 14px | 500 | 1.43 | 0px | Code snippets and terminal |
+|角色 |字体|尺寸|重量 |行高|字母间距 |笔记|
+|------|------|------|--------|-------------|----------------|--------|
+|显示英雄 | IBM Plex Sans 变量 | IBM Plex Sans Variable 30 像素 | 800 | 1.20 | 1.20 -0.75 像素 |超大胆、紧密、最大冲击力 |
+|章节标题 | IBM Plex Sans 变量 | IBM Plex Sans Variable 36 像素 | 700 | 1.50 | 1.50 0 像素 |大而慷慨的行高|
+|专题标题| IBM Plex Sans 变量 | IBM Plex Sans Variable 24 像素 | 700 | 1.33 | 1.33 0 像素 |专题章节标题 |
+|卡片标题| IBM Plex Sans 变量 | IBM Plex Sans Variable 21.4 像素 | 700 | 1.40 | 1.40 -0.54 像素 |尺寸稍显异常（按比例缩放）|
+|副标题| IBM Plex Sans 变量 | IBM Plex Sans Variable 20 像素 | 700 | 1.40 | 1.40 -0.5 像素 |内容小节 |
+|副标题大写 | IBM Plex Sans 变量 | IBM Plex Sans Variable 20 像素 | 700 | 1.40 | 1.40 0 像素 |标签的大写转换 |
+|身体重点| IBM Plex Sans 变量 | IBM Plex Sans Variable 19.3 像素 | 600 | 1.56 | 1.56 -0.48 像素 |半粗体标注文本 |
+|标签大写| IBM Plex Sans 变量 | IBM Plex Sans Variable 18 像素 | 700 | 1.50 | 1.50 0 像素 |大写类别标签 |
+|车身半| IBM Plex Sans 变量 | IBM Plex Sans Variable 18 像素 | 600 | 1.56 | 1.56 0 像素 |半粗体正文 |
+|身体| IBM Plex Sans 变量 | IBM Plex Sans Variable 16 像素 | 400 | 1.50 | 1.50 0 像素 |标准阅读文本|
+|身体中等| IBM Plex Sans 变量 | IBM Plex Sans Variable 16 像素 | 500 | 500 1.50 | 1.50 0 像素 |中等重量的机身 |
+|身体放松| IBM Plex Sans 变量 | IBM Plex Sans Variable 15 像素 | 400 | 1.71 | 1.71 0 像素 |宽松的行高适合长读 |
+|导航/用户界面 | IBM Plex Sans 变量 | IBM Plex Sans Variable 15 像素 | 600 | 1.50 | 1.50 0 像素 |导航和 UI 标签 |
+|标题| IBM Plex Sans 变量 | IBM Plex Sans Variable 14 像素 | 400–700 | 1.43 | 1.43 0 像素 |小文字，各种粗细|
+|小标签| IBM Plex Sans 变量 | IBM Plex Sans Variable 13 像素 | 500–700 | 1.00–1.50 | 0 像素 |标签、徽章、微型标签 |
+|微| IBM Plex Sans 变量 | IBM Plex Sans Variable 12 像素 | 400–700 | 1.33 | 1.33 0 像素 |最小的文本，部分大写 |
+|代码|源代码专业版 | 14 像素 | 500 | 500 1.43 | 1.43 0 像素 |代码片段和终端 |
 
-### Principles
-- **Bold heading dominance**: Headings use 700–800 weight — PostHog's typography is confident and assertive, not whispery
-- **Generous body line-heights**: Body text at 1.50–1.71 line-height creates extremely comfortable reading — the site is content-heavy and optimized for long sessions
-- **Fractional sizes**: Several sizes (21.4px, 19.3px, 13.7px) suggest a fluid/scaled type system rather than fixed stops — likely computed from Tailwind's rem scale at non-standard base
-- **Uppercase as category signal**: Bold uppercase labels (18px–20px weight 700) are used for product category headings — a magazine-editorial convention
-- **Selective negative tracking**: Letter-spacing tightens on display text (-0.75px at 30px) but relaxes to 0px on body — headlines compress, body breathes
+### 原则
+- **粗体标题优势**：标题使用 700–800 的权重 — PostHog 的排版充满自信和自信，而不是耳语
+- **宽大的正文行高**：1.50–1.71 行高的正文可营造极其舒适的阅读体验 — 该网站内容丰富，并针对长时间会话进行了优化
+- **小数尺寸**：多种尺寸（21.4px、19.3px、13.7px）表明采用流体/缩放类型系统而不是固定止损 — 可能是根据非标准底座上的 Tailwind 的 rem 比例计算出来的
+- **大写作为类别信号**：粗体大写标签（18px–20px 粗细 700）用于产品类别标题 - 杂志编辑惯例
+- **选择性负跟踪**：显示文本上的字母间距收紧（30 像素时为 -0.75 像素），但正文上的字母间距放宽至 0 像素 — 标题压缩，正文呼吸
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
-- **Dark Primary**: `#1e1f23` background, white text, 6px radius, `10px 12px` padding. Hover: opacity 0.7 with Amber Gold text. Active: opacity 0.8 with slight scale transform. The main CTA — dark and confident
-- **Sage Light**: `#e5e7e0` background, Olive Ink (`#4d4f46`) text, 4px radius, `4px` padding. Hover: `#f4f4f4` bg with PostHog Orange text. Compact utility button
-- **Warm Tan Featured**: `#d4c9b8` background, black text, no visible radius. Hover: same orange text flash. Featured/premium actions
-- **Input-style**: `#eeefe9` background, Sage Placeholder (`#9ea096`) text, 4px radius, 1px `#b6b7af` border. Looks like a search/filter control
-- **Near-white Ghost**: `#fdfdf8` background, Olive Ink text, 4px radius, transparent 1px border. Minimal presence
-- **Hover pattern**: All buttons flash PostHog Orange (`#F54E00`) or Amber Gold (`#F7A501`) text on hover — the brand's signature interaction surprise
+### 按钮
+- **深色主色**：`#1e1f23`背景，白色文本，6px半径，`10px 12px`填充。悬停：不透明度 0.7，带有琥珀金色文本。活动：不透明度 0.8，带有轻微的比例变换。主要 CTA——黑暗而自信
+- **Sage Light**：`#e5e7e0` 背景，橄榄色墨水 (`#4d4f46`) 文本，4 像素半径，`4 像素` 填充。悬停：带有 PostHog 橙色文本的“#f4f4f4”背景。紧凑型实用按钮
+- **暖棕褐色精选**：`#d4c9b8` 背景，黑色文本，无可见半径。悬停：相同的橙色文字闪烁。特色/优质行动
+- **输入样式**：`#eeefe9` 背景，Sage 占位符 (`#9ea096`) 文本，4 像素半径，1 像素`#b6b7af` 边框。看起来像搜索/过滤控件
+- **近白色幽灵**：`#fdfdf8` 背景，橄榄色墨水文本，4 像素半径，透明 1 像素边框。最少的存在
+- **悬停模式**：所有按钮在悬停时都会闪烁 PostHog Orange (`#F54E00`) 或琥珀金 (`#F7A501`) 文本 — 该品牌的标志性互动惊喜
 
-### Cards & Containers
-- **Bordered Card**: Warm Parchment (`#fdfdf8`) or white background, 1px `#bfc1b7` border, 4px–6px radius — clean and minimal
-- **Sage Surface Card**: `#eeefe9` background for secondary content containers
-- **Shadow Card**: `0px 25px 50px -12px rgba(0, 0, 0, 0.25)` — a single deep shadow for elevated content (modals, dropdowns)
-- **Hover**: Orange text flash on interactive cards — consistent with button behavior
+### 卡片和容器
+- **有边框的卡片**：温暖的羊皮纸 (`#fdfdf8`) 或白色背景，1px `#bfc1b7` 边框，4px–6px 半径 — 干净且最小
+- **Sage Surface Card**：辅助内容容器的“#eeefe9”背景
+- **Shadow Card**：`0px 25px 50px -12px rgba(0, 0, 0, 0.25)` — 用于提升内容（模态、下拉菜单）的单个深阴影
+- **悬停**：交互式卡上闪烁橙色文本 - 与按钮行为一致
 
-### Inputs & Forms
-- **Default**: `#eeefe9` background, `#9ea096` placeholder text, 1px `#b6b7af` border, 4px radius, `2px 0px 2px 8px` padding
-- **Focus**: `#3b82f6` ring at 50% opacity (Tailwind blue focus ring)
-- **Text color**: `#374151` for input values — darker than primary text for readability
-- **Border variations**: Multiple border patterns — some inputs use compound borders (top, left, bottom-only)
+### 输入和表格
+- **默认**：`#eeefe9`背景，`#9ea096`占位符文本，1px`#b6b7af`边框，4px半径，`2px 0px 2px 8px`填充
+- **焦点**：“#3b82f6”环，不透明度为 50%（Tailwind 蓝色焦点环）
+- **文本颜色**：输入值的“#374151” - 比主要文本更暗以提高可读性
+- **边框变化**：多种边框图案 - 某些输入使用复合边框（顶部、左侧、仅底部）
 
-### Navigation
-- **Top nav**: Warm background, IBM Plex Sans at 15px weight 600
-- **Dropdown menus**: Rich mega-menu structure with product categories
-- **Link color**: Deep Olive (`#23251d`) for nav links, underline on hover
-- **CTA**: Dark Primary button (#1e1f23) in the nav — "Get started - free"
-- **Mobile**: Collapses to hamburger with simplified menu
+### 导航
+- **顶部导航**：温暖的背景，IBM Plex Sans，15px 粗细 600
+- **下拉菜单**：丰富的超级菜单结构与产品类别
+- **链接颜色**：深橄榄色（`#23251d`）用于导航链接，悬停时下划线
+- **CTA**：导航中的深色主按钮 (#1e1f23) —“开始使用 - 免费”
+- **移动**：折叠为带有简化菜单的汉堡包
 
-### Image Treatment
-- **Hand-drawn illustrations**: Hedgehog mascot and quirky illustrations — the signature visual element
-- **Product screenshots**: UI screenshots embedded in device frames or clean containers
-- **Action figures**: Playful product photography of hedgehog figurines — anti-corporate
-- **Trust logos**: Enterprise logos (Airbus, GOV.UK) displayed in a muted trust bar
-- **Aspect ratios**: Mixed — illustrations are irregular, screenshots are 16:9 or widescreen
+### 图像处理
+- **手绘插图**：刺猬吉祥物和古怪的插图 - 标志性的视觉元素
+- **产品屏幕截图**：嵌入设备框架或干净容器中的 UI 屏幕截图
+- **动作人物**：有趣的刺猬雕像产品摄影 - 反企业
+- **信任徽标**：企业徽标（空客、GOV.UK）显示在静音信任栏中
+- **纵横比**：混合 — 插图不规则，屏幕截图为 16:9 或宽屏
 
-### AI Chat Widget
-- Floating PostHog AI assistant with speech bubble — an interactive product demo embedded in the marketing site
+### AI 聊天小部件
+- 带语音气泡的浮动 PostHog AI 助手 — 嵌入营销网站的交互式产品演示
 
-## 5. Layout Principles
+## 5.布局原则
 
-### Spacing System
-- **Base unit**: 8px
-- **Scale**: 2px, 4px, 6px, 8px, 10px, 12px, 16px, 18px, 24px, 32px, 34px
-- **Section padding**: 32px–48px vertical between sections (compact for a content-heavy site)
-- **Card padding**: 4px–12px internal (notably compact)
-- **Component gaps**: 4px–8px between related elements
+### 间距系统
+- **基本单位**：8px
+- **比例**：2 像素、4 像素、6 像素、8 像素、10 像素、12 像素、16 像素、18 像素、24 像素、32 像素、34 像素
+- **部分填充**：部分之间垂直 32 像素–48 像素（对于内容较多的网站而言紧凑）
+- **卡片填充**：4px–12px 内部（特别紧凑）
+- **组件间隙**：相关元素之间的距离为 4px–8px
 
-### Grid & Container
-- **Max width**: 1536px (largest breakpoint), with content containers likely 1200px–1280px
-- **Column patterns**: Varied — single column for text content, 2-3 column grids for feature cards, asymmetric layouts for product demos
-- **Breakpoints**: 13 defined — 1px, 425px, 482px, 640px, 768px, 767px, 800px, 900px, 1024px, 1076px, 1160px, 1280px, 1536px
+### 网格和容器
+- **最大宽度**：1536px（最大断点），内容容器可能为 1200px–1280px
+- **列模式**：多种多样 - 用于文本内容的单列、用于功能卡的 2-3 列网格、用于产品演示的非对称布局
+- **断点**：定义了 13 个 — 1px、425px、482px、640px、768px、767px、800px、900px、1024px、1076px、1160px、1280px、1536px
 
-### Whitespace Philosophy
-- **Content-dense by design**: PostHog's site is information-rich — whitespace is measured, not lavish
-- **Editorial pacing**: Content sections flow like a magazine with varied layouts keeping the eye moving
-- **Illustrations as breathing room**: Hand-drawn hedgehog art breaks up dense content sections naturally
+### 空白哲学
+- **内容密集的设计**：PostHog 的网站信息丰富 - 空白是经过衡量的，而不是奢侈的
+- **编辑节奏**：内容部分像一本杂志一样流动，具有不同的布局，保持眼球移动
+- **插图作为呼吸空间**：手绘刺猬艺术自然地打破了密集的内容部分
 
-### Border Radius Scale
-- **2px**: Small inline elements, tags (`span`)
-- **4px**: Primary UI components — buttons, inputs, dropdowns, menu items (`button`, `div`, `combobox`)
-- **6px**: Secondary containers — larger buttons, list items, card variants (`button`, `div`, `li`)
-- **9999px**: Pill shape — badges, status indicators, rounded tags (`span`, `div`)
+### 边界半径比例
+- **2px**：小型内联元素、标签（`span`）
+- **4px**：主要 UI 组件 — 按钮、输入、下拉菜单、菜单项（`button`、`div`、`combobox`）
+- **6px**：辅助容器 - 更大的按钮、列表项、卡片变体（`button`、`div`、`li`）
+- **9999px**：药丸形状 - 徽章、状态指示器、圆形标签（`span`、`div`）
 
-## 6. Depth & Elevation
+## 6. 深度和高度
 
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Level 0 (Flat) | No shadow, warm parchment background | Page canvas, most surfaces |
-| Level 1 (Border) | `1px solid #bfc1b7` (Sage Border) | Card containment, input borders, section dividers |
-| Level 2 (Compound Border) | Multiple 1px borders on different sides | Input groupings, toolbar elements |
-| Level 3 (Deep Shadow) | `0px 25px 50px -12px rgba(0, 0, 0, 0.25)` | Modals, floating elements, mega-menu dropdowns |
+|水平|治疗 |使用 |
+|--------|------------|-----|
+| 0 级（平）|没有阴影，温暖的羊皮纸背景|页面画布，大多数表面 |
+| 1 级（边界）| `1px 实心#bfc1b7`（鼠尾草边框）|卡片遏制、输入边框、分区分隔符 |
+| 2 级（复合边框）|不同边上有多个 1px 边框 |输入分组、工具栏元素 |
+| 3 级（深影）| `0px 25px 50px -12px rgba(0, 0, 0, 0.25)` |模态框、浮动元素、大型菜单下拉菜单 |
 
-### Shadow Philosophy
-PostHog's elevation system is remarkably minimal — only one shadow definition exists in the entire system. Depth is communicated through:
-- **Border containment**: Sage-tinted borders (`#bfc1b7`) at 1px create gentle warm separation
-- **Surface color shifts**: Moving from `#fdfdf8` to `#eeefe9` to `#e5e7e0` creates layered depth without shadows
-- **The single shadow**: The one defined shadow (`0 25px 50px -12px`) is reserved for floating elements — modals, dropdowns, popovers. It's a deep, dramatic shadow that creates clear separation when needed
+### 影子哲学
+PostHog 的高程系统非常小——整个系统中只存在一个阴影定义。深度通过以下方式传达：
+- **边界遏制**：鼠尾草色边框（`#bfc1b7`）在 1 像素处创建温和温暖的分离
+- **表面颜色变化**：从“#fdfdf8”移动到“#eeefe9”再到“#e5e7e0”创建没有阴影的分层深度
+- **单一阴影**：一个定义的阴影（`0 25px 50px -12px`）是为浮动元素保留的 - 模态框、下拉菜单、弹出框。它是一种深邃、戏剧性的阴影，可在需要时形成清晰的分离
 
-### Decorative Depth
-- **Illustration layering**: Hand-drawn hedgehog art creates visual depth naturally
-- **No gradients or glow**: The flat, warm surface system relies entirely on border and surface-color differentiation
-- **No glassmorphism**: Fully opaque surfaces throughout
+### 装饰深度
+- **插画层次感**：手绘刺猬艺术自然地创造视觉深度
+- **无渐变或发光**：平坦、温暖的表面系统完全依赖于边框和表面颜色的差异
+- **无玻璃形态**：整个表面完全不透明
 
-## 7. Do's and Don'ts
+## 7. 该做和不该做的事情
 
-### Do
-- Use the olive/sage color family (#4d4f46, #23251d, #bfc1b7) for text and borders — the warm green undertone is essential to the brand
-- Flash PostHog Orange (#F54E00) on hover states — it's the hidden brand signature
-- Use IBM Plex Sans at bold weights (700/800) for headings — the font carries technical credibility
-- Keep body text at generous line-heights (1.50–1.71) — the content-heavy site demands readability
-- Maintain the warm parchment background (#fdfdf8) — not pure white, never cold
-- Use 4px border-radius for most UI elements — keep corners subtle and functional
-- Include playful, hand-drawn illustration elements — the personality is the differentiator
-- Apply opacity-based hover states (0.7 opacity) on dark buttons rather than color shifts
+### 做
+- 使用橄榄色/鼠尾草色系列（#4d4f46、#23251d、#bfc1b7）作为文本和边框 - 温暖的绿色底色对于品牌至关重要
+- 悬停状态下 Flash PostHog Orange (#F54E00) — 这是隐藏的品牌签名
+- 使用粗体 (700/800) 的 IBM Plex Sans 作为标题 — 该字体具有技术可信度
+- 将正文保持在宽松的行高 (1.50–1.71) — 内容丰富的网站需要可读性
+- 保持温暖的羊皮纸背景（#fdfdf8）——不是纯白色，绝不冷
+- 对大多数 UI 元素使用 4px 边框半径 — 保持角落微妙且实用
+- 包括有趣的手绘插画元素——个性是与众不同的因素
+- 在深色按钮上应用基于不透明度的悬停状态（0.7 不透明度）而不是颜色偏移
 
-### Don't
-- Use blue, purple, or typical tech-SaaS colors — PostHog's palette is deliberately olive/sage
-- Add heavy shadows — the system uses one shadow for floating elements only; everything else uses borders
-- Make the design look "polished" or "premium" in a conventional sense — PostHog's charm is its irreverent, scrappy energy
-- Use tight line-heights on body text — the generous 1.50+ spacing is essential for the content-heavy layout
-- Apply large border-radius (12px+) on cards — PostHog uses 4px–6px, keeping things tight and functional
-- Remove the orange hover flash — it's a core interaction pattern, not decoration
-- Replace illustrations with stock photography — the hand-drawn hedgehog art is the brand
-- Use pure white (#ffffff) as page background — the warm sage-cream (#fdfdf8) tint is foundational
+### 不要
+- 使用蓝色、紫色或典型的科技 SaaS 颜色——PostHog 的调色板故意是橄榄色/鼠尾草色
+- 添加重阴影——系统仅对浮动元素使用一个阴影；其他一切都使用边框
+- 让设计在传统意义上看起来“精致”或“高级”——PostHog 的魅力在于其不羁、斗志旺盛的能量
+- 在正文上使用严格的行高 - 1.50 以上的宽裕间距对于内容丰富的布局至关重要
+- 在卡片上应用大边框半径 (12px+) - PostHog 使用 4px–6px，保持紧凑且实用
+- 删除橙色悬停闪光灯 - 这是核心交互模式，而不是装饰
+- 用图库摄影取代插图——手绘刺猬艺术是品牌
+- 使用纯白色 (#ffffff) 作为页面背景 — 温暖的鼠尾草奶油色 (#fdfdf8) 色调是基础
 
-## 8. Responsive Behavior
+## 8. 响应行为
 
-### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile Small | <425px | Single column, compact padding, stacked cards |
-| Mobile | 425px–640px | Slight layout adjustments, larger touch targets |
-| Tablet | 640px–768px | 2-column grids begin, nav partially visible |
-| Tablet Large | 768px–1024px | Multi-column layouts, expanded navigation |
-| Desktop | 1024px–1280px | Full layout, 3-column feature grids, expanded mega-menu |
-| Large Desktop | 1280px–1536px | Max-width container, generous margins |
-| Extra Large | >1536px | Centered container at max-width |
+### 断点
+|名称 |宽度|关键变化|
+|------|--------|-------------|
+|移动小| <425 像素 |单列、紧凑填充、堆叠卡片 |
+|手机 | 425 像素–640 像素 |轻微的布局调整，更大的触摸目标 |
+|平板电脑| 640 像素–768 像素 | 2 列网格开始，导航部分可见 |
+|平板电脑大号 | 768 像素–1024 像素 |多栏布局，扩展导航|
+|桌面| 1024 像素–1280 像素 |完整布局、3 列功能网格、扩展的超级菜单 |
+|大型桌面 | 1280 像素–1536 像素 |最大宽度容器，宽裕的边距 |
+|特大号 | >1536 像素 |最大宽度居中容器 |
 
-### Touch Targets
-- Buttons: 4px–6px radius with `4px–12px` padding — compact but usable
-- Nav links: 15px text at weight 600 with adequate padding
-- Mobile: Hamburger menu with simplified navigation
-- Inputs: Generous vertical padding for thumb-friendly forms
+### 触摸目标
+- 按钮：4px–6px 半径，带有 `4px–12px` 填充 — 紧凑但可用
+- 导航链接：15 像素文本，粗细为 600，具有足够的填充
+- 移动设备：带有简化导航的汉堡菜单
+- 输入：宽敞的垂直填充，适合拇指友好的表单
 
-### Collapsing Strategy
-- **Navigation**: Full mega-menu with dropdowns → hamburger menu on mobile
-- **Feature grids**: 3-column → 2-column → single column stacked
-- **Typography**: Display sizes reduce across breakpoints (30px → smaller)
-- **Illustrations**: Scale within containers, some may hide on mobile for space
-- **Section spacing**: Reduces proportionally while maintaining readability
+### 崩溃策略
+- **导航**：带有下拉菜单的完整大型菜单 → 移动设备上的汉堡菜单
+- **特征网格**：3列→2列→单列堆叠
+- **版式**：显示尺寸跨断点减小（30px→更小）
+- **插图**：在容器内缩放，有些可能隐藏在移动设备上以节省空间
+- **章节间距**：在保持可读性的同时按比例减小
 
-### Image Behavior
-- Illustrations scale responsively within containers
-- Product screenshots maintain aspect ratios
-- Trust logos reflow into multi-row grids on mobile
-- AI chat widget may reposition or simplify on small screens
+### 图像行为
+- 插图在容器内响应缩放
+- 产品屏幕截图保持宽高比
+- 信任徽标在移动设备上回流到多行网格中
+- AI聊天小部件可能会在小屏幕上重新定位或简化
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
-- Primary Text: Olive Ink (`#4d4f46`)
-- Dark Text: Deep Olive (`#23251d`)
-- Hover Accent: PostHog Orange (`#F54E00`)
-- Dark CTA: Near-Black (`#1e1f23`)
-- Button Surface: Light Sage (`#e5e7e0`)
-- Page Background: Warm Parchment (`#fdfdf8`)
-- Border: Sage Border (`#bfc1b7`)
-- Placeholder: Sage Placeholder (`#9ea096`)
+### 快速颜色参考
+- 主要文本：橄榄墨水 (`#4d4f46`)
+- 深色文本：深橄榄色 (`#23251d`)
+- 悬停口音：PostHog Orange (`#F54E00`)
+- 深色 CTA：近黑色 (`#1e1f23`)
+- 按钮表面：Light Sage (`#e5e7e0`)
+- 页面背景：温暖的羊皮纸（`#fdfdf8`）
+- 边框：鼠尾草边框（`#bfc1b7`）
+- 占位符：Sage 占位符 (`#9ea096`)
 
-### Example Component Prompts
-- "Create a hero section on warm parchment background (#fdfdf8) with 30px IBM Plex Sans heading at weight 800, line-height 1.20, letter-spacing -0.75px, olive ink text (#4d4f46), and a dark CTA button (#1e1f23, 6px radius, white text, opacity 0.7 on hover)"
-- "Design a feature card with #fdfdf8 background, 1px #bfc1b7 border, 4px radius, IBM Plex Sans heading at 20px weight 700, and 16px body text at weight 400 with 1.50 line-height in olive ink (#4d4f46)"
-- "Build a navigation bar with warm background, IBM Plex Sans links at 15px weight 600 in deep olive (#23251d), underline on hover, and a dark CTA button (#1e1f23) at the right"
-- "Create a button group: primary dark (#1e1f23, white text, 6px radius), secondary sage (#e5e7e0, #4d4f46 text, 4px radius), and ghost/text button — all flash #F54E00 orange text on hover"
-- "Design an input field with #eeefe9 background, 1px #b6b7af border, 4px radius, #9ea096 placeholder text, focus ring in #3b82f6 at 50% opacity"
+### 组件提示示例
+- “在温暖的羊皮纸背景 (#fdfdf8) 上创建一个英雄部分，标题为 30 像素 IBM Plex Sans，标题粗细为 800，行高为 1.20，字母间距为 -0.75 像素，橄榄色墨水文本 (#4d4f46) 和深色 CTA 按钮（#1e1f23，半径为 6 像素，白色文本，悬停时不透明度为 0.7）”
+- “设计一张功能卡，其中 #fdfdf8 背景、1 像素 #bfc1b7 边框、4 像素半径、IBM Plex Sans 标题为 20 像素，粗细为 700，正文为 16 像素，粗细为 400，行高为 1.50 橄榄色墨水 (#4d4f46)”
+- “构建一个带有暖色背景的导航栏，IBM Plex Sans 链接为 15 像素，粗细为 600，深橄榄色 (#23251d)，悬停时下划线，右侧有一个深色 CTA 按钮 (#1e1f23)”
+- “创建一个按钮组：主要深色（#1e1f23，白色文本，6px半径），次要鼠尾草（#e5e7e0，#4d4f46文本，4px半径）和幽灵/文本按钮 - 悬停时全部闪烁#F54E00橙色文本”
+- “设计一个输入字段，其中 #eeefe9 背景、1px #b6b7af 边框、4px 半径、#9ea096 占位符文本、#3b82f6 中的对焦环，不透明度为 50%”
 
-### Iteration Guide
-When refining existing screens generated with this design system:
-1. Verify the background is warm parchment (#fdfdf8) not pure white — the sage-cream warmth is essential
-2. Check that all text uses the olive family (#4d4f46, #23251d) not pure black or neutral gray
-3. Ensure hover states flash PostHog Orange (#F54E00) — if hovering feels bland, you're missing this
-4. Confirm borders use sage-tinted gray (#bfc1b7) not neutral gray — warmth runs through every element
-5. The overall tone should feel like a fun, scrappy startup wiki — never corporate-polished or sterile
+### 迭代指南
+当优化使用此设计系统生成的现有屏幕时：
+1.确认背景是温暖的羊皮纸（#fdfdf8）而不是纯白色——鼠尾草奶油色的温暖是必不可少的
+2. 检查所有文本是否使用橄榄色系列（#4d4f46、#23251d）而不是纯黑色或中性灰色
+3. 确保悬停状态闪烁 PostHog Orange (#F54E00) — 如果悬停感觉平淡，那么您就错过了这个
+4. 确认边框使用鼠尾草色灰色（#bfc1b7）而不是中性灰色——温暖贯穿每个元素
+5. 整体基调应该感觉像是一个有趣、斗志旺盛的初创维基——绝不是经过公司打磨或枯燥的

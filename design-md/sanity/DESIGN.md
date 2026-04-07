@@ -1,324 +1,325 @@
-# Design System Inspiration of Sanity
+# 理智的设计系统灵感
 
-## 1. Visual Theme & Atmosphere
+## 1.视觉主题和氛围
 
-Sanity's website is a developer-content platform rendered as a nocturnal command center -- dark, precise, and deeply structured. The entire experience sits on a near-black canvas (`#0b0b0b`) that reads less like a "dark mode toggle" and more like the natural state of a tool built for people who live in terminals. Where most CMS marketing pages reach for friendly pastels and soft illustration, Sanity leans into the gravity of its own product: structured content deserves a structured stage.
+Sanity 的网站是一个开发者内容平台，呈现为夜间指挥中心——黑暗、精确且结构深刻。整个体验位于近乎黑色的画布上（#0b0b0b），读起来不太像“黑暗模式切换”，而更像是为生活在终端中的人们构建的工具的自然状态。大多数 CMS 营销页面都采用友好的粉彩和柔和的插图，而 Sanity 则倾向于自己产品的重力：结构化内容应该有一个结构化的舞台。
 
-The signature typographic voice is waldenburgNormal -- a distinctive, slightly geometric sans-serif with tight negative letter-spacing (-0.32px to -4.48px at display sizes) that gives headlines a compressed, engineered quality. At 112px hero scale with -4.48px tracking, the type feels almost machined -- like precision-cut steel letterforms. This is paired with IBM Plex Mono for code and technical labels, creating a dual-register voice: editorial authority meets developer credibility.
+标志性的排版风格是waldenburgNormal——一种独特的、略带几何形状的无衬线字体，具有紧密的负字母间距（在显示尺寸下为-0.32px到-4.48px），使标题具有压缩的、工程化的质量。在 112 像素的英雄比例和 -4.48 像素的跟踪下，该字体感觉几乎是经过加工的——就像精密切割的钢字体一样。它与用于代码和技术标签的 IBM Plex Mono 配合使用，创建了双注册声音：编辑权威与开发人员可信度相结合。
 
-What makes Sanity distinctive is the interplay between its monochromatic dark palette and vivid, saturated accent punctuation. The neutral scale runs from pure black through a tightly controlled gray ramp (`#0b0b0b` -> `#212121` -> `#353535` -> `#797979` -> `#b9b9b9` -> `#ededed` -> `#ffffff`) with no warm or cool bias -- just pure, achromatic precision. Against this disciplined backdrop, a neon green accent (display-p3 green) and electric blue (`#0052ef`) land with the impact of signal lights in a dark control room. The orange-red CTA (`#f36458`) provides the only warm touch in an otherwise cool system.
+Sanity 的独特之处在于其单色深色调色板与生动、饱和的口音标点符号之间的相互作用。中性比例从纯黑色到严格控制的灰色渐变（`#0b0b0b` -> `#212121` -> `#353535` -> `#797979` -> `#b9b9b9` -> `#ededed` -> `#ffffff`），没有暖色或冷色偏差——只有纯粹的消色差精度。在这种纪律严明的背景下，霓虹绿（display-p3 绿）和电蓝色（“#0052ef”）在黑暗的控制室中与信号灯的效果相映成趣。橙红色 CTA (#f36458`) 在原本凉爽的系统中提供了唯一温暖的触感。
 
-**Key Characteristics:**
-- Near-black canvas (`#0b0b0b`) as the default, natural environment -- not a dark "mode" but the primary identity
-- waldenburgNormal with extreme negative tracking at display sizes, creating a precision-engineered typographic voice
-- Pure achromatic gray scale -- no warm or cool undertones, pure neutral discipline
-- Vivid accent punctuation: neon green, electric blue (`#0052ef`), and coral-red (`#f36458`) against the dark field
-- Pill-shaped primary buttons (99999px radius) contrasting with subtle rounded rectangles (3-6px) for secondary actions
-- IBM Plex Mono as the technical counterweight to the editorial display face
-- Full-bleed dark sections with content contained in measured max-width containers
-- Hover states that shift to electric blue (`#0052ef`) across all interactive elements -- a consistent "activation" signal
+**主要特征：**
+- 近乎黑色的画布（#0b0b0b）作为默认的自然环境——不是黑暗“模式”，而是主要身份
+- WaldenburgNormal 在显示尺寸下具有极端负跟踪，创建精确设计的印刷语音
+- 纯消色差灰度——无暖色或冷色底色，纯中性纪律
+- 生动的口音标点符号：霓虹绿、电蓝色 (`#0052ef`) 和珊瑚红 (`#f36458`) 与暗场相对应
+- 药丸形状的主要按钮（半径为 99999 像素）与用于辅助操作的微妙圆角矩形（3-6 像素）形成鲜明对比
+- IBM Plex Mono 作为编辑显示面的技术平衡
+- 全出血深色部分，内容包含在测量的最大宽度容器中
+- 悬停状态在所有交互元素上转变为电蓝色（`#0052ef`）——一致的“激活”信号
 
-## 2. Color Palette & Roles
+## 2. 调色板和角色
 
-### Primary Brand
-- **Sanity Black** (`#0b0b0b`): The primary canvas and dominant surface color. Not pure black but close enough to feel absolute. The foundation of the entire visual identity.
-- **Pure Black** (`#000000`): Used for maximum-contrast moments, deep overlays, and certain border accents.
-- **Sanity Red** (`#f36458`): The primary CTA and brand accent -- a warm coral-red that serves as the main call-to-action color. Used for "Get Started" buttons and primary conversion points.
+### 主要品牌
+- **理智黑** (`#0b0b0b`)：主要画布和主要表面颜色。不是纯黑色，但足够接近，感觉绝对。整个视觉识别的基础。
+- **纯黑色** (`#000000`)：用于最大对比度时刻、深度叠加和某些边框强调。
+- **理智红** (`#f36458`)：主要的 CTA 和品牌口音——温暖的珊瑚红色，作为主要的号召性用语颜色。用于“开始”按钮和主要转换点。
 
-### Accent & Interactive
-- **Electric Blue** (`#0052ef`): The universal hover/active state color across the entire system. Buttons, links, and interactive elements all shift to this blue on hover. Also used as `--color-blue-700` for focus rings and active states.
-- **Light Blue** (`#55beff` / `#afe3ff`): Secondary blue variants used for accent backgrounds, badges, and dimmed blue surfaces.
-- **Neon Green** (`color(display-p3 .270588 1 0)`): A vivid, wide-gamut green used as `--color-fg-accent-green` for success states and premium feature highlights. Falls back to `#19d600` in sRGB.
-- **Accent Magenta** (`color(display-p3 .960784 0 1)`): A vivid wide-gamut magenta for specialized accent moments.
+### 口音和互动
+- **电蓝色** (`#0052ef`)：整个系统的通用悬停/活动状态颜色。按钮、链接和交互元素在悬停时都会变成蓝色。也用作聚焦环和活动状态的“--color-blue-700”。
+- **浅蓝色** (`#55beff` / `#afe3ff`)：用于强调背景、徽章和暗蓝色表面的次要蓝色变体。
+- **霓虹绿**（`color(display-p3 .270588 1 0)`）：一种生动的广色域绿色，用作“--color-fg-accent-green”，用于成功状态和高级功能亮点。在 sRGB 中回退到“#19d600”。
+- **强调洋红色**（`color(display-p3 .960784 0 1)`）：一种生动的广色域洋红色，适合特殊的强调时刻。
 
-### Surface & Background
-- **Near Black** (`#0b0b0b`): Default page background and primary surface.
-- **Dark Gray** (`#212121`): Elevated surface color for cards, secondary containers, input backgrounds, and subtle layering above the base canvas.
-- **Medium Dark** (`#353535`): Tertiary surface and border color for creating depth between dark layers.
-- **Pure White** (`#ffffff`): Used for inverted sections, light-on-dark text, and specific button surfaces.
-- **Light Gray** (`#ededed`): Light surface for inverted/light sections and subtle background tints.
+### 表面和背景
+- **近黑色** (`#0b0b0b`)：默认页面背景和主表面。
+- **深灰色** (`#212121`)：卡片、辅助容器、输入背景和基础画布上方微妙分层的提升表面颜色。
+- **中暗** (`#353535`)：第三表面和边框颜色，用于在暗层之间创建深度。
+- **纯白色** (`#ffffff`)：用于反转部分、浅色文本和特定按钮表面。
+- **浅灰色**（`#ededed`）：用于倒置/浅色部分和微妙背景色调的浅色表面。
 
-### Neutrals & Text
-- **White** (`#ffffff`): Primary text color on dark surfaces, maximum legibility.
-- **Silver** (`#b9b9b9`): Secondary text, body copy on dark surfaces, muted descriptions, and placeholder text.
-- **Medium Gray** (`#797979`): Tertiary text, metadata, timestamps, and de-emphasized content.
-- **Charcoal** (`#212121`): Text on light/inverted surfaces.
-- **Near Black Text** (`#0b0b0b`): Primary text on white/light button surfaces.
+### 中性色和文字
+- **白色** (`#ffffff`)：深色表面上的主要文本颜色，最大的易读性。
+- **银牌** (`#b9b9b9`)：辅助文本、深色表面上的正文、静音描述和占位符文本。
+- **中灰色** (`#797979`)：第三级文本、元数据、时间戳和弱化内容。
+- **木炭** (`#212121`)：浅色/倒置表面上的文字。
+- **近黑色文本** (`#0b0b0b`)：白色/浅色按钮表面上的主要文本。
 
-### Semantic
-- **Error Red** (`#dd0000`): Destructive actions, validation errors, and critical warnings -- a pure, high-saturation red.
-- **GPC Green** (`#37cd84`): Privacy/compliance indicator green.
-- **Focus Ring Blue** (`#0052ef`): Focus ring color for accessibility, matching the interactive blue.
+### 语义
+- **错误红色** (`#dd0000`)：破坏性行为、验证错误和严重警告 - 纯净、高饱和度的红色。
+- **GPC Green** (`#37cd84`)：隐私/合规指示器绿色。
+- **聚焦环蓝色** (`#0052ef`)：聚焦环颜色便于访问，与交互式蓝色相匹配。
 
-### Border System
-- **Dark Border** (`#0b0b0b`): Primary border on dark containers -- barely visible, maintaining minimal containment.
-- **Subtle Border** (`#212121`): Standard border for inputs, textareas, and card edges on dark surfaces.
-- **Medium Border** (`#353535`): More visible borders for emphasized containment and dividers.
-- **Light Border** (`#ffffff`): Border on inverted/light elements or buttons needing contrast separation.
-- **Orange Border** (`color(display-p3 1 0.3333 0)`): Special accent border for highlighted/featured elements.
+### 边境系统
+- **深色边框** (`#0b0b0b`)：深色容器上的主要边框——几乎不可见，保持最小的遏制。
+- **微妙边框** (`#212121`)：深色表面上输入、文本区域和卡片边缘的标准边框。
+- **中边框** (`#353535`)：更明显的边框，用于强调遏制和分隔。
+- **浅色边框** (`#ffffff`)：需要对比分离的倒置/浅色元素或按钮上的边框。
+- **橙色边框** (`color(display-p3 1 0.3333 0)`)：突出显示/特色元素的特殊强调边框。
 
-## 3. Typography Rules
+## 3. 版式规则
 
-### Font Family
-- **Display / Headline**: `waldenburgNormal`, fallback: `waldenburgNormal Fallback, ui-sans-serif, system-ui`
-- **Body / UI**: `waldenburgNormal`, fallback: `waldenburgNormal Fallback, ui-sans-serif, system-ui`
-- **Code / Technical**: `IBM Plex Mono`, fallback: `ibmPlexMono Fallback, ui-monospace`
-- **Fallback / CJK**: `Helvetica`, fallback: `Arial, Hiragino Sans GB, STXihei, Microsoft YaHei, WenQuanYi Micro Hei`
+### 字体系列
+- **显示/标题**：`waldenburgNormal`，后备：`waldenburgNormal Fallback，ui-sans-serif，system-ui`
+- **正文/UI**：`waldenburgNormal`，后备：`waldenburgNormal后备，ui-sans-serif，system-ui`
+- **代码/技术**：`IBM Plex Mono`，后备：`ibmPlexMono Fallback，ui-monospace`
+- **后备 / CJK**：`Helvetica`，后备：`Arial、Hiragino Sans GB、STXihei、Microsoft YaHei、WenQuanYi Micro Hei`
 
-*Note: waldenburgNormal is a custom typeface. For external implementations, use Inter or Space Grotesk as the sans substitute (geometric, slightly condensed feel). IBM Plex Mono is available on Google Fonts.*
+*注：waldenburgNormal 是自定义字体。对于外部实现，请使用 Inter 或 Space Grotesk 作为 sans 替代品（几何、稍微压缩的感觉）。 IBM Plex Mono 可在 Google Fonts 上使用。*
 
-### Hierarchy
+### 层次结构
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|------|--------|-------------|----------------|-------|
-| Display / Hero | waldenburgNormal | 112px (7rem) | 400 | 1.00 (tight) | -4.48px | Maximum impact, compressed tracking |
-| Hero Secondary | waldenburgNormal | 72px (4.5rem) | 400 | 1.05 (tight) | -2.88px | Large section headers |
-| Section Heading | waldenburgNormal | 48px (3rem) | 400 | 1.08 (tight) | -1.68px | Primary section anchors |
-| Heading Large | waldenburgNormal | 38px (2.38rem) | 400 | 1.10 (tight) | -1.14px | Feature section titles |
-| Heading Medium | waldenburgNormal | 32px (2rem) | 425 | 1.24 (tight) | -0.32px | Card titles, subsection headers |
-| Heading Small | waldenburgNormal | 24px (1.5rem) | 425 | 1.24 (tight) | -0.24px | Smaller feature headings |
-| Subheading | waldenburgNormal | 20px (1.25rem) | 425 | 1.13 (tight) | -0.2px | Sub-section markers |
-| Body Large | waldenburgNormal | 18px (1.13rem) | 400 | 1.50 | -0.18px | Intro paragraphs, descriptions |
-| Body | waldenburgNormal | 16px (1rem) | 400 | 1.50 | normal | Standard body text |
-| Body Small | waldenburgNormal | 15px (0.94rem) | 400 | 1.50 | -0.15px | Compact body text |
-| Caption | waldenburgNormal | 13px (0.81rem) | 400-500 | 1.30-1.50 | -0.13px | Metadata, descriptions, tags |
-| Small Caption | waldenburgNormal | 12px (0.75rem) | 400 | 1.50 | -0.12px | Footnotes, timestamps |
-| Micro / Label | waldenburgNormal | 11px (0.69rem) | 500-600 | 1.00-1.50 | normal | Uppercase labels, tiny badges |
-| Code Body | IBM Plex Mono | 15px (0.94rem) | 400 | 1.50 | normal | Code blocks, technical content |
-| Code Caption | IBM Plex Mono | 13px (0.81rem) | 400-500 | 1.30-1.50 | normal | Inline code, small technical labels |
-| Code Micro | IBM Plex Mono | 10-12px | 400 | 1.30-1.50 | normal | Tiny code labels, uppercase tags |
+|角色 |字体|尺寸|重量 |行高|字母间距 |笔记|
+|------|------|------|--------|-------------|----------------|--------|
+|显示/英雄 |瓦尔登堡普通 | 112 像素（7 雷姆）| 400 | 1.00（紧）| -4.48 像素 |最大影响，压缩跟踪|
+|英雄中学 |瓦尔登堡普通 | 72 像素（4.5 雷姆）| 400 | 1.05（紧）| -2.88 像素 |大节标题 |
+|章节标题 |瓦尔登堡普通 | 48 像素（3 雷姆）| 400 | 1.08（紧）| -1.68 像素 |初级截面锚|
+|标题大 |瓦尔登堡普通 | 38 像素（2.38 雷姆）| 400 | 1.10（紧）| -1.14 像素 |专题章节标题 |
+|标题中|瓦尔登堡普通 | 32 像素（2 雷姆）| 425 | 425 1.24（紧）| -0.32 像素 |卡片标题、小节标题 |
+|小标题|瓦尔登堡普通 | 24 像素（1.5 雷姆）| 425 | 425 1.24（紧）| -0.24 像素 |较小的功能标题 |
+|副标题|瓦尔登堡普通 | 20 像素（1.25 雷姆）| 425 | 425 1.13（紧）| -0.2 像素 |子部分标记|
+|机身大 |瓦尔登堡普通 | 18 像素（1.13 雷姆）| 400 | 1.50 | 1.50 -0.18 像素 |介绍段落、描述 |
+|身体|瓦尔登堡普通 | 16 像素（1 雷姆）| 400 | 1.50 | 1.50正常 |标准正文 |
+|身材小|瓦尔登堡普通 | 15 像素（0.94 雷姆）| 400 | 1.50 | 1.50 -0.15 像素 |紧凑的正文 |
+|标题|瓦尔登堡普通 | 13 像素（0.81 雷姆）| 400-500 | 1.30-1.50 | -0.13 像素 |元数据、描述、标签 |
+|小标题|瓦尔登堡普通 | 12 像素（0.75 雷姆）| 400 | 1.50 | 1.50 -0.12 像素 |脚注、时间戳 |
+|微/标签|瓦尔登堡普通 | 11 像素 (0.69 雷姆) | 500-600 | 1.00-1.50 |正常 |大写标签、小徽章 |
+|代码正文 | IBM Plex 单声道 | 15 像素（0.94 雷姆）| 400 | 1.50 | 1.50正常 |代码块、技术内容|
+|代码说明| IBM Plex 单声道 | 13 像素（0.81 雷姆）| 400-500 | 1.30-1.50 |正常 |内联代码、小技术标签 |
+|微码| IBM Plex 单声道 | 10-12 像素 | 400 | 1.30-1.50 |正常 |微小的代码标签，大写标签 |
 
-### Principles
-- **Extreme negative tracking at scale**: Display headings at 72px+ use aggressive negative letter-spacing (-2.88px to -4.48px), creating a tight, engineered quality that distinguishes Sanity from looser editorial typography.
-- **Single font, multiple registers**: waldenburgNormal handles both editorial display and functional UI text. The weight range is narrow (400-425 for most, 500-600 only for tiny labels), keeping the voice consistent.
-- **OpenType feature control**: Typography uses deliberate feature settings including `"cv01", "cv11", "cv12", "cv13", "ss07"` for display sizes and `"calt" 0` for body text, fine-tuning character alternates for different contexts.
-- **Tight headings, relaxed body**: Headings use 1.00-1.24 line-height (extremely tight), while body text breathes at 1.50. This contrast creates clear visual hierarchy.
-- **Uppercase for technical labels**: IBM Plex Mono captions and small labels frequently use `text-transform: uppercase` with tight line-heights, creating a "system readout" aesthetic for technical metadata.
+### 原则
+- **大规模的极端负跟踪**：以 72 像素以上显示标题，使用激进的负字母间距（-2.88 像素到 -4.48 像素），创建紧凑的工程质量，将 Sanity 与宽松的编辑排版区分开来。
+- **单一字体，多个寄存器**：waldenburgNormal 处理编辑显示和功能性 UI 文本。权重范围较窄（大多数为 400-425，仅针对微小标签为 500-600），保持声音一致。
+- **OpenType 功能控制**：排版使用经过深思熟虑的功能设置，包括用于显示尺寸的“cv01”、“cv11”、“cv12”、“cv13”、“ss07”`和用于正文文本的“calt”0`，针对不同上下文微调字符替换。
+- **标题紧凑，正文放松**：标题使用 1.00-1.24 行高（极其紧凑），而正文则采用 1.50 的行高。这种对比创造了清晰的视觉层次。
+- **技术标签大写**：IBM Plex Mono 标题和小标签经常使用“文本转换：大写”和严格的行高，为技术元数据创建“系统读出”美感。
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
-**Primary CTA (Pill)**
-- Background: Sanity Red (`#f36458`)
-- Text: White (`#ffffff`)
-- Padding: 8px 16px
-- Border Radius: 99999px (full pill)
-- Border: none
-- Hover: Electric Blue (`#0052ef`) background, white text
-- Font: 16px waldenburgNormal, weight 400
+**初级 CTA（药丸）**
+- 背景：理智红（`#f36458`）
+- 文本：白色（`#ffffff`）
+- 内边距：8 像素 16 像素
+- 边框半径：99999px（全丸）
+- 边框：无
+- 悬停：电蓝色 (`#0052ef`) 背景，白色文本
+- 字体：16px waldenburgNormal，粗细 400
 
-**Secondary (Dark Pill)**
-- Background: Near Black (`#0b0b0b`)
-- Text: Silver (`#b9b9b9`)
-- Padding: 8px 12px
-- Border Radius: 99999px (full pill)
-- Border: none
-- Hover: Electric Blue (`#0052ef`) background, white text
+**次要（深色药丸）**
+- 背景：近黑色（`#0b0b0b`）
+- 文本：银色 (`#b9b9b9`)
+- 内边距：8 像素 12 像素
+- 边框半径：99999px（全丸）
+- 边框：无
+- 悬停：电蓝色 (`#0052ef`) 背景，白色文本
 
-**Outlined (Light Pill)**
-- Background: White (`#ffffff`)
-- Text: Near Black (`#0b0b0b`)
-- Padding: 8px
-- Border Radius: 99999px (full pill)
-- Border: 1px solid `#0b0b0b`
-- Hover: Electric Blue (`#0052ef`) background, white text
+**概述（轻丸）**
+- 背景：白色（`#ffffff`）
+- 文本：近黑色 (`#0b0b0b`)
+- 内边距：8px
+- 边框半径：99999px（全丸）
+- 边框：1px实线`#0b0b0b`
+- 悬停：电蓝色 (`#0052ef`) 背景，白色文本
 
-**Ghost / Subtle**
-- Background: Dark Gray (`#212121`)
-- Text: Silver (`#b9b9b9`)
-- Padding: 0px 12px
-- Border Radius: 5px
-- Border: 1px solid `#212121`
-- Hover: Electric Blue (`#0052ef`) background, white text
+**幽灵/微妙**
+- 背景：深灰色 (`#212121`)
+- 文本：银色 (`#b9b9b9`)
+- 内边距：0 像素 12 像素
+- 边框半径：5px
+- 边框：1px实心`#212121`
+- 悬停：电蓝色 (`#0052ef`) 背景，白色文本
 
-**Uppercase Label Button**
-- Font: 11px waldenburgNormal, weight 600, uppercase
-- Background: transparent or `#212121`
-- Text: Silver (`#b9b9b9`)
-- Letter-spacing: normal
-- Used for tab-like navigation and filter controls
+**大写标签按钮**
+- 字体：11px waldenburgNormal，粗细 600，大写
+- 背景：透明或“#212121”
+- 文本：银色 (`#b9b9b9`)
+- 字母间距：正常
+- 用于类似选项卡的导航和过滤器控件
 
-### Cards
+### 卡牌
 
-**Dark Content Card**
-- Background: `#212121`
-- Border: 1px solid `#353535` or `#212121`
-- Border Radius: 6px
-- Padding: 24px
-- Text: White (`#ffffff`) for titles, Silver (`#b9b9b9`) for body
-- Hover: subtle border color shift or elevation change
+**黑暗内容卡**
+- 背景：`#212121`
+- 边框：1px实线`#353535`或`#212121`
+- 边框半径：6px
+- 内边距：24px
+- 文本：标题为白色 (`#ffffff`)，正文为银色 (`#b9b9b9`)
+- 悬停：微妙的边框颜色变化或高度变化
 
-**Feature Card (Full-bleed)**
-- Background: `#0b0b0b` or full-bleed image/gradient
-- Border: none or 1px solid `#212121`
-- Border Radius: 12px
-- Padding: 32-48px
-- Contains large imagery with overlaid text
+**功能卡（全屏）**
+- 背景：“#0b0b0b”或全出血图像/渐变
+- 边框：无或 1px 实线 `#212121`
+- 边框半径：12px
+- 内边距：32-48px
+- 包含带有重叠文本的大图像
 
-### Inputs
+### 输入
 
-**Text Input / Textarea**
-- Background: Near Black (`#0b0b0b`)
-- Text: Silver (`#b9b9b9`)
-- Border: 1px solid `#212121`
-- Padding: 8px 12px
-- Border Radius: 3px
-- Focus: outline with `var(--focus-ring-color)` (blue), 2px solid
-- Focus background: shifts to deep cyan (`#072227`)
+**文本输入/文本区域**
+- 背景：近黑色（`#0b0b0b`）
+- 文本：银色 (`#b9b9b9`)
+- 边框：1px实心`#212121`
+- 内边距：8 像素 12 像素
+- 边框半径：3px
+- 焦点：带有 `var(--focus-ring-color)` 的轮廓（蓝色），2px 实心
+- 焦点背景：变为深青色 (`#072227`)
 
-**Search Input**
-- Background: `#0b0b0b`
-- Text: Silver (`#b9b9b9`)
-- Padding: 0px 12px
-- Border Radius: 3px
-- Placeholder: Medium Gray (`#797979`)
+**搜索输入**
+- 背景：`#0b0b0b`
+- 文本：银色 (`#b9b9b9`)
+- 内边距：0 像素 12 像素
+- 边框半径：3px
+- 占位符：中灰色 (`#797979`)
 
-### Navigation
+### 导航
 
-**Top Navigation**
-- Background: Near Black (`#0b0b0b`) with backdrop blur
-- Height: auto, compact padding
-- Logo: left-aligned, Sanity wordmark
-- Links: waldenburgNormal 16px, Silver (`#b9b9b9`)
-- Link Hover: Electric Blue via `--color-fg-accent-blue`
-- CTA Button: Sanity Red pill button right-aligned
-- Separator: 1px border-bottom `#212121`
+**顶部导航**
+- 背景：近黑色（`#0b0b0b`），背景模糊
+- 高度：自动，紧凑填充
+- 标志：左对齐，Sanity 字标
+- 链接：waldenburgNormal 16px，银色 (`#b9b9b9`)
+- 链接悬停：电蓝色通过`--color-fg-accent-blue`
+- CTA 按钮：理智红色药丸按钮右对齐
+- 分隔符：1px边框底部`#212121`
 
-**Footer**
-- Background: Near Black (`#0b0b0b`)
-- Multi-column link layout
-- Links: Silver (`#b9b9b9`), hover to blue
-- Section headers: White (`#ffffff`), 13px uppercase IBM Plex Mono
+**页脚**
+- 背景：近黑色（`#0b0b0b`）
+- 多列链接布局
+- 链接：银色（`#b9b9b9`），悬停至蓝色
+- 节标题：白色 (`#ffffff`)，13px 大写 IBM Plex Mono
 
-### Badges / Pills
+### 徽章/药丸
 
-**Neutral Subtle**
-- Background: White (`#ffffff`)
-- Text: Near Black (`#0b0b0b`)
-- Padding: 8px
-- Font: 13px
-- Border Radius: 99999px
+**中性微妙**
+- 背景：白色（`#ffffff`）
+- 文本：近黑色 (`#0b0b0b`)
+- 内边距：8px
+- 字体：13px
+- 边框半径：99999px
 
-**Neutral Filled**
-- Background: Near Black (`#0b0b0b`)
-- Text: White (`#ffffff`)
-- Padding: 8px
-- Font: 13px
-- Border Radius: 99999px
+**中性填充**
+- 背景：近黑色（`#0b0b0b`）
+- 文本：白色（`#ffffff`）
+- 内边距：8px
+- 字体：13px
+- 边框半径：99999px
 
-## 5. Layout Principles
+## 5.布局原则
 
-### Spacing System
-Base unit: **8px**
+### 间距系统
+基本单位： **8px**
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| space-1 | 1px | Hairline gaps, border-like spacing |
-| space-2 | 2px | Minimal internal padding |
-| space-3 | 4px | Tight component internal spacing |
-| space-4 | 6px | Small element gaps |
-| space-5 | 8px | Base unit -- button padding, input padding, badge padding |
-| space-6 | 12px | Standard component gap, button horizontal padding |
-| space-7 | 16px | Section internal padding, card spacing |
-| space-8 | 24px | Large component padding, card internal spacing |
-| space-9 | 32px | Section padding, container gutters |
-| space-10 | 48px | Large section vertical spacing |
-| space-11 | 64px | Major section breaks |
-| space-12 | 96-120px | Hero vertical padding, maximum section spacing |
+|代币|价值|用途 |
+|--------|--------|--------|
+|空间-1 | 1 像素 |发际线间隙、边框般的间距 |
+|空间2 | 2 像素 |最小的内部填充|
+|空间3 | 4 像素 |紧密的组件内部间距|
+|空间4 | 6 像素 |元件间隙小 |
+|空间5 | 8 像素 |基本单元——按钮填充、输入填充、徽章填充|
+|空间6 | 12 像素 |标准组件间隙、按钮水平内边距 |
+|空间7 | 16 像素 |截面内部填充、卡间距|
+|空间8 | 24 像素 |元件填充量大，卡内部间距|
+|空间9 | 32 像素 |型材填充物、集装箱天沟|
+|空间10 | 48 像素 |大截面垂直间距|
+|空间11 | 64 像素 |主要分节符 |
+|空间12 | 96-120 像素 | Hero 垂直内边距，最大节间距 |
 
-### Grid & Container
-- Max content width: ~1440px (inferred from breakpoints)
-- Page gutter: 32px on desktop, 16px on mobile
-- Content sections use full-bleed backgrounds with centered, max-width content
-- Multi-column layouts: 2-3 columns on desktop, single column on mobile
-- Card grids: CSS Grid with consistent gaps (16-24px)
+### 网格和容器
+- 最大内容宽度：~1440px（从断点推断）
+- 页面间距：桌面上 32 像素，移动设备上 16 像素
+- 内容部分使用全出血背景和居中、最大宽度内容
+- 多列布局：桌面上2-3列，移动设备上单列
+- 卡片网格：具有一致间隙的 CSS 网格 (16-24px)
 
-### Whitespace Philosophy
-Sanity uses aggressive vertical spacing between sections (64-120px) to create breathing room on the dark canvas. Within sections, spacing is tighter (16-32px), creating dense information clusters separated by generous voids. This rhythm gives the page a "slides" quality -- each section feels like its own focused frame.
+### 空白哲学
+Sanity 在各部分之间使用积极的垂直间距（64-120 像素），在深色画布上创造呼吸空间。在部分内，间距更紧密（16-32px），创建由大量空隙分隔的密集信息簇。这种节奏赋予页面一种“幻灯片”的品质——每个部分都感觉像是它自己的聚焦框架。
 
-### Border Radius Scale
+### 边界半径比例
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| radius-xs | 3px | Inputs, textareas, subtle rounding |
-| radius-sm | 4-5px | Secondary buttons, small cards, tags |
-| radius-md | 6px | Standard cards, containers |
-| radius-lg | 12px | Large cards, feature containers, forms |
-| radius-pill | 99999px | Primary buttons, badges, nav pills |
+|代币|价值|用途 |
+|--------|--------|--------|
+|半径-xs | 3 像素 |输入、文本区域、微妙舍入 |
+|半径-sm | 4-5 像素 |辅助按钮、小卡片、标签 |
+|半径-md | 6 像素 |标准卡片、容器|
+|半径-lg | 12 像素 |大卡片、特色容器、表格 |
+|半径丸 | 99999 像素 |主按钮、徽章、导航丸 |
 
-## 6. Depth & Elevation
+## 6. 深度和高度
 
-### Shadow System
+### 影子系统
 
-| Level | Value | Usage |
-|-------|-------|-------|
-| Level 0 (Flat) | none | Default state for most elements -- dark surfaces create depth through color alone |
-| Level 1 (Subtle) | 0px 0px 0px 1px `#212121` | Border-like shadow for minimal containment without visible borders |
-| Level 2 (Focus) | 0 0 0 2px `var(--color-blue-500)` | Focus ring for inputs and interactive elements |
-| Level 3 (Overlay) | Backdrop blur + semi-transparent dark | Navigation overlay, modal backgrounds |
+|水平|价值|用途 |
+|--------|--------|--------|
+| 0 级（平）|无 |大多数元素的默认状态——深色表面仅通过颜色创建深度 |
+| 1 级（微妙）| 0 像素 0 像素 0 像素 1 像素 `#212121` |类似边框的阴影，可实现最小程度的包容，无可见边框 |
+| 2 级（重点）| 0 0 0 2px `var(--color-blue-500)` |用于输入和交互元素的聚焦环|
+| 3 级（覆盖）|背景虚化+半透暗|导航叠加、模态背景 |
 
-### Depth Philosophy
-Sanity's depth system is almost entirely **colorimetric** rather than shadow-based. Elevation is communicated through surface color shifts: `#0b0b0b` (ground) -> `#212121` (elevated) -> `#353535` (prominent) -> `#ffffff` (inverted/highest). This approach is native to dark interfaces where traditional drop shadows would be invisible. The few shadows that exist are ring-based (0px 0px 0px Npx) or blur-based (backdrop-filter) rather than offset shadows, maintaining the flat, precision-engineered aesthetic.
+### 深度哲学
+Sanity 的深度系统几乎完全是**色度**，而不是基于阴影。海拔通过表面颜色变化来传达：“#0b0b0b”（地面）->“#212121”（升高）->“#353535”（突出）->“#ffffff”（倒置/最高）。这种方法原生于深色界面，传统的阴影在深色界面中是不可见的。存在的少数阴影是基于环的（0px 0px 0px Npx）或基于模糊的（背景滤镜）而不是偏移阴影，从而保持了平面、精密设计的美感。
 
-Border-based containment (1px solid `#212121` or `#353535`) serves as the primary spatial separator, with the border darkness calibrated to be visible but not dominant. The system avoids "floating card" aesthetics -- everything feels mounted to the surface rather than hovering above it.
+基于边界的遏制（1px实心“#212121”或“#353535”）作为主要空间分隔符，边界黑暗被校准为可见但不占主导地位。该系统避免了“浮动卡片”美学——所有东西都感觉安装在表面上，而不是悬停在其上方。
 
-## 7. Do's and Don'ts
+## 7. 该做和不该做的事情
 
-### Do
-- Use the achromatic gray scale as the foundation -- maintain pure neutral discipline with no warm/cool tinting
-- Apply Electric Blue (`#0052ef`) consistently as the universal hover/active state across all interactive elements
-- Use extreme negative letter-spacing (-2px to -4.48px) on display headings 48px and above
-- Keep primary CTAs as full-pill shapes (99999px radius) with the coral-red (`#f36458`)
-- Use IBM Plex Mono uppercase for technical labels, tags, and system metadata
-- Communicate depth through surface color (dark-to-light) rather than shadows
-- Maintain generous vertical section spacing (64-120px) on the dark canvas
-- Use `"cv01", "cv11", "cv12", "cv13", "ss07"` OpenType features for display typography
+### 做
+- 使用消色差灰度作为基础——保持纯粹的中性纪律，没有暖/冷色调
+- 在所有交互元素中一致应用电蓝色（`#0052ef`）作为通用悬停/活动状态
+- 在 48 像素及以上的显示标题上使用极端负字母间距（-2 像素至 -4.48 像素）
+- 将主要 CTA 保持为完整药丸形状（半径 99999 像素），珊瑚红色 (`#f36458`)
+- 使用 IBM Plex Mono 大写字母表示技术标签、标记和系统元数据
+- 通过表面颜色（从暗到亮）而不是阴影来传达深度
+- 在深色画布上保持足够的垂直部分间距（64-120px）
+- 使用“cv01”、“cv11”、“cv12”、“cv13”、“ss07”` OpenType 功能进行显示排版
 
-### Don't
-- Don't introduce warm or cool color tints to the neutral scale -- Sanity's grays are pure achromatic
-- Don't use drop shadows for elevation -- dark interfaces demand colorimetric depth
-- Don't apply border-radius between 13px and 99998px -- the system jumps from 12px (large card) directly to pill (99999px)
-- Don't mix the coral-red CTA with the electric blue interactive color in the same element
-- Don't use heavy font weights (700+) -- the system maxes out at 600 and only for 11px uppercase labels
-- Don't place light text on light surfaces or dark text on dark surfaces without checking the gray-on-gray contrast ratio
-- Don't use traditional offset box-shadows -- ring shadows (0 0 0 Npx) or border-based containment only
-- Don't break the tight line-height on headings -- 1.00-1.24 is the range, never go to 1.5+ for display text
+### 不要
+- 不要在中性色阶中引入暖色调或冷色调 - Sanity 的灰色是纯粹的消色差
+- 不要使用投影来提升高度——深色界面需要色度深度
+- 不要在 13px 和 99998px 之间应用 border-radius -- 系统从 12px（大卡）直接跳转到pillar（99999px）
+- 不要将珊瑚红 CTA 与电蓝色互动色混合在同一元素中
+- 不要使用较重的字体粗细（700+）——系统最大字体粗细为 600，且仅适用于 11px 大写标签
+- 在未检查灰对灰对比度的情况下，请勿将浅色文本放置在浅色表面上或将深色文本放置在深色表面上
+- 不要使用传统的偏移框阴影——环形阴影（0 0 0 Npx）或仅基于边框的包含
+- 不要打破标题上严格的行高 - 范围为 1.00-1.24，显示文本切勿使用 1.5+
 
-## 8. Responsive Behavior
+## 8. 响应行为
 
-### Breakpoints
+### 断点
 
-| Name | Width | Behavior |
-|------|-------|----------|
-| Desktop XL | >= 1640px | Full layout, maximum content width |
-| Desktop | >= 1440px | Standard desktop layout |
-| Desktop Compact | >= 1200px | Slightly condensed desktop |
-| Laptop | >= 1100px | Reduced column widths |
-| Tablet Landscape | >= 960px | 2-column layouts begin collapsing |
-| Tablet | >= 768px | Transition zone, some elements stack |
-| Mobile Large | >= 720px | Near-tablet layout |
-| Mobile | >= 480px | Single-column, stacked layout |
-| Mobile Small | >= 376px | Minimum supported width |
+|名称 |宽度|行为 |
+|------|--------|----------|
+|桌面XL | >= 1640 像素 |全布局，最大内容宽度 |
+|桌面| >= 1440 像素 |标准桌面布局|
+|桌面紧凑型| >= 1200 像素 |略显浓缩的桌面|
+|笔记本电脑 | >= 1100 像素 |减少列宽 |
+|平板电脑横向 | >= 960 像素 | 2 列布局开始崩溃 |
+|平板电脑| >= 768 像素 |过渡区，一些元素堆叠 |
+|移动大| >= 720 像素 |接近平板电脑的布局|
+|手机 | >= 480 像素 |单列、堆叠布局 |
+|移动小| >= 376 像素 |最小支持宽度 |
 
-### Collapsing Strategy
-- **Navigation**: Horizontal links collapse to hamburger menu below 768px
-- **Hero typography**: Scales from 112px -> 72px -> 48px -> 38px across breakpoints, maintaining tight letter-spacing ratios
-- **Grid layouts**: 3-column -> 2-column at ~960px, single-column below 768px
-- **Card grids**: Horizontal scrolling on mobile instead of wrapping (preserving card aspect ratios)
-- **Section spacing**: Vertical padding reduces by ~40% on mobile (120px -> 64px -> 48px)
-- **Button sizing**: CTA pills maintain padding but reduce font size; ghost buttons stay fixed
-- **Code blocks**: Horizontal scroll with preserved monospace formatting
+### 崩溃策略
+- **导航**：水平链接折叠到低于 768 像素的汉堡菜单
+- **英雄排版**：跨断点从 112px -> 72px -> 48px -> 38px 进行缩放，保持严格的字母间距比
+- **网格布局**：3 列 -> 2 列，约 960 像素，单列低于 768 像素
+- **卡片网格**：在移动设备上水平滚动而不是换行（保留卡片纵横比）
+- **部分间距**：移动设备上的垂直内边距减少约 40%（120 像素 -> 64 像素 -> 48 像素）
+- **按钮大小**：CTA 药丸保持填充但减小字体大小；幽灵按钮保持固定
+- **代码块**：保留等宽格式的水平滚动
 
-### Mobile-Specific Adjustments
-- Full-bleed sections extend edge-to-edge with 16px internal gutters
-- Touch targets: minimum 44px for all interactive elements
-- Heading letter-spacing relaxes slightly at mobile sizes (less aggressive negative tracking)
-- Image containers switch from fixed aspect ratios to full-width with auto height
+### 针对移动设备的调整
+- 全出血部分从边到边延伸，具有 16 像素的内部排水沟
+- 触摸目标：所有交互元素最小 44 像素
+- 标题字母间距在移动设备尺寸下略有放松（不太积极的负面跟踪）
+- 图像容器从固定宽高比切换到具有自动高度的全宽
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
+### 快速颜色参考
+
 ```
 Background:      #0b0b0b (near-black canvas)
 Surface:         #212121 (elevated cards/containers)
@@ -333,25 +334,26 @@ Error:           #dd0000 (pure red)
 Light Surface:   #ededed / #ffffff (inverted sections)
 ```
 
-### Example Prompts
 
-**Landing page section:**
-"Create a feature section with a near-black (#0b0b0b) background. Use a 48px heading in Inter with -1.68px letter-spacing, white text. Below it, 16px body text in #b9b9b9 with 1.50 line-height. Include a coral-red (#f36458) pill button with white text and a secondary dark (#0b0b0b) pill button with #b9b9b9 text. Both buttons hover to #0052ef blue."
+### 提示示例
 
-**Card grid:**
-"Build a 3-column card grid on a #0b0b0b background. Each card has a #212121 surface, 1px solid #353535 border, 6px border-radius, and 24px padding. Card titles are 24px white with -0.24px letter-spacing. Body text is 13px #b9b9b9. Add a 13px IBM Plex Mono uppercase tag in #797979 at the top of each card."
+**着陆页部分：**
+“创建一个具有近乎黑色 (#0b0b0b) 背景的功能部分。在 Inter 中使用 48px 标题，字母间距为 -1.68px，白色文本。在其下方，#b9b9b9 中的 16px 正文文本，行高为 1.50。包括一个带有白色文本的珊瑚红 (#f36458) 药丸按钮和一个带有 #b9b9b9 的辅助深色 (#0b0b0b) 药丸按钮两个按钮都悬停在#0052ef 蓝色。”
 
-**Form section:**
-"Design a contact form on a #0b0b0b background. Inputs have #0b0b0b background, 1px solid #212121 border, 3px border-radius, 8px 12px padding, and #b9b9b9 placeholder text. Focus state shows a 2px blue (#0052ef) ring. Submit button is a full-width coral-red (#f36458) pill. Include a 13px #797979 helper text below each field."
+**卡片网格：**
+“在 #0b0b0b 背景上构建 3 列卡片网格。每张卡片都有一个 #212121 表面、1px 实体 #353535 边框、6px 边框半径和 24px 填充。卡片标题为 24px 白色，字母间距为 -0.24px。正文为 13px #b9b9b9。在中添加 13px IBM Plex Mono 大写标签#797979 在每张卡的顶部。”
 
-**Navigation bar:**
-"Create a sticky top navigation on #0b0b0b with backdrop blur. Left: brand text in 15px white. Center/right: nav links in 16px #b9b9b9 that hover to blue. Far right: a coral-red (#f36458) pill CTA button. Bottom border: 1px solid #212121."
+**表格部分：**
+“在 #0b0b0b 背景上设计一个联系表单。输入具有 #0b0b0b 背景、1px 实线 #212121 边框、3px 边框半径、8px 12px 填充和 #b9b9b9 占位符文本。焦点状态显示 2px 蓝色 (#0052ef) 环。提交按钮是全角珊瑚红色 (#f36458) 药丸。包括 13px #797979 每个字段下方的帮助文本。”
 
-### Iteration Guide
-1. **Start dark**: Begin with `#0b0b0b` background, `#ffffff` primary text, `#b9b9b9` secondary text
-2. **Add structure**: Use `#212121` surfaces and `#353535` borders for containment -- no shadows
-3. **Apply typography**: Inter (or Space Grotesk) with tight letter-spacing on headings, 1.50 line-height on body
-4. **Color punctuation**: Add `#f36458` for CTAs and `#0052ef` for all hover/interactive states
-5. **Refine spacing**: 8px base unit, 24-32px within sections, 64-120px between sections
-6. **Technical details**: Add IBM Plex Mono uppercase labels for tags and metadata
-7. **Polish**: Ensure all interactive elements hover to `#0052ef`, all buttons are pills or subtle 5px radius, borders are hairline (1px)
+**导航栏：**
+“在 #0b0b0b 上创建带有背景模糊的粘性顶部导航。左：15 像素白色的品牌文本。中/右：16 像素 #b9b9b9 的导航链接，悬停在蓝色。最右：珊瑚红 (#f36458) 药丸 CTA 按钮。底部边框：1 像素实线 #212121。”
+
+### 迭代指南
+1. **开始黑暗**：从`#0b0b0b`背景开始，`#ffffff`主要文本，`#b9b9b9`辅助文本
+2. **添加结构**：使用`#212121`表面和`#353535`边框进行遏制——无阴影
+3. **应用排版**：Inter（或 Space Grotesk），标题上字母间距较小，正文行高为 1.50
+4. **颜色标点**：为 CTA 添加“#f36458”，为所有悬停/交互状态添加“#0052ef”
+5. **细化间距**：8px基本单位，部分内24-32px，部分之间64-120px
+6. **技术细节**：为标签和元数据添加 IBM Plex Mono 大写标签
+7. **抛光**：确保所有交互元素悬停在`#0052ef`，所有按钮都是药丸或微妙的5px半径，边框是细线（1px）

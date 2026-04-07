@@ -1,108 +1,108 @@
-# Design System Inspiration of Miro
+# Miro的设计系统灵感
 
-## 1. Visual Theme & Atmosphere
+## 1.视觉主题和氛围
 
-Miro's website is a clean, collaborative-tool-forward platform that communicates "visual thinking" through generous whitespace, pastel accent colors, and a confident geometric font. The design uses a predominantly white canvas with near-black text (`#1c1c1e`) and a distinctive pastel color palette — coral, rose, teal, orange, yellow, moss — each representing different collaboration contexts.
+Miro 的网站是一个干净的协作工具转发平台，通过大量的空白、柔和的强调色和自信的几何字体来传达“视觉思维”。该设计使用以白色为主的画布，带有近乎黑色的文本（“#1c1c1e”）和独特的柔和色调——珊瑚色、玫瑰色、青色、橙色、黄色、苔藓色——每种都代表不同的协作环境。
 
-The typography uses Roobert PRO Medium as the primary display font with OpenType character variants (`"blwf", "cv03", "cv04", "cv09", "cv11"`) and negative letter-spacing (-1.68px at 56px). Noto Sans handles body text with its own stylistic set (`"liga" 0, "ss01", "ss04", "ss05"`). The design is built with Framer, giving it smooth animations and modern component patterns.
+版式使用 Roobert PRO Medium 作为主要显示字体，具有 OpenType 字符变体（“blwf”、“cv03”、“cv04”、“cv09”、“cv11”）和负字母间距（-1.68px 至 56px）。 Noto Sans 使用自己的风格集（“liga”0、“ss01”、“ss04”、“ss05”）处理正文。该设计是使用 Framer 构建的，赋予其流畅的动画和现代的组件模式。
 
-**Key Characteristics:**
-- White canvas with near-black (`#1c1c1e`) text
-- Roobert PRO Medium with multiple OpenType character variants
-- Pastel accent palette: coral, rose, teal, orange, yellow, moss (light + dark pairs)
-- Blue 450 (`#5b76fe`) as primary interactive color
-- Success green (`#00b473`) for positive states
-- Generous border-radius: 8px–50px range
-- Framer-built with smooth motion patterns
-- Ring shadow border: `rgb(224,226,232) 0px 0px 0px 1px`
+**主要特征：**
+- 带有近乎黑色 (`#1c1c1e`) 文本的白色画布
+- Roobert PRO Medium 具有多种 OpenType 字符变体
+- 柔和的色调调色板：珊瑚色、玫瑰色、青色、橙色、黄色、苔藓色（浅色 + 深色配对）
+- 蓝色 450 (`#5b76fe`) 作为主要交互颜色
+- 成功绿色（`#00b473`）表示积极状态
+- 宽大的边框半径：8px–50px范围
+- 具有平滑运动模式的成帧器构建
+- 环形阴影边框：`rgb(224,226,232) 0px 0px 0px 1px`
 
-## 2. Color Palette & Roles
+## 2. 调色板和角色
 
-### Primary
-- **Near Black** (`#1c1c1e`): Primary text
-- **White** (`#ffffff`): `--tw-color-white`, primary surface
-- **Blue 450** (`#5b76fe`): `--tw-color-blue-450`, primary interactive
-- **Actionable Pressed** (`#2a41b6`): `--tw-color-actionable-pressed`
+### 小学
+- **近黑色** (`#1c1c1e`)：主要文本
+- **白色** (`#ffffff`)：`--tw-color-white`，主表面
+- **蓝色 450** (`#5b76fe`)：`--tw-color-blue-450`，主要交互
+- **可操作按下** (`#2a41b6`): `--tw-color-actionable-pressed`
 
-### Pastel Accents (Light/Dark pairs)
-- **Coral**: Light `#ffc6c6` / Dark `#600000`
-- **Rose**: Light `#ffd8f4` / Dark (implied)
-- **Teal**: Light `#c3faf5` / Dark `#187574`
-- **Orange**: Light `#ffe6cd`
-- **Yellow**: Dark `#746019`
-- **Moss**: Dark `#187574`
-- **Pink** (`#fde0f0`): Soft pink surface
-- **Red** (`#fbd4d4`): Light red surface
-- **Dark Red** (`#e3c5c5`): Muted red
+### 柔和的口音（浅色/深色对）
+- **珊瑚色**：浅色 `#ffc6c6` / 深色 `#600000`
+- **玫瑰色**：浅色 `#ffd8f4` / 深色（隐含）
+- **青色**：浅色`#c3faf5`/深色`#187574`
+- **橙色**：浅色`#ffe6cd`
+- **黄色**：深色`#746019`
+- **苔藓**：深色`#187574`
+- **粉色** (`#fde0f0`)：柔和的粉色表面
+- **红色** (`#fbd4d4`)：浅红色表面
+- **深红色** (`#e3c5c5`)：柔和的红色
 
-### Semantic
-- **Success** (`#00b473`): `--tw-color-success-accent`
+### 语义
+- **成功** (`#00b473`): `--tw-color-success-accent`
 
-### Neutral
-- **Slate** (`#555a6a`): Secondary text
-- **Input Placeholder** (`#a5a8b5`): `--tw-color-input-placeholder`
-- **Border** (`#c7cad5`): Button borders
-- **Ring** (`rgb(224,226,232)`): Shadow-as-border
+### 中性
+- **Slate** (`#555a6a`)：辅助文本
+- **输入占位符** (`#a5a8b5`): `--tw-color-input-placeholder`
+- **边框** (`#c7cad5`)：按钮边框
+- **Ring** (`rgb(224,226,232)`)：阴影作为边框
 
-## 3. Typography Rules
+## 3. 版式规则
 
-### Font Families
-- **Display**: `Roobert PRO Medium`, fallback: Placeholder — `"blwf", "cv03", "cv04", "cv09", "cv11"`
-- **Display Variants**: `Roobert PRO SemiBold`, `Roobert PRO SemiBold Italic`, `Roobert PRO`
-- **Body**: `Noto Sans` — `"liga" 0, "ss01", "ss04", "ss05"`
+### 字体系列
+- **显示**：`Roobert PRO Medium`，备用：占位符 — `"blwf"、"cv03"、"cv04"、"cv09"、"cv11"`
+- **显示变体**：`Roobert PRO SemiBold`、`Roobert PRO SemiBold Italic`、`Roobert PRO`
+- **正文**：`Noto Sans` — `"liga" 0、"ss01"、"ss04"、"ss05"`
 
-### Hierarchy
+### 层次结构
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing |
+|角色 |字体|尺寸|重量 |行高|字母间距 |
 |------|------|------|--------|-------------|----------------|
-| Display Hero | Roobert PRO Medium | 56px | 400 | 1.15 | -1.68px |
-| Section Heading | Roobert PRO Medium | 48px | 400 | 1.15 | -1.44px |
-| Card Title | Roobert PRO Medium | 24px | 400 | 1.15 | -0.72px |
-| Sub-heading | Noto Sans | 22px | 400 | 1.35 | -0.44px |
-| Feature | Roobert PRO Medium | 18px | 600 | 1.35 | normal |
-| Body | Noto Sans | 18px | 400 | 1.45 | normal |
-| Body Standard | Noto Sans | 16px | 400–600 | 1.50 | -0.16px |
-| Button | Roobert PRO Medium | 17.5px | 700 | 1.29 | 0.175px |
-| Caption | Roobert PRO Medium | 14px | 400 | 1.71 | normal |
-| Small | Roobert PRO Medium | 12px | 400 | 1.15 | -0.36px |
-| Micro Uppercase | Roobert PRO | 10.5px | 400 | 0.90 | uppercase |
+|显示英雄 | Roobert PRO 中号 | 56 像素 | 400 | 1.15 | 1.15 -1.68 像素 |
+|章节标题 | Roobert PRO 中号 | 48 像素 | 400 | 1.15 | 1.15 -1.44 像素 |
+|卡片标题 | Roobert PRO 中号 | 24 像素 | 400 | 1.15 | 1.15 -0.72 像素 |
+|副标题| Noto Sans | 诺托三世22 像素 | 400 | 1.35 | 1.35 -0.44 像素 |
+|特色| Roobert PRO 中号 | 18 像素 | 600 | 1.35 | 1.35正常 |
+|身体| Noto Sans | 诺托三世18 像素 | 400 | 1.45 | 1.45正常 |
+|车身标准| Noto Sans | 诺托三世16 像素 | 400–600 | 1.50 | 1.50 -0.16 像素 |
+|按钮| Roobert PRO 中号 | 17.5 像素 | 700 | 1.29 | 1.29 0.175 像素 |
+|标题| Roobert PRO 中号 | 14 像素 | 400 | 1.71 | 1.71正常 |
+|小| Roobert PRO 中号 | 12 像素 | 400 | 1.15 | 1.15 -0.36 像素 |
+|微型大写|鲁伯特 PRO | 10.5 像素 | 400 | 0.90 | 0.90大写 |
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
-- Outlined: transparent bg, `1px solid #c7cad5`, 8px radius, 7px 12px padding
-- White circle: 50% radius, white bg with shadow
-- Blue primary (implied from interactive color)
+### 按钮
+- 轮廓：透明背景，`1px 实体#c7cad5`，8px 半径，7px 12px 填充
+- 白色圆圈：50%半径，带阴影的白色背景
+- 蓝色原色（从交互颜色暗示）
 
-### Cards: 12px–24px radius, pastel backgrounds
-### Inputs: white bg, `1px solid #e9eaef`, 8px radius, 16px padding
+### 卡片：12px–24px 半径，柔和的背景
+### 输入：白色背景、`1px 实体 #e9eaef`、8px 半径、16px 填充
 
-## 5. Layout Principles
-- Spacing: 1–24px base scale
-- Radius: 8px (buttons), 10px–12px (cards), 20px–24px (panels), 40px–50px (large containers)
-- Ring shadow: `rgb(224,226,232) 0px 0px 0px 1px`
+## 5.布局原则
+- 间距：1–24px 基本比例
+- 半径：8px（按钮）、10px–12px（卡片）、20px–24px（面板）、40px–50px（大型容器）
+- 环形阴影：`rgb(224,226,232) 0px 0px 0px 1px`
 
-## 6. Depth & Elevation
-Minimal — ring shadow + pastel surface contrast
+## 6. 深度和高度
+最小 — 环形阴影 + 柔和的表面对比度
 
-## 7. Do's and Don'ts
-### Do
-- Use pastel light/dark pairs for feature sections
-- Apply Roobert PRO with OpenType character variants
-- Use Blue 450 (#5b76fe) for interactive elements
-### Don't
-- Don't use heavy shadows
-- Don't mix more than 2 pastel accents per section
+## 7. 该做和不该做的事情
+### 做
+- 对特征部分使用柔和的浅色/深色对
+- 将 Roobert PRO 与 OpenType 字符变体一起应用
+- 使用 Blue 450 (#5b76fe) 作为交互元素
+### 不要
+- 不要使用浓重的阴影
+- 每个部分不要混合超过 2 个柔和的口音
 
-## 8. Responsive Behavior
-Breakpoints: 425px, 576px, 768px, 896px, 1024px, 1200px, 1280px, 1366px, 1700px, 1920px
+## 8. 响应行为
+断点：425px、576px、768px、896px、1024px、1200px、1280px、1366px、1700px、1920px
 
-## 9. Agent Prompt Guide
-### Quick Color Reference
-- Text: Near Black (`#1c1c1e`)
-- Background: White (`#ffffff`)
-- Interactive: Blue 450 (`#5b76fe`)
-- Success: `#00b473`
-- Border: `#c7cad5`
-### Example Component Prompts
-- "Create hero: white background. Roobert PRO Medium 56px, line-height 1.15, letter-spacing -1.68px. Blue CTA (#5b76fe). Outlined secondary (1px solid #c7cad5, 8px radius)."
+## 9. 代理提示指南
+### 快速颜色参考
+- 文本：近黑色 (`#1c1c1e`)
+- 背景：白色（`#ffffff`）
+- 互动：蓝色 450 (`#5b76fe`)
+- 成功：`#00b473`
+- 边框：`#c7cad5`
+### 组件提示示例
+- “创建英雄：白色背景。Roobert PRO Medium 56px，行高1.15，字母间距-1.68px。蓝色CTA (#5b76fe)。概述辅助（1px实心#c7cad5，8px半径）。”

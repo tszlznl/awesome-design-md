@@ -1,89 +1,89 @@
-# Design System Inspiration of Airtable
+# Airtable的设计系统灵感
 
-## 1. Visual Theme & Atmosphere
+## 1.视觉主题和氛围
 
-Airtable's website is a clean, enterprise-friendly platform that communicates "sophisticated simplicity" through a white canvas with deep navy text (`#181d26`) and Airtable Blue (`#1b61c9`) as the primary interactive accent. The Haas font family (display + text variants) creates a Swiss-precision typography system with positive letter-spacing throughout.
+Airtable 的网站是一个干净、企业友好的平台，通过白色画布传达“复杂的简单性”，并以深海军蓝文本（“#181d26”）和 Airtable 蓝色（“#1b61c9”）作为主要交互口音。 Haas 字体系列（显示 + 文本变体）创建了一个瑞士精确的排版系统，整个系统都具有正字母间距。
 
-**Key Characteristics:**
-- White canvas with deep navy text (`#181d26`)
-- Airtable Blue (`#1b61c9`) as primary CTA and link color
-- Haas + Haas Groot Disp dual font system
-- Positive letter-spacing on body text (0.08px–0.28px)
-- 12px radius buttons, 16px–32px for cards
-- Multi-layer blue-tinted shadow: `rgba(45,127,249,0.28) 0px 1px 3px`
-- Semantic theme tokens: `--theme_*` CSS variable naming
+**主要特征：**
+- 带有深海军文字的白色画布 (`#181d26`)
+- Airtable Blue (`#1b61c9`) 作为主要 CTA 和链接颜色
+- Haas + Haas Groot Disp 双字体系统
+- 正文上的正字母间距 (0.08px–0.28px)
+- 12px 半径按钮，16px–32px 卡片
+- 多层蓝色阴影：`rgba(45,127,249,0.28) 0px 1px 3px`
+- 语义主题标记：`--theme_*` CSS 变量命名
 
-## 2. Color Palette & Roles
+## 2. 调色板和角色
 
-### Primary
-- **Deep Navy** (`#181d26`): Primary text
-- **Airtable Blue** (`#1b61c9`): CTA buttons, links
-- **White** (`#ffffff`): Primary surface
-- **Spotlight** (`rgba(249,252,255,0.97)`): `--theme_button-text-spotlight`
+### 小学
+- **深海军** (`#181d26`)：主要文本
+- **Airtable Blue** (`#1b61c9`)：CTA 按钮、链接
+- **白色** (`#ffffff`)：主表面
+- **聚光灯** (`rgba(249,252,255,0.97)`): `--theme_button-text-spotlight`
 
-### Semantic
-- **Success Green** (`#006400`): `--theme_success-text`
-- **Weak Text** (`rgba(4,14,32,0.69)`): `--theme_text-weak`
-- **Secondary Active** (`rgba(7,12,20,0.82)`): `--theme_button-text-secondary-active`
+### 语义
+- **成功绿色** (`#006400`): `--theme_success-text`
+- **弱文本** (`rgba(4,14,32,0.69)`): `--theme_text-weak`
+- **次要活动** (`rgba(7,12,20,0.82)`): `--theme_button-text-secondary-active`
 
-### Neutral
-- **Dark Gray** (`#333333`): Secondary text
-- **Mid Blue** (`#254fad`): Link/accent blue variant
-- **Border** (`#e0e2e6`): Card borders
-- **Light Surface** (`#f8fafc`): Subtle surface
+### 中性
+- **深灰色** (`#333333`)：辅助文本
+- **中蓝色** (`#254fad`)：链接/强调蓝色变体
+- **边框** (`#e0e2e6`)：卡片边框
+- **光表面** (`#f8fafc`)：微妙的表面
 
-### Shadows
-- **Blue-tinted** (`rgba(0,0,0,0.32) 0px 0px 1px, rgba(0,0,0,0.08) 0px 0px 2px, rgba(45,127,249,0.28) 0px 1px 3px, rgba(0,0,0,0.06) 0px 0px 0px 0.5px inset`)
-- **Soft** (`rgba(15,48,106,0.05) 0px 0px 20px`)
+### 阴影
+- **蓝色** (`rgba(0,0,0,0.32) 0px 0px 1px, rgba(0,0,0,0.08) 0px 0px 2px, rgba(45,127,249,0.28) 0px 1px 3px, rgba(0,0,0,0.06) 0px 0px 0px 0.5px 插入`)
+- **软** (`rgba(15,48,106,0.05) 0px 0px 20px`)
 
-## 3. Typography Rules
+## 3. 版式规则
 
-### Font Families
-- **Primary**: `Haas`, fallbacks: `-apple-system, system-ui, Segoe UI, Roboto`
-- **Display**: `Haas Groot Disp`, fallback: `Haas`
+### 字体系列
+- **主要**：`Haas`，后备：`-apple-system、system-ui、Segoe UI、Roboto`
+- **显示**：`Haas Groot Disp`，后备：`Haas`
 
-### Hierarchy
+### 层次结构
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing |
+|角色 |字体|尺寸|重量 |行高|字母间距 |
 |------|------|------|--------|-------------|----------------|
-| Display Hero | Haas | 48px | 400 | 1.15 | normal |
-| Display Bold | Haas Groot Disp | 48px | 900 | 1.50 | normal |
-| Section Heading | Haas | 40px | 400 | 1.25 | normal |
-| Sub-heading | Haas | 32px | 400–500 | 1.15–1.25 | normal |
-| Card Title | Haas | 24px | 400 | 1.20–1.30 | 0.12px |
-| Feature | Haas | 20px | 400 | 1.25–1.50 | 0.1px |
-| Body | Haas | 18px | 400 | 1.35 | 0.18px |
-| Body Medium | Haas | 16px | 500 | 1.30 | 0.08–0.16px |
-| Button | Haas | 16px | 500 | 1.25–1.30 | 0.08px |
-| Caption | Haas | 14px | 400–500 | 1.25–1.35 | 0.07–0.28px |
+|显示英雄 |哈斯| 48 像素 | 400 | 1.15 | 1.15正常 |
+|显示粗体|哈斯格鲁特显示 | 48 像素 | 900 | 900 1.50 | 1.50正常 |
+|章节标题 |哈斯| 40 像素 | 400 | 1.25 | 1.25正常 |
+|副标题|哈斯| 32 像素 | 400–500 | 1.15–1.25 |正常 |
+|卡片标题 |哈斯| 24 像素 | 400 | 1.20–1.30 | 0.12 像素 |
+|特色 |哈斯| 20 像素 | 400 | 1.25–1.50 | 0.1 像素 |
+|身体|哈斯| 18 像素 | 400 | 1.35 | 1.35 0.18 像素 |
+|身体中等|哈斯| 16 像素 | 500 | 500 1.30 | 1.30 0.08–0.16 像素 |
+|按钮|哈斯| 16 像素 | 500 | 500 1.25–1.30 | 0.08 像素 |
+|标题|哈斯| 14 像素 | 400–500 | 1.25–1.35 | 0.07–0.28 像素 |
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
-- **Primary Blue**: `#1b61c9`, white text, 16px 24px padding, 12px radius
-- **White**: white bg, `#181d26` text, 12px radius, 1px border white
-- **Cookie Consent**: `#1b61c9` bg, 2px radius (sharp)
+### 按钮
+- **原蓝色**：`#1b61c9`，白色文本，16px 24px 填充，12px 半径
+- **白色**：白色背景，`#181d26`文本，12px半径，1px边框白色
+- **Cookie 同意**：`#1b61c9` bg，2px 半径（锐利）
 
-### Cards: `1px solid #e0e2e6`, 16px–24px radius
-### Inputs: Standard Haas styling
+### 卡片：`1px 实心 #e0e2e6`，16px–24px 半径
+### 输入：标准 Haas 造型
 
-## 5. Layout
-- Spacing: 1–48px (8px base)
-- Radius: 2px (small), 12px (buttons), 16px (cards), 24px (sections), 32px (large), 50% (circles)
+## 5. 布局
+- 间距：1–48px（8px 基础）
+- 半径：2px（小）、12px（按钮）、16px（卡片）、24px（部分）、32px（大）、50%（圆圈）
 
-## 6. Depth
-- Blue-tinted multi-layer shadow system
-- Soft ambient: `rgba(15,48,106,0.05) 0px 0px 20px`
+## 6.深度
+- 蓝色多层阴影系统
+- 柔和环境：`rgba(15,48,106,0.05) 0px 0px 20px`
 
-## 7. Do's and Don'ts
-### Do: Use Airtable Blue for CTAs, Haas with positive tracking, 12px radius buttons
-### Don't: Skip positive letter-spacing, use heavy shadows
+## 7. 该做和不该做的事情
+### 要做：使用 Airtable Blue 进行 CTA、Haas 进行正向跟踪、12 像素半径按钮
+### 不要：跳过正字母间距，使用浓重的阴影
 
-## 8. Responsive Behavior
-Breakpoints: 425–1664px (23 breakpoints)
+## 8. 响应行为
+断点：425–1664px（23 个断点）
 
-## 9. Agent Prompt Guide
-- Text: Deep Navy (`#181d26`)
-- CTA: Airtable Blue (`#1b61c9`)
-- Background: White (`#ffffff`)
-- Border: `#e0e2e6`
+## 9. 代理提示指南
+- 文本：深海军蓝 (`#181d26`)
+- CTA：Airtable 蓝色（`#1b61c9`）
+- 背景：白色（`#ffffff`）
+- 边框：`#e0e2e6`

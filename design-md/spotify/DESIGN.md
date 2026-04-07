@@ -1,246 +1,246 @@
-# Design System Inspiration of Spotify
+# Spotify 的设计系统灵感
 
-## 1. Visual Theme & Atmosphere
+## 1.视觉主题和氛围
 
-Spotify's web interface is a dark, immersive music player that wraps listeners in a near-black cocoon (`#121212`, `#181818`, `#1f1f1f`) where album art and content become the primary source of color. The design philosophy is "content-first darkness" — the UI recedes into shadow so that music, podcasts, and playlists can glow. Every surface is a shade of charcoal, creating a theater-like environment where the only true color comes from the iconic Spotify Green (`#1ed760`) and the album artwork itself.
+Spotify 的网络界面是一个黑暗的、身临其境的音乐播放器，将听众包裹在一个近乎黑色的茧中（“#121212”、“#181818”、“#1f1f1f”），其中专辑封面和内容成为颜色的主要来源。设计理念是“内容优先的黑暗”——用户界面隐入阴影，以便音乐、播客和播放列表可以发光。每个表面都是木炭色，营造出剧院般的环境，唯一真实的颜色来自标志性的 Spotify Green (“#1ed760”) 和专辑插图本身。
 
-The typography uses SpotifyMixUI and SpotifyMixUITitle — proprietary fonts from the CircularSp family (Circular by Lineto, customized for Spotify) with an extensive fallback stack that includes Arabic, Hebrew, Cyrillic, Greek, Devanagari, and CJK fonts, reflecting Spotify's global reach. The type system is compact and functional: 700 (bold) for emphasis and navigation, 600 (semibold) for secondary emphasis, and 400 (regular) for body. Buttons use uppercase with positive letter-spacing (1.4px–2px) for a systematic, label-like quality.
+排版使用 SpotifyMixUI 和 SpotifyMixUITitle — CircularSp 系列的专有字体（Circular by Lineto，为 Spotify 定制），具有广泛的后备堆栈，包括阿拉伯语、希伯来语、西里尔语、希腊语、梵文和 CJK 字体，反映了 Spotify 的全球影响力。字体系统紧凑且实用：700（粗体）用于强调和导航，600（半粗体）用于次要强调，400（常规）用于正文。按钮使用大写字母和正字母间距 (1.4px–2px)，以实现系统化、类似标签的质量。
 
-What distinguishes Spotify is its pill-and-circle geometry. Primary buttons use 500px–9999px radius (full pill), circular play buttons use 50% radius, and search inputs are 500px pills. Combined with heavy shadows (`rgba(0,0,0,0.5) 0px 8px 24px`) on elevated elements and a unique inset border-shadow combo (`rgb(18,18,18) 0px 1px 0px, rgb(124,124,124) 0px 0px 0px 1px inset`), the result is an interface that feels like a premium audio device — tactile, rounded, and built for touch.
+Spotify 的独特之处在于它的圆丸几何形状。主按钮使用 500px–9999px 半径（完整药丸），圆形播放按钮使用 50% 半径，搜索输入为 500px 药丸。结合高架元素上的重阴影（`rgba(0,0,0,0.5) 0px 8px 24px`）和独特的插入边框阴影组合（`rgb(18,18,18) 0px 1px 0px, rgb(124,124,124) 0px 0px 0px 1px inset`），结果是一个感觉像高级音频设备的界面 -有触觉、圆润、专为触摸而设计。
 
-**Key Characteristics:**
-- Near-black immersive dark theme (`#121212`–`#1f1f1f`) — UI disappears behind content
-- Spotify Green (`#1ed760`) as singular brand accent — never decorative, always functional
-- SpotifyMixUI/CircularSp font family with global script support
-- Pill buttons (500px–9999px) and circular controls (50%) — rounded, touch-optimized
-- Uppercase button labels with wide letter-spacing (1.4px–2px)
-- Heavy shadows on elevated elements (`rgba(0,0,0,0.5) 0px 8px 24px`)
-- Semantic colors: negative red (`#f3727f`), warning orange (`#ffa42b`), announcement blue (`#539df5`)
-- Album art as the primary color source — the UI is achromatic by design
+**主要特征：**
+- 近乎黑色的沉浸式黑暗主题 (`#121212`–`#1f1f1f`) — UI 消失在内容后面
+- Spotify Green (`#1ed760`) 作为独特的品牌口音 — 从不装饰，始终实用
+- SpotifyMixUI/CircularSp 字体系列，支持全局脚本
+- 药丸按钮 (500px–9999px) 和圆形控件 (50%) — 圆形、触摸优化
+- 具有宽字母间距的大写按钮标签 (1.4px–2px)
+- 升高的元素上有很重的阴影（`rgba(0,0,0,0.5) 0px 8px 24px`）
+- 语义颜色：负面红色（`#f3727f`）、警告橙色（`#ffa42b`）、公告蓝色（`#539df5`）
+- 专辑封面作为主要颜色源 — UI 设计为无彩色
 
-## 2. Color Palette & Roles
+## 2. 调色板和角色
 
-### Primary Brand
-- **Spotify Green** (`#1ed760`): Primary brand accent — play buttons, active states, CTAs
-- **Near Black** (`#121212`): Deepest background surface
-- **Dark Surface** (`#181818`): Cards, containers, elevated surfaces
-- **Mid Dark** (`#1f1f1f`): Button backgrounds, interactive surfaces
+### 主要品牌
+- **Spotify Green** (`#1ed760`)：主要品牌口音 — 播放按钮、活动状态、CTA
+- **近黑色** (`#121212`)：最深的背景表面
+- **深色表面** (`#181818`)：卡片、容器、高架表面
+- **中暗** (`#1f1f1f`)：按钮背景、交互式表面
 
-### Text
-- **White** (`#ffffff`): `--text-base`, primary text
-- **Silver** (`#b3b3b3`): Secondary text, muted labels, inactive nav
-- **Near White** (`#cbcbcb`): Slightly brighter secondary text
-- **Light** (`#fdfdfd`): Near-pure white for maximum emphasis
+### 文字
+- **白色** (`#ffffff`)：`--text-base`，主要文本
+- **银牌** (`#b3b3b3`)：辅助文本、静音标签、非活动导航
+- **近白色** (`#cbcbcb`)：稍微明亮的辅助文本
+- **浅色** (`#fdfdfd`)：近乎纯白色，可最大程度地强调
 
-### Semantic
-- **Negative Red** (`#f3727f`): `--text-negative`, error states
-- **Warning Orange** (`#ffa42b`): `--text-warning`, warning states
-- **Announcement Blue** (`#539df5`): `--text-announcement`, info states
+### 语义
+- **负红色** (`#f3727f`)：`--text-negative`，错误状态
+- **警告橙色** (`#ffa42b`)：`--text-warning`，警告状态
+- **蓝色公告** (`#539df5`)：`--text-announcement`，信息状态
 
-### Surface & Border
-- **Dark Card** (`#252525`): Elevated card surface
-- **Mid Card** (`#272727`): Alternate card surface
-- **Border Gray** (`#4d4d4d`): Button borders on dark
-- **Light Border** (`#7c7c7c`): Outlined button borders, muted links
-- **Separator** (`#b3b3b3`): Divider lines
-- **Light Surface** (`#eeeeee`): Light-mode buttons (rare)
-- **Spotify Green Border** (`#1db954`): Green accent border variant
+### 表面和边框
+- **深色卡片** (`#252525`)：升高的卡片表面
+- **中卡** (`#272727`)：备用卡表面
+- **边框灰色** (`#4d4d4d`)：按钮边框为深色
+- **浅色边框** (`#7c7c7c`)：轮廓按钮边框，静音链接
+- **分隔符** (`#b3b3b3`)：分隔线
+- **Light Surface** (`#eeeeee`)：灯光模式按钮（罕见）
+- **Spotify 绿色边框** (`#1db954`)：绿色强调边框变体
 
-### Shadows
-- **Heavy** (`rgba(0,0,0,0.5) 0px 8px 24px`): Dialogs, menus, elevated panels
-- **Medium** (`rgba(0,0,0,0.3) 0px 8px 8px`): Cards, dropdowns
-- **Inset Border** (`rgb(18,18,18) 0px 1px 0px, rgb(124,124,124) 0px 0px 0px 1px inset`): Input border-shadow combo
+### 阴影
+- **Heavy** (`rgba(0,0,0,0.5) 0px 8px 24px`)：对话框、菜单、提升面板
+- **中** (`rgba(0,0,0,0.3) 0px 8px 8px`)：卡片、下拉菜单
+- **插入边框** (`rgb(18,18,18) 0px 1px 0px, rgb(124,124,124) 0px 0px 0px 1px inset`): 输入边框阴影组合
 
-## 3. Typography Rules
+## 3. 版式规则
 
-### Font Families
-- **Title**: `SpotifyMixUITitle`, fallbacks: `CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, Helvetica Neue, helvetica, arial, Hiragino Sans, Hiragino Kaku Gothic ProN, Meiryo, MS Gothic`
-- **UI / Body**: `SpotifyMixUI`, same fallback stack
+### 字体系列
+- **标题**：`SpotifyMixUITitle`，后备：`CircularSp-Arab、CircularSp-Hebr、CircularSp-Cyrl、CircularSp-Grek、CircularSp-Deva、Helvetica Neue、helvetica、arial、Hiragino Sans、Hiragino Kaku Gothic ProN、Meiryo、MS Gothic`
+- **UI / Body**：`SpotifyMixUI`，相同的后备堆栈
 
-### Hierarchy
+### 层次结构
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|------|--------|-------------|----------------|-------|
-| Section Title | SpotifyMixUITitle | 24px (1.50rem) | 700 | normal | normal | Bold title weight |
-| Feature Heading | SpotifyMixUI | 18px (1.13rem) | 600 | 1.30 (tight) | normal | Semibold section heads |
-| Body Bold | SpotifyMixUI | 16px (1.00rem) | 700 | normal | normal | Emphasized text |
-| Body | SpotifyMixUI | 16px (1.00rem) | 400 | normal | normal | Standard body |
-| Button Uppercase | SpotifyMixUI | 14px (0.88rem) | 600–700 | 1.00 (tight) | 1.4px–2px | `text-transform: uppercase` |
-| Button | SpotifyMixUI | 14px (0.88rem) | 700 | normal | 0.14px | Standard button |
-| Nav Link Bold | SpotifyMixUI | 14px (0.88rem) | 700 | normal | normal | Navigation |
-| Nav Link | SpotifyMixUI | 14px (0.88rem) | 400 | normal | normal | Inactive nav |
-| Caption Bold | SpotifyMixUI | 14px (0.88rem) | 700 | 1.50–1.54 | normal | Bold metadata |
-| Caption | SpotifyMixUI | 14px (0.88rem) | 400 | normal | normal | Metadata |
-| Small Bold | SpotifyMixUI | 12px (0.75rem) | 700 | 1.50 | normal | Tags, counts |
-| Small | SpotifyMixUI | 12px (0.75rem) | 400 | normal | normal | Fine print |
-| Badge | SpotifyMixUI | 10.5px (0.66rem) | 600 | 1.33 | normal | `text-transform: capitalize` |
-| Micro | SpotifyMixUI | 10px (0.63rem) | 400 | normal | normal | Smallest text |
+|角色 |字体|尺寸|重量 |行高|字母间距 |笔记|
+|------|------|------|--------|-------------|----------------|--------|
+|章节标题 | SpotifyMixUITitle | SpotifyMixUITitle | 24 像素（1.50 雷姆）| 700 |正常 |正常 |粗体标题粗细|
+|专题标题| SpotifyMixUI | 18 像素（1.13 雷姆）| 600 | 1.30（紧）|正常 |半粗体剖面头|
+|身体粗体| SpotifyMixUI | 16 像素（1.00 雷姆）| 700 |正常 |正常 |强调文字 |
+|身体| SpotifyMixUI | 16 像素（1.00 雷姆）| 400 |正常 |正常 |标准机身|
+|按钮大写| SpotifyMixUI | 14 像素（0.88 雷姆）| 600–700 | 1.00（紧）| 1.4 像素–2 像素 | `文本转换：大写` |
+|按钮| SpotifyMixUI | 14 像素（0.88 雷姆）| 700 |正常 | 0.14 像素 |标准按钮|
+|导航链接粗体| SpotifyMixUI | 14 像素（0.88 雷姆）| 700 |正常 |正常 |导航 |
+|导航链接 | SpotifyMixUI | 14 像素（0.88 雷姆）| 400 |正常 |正常 |不活动的导航 |
+|标题粗体| SpotifyMixUI | 14 像素（0.88 雷姆）| 700 | 1.50–1.54 |正常 |粗体元数据|
+|标题| SpotifyMixUI | 14 像素（0.88 雷姆）| 400 |正常 |正常 |元数据 |
+|小粗体| SpotifyMixUI | 12 像素（0.75 雷姆）| 700 | 1.50 | 1.50正常 |标签、计数 |
+|小| SpotifyMixUI | 12 像素（0.75 雷姆）| 400 |正常 |正常 |精美印刷|
+|徽章| SpotifyMixUI | 10.5 像素（0.66 雷姆）| 600 | 1.33 | 1.33正常 | `文本转换：大写` |
+|微| SpotifyMixUI | 10 像素（0.63 雷姆）| 400 |正常 |正常 |最小的文字 |
 
-### Principles
-- **Bold/regular binary**: Most text is either 700 (bold) or 400 (regular), with 600 used sparingly. This creates a clear visual hierarchy through weight contrast rather than size variation.
-- **Uppercase buttons as system**: Button labels use uppercase + wide letter-spacing (1.4px–2px), creating a systematic "label" voice distinct from content text.
-- **Compact sizing**: The range is 10px–24px — narrower than most systems. Spotify's type is compact and functional, designed for scanning playlists, not reading articles.
-- **Global script support**: The extensive fallback stack (Arabic, Hebrew, Cyrillic, Greek, Devanagari, CJK) reflects Spotify's 180+ market reach.
+### 原则
+- **粗体/常规二进制**：大多数文本为 700（粗体）或 400（常规），很少使用 600。这通过重量对比而不是尺寸变化创建了清晰的视觉层次。
+- **大写按钮作为系统**：按钮标签使用大写+宽字母间距（1.4px–2px），创建与内容文本不同的系统“标签”声音。
+- **紧凑尺寸**：范围为 10px–24px — 比大多数系统窄。 Spotify 的类型紧凑且功能齐全，专为扫描播放列表而不是阅读文章而设计。
+- **全球脚本支持**：广泛的后备堆栈（阿拉伯语、希伯来语、西里尔语、希腊语、梵文、中日韩）反映了 Spotify 的 180 多个市场覆盖范围。
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
-**Dark Pill**
-- Background: `#1f1f1f`
-- Text: `#ffffff` or `#b3b3b3`
-- Padding: 8px 16px
-- Radius: 9999px (full pill)
-- Use: Navigation pills, secondary actions
+**黑色药丸**
+- 背景：`#1f1f1f`
+- 文本：“#ffffff”或“#b3b3b3”
+- 内边距：8 像素 16 像素
+- 半径：9999px（全丸）
+- 用途：导航药丸、辅助动作
 
-**Dark Large Pill**
-- Background: `#181818`
-- Text: `#ffffff`
-- Padding: 0px 43px
-- Radius: 500px
-- Use: Primary app navigation buttons
+**深色大药丸**
+- 背景：`#181818`
+- 文本：`#ffffff`
+- 内边距：0px 43px
+- 半径：500px
+- 使用：主要应用程序导航按钮
 
-**Light Pill**
-- Background: `#eeeeee`
-- Text: `#181818`
-- Radius: 500px
-- Use: Light-mode CTAs (cookie consent, marketing)
+**轻丸**
+- 背景：`#eeeeee`
+- 文本：`#181818`
+- 半径：500px
+- 使用：轻型模式 CTA（cookie 同意、营销）
 
-**Outlined Pill**
-- Background: transparent
-- Text: `#ffffff`
-- Border: `1px solid #7c7c7c`
-- Padding: 4px 16px 4px 36px (asymmetric for icon)
-- Radius: 9999px
-- Use: Follow buttons, secondary actions
+**概述药丸**
+- 背景：透明
+- 文本：`#ffffff`
+- 边框：`1px 实线#7c7c7c`
+- 填充：4px 16px 4px 36px（图标不对称）
+- 半径：9999px
+- 使用：跟随按钮、辅助操作
 
-**Circular Play**
-- Background: `#1f1f1f`
-- Text: `#ffffff`
-- Padding: 12px
-- Radius: 50% (circle)
-- Use: Play/pause controls
+**循环播放**
+- 背景：`#1f1f1f`
+- 文本：`#ffffff`
+- 内边距：12px
+- 半径：50%（圆形）
+- 使用：播放/暂停控件
 
-### Cards & Containers
-- Background: `#181818` or `#1f1f1f`
-- Radius: 6px–8px
-- No visible borders on most cards
-- Hover: slight background lightening
-- Shadow: `rgba(0,0,0,0.3) 0px 8px 8px` on elevated
+### 卡片和容器
+- 背景：`#181818`或`#1f1f1f`
+- 半径：6px–8px
+- 大多数卡片上没有可见的边框
+- 悬停：轻微的背景照明
+- 阴影：高架上的“rgba(0,0,0,0.3) 0px 8px 8px”
 
-### Inputs
-- Search input: `#1f1f1f` background, `#ffffff` text
-- Radius: 500px (pill)
-- Padding: 12px 96px 12px 48px (icon-aware)
-- Focus: border becomes `#000000`, outline `1px solid`
+### 输入
+- 搜索输入：`#1f1f1f`背景，`#ffffff`文本
+- 半径：500px（药丸）
+- 填充：12px 96px 12px 48px（图标感知）
+- 焦点：边框变为“#000000”，轮廓“1px 实心”
 
-### Navigation
-- Dark sidebar with SpotifyMixUI 14px weight 700 for active, 400 for inactive
-- `#b3b3b3` muted color for inactive items, `#ffffff` for active
-- Circular icon buttons (50% radius)
-- Spotify logo top-left in green
+### 导航
+- 带有 SpotifyMixUI 的深色侧边栏 14px 权重 700 表示活动，400 表示非活动
+- `#b3b3b3` 表示非活动项目的静音颜色，`#ffffff` 表示活动项目
+- 圆形图标按钮（50% 半径）
+- Spotify 徽标左上角为绿色
 
-## 5. Layout Principles
+## 5.布局原则
 
-### Spacing System
-- Base unit: 8px
-- Scale: 1px, 2px, 3px, 4px, 5px, 6px, 8px, 10px, 12px, 14px, 15px, 16px, 20px
+### 间距系统
+- 基本单位：8px
+- 比例：1 像素、2 像素、3 像素、4 像素、5 像素、6 像素、8 像素、10 像素、12 像素、14 像素、15 像素、16 像素、20 像素
 
-### Grid & Container
-- Sidebar (fixed) + main content area
-- Grid-based album/playlist cards
-- Full-width now-playing bar at bottom
-- Responsive content area fills remaining space
+### 网格和容器
+- 侧边栏（固定）+主要内容区域
+- 基于网格的专辑/播放列表卡
+- 底部全角正在播放栏
+- 响应式内容区域填充剩余空间
 
-### Whitespace Philosophy
-- **Dark compression**: Spotify packs content densely — playlist grids, track lists, and navigation are all tightly spaced. The dark background provides visual rest between elements without needing large gaps.
-- **Content density over breathing room**: This is an app, not a marketing site. Every pixel serves the listening experience.
+### 空白哲学
+- **暗压缩**：Spotify 密集地打包内容 - 播放列表网格、曲目列表和导航都间隔紧密。深色背景在元素之间提供视觉休息，而不需要大的间隙。
+- **内容密度超过呼吸空间**：这是一个应用程序，而不是营销网站。每个像素都服务于聆听体验。
 
-### Border Radius Scale
-- Minimal (2px): Badges, explicit tags
-- Subtle (4px): Inputs, small elements
-- Standard (6px): Album art containers, cards
-- Comfortable (8px): Sections, dialogs
-- Medium (10px–20px): Panels, overlay elements
-- Large (100px): Large pill buttons
-- Pill (500px): Primary buttons, search input
-- Full Pill (9999px): Navigation pills, search
-- Circle (50%): Play buttons, avatars, icons
+### 边界半径比例
+- 最小（2px）：徽章、显式标签
+- 微妙 (4px)：输入、小元素
+- 标准 (6px)：专辑封面容器、卡片
+- 舒适 (8px)：部分、对话框
+- 中（10px–20px）：面板、覆盖元素
+- 大（100px）：大药丸按钮
+- Pill (500px)：主要按钮、搜索输入
+- Full Pill (9999px)：导航药丸、搜索
+- 圆圈 (50%)：播放按钮、头像、图标
 
-## 6. Depth & Elevation
+## 6. 深度和高度
 
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Base (Level 0) | `#121212` background | Deepest layer, page background |
-| Surface (Level 1) | `#181818` or `#1f1f1f` | Cards, sidebar, containers |
-| Elevated (Level 2) | `rgba(0,0,0,0.3) 0px 8px 8px` | Dropdown menus, hover cards |
-| Dialog (Level 3) | `rgba(0,0,0,0.5) 0px 8px 24px` | Modals, overlays, menus |
-| Inset (Border) | `rgb(18,18,18) 0px 1px 0px, rgb(124,124,124) 0px 0px 0px 1px inset` | Input borders |
+|水平|治疗 |使用 |
+|--------|------------|-----|
+|基础（0级）| `#121212` 背景 |最深层，页面背景|
+|表面（1 级）| `#181818` 或 `#1f1f1f` |卡片、侧边栏、容器 |
+|高架（2 级）| `rgba(0,0,0,0.3) 0px 8px 8px` |下拉菜单、悬停卡 |
+|对话（第 3 级）| `rgba(0,0,0,0.5) 0px 8px 24px` |模态框、叠加层、菜单 |
+|插图（边框）| `rgb(18,18,18) 0px 1px 0px, rgb(124,124,124) 0px 0px 0px 1px 插入` |输入边框 |
 
-**Shadow Philosophy**: Spotify uses notably heavy shadows for a dark-themed app. The 0.5 opacity shadow at 24px blur creates a dramatic "floating in darkness" effect for dialogs and menus, while the 0.3 opacity at 8px blur provides a more subtle card lift. The unique inset border-shadow combination on inputs creates a recessed, tactile quality.
+**阴影哲学**：Spotify 在黑暗主题应用程序中使用了特别厚重的阴影。 24 像素模糊的 0.5 不透明度阴影为对话框和菜单创建了戏剧性的“漂浮在黑暗中”效果，而 8 像素模糊的 0.3 不透明度提供了更微妙的卡片提升效果。输入端独特的嵌入式边框阴影组合创造了凹进的触觉品质。
 
-## 7. Do's and Don'ts
+## 7. 该做和不该做的事情
 
-### Do
-- Use near-black backgrounds (`#121212`–`#1f1f1f`) — depth through shade variation
-- Apply Spotify Green (`#1ed760`) only for play controls, active states, and primary CTAs
-- Use pill shape (500px–9999px) for all buttons — circular (50%) for play controls
-- Apply uppercase + wide letter-spacing (1.4px–2px) on button labels
-- Keep typography compact (10px–24px range) — this is an app, not a magazine
-- Use heavy shadows (`0.3–0.5 opacity`) for elevated elements on dark backgrounds
-- Let album art provide color — the UI itself is achromatic
+### 做
+- 使用近乎黑色的背景 (`#121212`–`#1f1f1f`) — 通过阴影变化来确定深度
+- 仅对播放控件、活动状态和主要 CTA 应用 Spotify Green (`#1ed760`)
+- 对所有按钮使用药丸形状 (500px–9999px) - 圆形 (50%) 用于播放控件
+- 在按钮标签上应用大写 + 宽字母间距 (1.4px–2px)
+- 保持排版紧凑（10px–24px范围）——这是一个应用程序，而不是一本杂志
+- 对深色背景上的升高元素使用重阴影（“0.3–0.5 不透明度”）
+- 让专辑封面提供色彩——用户界面本身是无彩色的
 
-### Don't
-- Don't use Spotify Green decoratively or on backgrounds — it's functional only
-- Don't use light backgrounds for primary surfaces — the dark immersion is core
-- Don't skip the pill/circle geometry on buttons — square buttons break the identity
-- Don't use thin/subtle shadows — on dark backgrounds, shadows need to be heavy to be visible
-- Don't add additional brand colors — green + achromatic grays is the complete palette
-- Don't use relaxed line-heights — Spotify's typography is compact and dense
-- Don't expose raw gray borders — use shadow-based or inset borders instead
+### 不要
+- 请勿将 Spotify Green 用于装饰或背景 — 它仅具有功能性
+- 不要在主表面上使用浅色背景——黑暗的沉浸感是核心
+- 不要跳过按钮上的药丸/圆形几何形状 - 方形按钮会破坏身份
+- 不要使用薄/微妙的阴影 - 在深色背景上，阴影需要很重才能可见
+- 不要添加额外的品牌颜色——绿色+无彩色的灰色是完整的调色板
+- 不要使用宽松的行高——Spotify 的排版紧凑而密集
+- 不要暴露原始的灰色边框 - 使用基于阴影或插入边框代替
 
-## 8. Responsive Behavior
+## 8. 响应行为
 
-### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile Small | <425px | Compact mobile layout |
-| Mobile | 425–576px | Standard mobile |
-| Tablet | 576–768px | 2-column grid |
-| Tablet Large | 768–896px | Expanded layout |
-| Desktop Small | 896–1024px | Sidebar visible |
-| Desktop | 1024–1280px | Full desktop layout |
-| Large Desktop | >1280px | Expanded grid |
+### 断点
+|名称 |宽度|关键变化|
+|------|--------|-------------|
+|移动小| <425 像素 |紧凑的移动布局|
+|手机 | 425–576 像素 |标准移动|
+|平板电脑| 576–768 像素 | 2 列网格 |
+|平板电脑大号 | 768–896 像素 |扩展布局|
+|桌面小| 896–1024 像素 |侧边栏可见 |
+|桌面| 1024–1280 像素 |完整的桌面布局|
+|大型桌面 | >1280 像素 |扩展网格|
 
-### Collapsing Strategy
-- Sidebar: full → collapsed → hidden
-- Album grid: 5 columns → 3 → 2 → 1
-- Now-playing bar: maintained at all sizes
-- Search: pill input maintained, width adjusts
-- Navigation: sidebar → bottom bar on mobile
+### 崩溃策略
+- 侧边栏：完整→折叠→隐藏
+- 相册网格：5列→3→2→1
+- 正在播放的栏：保持所有尺寸
+- 搜索：维持药丸输入，调整宽度
+- 导航：侧边栏 → 移动设备底部栏
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
-- Background: Near Black (`#121212`)
-- Surface: Dark Card (`#181818`)
-- Text: White (`#ffffff`)
-- Secondary text: Silver (`#b3b3b3`)
-- Accent: Spotify Green (`#1ed760`)
-- Border: `#4d4d4d`
-- Error: Negative Red (`#f3727f`)
+### 快速颜色参考
+- 背景：近黑色 (`#121212`)
+- 表面：黑卡 (`#181818`)
+- 文本：白色（`#ffffff`）
+- 辅助文本：银色（`#b3b3b3`）
+- 口音：Spotify 绿色 (`#1ed760`)
+- 边框：`#4d4d4d`
+- 错误：负红色（`#f3727f`）
 
-### Example Component Prompts
-- "Create a dark card: #181818 background, 8px radius. Title at 16px SpotifyMixUI weight 700, white text. Subtitle at 14px weight 400, #b3b3b3. Shadow rgba(0,0,0,0.3) 0px 8px 8px on hover."
-- "Design a pill button: #1f1f1f background, white text, 9999px radius, 8px 16px padding. 14px SpotifyMixUI weight 700, uppercase, letter-spacing 1.4px."
-- "Build a circular play button: Spotify Green (#1ed760) background, #000000 icon, 50% radius, 12px padding."
-- "Create search input: #1f1f1f background, white text, 500px radius, 12px 48px padding. Inset border: rgb(124,124,124) 0px 0px 0px 1px inset."
-- "Design navigation sidebar: #121212 background. Active items: 14px weight 700, white. Inactive: 14px weight 400, #b3b3b3."
+### 组件提示示例
+- “创建一张暗卡：#181818 背景，8px 半径。标题为 16px SpotifyMixUI 权重 700，白色文本。副标题为 14px 权重 400，#b3b3b3。悬停时阴影 rgba(0,0,0,0.3) 0px 8px 8px。”
+- “设计一个药丸按钮：#1f1f1f 背景，白色文本，9999px 半径，8px 16px 填充。14px SpotifyMixUI 粗细 700，大写，字母间距 1.4px。”
+- “构建一个圆形播放按钮：Spotify Green (#1ed760) 背景，#000000 图标，50% 半径，12px 填充。”
+- “创建搜索输入：#1f1f1f 背景，白色文本，500px 半径，12px 48px 填充。插入边框：rgb(124,124,124) 0px 0px 0px 1px 插入。”
+- “设计导航侧边栏：#121212 背景。活动项目：14px 重量 700，白色。非活动：14px 重量 400，#b3b3b3。”
 
-### Iteration Guide
-1. Start with #121212 — everything lives in near-black darkness
-2. Spotify Green for functional highlights only (play, active, CTA)
-3. Pill everything — 500px for large, 9999px for small, 50% for circular
-4. Uppercase + wide tracking on buttons — the systematic label voice
-5. Heavy shadows (0.3–0.5 opacity) for elevation — light shadows are invisible on dark
-6. Album art provides all the color — the UI stays achromatic
+### 迭代指南
+1. 从#121212开始——一切都生活在近乎黑色的黑暗中
+2. Spotify Green 仅用于功能亮点（播放、活动、CTA）
+3.将所有东西都变成丸子——大的500px，小9999px，圆形50%
+4. 大写+按钮上的宽跟踪——系统标签声音
+5. 高度的重阴影（0.3–0.5 不透明度）——浅阴影在黑暗中不可见
+6.专辑封面提供了所有的颜色——用户界面保持无彩色

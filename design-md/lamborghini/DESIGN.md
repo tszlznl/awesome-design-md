@@ -1,288 +1,288 @@
-# Design System Inspiration of Lamborghini
+# 兰博基尼的设计系统灵感
 
-## 1. Visual Theme & Atmosphere
+## 1.视觉主题和氛围
 
-Lamborghini's website is a cathedral of darkness — a digital stage where jet-black surfaces stretch infinitely and every element emerges from the void like a machine under a spotlight. The page is almost entirely black. Not dark gray, not near-black — true, uncompromising black (`#000000`) that saturates the viewport and refuses to yield. Into this abyss, white type and Lamborghini Gold (`#FFC000`) are deployed with surgical precision, creating a visual language that feels like walking through a nighttime motorsport event where every surface absorbs light except the things that matter.
+兰博基尼的网站是一座黑暗的大教堂——一个数字舞台，漆黑的表面无限延伸，每个元素都从虚空中显现出来，就像聚光灯下的机器一样。页面几乎全黑。不是深灰色，也不是近乎黑色——真正的、不妥协的黑色（#000000）充满了视口并且拒绝屈服。在这个深渊中，白色字体和兰博基尼金色（“#FFC000”）以外科手术般的精确度部署，创造出一种视觉语言，感觉就像走过夜间赛车赛事，除了重要的东西之外，每个表面都吸收光线。
 
-The hero is a full-viewport video — dark, cinematic, immersive — showing event footage or vehicle reveals with the Lamborghini bull logo floating ethereally above. The navigation is minimal: a centered bull logo, a "MENU" hamburger on the left, and search/bookmark icons on the right, all rendered in white against the black canvas. There are no borders, no visible nav containers, no background color on the header — just white marks floating in darkness. The overall mood is nocturnal luxury: exclusive, theatrical, and deliberately intimidating. Each section transition is a scroll through darkness into the next revelation.
+主角是一段全视口视频——黑暗、电影般、身临其境——展示事件片段或车辆展示，上面飘浮着兰博基尼公牛标志。导航是最小的：居中的公牛标志，左侧的“菜单”汉堡包，右侧的搜索/书签图标，全部在黑色画布上呈现为白色。没有边框，没有可见的导航容器，标题上没有背景颜色——只有漂浮在黑暗中的白色标记。整体气氛是夜间的奢华：独特、戏剧化、故意令人生畏。每个部分的过渡都是穿过黑暗进入下一个启示的滚动。
 
-Typography is the voice of this darkness. LamboType — a custom Neo-Grotesk typeface created by Character Type and design agency Strichpunkt — is used for everything from 120px uppercase display headlines to 10px micro labels. Its distinctive 12° angled terminals are inspired by the aerodynamic lines of Lamborghini's super sports cars, and its proportions range from Normal to Ultracompressed width. Headlines SHOUT in uppercase at enormous scales with tight line-heights (0.92 at 120px), creating dense blocks of text that feel stamped from steel. The typeface carries hexagonal geometric DNA — constructed from hexagons, three-armed stars, and circles — that echoes throughout the interface in the hexagonal pause button and UI icons. Built on Bootstrap grid with 68 Element Plus/UI components, the technical infrastructure is substantial beneath the theatrical surface.
+印刷术是这黑暗的声音。 LamboType 是由 Character Type 和设计机构 Strichpunkt 创建的定制 Neo-Grotesk 字体，可用于从 120 像素大写显示标题到 10 像素微型标签的各种内容。其独特的 12° 角度终端的灵感来自兰博基尼超级跑车的空气动力学线条，其比例范围从正常宽度到超压缩宽度。标题以大写字母大写，行高严格（120 像素时为 0.92），创造出密集的文本块，感觉像是钢印的。该字体带有六边形几何DNA——由六边形、三臂星和圆圈构成——与六边形暂停按钮和UI图标的整个界面相呼应。技术基础设施建立在具有 68 个 Element Plus/UI 组件的 Bootstrap 网格之上，在戏剧性的表面之下是巨大的。
 
-**Key Characteristics:**
-- True black (`#000000`) dominant surfaces with white and gold as the only relief colors
-- LamboType custom Neo-Grotesk font with 12° angled terminals inspired by aerodynamic car lines
-- Lamborghini Gold (`#FFC000`) as the sole accent color — used exclusively for primary CTA buttons
-- All-uppercase display typography at extreme scales (120px, 80px, 54px) with tight line-heights
-- Full-viewport video heroes with cinematic event/vehicle content
-- Zero border-radius on buttons — sharp, angular, uncompromising rectangles
-- Hexagonal motifs in UI elements (pause button, icon system) echoing brand geometry
-- Bootstrap grid system + Element Plus/UI 68 components underneath
-- Transparent ghost buttons with white borders at 50% opacity as the secondary CTA pattern
+**主要特征：**
+- 纯黑色 (`#000000`) 主导表面，白色和金色作为唯一的浮雕颜色
+- LamboType 定制 Neo-Grotesk 字体，带有 12° 角度终端，灵感源自汽车空气动力学线条
+- 兰博基尼金 (`#FFC000`) 作为唯一的强调色 — 专门用于主要 CTA 按钮
+- 极端比例（120px、80px、54px）的全大写显示排版，行高紧凑
+- 全视口视频英雄与电影事件/车辆内容
+- 按钮上的零边框半径——锐利、有棱角、毫不妥协的矩形
+- UI 元素（暂停按钮、图标系统）中的六角形图案与品牌几何形状相呼应
+- Bootstrap网格系统+底层Element Plus/UI 68组件
+- 带有白色边框、不透明度为 50% 的透明幽灵按钮作为辅助 CTA 图案
 
-## 2. Color Palette & Roles
+## 2. 调色板和角色
 
-### Primary
-- **Lamborghini Gold** (`#FFC000`): The signature accent color — a warm, saturated amber-gold (rgb 255, 192, 0) used exclusively for primary action buttons ("Discover More", "Tickets", "Start Configuration"). The only chromatic color in the entire interface, it ignites against the black canvas like a headlight cutting through night
-- **Pure White** (`#FFFFFF`): Primary text color on dark surfaces, logo rendering, nav elements, and light-mode button fills — the voice that speaks from the darkness
+### 小学
+- **兰博基尼金** (`#FFC000`)：标志性的强调色 — 温暖、饱和的琥珀金色 (rgb 255, 192, 0)，专门用于主要操作按钮（“发现更多”、“门票”、“开始配置”）。整个界面中唯一的彩色，它在黑色画布上闪耀，就像划破黑夜的头灯一样
+- **纯白色** (`#FFFFFF`)：黑暗表面上的主要文本颜色、徽标渲染、导航元素和灯光模式按钮填充 - 从黑暗中说话的声音
 
-### Secondary & Accent
-- **Dark Gold** (`#917300`): Hover/pressed state for gold buttons — a deep amber (rgb 145, 115, 0) that darkens the gold to signal interaction
-- **Gold Text** (`#FFCE3E`): Slightly lighter gold variant (rgb 255, 206, 62) used for inline text accents and highlighted labels
-- **Cyan Pulse** (`#29ABE2`): Electric blue-cyan (rgb 41, 171, 226) appearing as an informational accent and interactive element highlight
-- **Link Blue** (`#3860BE`): Medium blue (rgb 56, 96, 190) used universally for link hover states across all text colors
+### 次要和口音
+- **深金色** (`#917300`)：金色按钮的悬停/按下状态 — 深琥珀色 (rgb 145, 115, 0)，使金色变暗以表示交互
+- **金色文本** (`#FFCE3E`)：稍浅的金色变体 (rgb 255, 206, 62)，用于内联文本重音和突出显示的标签
+- **青色脉冲** (`#29ABE2`)：电蓝青色 (rgb 41, 171, 226) 作为信息强调和交互元素突出显示
+- **链接蓝色** (`#3860BE`)：中蓝色 (rgb 56、96、190) 普遍用于所有文本颜色的链接悬停状态
 
-### Surface & Background
-- **Absolute Black** (`#000000`): The dominant surface color — used for page background, hero sections, header, footer, and most containers
-- **Charcoal** (`#202020`): Elevated dark surface (rgb 32, 32, 32) — the primary "dark gray" for cards, panels, and text containers sitting above the black canvas
-- **Dark Iron** (`#181818`): Subtle surface variant (rgb 24, 24, 24) — barely distinguishable from black, used for footer and deep sections
-- **Overlay Black** (`rgba(0,0,0,0.7)`): Semi-transparent overlay for modals and video dimming
-- **Near White** (`#F8F8F8`): Rare light surface (rgb 248, 248, 248) for content blocks in white-mode sections
-- **Mist** (`#E6E6E6`): Light gray surface for secondary light-mode containers
+### 表面和背景
+- **绝对黑色** (`#000000`)：主要表面颜色 - 用于页面背景、英雄部分、页眉、页脚和大多数容器
+- **木炭** (`#202020`)：升高的深色表面 (rgb 32, 32, 32) — 位于黑色画布上方的卡片、面板和文本容器的主要“深灰色”
+- **黑铁色** (`#181818`)：微妙的表面变体 (rgb 24, 24, 24) - 与黑色几乎无法区分，用于页脚和深层部分
+- **Overlay Black** (`rgba(0,0,0,0.7)`)：用于模态和视频调光的半透明叠加
+- **近白色**（`#F8F8F8`）：白色模式部分内容块的罕见光表面（rgb 248、248、248）
+- **Mist** (`#E6E6E6`)：辅助光模式容器的浅灰色表面
 
-### Neutrals & Text
-- **Pure White** (`#FFFFFF`): Primary text on dark backgrounds — headlines, body, nav labels
-- **Smoke** (`#F5F5F5`): Secondary text on dark surfaces — slightly softer than pure white
-- **Graphite** (`#494949`): Dark gray text on light surfaces (rgb 73, 73, 73)
-- **Ash** (`#7D7D7D`): Mid-range gray for muted text, timestamps, and metadata (rgb 125, 125, 125)
-- **Steel** (`#969696`): Lighter gray for disabled text and subtle labels (rgb 150, 150, 150)
-- **Slate** (`#666666`): Alternative mid-gray for secondary content
-- **Iron** (`#555555`): Dark mid-gray for body text variants
-- **Shadow** (`#313131`): Very dark gray for text on dark surfaces where white is too strong
+### 中性色和文字
+- **纯白色** (`#FFFFFF`)：深色背景上的主要文本 - 标题、正文、导航标签
+- **烟雾** (`#F5F5F5`)：深色表面上的辅助文本 - 比纯白色稍微柔和
+- **石墨** (`#494949`)：浅色表面上的深灰色文本 (rgb 73, 73, 73)
+- **Ash** (`#7D7D7D`)：用于静音文本、时间戳和元数据的中灰色（rgb 125、125、125）
+- **Steel** (`#969696`)：浅灰色用于禁用文本和细微标签（rgb 150、150、150）
+- **Slate** (`#666666`)：次要内容的替代中灰色
+- **铁** (`#555555`)：正文变体的深中灰色
+- **阴影** (`#313131`)：非常深的灰色，适用于白色太强的深色表面上的文本
 
-### Semantic & Accent
-- **Cyan Pulse** (`#29ABE2`): Used for informational highlights and interactive feedback
-- **Link Blue** (`#3860BE`): Universal hover state for all hyperlinks
-- **Teal Action** (`#1EAEDB`): Button hover background for transparent/ghost variants (rgb 30, 174, 219)
+### 语义和口音
+- **Cyan Pulse** (`#29ABE2`)：用于信息亮点和交互式反馈
+- **链接蓝色** (`#3860BE`)：所有超链接的通用悬停状态
+- **青色动作** (`#1EAEDB`)：透明/幽灵变体的按钮悬停背景（rgb 30、174、219）
 
-### Gradient System
-- No explicit gradients in the color palette — the dark-to-light progression is achieved through surface layering: `#000000` → `#181818` → `#202020` → `#494949` → `#7D7D7D`
-- Video heroes use natural atmospheric gradients from the content itself
-- Top-of-page gradient: subtle dark-to-darker fade at the edges of full-bleed imagery
+### 渐变系统
+- 调色板中没有明确的渐变 - 通过表面分层实现从暗到亮的渐变：`#000000`→`#181818`→`#202020`→`#494949`→`#7D7D7D`
+- 视频英雄使用内容本身的自然大气梯度
+- 页面顶部渐变：全出血图像边缘出现微妙的由暗到暗的淡入淡出
 
-## 3. Typography Rules
+## 3. 版式规则
 
-### Font Family
-- **Display & UI**: `LamboType`, Roboto, Helvetica Neue, Arial — custom Neo-Grotesk typeface by Character Type for Lamborghini's 2024 brand refresh. Available in widths from Normal to Ultracompressed and weights from Light (300) to Black. Features 12° angled terminals inspired by aerodynamic car geometry, hexagonal construction logic, and support for 200+ languages including Latin, Cyrillic, and Greek
-- **Fallback/UI**: `Open Sans` — used for some button/form contexts as system fallback
-- **No italic variants** observed on the marketing site — the brand voice is always upright
+### 字体系列
+- **显示和 UI**：`LamboType`、Roboto、Helvetica Neue、Arial — 按字符类型为兰博基尼 2024 年品牌更新定制的 Neo-Grotesk 字体。宽度从普通到超压缩，重量从浅色 (300) 到黑色。具有 12° 角度端子，其灵感源自空气动力学汽车几何形状、六边形结构逻辑，并支持 200 多种语言，包括拉丁语、西里尔语和希腊语
+- **后备/UI**：`Open Sans` — 用于某些按钮/表单上下文作为系统后备
+- **在营销网站上观察到没有斜体变体** - 品牌声音始终是直立的
 
-### Hierarchy
+### 层次结构
 
-| Role | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|--------|-------------|----------------|-------|
-| Hero Display | 120px (7.50rem) | 400 | 0.92 | normal | LamboType, uppercase, maximum impact |
-| Display 2 | 80px (5.00rem) | 400 | 1.13 | normal | LamboType, uppercase, major section titles |
-| Section Title | 54px (3.38rem) | 400 | 1.19 | normal | LamboType, uppercase |
-| Sub-section | 40px (2.50rem) | 400 | 1.15 | normal | LamboType, uppercase |
-| Feature Heading | 27px (1.69rem) | 400 | 1.37 | normal | LamboType, uppercase |
-| Card Title | 24px (1.50rem) | 400 | — | normal | LamboType |
-| Body Large | 18px (1.13rem) | 400 | 1.56 | normal | LamboType, mixed case and uppercase variants |
-| Body / UI | 16px (1.00rem) | 400/700 | 1.50 | normal/0.16px | LamboType, primary body text |
-| Button Large | 16px (1.00rem) | 400 | 1.50 | normal | Gold CTA buttons |
-| Button Standard | 14.4px (0.90rem) | 300/700 | 1.00 | 0.14–0.2px | LamboType, uppercase, ghost buttons |
-| Button Small | 13px (0.81rem) | 300/500 | 1.20 | 0.13–0.2px | LamboType, compact button variant |
-| Caption | 14px (0.88rem) | 600/700 | 1.14–1.50 | -0.42px | LamboType, uppercase, negative tracking |
-| Label | 12px (0.75rem) | 400/500 | 1.83 | 0.96px | LamboType, uppercase badges and micro labels |
-| Micro | 10px (0.63rem) | 400 | 1.00–2.00 | 0.225px | LamboType, uppercase, smallest text |
+|角色 |尺寸|重量 |行高|字母间距 |笔记|
+|------|------|--------|-------------|----------------|--------|
+|英雄展示| 120 像素（7.50 雷姆）| 400 | 0.92 | 0.92正常 | LamboType，大写，影响最大 |
+|显示 2 | 80 像素（5.00 雷姆）| 400 | 1.13 | 1.13正常 | LamboType，大写，主要章节标题 |
+|章节标题 | 54 像素（3.38 雷姆）| 400 | 1.19 | 1.19正常 | Lambo 类型，大写 |
+|子节| 40 像素（2.50 雷姆）| 400 | 1.15 | 1.15正常 | Lambo 类型，大写 |
+|专题标题| 27 像素 (1.69 雷姆) | 400 | 1.37 | 1.37正常 | Lambo 类型，大写 |
+|卡片标题 | 24 像素（1.50 雷姆）| 400 | — |正常 |兰博类型|
+|机身大 | 18 像素（1.13 雷姆）| 400 | 1.56 | 1.56正常 | LamboType、混合大小写和大写变体 |
+|机身/用户界面| 16 像素（1.00 雷姆）| 400/700 | 400/700 1.50 | 1.50正常/0.16px | LamboType，主要正文文本 |
+|按钮大| 16 像素（1.00 雷姆）| 400 | 1.50 | 1.50正常 |金色 CTA 按钮 |
+|按钮标准| 14.4 像素（0.90 雷姆）| 300/700 | 300/700 1.00 | 0.14–0.2 像素 | LamboType、大写、幽灵按钮 |
+|按钮小| 13 像素（0.81 雷姆）| 300/500 | 300/500 1.20 | 1.20 0.13–0.2 像素 | LamboType，紧凑型按钮变体 |
+|标题| 14 像素（0.88 雷姆）| 600/700 | 600/700 1.14–1.50 | -0.42 像素 | LamboType，大写，负跟踪 |
+|标签| 12 像素（0.75 雷姆）| 400/500 | 400/500 1.83 | 1.83 0.96 像素 | LamboType、大写徽章和微型标签 |
+|微| 10 像素（0.63 雷姆）| 400 | 1.00–2.00 | 0.225 像素 | LamboType，大写，最小文本 |
 
-### Principles
-- **ALL-CAPS is the default voice**: Display and feature headings are universally uppercase. This creates a shouting, commanding tone that matches the brand's aggression
-- **Extreme scale range**: From 120px heroes to 10px micro labels — a 12:1 ratio that creates dramatic visual hierarchy
-- **Tight line-heights at scale**: Display sizes use 0.92-1.19 line-height, creating dense, compressed blocks of type that feel stamped rather than typeset
-- **Weight 400 dominates**: Unlike many design systems that use bold for emphasis, Lamborghini's regular weight carries the headlines — the typeface itself is so distinctive it doesn't need weight variation
-- **Negative tracking on captions**: -0.42px letter-spacing on 14px captions creates a compressed, technical aesthetic
-- **Positive tracking on micro text**: +0.225px at 10px ensures legibility at the smallest sizes
-- **Single typeface discipline**: LamboType handles everything — the 12° angled terminals and hexagonal geometry provide visual coherence across all sizes
+### 原则
+- **全部大写是默认语音**：显示和功能标题普遍为大写。这创造了一种呼喊、命令的语气，与品牌的侵略性相匹配
+- **极端比例范围**：从 120 像素英雄到 10 像素微标签 - 12:1 的比例，创造戏剧性的视觉层次
+- **比例上的紧密行高**：显示尺寸使用 0.92-1.19 行高，创建密集、压缩的类型块，感觉像是压印的而不是排版的
+- **粗细 400 占主导地位**：与许多使用粗体强调的设计系统不同，兰博基尼的常规粗细占据了头条新闻 - 字体本身非常独特，不需要粗细变化
+- **字幕上的负跟踪**：14px 字幕上的 -0.42px 字母间距创建了压缩的技术美感
+- **微文本上的积极跟踪**：+0.225px at 10px 确保最小尺寸的易读性
+- **单一字体规则**：LamboType 处理一切 — 12° 角度终端和六边形几何形状提供了所有尺寸的视觉连贯性
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
-All buttons use **zero border-radius** — sharp, angular rectangles that echo the aggressive lines of Lamborghini vehicles.
+### 按钮
+所有按钮均使用**零边框半径**——锐利、有棱角的矩形，与兰博基尼汽车的激进线条相呼应。
 
-**Gold Accent CTA** — The primary action:
-- Default: bg `#FFC000` (Lamborghini Gold), text `#000000`, padding 24px, fontSize 16px, fontWeight 400, borderRadius 0px, no border
-- Hover: bg `#917300` (Dark Gold), darkens significantly
-- Class: `btn-accent btn-large`
-- Used for: "Discover More", "Tickets", "Start Configuration"
+**金色口音 CTA** — 主要操作：
+- 默认：bg `#FFC000`（兰博基尼金色），文本`#000000`，填充 24 像素，字体大小 16 像素，字体粗细 400，边框半径 0 像素，无边框
+- 悬停：背景“#917300”（深金色），显着变暗
+- 类：`btn-accent btn-large`
+- 用于：“发现更多”、“门票”、“启动配置”
 
-**Transparent Ghost** — The secondary action on dark backgrounds:
-- Default: bg transparent, text `#FFFFFF`, border 1px solid `#FFFFFF`, padding 16px, opacity 0.5
-- Hover: bg `#1EAEDB` (Teal Action), text white, opacity 0.7
-- Focus: bg `#1EAEDB`, border 1px solid `#000000`, outline 2px solid `#000000`
-- Used for: secondary CTAs on hero sections and dark panels
+**透明幽灵** — 深色背景上的辅助操作：
+- 默认：背景透明，文本`#FFFFFF`，边框1px实心`#FFFFFF`，填充16px，不透明度0.5
+- 悬停：bg `#1EAEDB`（青色动作），文本白色，不透明度 0.7
+- 焦点：背景`#1EAEDB`，边框1px实心`#000000`，轮廓2px实心`#000000`
+- 用于：英雄部分和深色面板上的辅助 CTA
 
-**White Filled** — Light-mode primary:
-- Default: bg `#FFFFFF`, text `#202020`, no border
-- Used for: CTAs on dark sections where gold isn't appropriate
+**白色填充** — 光模式主色：
+- 默认：背景`#FFFFFF`，文本`#202020`，无边框
+- 用于：在不适合金色的黑暗部分进行 CTA
 
-**Black Filled** — Dark filled variant:
-- Default: bg `#000000`, text `#202020`
-- Used for: Inverted CTA on light sections
+**黑色填充** — 深色填充变体：
+- 默认：背景`#000000`，文本`#202020`
+- 用于：浅色切片上的倒置 CTA
 
-**Gray Neutral** — Subtle action:
-- Default: bg `#969696`, text `#202020`
-- Used for: secondary/tertiary actions, badge-like buttons
+**灰色中性** — 微妙的动作：
+- 默认：背景`#969696`，文本`#202020`
+- 用于：二级/三级操作、类似徽章的按钮
 
-### Cards & Containers
-- Background: `#202020` (Charcoal) on black canvas, or `#000000` on lighter sections
-- Border: `0px 1px solid #202020` bottom borders for section dividers
-- Border-radius: 0px (completely sharp corners)
-- Shadow: minimal, uses overlay opacity for depth
-- Content: full-bleed photography + overlaid text in white
+### 卡片和容器
+- 背景：黑色画布上的“#202020”（木炭），或浅色部分上的“#000000”
+- 边框：`0px 1pxsolid #202020` 部分分隔线的底部边框
+- 边框半径：0px（完全尖角）
+- 阴影：最小，使用叠加不透明度来获得深度
+- 内容：全出血摄影+白色叠加文本
 
-### Inputs & Forms
-- Minimal form presence on the marketing site
-- Switch elements: border-radius 20px (the only rounded element), border 1px solid `#DDDDDD`
-- Cookie banner input style: white text on black with `#7D7D7D` borders
+### 输入和表格
+- 营销网站上的最小形式存在
+- 开关元素：边框半径 20px（唯一的圆形元素），边框 1px 实心`#DDDDDD`
+- Cookie 横幅输入样式：黑底白字，带有“#7D7D7D”边框
 
-### Navigation
-- **Desktop**: Centered bull logo, "MENU" hamburger with icon on left, search icon + bookmarks icon on right
-- **Background**: Transparent (inherits black page background)
-- **Sticky**: Fixed to top, floats above content
-- **No visible borders or shadows** — elements float in the darkness
-- **"MENU" label**: White text at 14px weight 400, uppercase, accompanies hamburger icon
-- **Hexagonal motifs**: Pause button on hero sections uses hexagonal outline shape
+### 导航
+- **桌面**：居中的公牛标志，左侧带有图标的“菜单”汉堡包，右侧是搜索图标+书签图标
+- **背景**：透明（继承黑色页面背景）
+- **粘性**：固定到顶部，浮动在内容上方
+- **没有可见的边框或阴影** - 元素漂浮在黑暗中
+- **“MENU”标签**：白色文本，14 像素，粗细 400，大写，附带汉堡包图标
+- **六边形图案**：英雄部分的暂停按钮使用六边形轮廓形状
 
-### Image Treatment
-- **Hero**: Full-viewport video sections (100vh) with cinematic event/vehicle footage
-- **Event photography**: Full-bleed aerial shots of Lamborghini Arena events
-- **Vehicle imagery**: High-contrast studio shots on dark backgrounds, full-width
-- **Aspect ratios**: Predominantly 16:9 and wider for cinematic feel
-- **Dark gradient overlays**: Subtle darkening at top/bottom edges of video to ensure text legibility
+### 图像处理
+- **英雄**：带有电影事件/车辆镜头的全视口视频部分 (100vh)
+- **活动摄影**：兰博基尼竞技场活动的全出血航拍照片
+- **车辆图像**：深色背景上的高对比度工作室拍摄，全宽
+- **纵横比**：主要为 16:9 或更宽，以实现电影般的感觉
+- **深色渐变叠加**：视频顶部/底部边缘轻微变暗，以确保文本的易读性
 
-### Distinctive Components
-- **Hexagonal Pause Button**: Video control uses a hexagonal outline (matching the brand's geometric DNA from the typeface), positioned bottom-right of hero sections
-- **Progress Bar**: Thin white line at bottom of hero sections indicating video/slide progress
-- **Badge/Tag**: bg `#969696`, text white, padding 8px, fontSize 10px, borderRadius 2px — tiny metallic pills
+### 独特的组件
+- **六角形暂停按钮**：视频控制使用六角形轮廓（与字体中的品牌几何DNA相匹配），位于英雄部分的右下角
+- **进度条**：英雄部分底部的细白线指示视频/幻灯片进度
+- **徽章/标签**：bg `#969696`，文本白色，填充 8px，字体大小 10px，borderRadius 2px — 微小的金属丸
 
-## 5. Layout Principles
+## 5.布局原则
 
-### Spacing System
-- **Base unit**: 8px
-- **Full scale**: 2px, 4px, 5px, 8px, 10px, 12px, 15px, 16px, 20px, 24px, 32px, 40px, 48px, 56px
-- **Button padding**: 16px (ghost), 24px (gold accent)
-- **Section padding**: 48–56px vertical, 40px horizontal
-- **Small spacing**: 2–5px for fine adjustments (badge padding, border spacing)
+### 间距系统
+- **基本单位**：8px
+- **全尺寸**：2 像素、4 像素、5 像素、8 像素、10 像素、12 像素、15 像素、16 像素、20 像素、24 像素、32 像素、40 像素、48 像素、56 像素
+- **按钮填充**：16px（幽灵），24px（金色强调）
+- **部分填充**：垂直 48–56 像素，水平 40 像素
+- **小间距**：2–5px 用于精细调整（徽章填充、边框间距）
 
-### Grid & Container
-- **Framework**: Bootstrap grid system (container + row + col)
-- **Max width**: 1440px (largest breakpoint)
-- **Columns**: Standard 12-column Bootstrap grid
-- **Full-bleed**: Hero sections break out of grid to fill viewport edge-to-edge
-- **Content areas**: Centered within 1200px max-width containers
+### 网格和容器
+- **框架**：Bootstrap网格系统（容器+行+列）
+- **最大宽度**：1440px（最大断点）
+- **列**：标准 12 列 Bootstrap 网格
+- **全出血**：英雄部分突破网格以边缘到边缘填充视口
+- **内容区域**：在最大宽度为 1200 像素的容器内居中
 
-### Whitespace Philosophy
-Lamborghini uses darkness as whitespace. The generous black expanses between content blocks serve the same function as white space in a light design — creating breathing room that elevates each element to the status of exhibit. A model name floating in the middle of a black viewport has the same visual weight as a gallery piece on a white wall. The absence of color IS the design.
+### 空白哲学
+兰博基尼使用黑暗作为空白。内容块之间宽阔的黑色区域与灯光设计中的白色空间具有相同的功能——创造呼吸空间，将每个元素提升到展览的地位。漂浮在黑色视口中间的模型名称与白墙上的画廊作品具有相同的视觉重量。没有色彩就是设计。
 
-### Border Radius Scale
-| Value | Context |
-|-------|---------|
-| 0px | Default for everything — buttons, cards, containers, images |
-| 1px | Subtle span elements |
-| 2px | Badges, close buttons, cookie elements — barely perceptible |
-| 20px | Toggle switches only — the sole rounded element |
+### 边界半径比例
+|价值|背景 |
+|--------|---------|
+| 0 像素 |一切的默认设置——按钮、卡片、容器、图像|
+| 1 像素 |微妙的跨度元素|
+| 2 像素 |徽章、关闭按钮、cookie 元素——几乎难以察觉 |
+| 20 像素 |仅限拨动开关 — 唯一的圆形元件 |
 
-## 6. Depth & Elevation
+## 6. 深度和高度
 
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Level 0 (Abyss) | `#000000` flat | Page background, deepest layer |
-| Level 1 (Surface) | `#181818` or `#202020` | Cards, content panels, elevated sections |
-| Level 2 (Overlay) | `rgba(0,0,0,0.7)` | Modal backdrops, video dimming |
-| Level 3 (Fog) | `rgba(0,0,0,0.5)` | Lighter overlays, hover states |
-| Level 4 (Mist) | `rgba(0,0,0,0.25)` | Subtle depth hints |
+|水平|治疗 |使用 |
+|--------|------------|-----|
+| 0 级（深渊）| `#000000` 平 |页面背景，最深层|
+| 1 级（表面）| `#181818` 或 `#202020` |卡片、内容面板、高架部分 |
+| 2 级（覆盖）| `rgba(0,0,0,0.7)` |模态背景、视频调光|
+| 3 级（雾）| `rgba(0,0,0,0.5)` |更轻的叠加层、悬停状态 |
+| 4 级（雾）| `rgba(0,0,0,0.25)` |微妙的深度暗示|
 
-### Shadow Philosophy
-Lamborghini achieves depth through surface color layering rather than shadows. On a black canvas, traditional drop shadows are invisible — instead, the system creates elevation by shifting from absolute black to progressively lighter dark grays: `#000000` → `#181818` → `#202020` → `#494949`. This "darkness gradient" approach means that elevated elements are literally lighter than their surroundings, inverting the traditional shadow model.
+### 影子哲学
+兰博基尼通过表面颜色分层而不是阴影来实现深度。在黑色画布上，传统的投影是不可见的 - 相反，系统通过从绝对黑色转变为逐渐变浅的深灰色来创建高度：“#000000”→“#181818”→“#202020”→“#494949”。这种“黑暗梯度”方法意味着升高的元素实际上比周围的环境更亮，从而颠倒了传统的阴影模型。
 
-### Decorative Depth
-- Full-bleed video provides atmospheric depth through cinematic lighting
-- The hexagonal pause button floats with a thin white outline stroke
-- Progress bars at hero section bottoms create a subtle horizon line
-- No gradients, glows, or blur effects on UI elements — the photography provides all visual richness
+### 装饰深度
+- 全出血视频通过电影灯光提供大气深度
+- 六边形暂停按钮带有细白色轮廓笔划浮动
+- 英雄部分底部的进度条创建了一条微妙的地平线
+- UI 元素上没有渐变、发光或模糊效果 - 摄影提供了所有视觉丰富度
 
-## 7. Do's and Don'ts
+## 7. 该做和不该做的事情
 
-### Do
-- Use absolute black (`#000000`) as the primary background — never dark gray as a substitute
-- Apply Lamborghini Gold (`#FFC000`) exclusively for primary CTA buttons — never for decorative purposes
-- Set all display headings in uppercase with LamboType — the brand voice is always SHOUTING
-- Use zero border-radius on buttons and cards — sharp angles are non-negotiable
-- Maintain tight line-heights (0.92–1.19) on display type to create dense, architectural text blocks
-- Use the transparent ghost button (white border, 50% opacity) as the secondary CTA on dark backgrounds
-- Let full-viewport video/photography carry emotional weight — UI is infrastructure, not decoration
-- Reserve hexagonal geometry for UI icons and the video control button
-- Use weight 400 (regular) for headlines — the typeface is distinctive enough without bold emphasis
-- Keep the gray palette achromatic — all neutrals are pure gray without color tinting
+### 做
+- 使用绝对黑色（`#000000`）作为主要背景 - 切勿使用深灰色作为替代品
+- 专门为主要 CTA 按钮应用兰博基尼金色 (`#FFC000`) — 绝不用于装饰目的
+- 使用 LamboType 将所有显示标题设置为大写 — 品牌声音始终为 SHOUTING
+- 在按钮和卡片上使用零边框半径 - 锐角是不可协商的
+- 在显示类型上保持严格的行高 (0.92–1.19)，以创建密集的建筑文本块
+- 使用透明幽灵按钮（白色边框，50% 不透明度）作为深色背景上的辅助 CTA
+- 让全视口视频/摄影承载情感重量 - UI 是基础设施，而不是装饰
+- 为UI图标和视频控制按钮保留六边形几何形状
+- 标题使用粗细 400（常规）——字体足够独特，无需粗体强调
+- 保持灰色调色板无彩色——所有中性色都是纯灰色，没有着色
 
-### Don't
-- Introduce additional accent colors beyond gold — the monochrome-plus-gold system is sacred
-- Apply border-radius to buttons or cards — curved edges contradict the angular vehicle aesthetic
-- Use LamboType in italic or decorative styles — the brand is always upright and direct
-- Add gradients to buttons or surfaces — depth comes from surface layering, not blending
-- Use light backgrounds as the primary canvas — darkness is the default state, light is the exception
-- Mix lowercase into display headings — the uppercase convention communicates authority and power
-- Add hover animations with scale or translate — interactions should be color-only (background/opacity shifts)
-- Use Open Sans for display text — LamboType must handle all visible typography
-- Create busy layouts with many small elements — Lamborghini's design is about singular, bold statements
-- Apply shadows to elements — on a black canvas, shadows are meaningless; use surface color shifts instead
+### 不要
+- 引入金色以外的额外强调色——单色加金色系统是神圣的
+- 将边框半径应用于按钮或卡片 - 弯曲的边缘与有角度的车辆美学相矛盾
+- 使用斜体或装饰风格的LamboType——品牌始终是正直和直接的
+- 向按钮或表面添加渐变 - 深度来自表面分层，而不是混合
+- 使用浅色背景作为主要画布 - 黑暗是默认状态，浅色是例外
+- 将小写字母混合到显示标题中——大写字母约定传达权威和权力
+- 添加带有缩放或平移的悬停动画 - 交互应该仅是颜色的（背景/不透明度变化）
+- 使用 Open Sans 来显示文本 — LamboType 必须处理所有可见的排版
+- 使用许多小元素创建复杂的布局 - 兰博基尼的设计是关于独特、大胆的陈述
+- 对元素应用阴影——在黑色画布上，阴影毫无意义；使用表面颜色偏移代替
 
-## 8. Responsive Behavior
+## 8. 响应行为
 
-### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile Small | <425px | Single column, reduced type scale, stacked buttons |
-| Mobile | 425-576px | Single column, hamburger nav, hero text ~40px |
-| Tablet Small | 576-768px | 2-column grid begins, padding adjusts |
-| Tablet | 768-1024px | 2-column layout, expanded hero, vehicle cards side-by-side |
-| Desktop | 1024-1280px | Full navigation, 3+ column grids, display text at 80px |
-| Desktop Large | 1280-1440px | Full layout, hero at 120px display, max-width containers |
-| Wide | >1440px | Content centered, margins expand, hero fills viewport |
+### 断点
+|名称 |宽度|关键变化|
+|------|--------|-------------|
+|移动小| <425 像素 |单栏、缩小字体比例、堆叠按钮 |
+|手机 | 425-576 像素 |单栏，汉堡导航，英雄文本 ~40px |
+|小型平板电脑 | 576-768 像素 | 2 列网格开始，填充调整 |
+|平板电脑| 768-1024 像素 | 2 列布局、扩展英雄、并排车辆卡 |
+|桌面| 1024-1280 像素 |完整导航，3+ 列网格，以 80 像素显示文本 |
+|桌面大| 1280-1440 像素 |完整布局，120 像素显示的英雄，最大宽度容器 |
+|宽| >1440 像素 |内容居中、边距扩大、英雄填充视口 |
 
-### Touch Targets
-- Gold CTA buttons: 48px+ minimum height with 24px padding (exceeds WCAG 44×44px)
-- Ghost buttons: 48px+ with 16px padding
-- Hamburger menu: large touch target (~48px square)
-- Hexagonal pause button: approximately 48px diameter
+### 触摸目标
+- 金色 CTA 按钮：48px+ 最小高度，24px 填充（超过 WCAG 44×44px）
+- 幽灵按钮：48px+，内边距 16px
+- 汉堡菜单：大触摸目标（约 48 像素方形）
+- 六角形暂停按钮：直径约 48px
 
-### Collapsing Strategy
-- **Navigation**: Always hamburger-based ("MENU" + icon) — no horizontal nav expansion on any breakpoint
-- **Hero video**: Maintains full-viewport height across all breakpoints, adjusting object-fit
-- **Display type**: Scales from 120px (desktop) → 80px (tablet) → 54px/40px (mobile)
-- **Button layout**: Side-by-side on desktop, stacks vertically on mobile
-- **Grid columns**: 3-column → 2-column → 1-column progression
-- **Section spacing**: Reduces from 56px → 40px → 24px vertical padding
+### 崩溃策略
+- **导航**：始终基于汉堡包（“MENU”+图标）-任何断点上都没有水平导航扩展
+- **英雄视频**：在所有断点上保持全视口高度，调整对象适合度
+- **显示类型**：缩放范围为 120px（桌面）→ 80px（平板电脑）→ 54px/40px（移动设备）
+- **按钮布局**：在桌面上并排，在移动设备上垂直堆叠
+- **网格列**：3 列 → 2 列 → 1 列级数
+- **部分间距**：从 56px → 40px → 24px 垂直填充减少
 
-### Image Behavior
-- Hero videos use `object-fit: cover` to maintain cinematic framing at all sizes
-- Vehicle images scale within their containers with maintained aspect ratios
-- Event photography crops to viewport width on narrow screens
-- Background images darken at edges to maintain text contrast on all viewports
+### 图像行为
+- 英雄视频使用“object-fit: cover”来保持所有尺寸的电影框架
+- 车辆图像在其容器内缩放并保持纵横比
+- 事件摄影在窄屏幕上裁剪为视口宽度
+- 背景图像边缘变暗，以保持所有视口上的文本对比度
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
-- Primary CTA: "Lamborghini Gold (#FFC000)"
-- Background: "Absolute Black (#000000)"
-- Surface: "Charcoal (#202020)"
-- Heading text: "Pure White (#FFFFFF)"
-- Body text: "Ash (#7D7D7D)"
-- Link hover: "Link Blue (#3860BE)"
-- Accent: "Cyan Pulse (#29ABE2)"
-- Border: "Pure White (#FFFFFF) at 50% opacity"
+### 快速颜色参考
+- 主要 CTA：“兰博基尼金 (#FFC000)”
+- 背景：“绝对黑色 (#000000)”
+- 表面：“木炭 (#202020)”
+- 标题文字：“纯白色 (#FFFFFF)”
+- 正文：“Ash (#7D7D7D)”
+- 链接悬停：“蓝色链接 (#3860BE)”
+- 口音：“青色脉冲 (#29ABE2)”
+- 边框：“纯白色 (#FFFFFF)，不透明度为 50%”
 
-### Example Component Prompts
-- "Create a hero section with a full-viewport black background, the model name 'TEMERARIO' in LamboType at 120px uppercase weight 400 white text with 0.92 line-height, centered vertically, with a Lamborghini Gold (#FFC000) 'Discover More' button below — sharp corners, 0px radius, 24px padding, black text"
-- "Design a transparent ghost button with 1px solid white border at 50% opacity, white text at 14.4px uppercase with 0.2px letter-spacing, padding 16px, on a black background — hover state changes to Teal Action (#1EAEDB) background with 70% opacity"
-- "Build a navigation bar with zero visible background on absolute black, a centered bull logo, 'MENU' text label with hamburger icon on the left, and search + bookmark icons on the right — all in white, sticky position"
-- "Create a news card grid on charcoal (#202020) background with white headlines at 27px uppercase, body text in #7D7D7D at 16px, and a white underlined 'Read More' link that turns #3860BE on hover"
-- "Design a section divider using a 1px solid bottom border in #202020 on a black canvas — the elevation difference is purely through surface color shift, not shadow"
+### 组件提示示例
+- “创建一个具有全视口黑色背景的英雄部分，LamboType 中的模型名称“TEMERARIO”，120 像素大写粗细 400 白色文本，行高 0.92，垂直居中，下方带有兰博基尼金色 (#FFC000)“发现更多”按钮 — 尖角、0 像素半径、24 像素填充、黑色文本”
+- “设计一个透明幽灵按钮，其 1 像素实心白色边框，不透明度为 50%，白色文本为 14.4 像素大写，字母间距为 0.2 像素，填充 16 像素，黑色背景 — 悬停状态更改为不透明度为 70% 的青色动作 (#1EAEDB) 背景”
+- “在绝对黑色上构建一个具有零可见背景的导航栏，居中的公牛徽标，左侧带有汉堡包图标的“菜单”文本标签，右侧的搜索+书签图标 - 全部位于白色粘性位置”
+- “在木炭 (#202020) 背景上创建一个新闻卡网格，其中白色标题为 27 像素大写，正文为 #7D7D7D 为 16 像素，以及一个白色下划线的“阅读更多”链接，悬停时会变成#3860BE”
+- “在黑色画布上使用 #202020 中的 1px 实心底部边框设计分区分隔线 — 标高差异纯粹是通过表面颜色偏移，而不是阴影”
 
-### Iteration Guide
-When refining existing screens generated with this design system:
-1. Focus on ONE component at a time — Lamborghini's system is extreme and every element must feel aggressive
-2. Reference specific color names and hex codes from this document — the palette has only about 5 active colors
-3. Use natural language descriptions, not CSS values — "sharp-cut golden rectangle" not "border-radius: 0px; background: #FFC000"
-4. Describe the desired "feel" alongside specific measurements — "floating in total darkness" communicates the black canvas better than "background: #000000"
-5. Remember that UPPERCASE IS THE DEFAULT — if text isn't uppercase at display sizes, it probably should be
+### 迭代指南
+当优化使用此设计系统生成的现有屏幕时：
+1. 一次专注于一个组件——兰博基尼的系统非常极端，每个元素都必须具有侵略性
+2. 参考本文档中的特定颜色名称和十六进制代码 - 调色板只有大约 5 种活动颜色
+3.使用自然语言描述，而不是CSS值——“锐利的黄金矩形”而不是“边框半径：0px；背景：#FFC000”
+4. 描述所需的“感觉”以及具体的测量结果——“漂浮在完全黑暗中”比“背景：#000000”更好地传达黑色画布
+5. 请记住，默认为大写 — 如果文本在显示尺寸下不是大写，则可能应该是

@@ -1,0 +1,4 @@
+- [x] 已成功创建并切换到 `docs/translate-to-chinese`（或类似名称）的 Git 分支。
+- [x] 根目录下的非代码文档（如 `README.md`）已翻译为中文，且格式未损坏。
+- [x] 根目录下的非代码文档（如 `CONTRIBUTING.md`）已翻译为中文，且格式未损坏。
+- [x] `design-md/` 目录下的所有非代码文档（如各子文件夹中的 `DESIGN.md`, `README.md` 等）均已翻译为中文。

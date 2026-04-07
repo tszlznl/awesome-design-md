@@ -1,323 +1,323 @@
-# Design System Inspiration of VoltAgent
+# VoltAgent 的设计系统灵感
 
-## 1. Visual Theme & Atmosphere
+## 1.视觉主题和氛围
 
-VoltAgent's interface is a deep-space command terminal for the AI age — a developer-facing darkness built on near-pure-black surfaces (`#050507`) where the only interruption is the electric pulse of emerald green energy. The entire experience evokes the feeling of staring into a high-powered IDE at 2am: dark, focused, and alive with purpose. This is not a friendly SaaS landing page — it's an engineering platform that announces itself through code snippets, architectural diagrams, and raw technical confidence.
+VoltAgent 的界面是人工智能时代的深空命令终端——一个面向开发人员的黑暗环境，建立在近乎纯黑色的表面上（“#050507”），唯一的中断是翠绿色能量的电脉冲。整个体验让人感觉就像凌晨 2 点凝视高性能 IDE：黑暗、专注、充满活力。这不是一个友好的 SaaS 登陆页面 - 这是一个通过代码片段、架构图和原始技术信心来展示自己的工程平台。
 
-The green accent (`#00d992`) is used with surgical precision — it glows from headlines, borders, and interactive elements like a circuit board carrying a signal. Against the carbon-black canvas, this green reads as "power on" — a deliberate visual metaphor for an AI agent engineering platform. The supporting palette is built entirely from warm-neutral grays (`#3d3a39`, `#8b949e`, `#b8b3b0`) that soften the darkness without introducing color noise, creating a cockpit-like warmth that pure blue-grays would lack.
+绿色口音（“#00d992”）的使用非常精确——它从标题、边框和交互元素（如承载信号的电路板）中发光。在炭黑画布的映衬下，这种绿色读作“通电”——这是对人工智能代理工程平台的故意视觉隐喻。支持调色板完全由暖中性灰色（“#3d3a39”、“#8b949e”、“#b8b3b0”）构建，可以在不引入色彩噪声的情况下软化黑暗，从而营造出纯蓝灰色所缺乏的驾驶舱般的温暖感。
 
-Typography leans on the system font stack for headings — achieving maximum rendering speed and native-feeling authority — while Inter carries the body and UI text with geometric precision. Code blocks use SFMono-Regular, the same font developers see in their terminals, reinforcing the tool's credibility at every scroll.
+排版依赖于标题的系统字体堆栈 - 实现最大的渲染速度和原生感觉的权威 - 而 Inter 则以几何精度承载正文和 UI 文本。代码块使用 SFMano-Regular，与开发人员在终端中看到的字体相同，增强了该工具在每次滚动时的可信度。
 
-**Key Characteristics:**
-- Carbon-black canvas (`#050507`) with warm-gray border containment (`#3d3a39`) — not cold or sterile
-- Single-accent identity: Emerald Signal Green (`#00d992`) as the sole chromatic energy source
-- Dual-typography system: system-ui for authoritative headings, Inter for precise UI/body text, SFMono for code credibility
-- Ultra-tight heading line-heights (1.0–1.11) creating dense, compressed power blocks
-- Warm neutral palette (`#3d3a39`, `#8b949e`, `#b8b3b0`) that prevents the dark theme from feeling clinical
-- Developer-terminal aesthetic where code snippets ARE the hero content
-- Green glow effects (`drop-shadow`, border accents) that make UI elements feel electrically alive
+**主要特征：**
+- 碳黑帆布 (`#050507`) 与暖灰色边框遏制 (`#3d3a39`) — 不冷或无菌
+- 单重音标识：翡翠信号绿 (`#00d992`) 作为唯一的色彩能源
+- 双排版系统：system-ui 用于权威标题，Inter 用于精确 UI/正文文本，SFMono 用于代码可信度
+- 超紧的航向线高度 (1.0–1.11) 创建密集、压缩的电源块
+- 温暖的中性调色板（`#3d3a39`、`#8b949e`、`#b8b3b0`）可防止黑暗主题感觉冷漠
+- 开发者终端的美学，其中代码片段是主要内容
+- 绿色发光效果（“投影”、边框强调）使 UI 元素感觉充满活力
 
-## 2. Color Palette & Roles
+## 2. 调色板和角色
 
-### Primary
-- **Emerald Signal Green** (`#00d992`): The core brand energy — used for accent borders, glow effects, and the highest-signal interactive moments. This is the "power-on" indicator of the entire interface.
-- **VoltAgent Mint** (`#2fd6a1`): The button-text variant of the brand green — slightly warmer and more readable than pure Signal Green, used specifically for CTA text on dark surfaces.
-- **Tailwind Emerald** (`#10b981`): The ecosystem-standard green used at low opacity (30%) for subtle background tints and link defaults. Bridges VoltAgent's custom palette with Tailwind's utility classes.
+### 小学
+- **翡翠信号绿** (`#00d992`)：核心品牌能量 — 用于强调边框、发光效果和最高信号互动时刻。这是整个界面的“开机”指示灯。
+- **VoltAgent Mint** (`#2fd6a1`)：品牌绿色的按钮文本变体 - 比纯信号绿色稍微温暖且更具可读性，专门用于深色表面上的 CTA 文本。
+- **Tailwind Emerald** (`#10b981`)：生态系统标准绿色，在低不透明度 (30%) 下使用，用于微妙的背景色调和链接默认值。将 VoltAgent 的自定义调色板与 Tailwind 的实用程序类连接起来。
 
-### Secondary & Accent
-- **Soft Purple** (`#818cf8`): A cool indigo-violet used sparingly for secondary categorization, code syntax highlights, and visual variety without competing with green.
-- **Cobalt Primary** (`#306cce`): Docusaurus primary dark — used in documentation contexts for links and interactive focus states.
-- **Deep Cobalt** (`#2554a0`): The darkest primary shade, reserved for pressed/active states in documentation UI.
-- **Ring Blue** (`#3b82f6`): Tailwind's ring color at 50% opacity — visible only during keyboard focus for accessibility compliance.
+### 次要和口音
+- **软紫色** (`#818cf8`)：一种凉爽的靛紫，少量用于二级分类、代码语法突出显示和视觉多样性，而不与绿色竞争。
+- **Cobalt Primary** (`#306cce`)：Docusaurus 原色深色 — 用于链接和交互式焦点状态的文档上下文。
+- **深钴色** (`#2554a0`)：最暗的主色调，保留用于文档 UI 中的按下/活动状态。
+- **环蓝色** (`#3b82f6`)：Tailwind 的环颜色为 50% 不透明度 - 仅在键盘焦点期间可见，以确保辅助功能合规性。
 
-### Surface & Background
-- **Abyss Black** (`#050507`): The landing page canvas — a near-pure black with the faintest warm undertone, darker than most "dark themes" for maximum contrast with green accents.
-- **Carbon Surface** (`#101010`): The primary card and button background — one shade lighter than Abyss, creating a barely perceptible elevation layer. Used across all contained surfaces.
-- **Warm Charcoal Border** (`#3d3a39`): The signature containment color — not a cold gray but a warm, almost brownish dark tone that prevents borders from feeling harsh against the black canvas.
+### 表面和背景
+- **Abyss Black** (`#050507`)：着陆页画布 - 接近纯黑色，具有最微弱的温暖底色，比大多数“黑暗主题”更暗，与绿色口音形成最大对比度。
+- **碳表面**（`#101010`）：主卡片和按钮背景 - 比深渊浅一个阴影，创建一个几乎察觉不到的高度层。用于所有包含的表面。
+- **暖木炭边框** (`#3d3a39`)：标志性的遏制颜色 - 不是冷灰色，而是温暖的、近乎棕色的暗色调，可以防止边框在黑色画布上感觉刺眼。
 
-### Neutrals & Text
-- **Snow White** (`#f2f2f2`): The primary text color on dark surfaces — not pure white (`#ffffff`) but a softened, eye-friendly off-white. The most-used color on the site (1008 instances).
-- **Pure White** (`#ffffff`): Reserved for the highest-emphasis moments — ghost button text and maximum-contrast headings. Used at low opacity (5%) for subtle overlay effects.
-- **Warm Parchment** (`#b8b3b0`): Secondary body text — a warm light gray with a slight pinkish undertone that reads as "paper" against the dark canvas.
-- **Steel Slate** (`#8b949e`): Tertiary text, metadata, timestamps, and de-emphasized content. A cool blue-gray that provides clear hierarchy below Warm Parchment.
-- **Fog Gray** (`#bdbdbd`): Footer links and supporting navigation text — brightens on hover to Pure White.
-- **Mist Gray** (`#dcdcdc`): Slightly brighter than Fog, used for secondary link text that transitions to bright green on hover.
-- **Near White** (`#eeeeee`): Highest-contrast secondary text, one step below Snow White.
+### 中性色和文字
+- **雪白** (`#f2f2f2`)：深色表面上的主要文本颜色 — 不是纯白色 (`#ffffff`)，而是柔和的、对眼睛友好的灰白色。网站上最常用的颜色（1008 个实例）。
+- **纯白色** (`#ffffff`)：保留给最强调的时刻 — 幽灵按钮文本和最大对比度标题。以低不透明度 (5%) 使用以获得微妙的叠加效果。
+- **温暖的羊皮纸** (`#b8b3b0`)：次要正文 — 温暖的浅灰色，带有轻微的粉红色底色，在深色画布上读起来就像“纸”。
+- **Steel Slate** (`#8b949e`)：第三级文本、元数据、时间戳和弱化内容。冷色蓝灰色，在暖色羊皮纸下面提供清晰的层次结构。
+- **雾灰色** (`#bdbdbd`)：页脚链接和支持导航文本 — 悬停时变亮为纯白色。
+- **雾灰色** (`#dcdcdc`)：比雾稍亮，用于在悬停时转换为亮绿色的辅助链接文本。
+- **近白色** (`#eeeeee`)：最高对比度的辅助文本，比白雪公主低一级。
 
-### Semantic & Accent
-- **Success Emerald** (`#008b00`): Deep green for success states and positive confirmations in documentation contexts.
-- **Success Light** (`#80d280`): Soft pastel green for success backgrounds and subtle positive indicators.
-- **Warning Amber** (`#ffba00`): Bright amber for warning alerts and caution states.
-- **Warning Pale** (`#ffdd80`): Softened amber for warning background fills.
-- **Danger Coral** (`#fb565b`): Vivid red for error states and destructive action warnings.
-- **Danger Rose** (`#fd9c9f`): Softened coral-pink for error backgrounds.
-- **Info Teal** (`#4cb3d4`): Cool teal-blue for informational callouts and tip admonitions.
-- **Dashed Border Slate** (`#4f5d75` at 40%): A muted blue-gray used exclusively for decorative dashed borders in workflow diagrams.
+### 语义和口音
+- **成功翡翠** (`#008b00`)：深绿色表示成功状态和文档上下文中的积极确认。
+- **成功灯** (`#80d280`)：柔和的绿色，用于成功背景和微妙的积极指标。
+- **警告琥珀色** (`#ffba00`)：明亮的琥珀色表示警告警报和警告状态。
+- **警告苍白** (`#ffdd80`)：软化琥珀色用于警告背景填充。
+- **危险珊瑚** (`#fb565b`)：鲜艳的红色表示错误状态和破坏性操作警告。
+- **危险玫瑰** (`#fd9c9f`)：柔和的珊瑚粉色，用于错误背景。
+- **信息青色** (`#4cb3d4`)：凉爽的青色蓝色，用于信息标注和提示警告。
+- **虚线边框石板**（`#4f5d75` at 40%）：一种柔和的蓝灰色，专门用于工作流程图中的装饰虚线边框。
 
-### Gradient System
-- **Green Signal Glow**: `drop-shadow(0 0 2px #00d992)` animating to `drop-shadow(0 0 8px #00d992)` — creates a pulsing "electric charge" effect on the VoltAgent bolt logo and interactive elements. The glow expands and contracts like a heartbeat.
-- **Warm Ambient Haze**: `rgba(92, 88, 85, 0.2) 0px 0px 15px` — a warm-toned diffused shadow that creates a soft atmospheric glow around elevated cards, visible at the edges without sharp boundaries.
-- **Deep Dramatic Elevation**: `rgba(0, 0, 0, 0.7) 0px 20px 60px` with `rgba(148, 163, 184, 0.1) 0px 0px 0px 1px inset` — a heavy, dramatic downward shadow paired with a faint inset slate ring for the most prominent floating elements.
+### 渐变系统
+- **绿色信号发光**：`drop-shadow(0 0 2px #00d992)` 动画为 `drop-shadow(0 0 8px #00d992)` — 在 VoltAgent 螺栓徽标和交互元素上创建脉冲“电荷”效果。光芒像心跳一样扩张和收缩。
+- **温暖的环境雾度**：`rgba(92, 88, 85, 0.2) 0px 0px 15px` — 暖色调的漫射阴影，在高架卡片周围产生柔和的大气辉光，在边缘可见，没有尖锐的边界。
+- **深度戏剧性海拔**：`rgba(0, 0, 0, 0.7) 0px 20px 60px` 和 `rgba(148, 163, 184, 0.1) 0px 0px 0px 1px inset` — 一个沉重的、戏剧性的向下阴影，搭配一个微弱的嵌入石板环，用于最突出的浮动元素。
 
-## 3. Typography Rules
+## 3. 版式规则
 
-### Font Family
-- **Primary (Headings)**: `system-ui`, with fallbacks: `-apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol`
-- **Secondary (Body/UI)**: `Inter`, with fallbacks inheriting from system-ui stack. OpenType features: `"calt", "rlig"` (contextual alternates and required ligatures)
-- **Monospace (Code)**: `SFMono-Regular`, with fallbacks: `Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace`
+### 字体系列
+- **主要（标题）**：`system-ui`，后备：`-apple-system、Segoe UI、Roboto、Ubuntu、Cantarell、Noto Sans、Helvetica、Arial、Apple Color Emoji、Segoe UI Emoji、Segoe UI Symbol`
+- **辅助（主体/UI）**：`Inter`，具有从系统 UI 堆栈继承的后备。 OpenType 功能：“calt”、“rlig”（上下文替代和所需连字）
+- **等宽字体（代码）**：`SFMono-Regular`，有后备：`Menlo、Monaco、Consolas、Liberation Mono、Courier New、等宽字体`
 
-### Hierarchy
+### 层次结构
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|------|--------|-------------|----------------|-------|
-| Display / Hero | system-ui | 60px (3.75rem) | 400 | 1.00 (tight) | -0.65px | Maximum impact, compressed blocks |
-| Section Heading | system-ui | 36px (2.25rem) | 400 | 1.11 (tight) | -0.9px | Tightest letter-spacing in the system |
-| Sub-heading | system-ui | 24px (1.50rem) | 700 | 1.33 | -0.6px | Bold weight for emphasis at this size |
-| Sub-heading Light | system-ui / Inter | 24px (1.50rem) | 300–400 | 1.33 | -0.6px | Light weight variant for softer hierarchy |
-| Overline | system-ui | 20px (1.25rem) | 600 | 1.40 | 0.5px | Uppercase transform, positive letter-spacing |
-| Feature Title | Inter | 20px (1.25rem) | 500–600 | 1.40 | normal | Card headings, feature names |
-| Overline Small | Inter | 18px (1.13rem) | 600 | 1.56 | 0.45px | Uppercase section labels |
-| Body / Button | Inter | 16px (1.00rem) | 400–600 | 1.50–1.65 | normal | Standard text, nav links, buttons |
-| Nav Link | Inter | 14.45px (0.90rem) | 500 | 1.65 | normal | Navigation-specific sizing |
-| Caption / Label | Inter | 14px (0.88rem) | 400–600 | 1.43–1.65 | normal | Descriptions, metadata, badge text |
-| Tag / Overline Tiny | system-ui | 14px (0.88rem) | 600 | 1.43 | 2.52px | Widest letter-spacing — reserved for uppercase tags |
-| Micro | Inter | 12px (0.75rem) | 400–500 | 1.33 | normal | Smallest sans-serif text |
-| Code Body | SFMono-Regular | 13–14px | 400–686 | 1.23–1.43 | normal | Inline code, terminal output, variable weight for syntax |
-| Code Small | SFMono-Regular | 11–12px | 400 | 1.33–1.45 | normal | Tiny code references, line numbers |
-| Code Button | monospace | 13px (0.81rem) | 700 | 1.65 | normal | Copy-to-clipboard button labels |
+|角色 |字体|尺寸|重量 |行高|字母间距 |笔记|
+|------|------|------|--------|-------------|----------------|--------|
+|显示/英雄 |系统用户界面 | 60 像素（3.75 雷姆）| 400 | 1.00（紧）| -0.65 像素 |最大影响，压缩块|
+|章节标题 |系统用户界面 | 36 像素（2.25 雷姆）| 400 | 1.11（紧）| -0.9 像素 |系统中最严格的字母间距 |
+|副标题|系统用户界面 | 24 像素（1.50 雷姆）| 700 | 1.33 | 1.33 -0.6 像素 |粗体字重强调此尺寸|
+|副标题灯|系统用户界面 / 国际米兰 | 24 像素（1.50 雷姆）| 300–400 | 1.33 | 1.33 -0.6 像素 |轻量级变体，层次更柔和 |
+|上划线|系统用户界面 | 20 像素（1.25 雷姆）| 600 | 1.40 | 1.40 0.5 像素 |大写转换，正字母间距 |
+|专题标题 |国际米兰| 20 像素（1.25 雷姆）| 500–600 | 1.40 | 1.40正常 |卡片标题、功能名称 |
+|上划线小 |国际米兰| 18 像素（1.13 雷姆）| 600 | 1.56 | 1.56 0.45 像素 |大写部分标签 |
+|机身/按钮|国际米兰| 16 像素（1.00 雷姆）| 400–600 | 1.50–1.65 |正常 |标准文本、导航链接、按钮 |
+|导航链接 |国际米兰| 14.45 像素（0.90 雷姆）| 500 | 500 1.65 | 1.65正常 |导航特定尺寸 |
+|标题/标签|国际米兰| 14 像素（0.88 雷姆）| 400–600 | 1.43–1.65 |正常 |描述、元数据、徽章文本 |
+|标签/上划线小|系统用户界面 | 14 像素（0.88 雷姆）| 600 | 1.43 | 1.43 2.52 像素 |最宽的字母间距 - 保留用于大写标签 |
+|微|国际米兰| 12 像素（0.75 雷姆）| 400–500 | 1.33 | 1.33正常 |最小的无衬线文本 |
+|代码正文 | SFMono-常规 | 13–14 像素 | 400–686 | 1.23–1.43 |正常 |内联代码、终端输出、语法权重可变 |
+|代码小| SFMono-常规 | 11–12 像素 | 400 | 1.33–1.45 |正常 |微小的代码引用、行号 |
+|代码按钮|等宽 | 13 像素（0.81 雷姆）| 700 | 1.65 | 1.65正常 |复制到剪贴板按钮标签 |
 
-### Principles
-- **System-native authority**: Display headings use system-ui rather than a custom web font — this means the largest text renders instantly (no FOIT/FOUT) and inherits the operating system's native personality. On macOS it's SF Pro, on Windows it's Segoe UI. The design accepts this variability as a feature, not a bug.
-- **Tight compression creates density**: Hero line-heights are extremely compressed (1.0) with negative letter-spacing (-0.65px to -0.9px), creating text blocks that feel like dense technical specifications rather than airy marketing copy.
-- **Weight gradient, not weight contrast**: The system uses a gentle 300→400→500→600→700 weight progression. Bold (700) is reserved for sub-headings and code-button emphasis. Most body text lives at 400–500, creating subtle rather than dramatic hierarchy.
-- **Uppercase is earned and wide**: When uppercase appears, it's always paired with generous letter-spacing (0.45px–2.52px), transforming dense words into spaced-out overline labels. This treatment is never applied to headings.
-- **OpenType by default**: Both system-ui and Inter enable `"calt"` and `"rlig"` features, ensuring contextual character adjustments and ligature rendering throughout.
+### 原则
+- **系统本机权限**：显示标题使用 system-ui 而不是自定义 Web 字体 - 这意味着最大的文本会立即呈现（无 FOIT/FOUT）并继承操作系统的本机个性。在 macOS 上它是 SF Pro，在 Windows 上它是 Segoe UI。设计将这种可变性视为一种功能，而不是错误。
+- **严格压缩创造密度**：英雄行高被极度压缩（1.0），字母间距为负（-0.65px至-0.9px），创建的文本块感觉像是密集的技术规范，而不是空洞的营销文案。
+- **重量梯度，而不是重量对比**：系统使用温和的 300→400→500→600→700 重量级数。粗体 (700) 保留用于副标题和代码按钮强调。大多数正文都在 400-500 之间，创造了微妙而不是戏剧性的层次结构。
+- **大写字母是赢得和宽**：当大写字母出现时，它总是与宽大的字母间距（0.45px–2.52px）配对，将密集的单词转换为间隔的上划线标签。这种处理方式永远不会应用于标题。
+- **默认情况下 OpenType**：system-ui 和 Inter 都启用“calt”和“rlig”功能，确保上下文字符调整和连字渲染。
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
-**Ghost / Outline (Standard)**
-- Background: transparent
-- Text: Pure White (`#ffffff`)
-- Padding: comfortable (12px 16px)
-- Border: thin solid Warm Charcoal (`1px solid #3d3a39`)
-- Radius: comfortably rounded (6px)
-- Hover: background darkens to `rgba(0, 0, 0, 0.2)`, opacity drops to 0.4
-- Outline: subtle green tint (`rgba(33, 196, 93, 0.5)`)
-- The default interactive element — unassuming but clearly clickable
+**重影/轮廓（标准）**
+- 背景：透明
+- 文本：纯白色（`#ffffff`）
+- 填充：舒适（12 像素 16 像素）
+- 边框：薄实心暖木炭（`1px 实心 #3d3a39`）
+- 半径：舒适的圆形（6px）
+- 悬停：背景变暗为“rgba(0, 0, 0, 0.2)”，不透明度降至 0.4
+- 轮廓：微妙的绿色色调 (`rgba(33, 196, 93, 0.5)`)
+- 默认的交互元素——低调但明显可点击
 
-**Primary Green CTA**
-- Background: Carbon Surface (`#101010`)
-- Text: VoltAgent Mint (`#2fd6a1`)
-- Padding: comfortable (12px 16px)
-- Border: none visible (outline-based focus indicator)
-- Outline: VoltAgent Mint (`rgb(47, 214, 161)`)
-- Hover: same darkening behavior as Ghost
-- The "powered on" button — green text on dark surface reads as an active terminal command
+**初级绿色 CTA**
+- 背景：碳表面（`#101010`）
+- 文本：VoltAgent Mint (`#2fd6a1`)
+- 填充：舒适（12 像素 16 像素）
+- 边框：不可见（基于轮廓的焦点指示器）
+- 轮廓：VoltAgent 薄荷色 (`rgb(47, 214, 161)`)
+- 悬停：与幽灵相同的变暗行为
+- “开机”按钮 — 深色表面上的绿色文本读取为活动终端命令
 
-**Tertiary / Emphasized Container Button**
-- Background: Carbon Surface (`#101010`)
-- Text: Snow White (`#f2f2f2`)
-- Padding: generous (20px all sides)
-- Border: thick solid Warm Charcoal (`3px solid #3d3a39`)
-- Radius: comfortably rounded (8px)
-- A card-like button treatment for larger interactive surfaces (code copy blocks, feature CTAs)
+**第三/强调容器按钮**
+- 背景：碳表面（`#101010`）
+- 文本：白雪公主 (`#f2f2f2`)
+- 填充：宽大（各边 20 像素）
+- 边框：厚实心暖木炭（`3px 实心#3d3a39`）
+- 半径：舒适的圆形（8px）
+- 针对更大交互界面的卡片式按钮处理（代码复制块、功能 CTA）
 
-### Cards & Containers
-- Background: Carbon Surface (`#101010`) — one shade lighter than the page canvas
-- Border: `1px solid #3d3a39` (Warm Charcoal) for standard containment; `2px solid #00d992` for highlighted/active cards
-- Radius: comfortably rounded (8px) for content cards; subtly rounded (4–6px) for smaller inline containers
-- Shadow Level 1: Warm Ambient Haze (`rgba(92, 88, 85, 0.2) 0px 0px 15px`) for standard elevation
-- Shadow Level 2: Deep Dramatic (`rgba(0, 0, 0, 0.7) 0px 20px 60px` + `rgba(148, 163, 184, 0.1) 0px 0px 0px 1px inset`) for hero/feature showcase cards
-- Hover behavior: likely border color shift toward green accent or subtle opacity increase
-- Dashed variant: `1px dashed rgba(79, 93, 117, 0.4)` for workflow/diagram containers — visually distinct from solid-border content cards
+### 卡片和容器
+- 背景：碳表面 (`#101010`) — 比页面画布浅一号的阴影
+- 边框：“1px 实心#3d3a39”（暖木炭）用于标准遏制； `2pxsolid #00d992` 用于突出显示/活动卡片
+- 半径：内容卡的舒适圆角（8 像素）；适用于较小的内联容器的巧妙圆形（4–6px）
+- 阴影级别 1：标准高程的温暖环境雾霾 (`rgba(92, 88, 85, 0.2) 0px 0px 15px`)
+- 阴影级别 2：深度戏剧（`rgba(0, 0, 0, 0.7) 0px 20px 60px` + `rgba(148, 163, 184, 0.1) 0px 0px 0px 1px inset`）用于英雄/功能展示卡
+- 悬停行为：边框颜色可能会转向绿色或微妙的不透明度增加
+- 虚线变体：用于工作流程/图表容器的“1px 虚线 rgba(79, 93, 117, 0.4)”——在视觉上与实边框内容卡不同
 
-### Inputs & Forms
-- No explicit input token data extracted — the site is landing-page focused with minimal form UI
-- The npm install command (`npm create voltagent-app@latest`) is presented as a code block rather than an input field
-- Inferred style: Carbon Surface background, Warm Charcoal border, VoltAgent Mint focus ring, Snow White text
+### 输入和表格
+- 没有提取明确的输入令牌数据 - 该网站以登陆页面为重点，具有最小的表单 UI
+- npm install 命令（`npm createVoltagent-app@latest`）显示为代码块而不是输入字段
+- 推断风格：碳表面背景、暖木炭边框、VoltAgent 薄荷色对焦环、雪白文字
 
-### Navigation
-- Sticky top nav bar on Abyss Black canvas
-- Logo: VoltAgent bolt icon with animated green glow (`drop-shadow` cycling 2px–8px)
-- Nav structure: Logo → Product dropdown → Use Cases dropdown → Resources dropdown → GitHub stars badge → Docs CTA
-- Link text: Snow White (`#f2f2f2`) at 14–16px Inter, weight 500
-- Hover: links transition to green variants (`#00c182` or `#00ffaa`)
-- GitHub badge: social proof element integrated directly into nav
-- Mobile: collapses to hamburger menu, single-column vertical layout
+### 导航
+- 深渊黑色画布上的粘性顶部导航栏
+- 徽标：VoltAgent 螺栓图标，带有动画绿光（`drop-shadow` 循环 2px–8px）
+- 导航结构：徽标 → 产品下拉菜单 → 使用案例下拉菜单 → 资源下拉菜单 → GitHub 星星徽章 → 文档 CTA
+- 链接文本：白雪公主 (`#f2f2f2`)，14–16px Inter，粗细 500
+- 悬停：链接过渡到绿色变体（“#00c182”或“#00ffaa”）
+- GitHub 徽章：直接集成到导航中的社交证明元素
+- 移动设备：折叠为汉堡菜单，单列垂直布局
 
-### Image Treatment
-- Dark-themed product screenshots and architectural diagrams dominate
-- Code blocks are treated as primary visual content — syntax-highlighted with SFMono-Regular
-- Agent workflow visualizations appear as interactive node graphs with green connection lines
-- Decorative dot-pattern backgrounds appear behind hero sections
-- Full-bleed within card containers, respecting 8px radius rounding
+### 图像处理
+- 黑暗主题的产品截图和架构图占主导地位
+- 代码块被视为主要视觉内容 - 使用 SFMano-Regular 语法突出显示
+- 代理工作流程可视化显示为带有绿色连接线的交互式节点图
+- 装饰点图案背景出现在英雄部分后面
+- 卡片容器内的全出血，遵循 8 像素半径舍入
 
-### Distinctive Components
+### 独特的组件
 
-**npm Install Command Block**
-- A prominent code snippet (`npm create voltagent-app@latest`) styled as a copyable command
-- SFMono-Regular on Carbon Surface with a copy-to-clipboard button
-- Functions as the primary CTA — "install first, read later" developer psychology
+**npm 安装命令块**
+- 突出的代码片段（`npm createVoltagent-app@latest`）样式为可复制命令
+- 碳表面上的 SFMano-Regular，带有复制到剪贴板按钮
+- 充当主要 CTA——“先安装，后阅读”的开发者心理
 
-**Company Logo Marquee**
-- Horizontal scrolling strip of developer/company logos
-- Infinite animation (`scrollLeft`/`scrollRight`, 25–80s durations)
-- Pauses on hover and for users with reduced-motion preferences
-- Demonstrates ecosystem adoption without cluttering the layout
+**公司标志跑马灯**
+- 开发商/公司徽标的水平滚动条
+- 无限动画（`scrollLeft`/`scrollRight`，持续时间 25–80 秒）
+- 悬停时暂停并适合具有减少运动偏好的用户
+- 展示生态系统的采用，而不会使布局混乱
 
-**Feature Section Cards**
-- Large cards combining code examples with descriptive text
-- Left: code snippet with syntax highlighting; Right: feature description
-- Green accent border (`2px solid #00d992`) on highlighted/active features
-- Internal padding: generous (24–32px estimated)
+**功能部分卡**
+- 将代码示例与描述性文本相结合的大卡片
+- 左：带语法高亮的代码片段；右：功能描述
+- 突出显示/活动功能上的绿色强调边框（“2px 实线#00d992”）
+- 内部填充：宽大（估计 24–32 像素）
 
-**Agent Flow Diagrams**
-- Interactive node-graph visualizations showing agent coordination
-- Connection lines use VoltAgent green variants
-- Nodes styled as mini-cards within the Warm Charcoal border system
+**代理流程图**
+- 交互式节点图可视化显示代理协调
+- 连接线使用 VoltAgent 绿色变体
+- 暖木炭边框系统中的节点样式为迷你卡
 
-**Community / GitHub Section**
-- Large GitHub icon as the visual anchor
-- Star count and contributor metrics prominently displayed
-- Warm social proof: Discord, X, Reddit, LinkedIn, YouTube links in footer
+**社区/GitHub 部分**
+- 大 GitHub 图标作为视觉锚点
+- 突出显示星级数和贡献者指标
+- 温暖的社交证明：页脚中的 Discord、X、Reddit、LinkedIn、YouTube 链接
 
-## 5. Layout Principles
+## 5.布局原则
 
-### Spacing System
-- Base unit: 8px
-- Scale: 2px, 4px, 5px, 6px, 6.4px, 8px, 12px, 16px, 20px, 24px, 28px, 32px, 40px, 48px, 64px
-- Button padding: 12px 16px (standard), 20px (container-button)
-- Card internal padding: approximately 24–32px
-- Section vertical spacing: generous (estimated 64–96px between major sections)
-- Component gap: 16–24px between sibling cards/elements
+### 间距系统
+- 基本单位：8px
+- 比例：2像素、4像素、5像素、6像素、6.4像素、8像素、12像素、16像素、20像素、24像素、28像素、32像素、40像素、48像素、64像素
+- 按钮内边距：12px 16px（标准）、20px（容器按钮）
+- 卡片内部填充：大约 24–32 像素
+- 部分垂直间距：宽大（主要部分之间估计为 64–96px）
+- 组件间隙：兄弟卡/元素之间为 16–24px
 
-### Grid & Container
-- Max container width: approximately 1280–1440px, centered
-- Hero: centered single-column with maximum breathing room
-- Feature sections: alternating asymmetric layouts (code left / text right, then reversed)
-- Logo marquee: full-width horizontal scroll, breaking the container constraint
-- Card grids: 2–3 column for feature showcases
-- Integration grid: responsive multi-column for partner/integration icons
+### 网格和容器
+- 最大容器宽度：大约 1280–1440 像素，居中
+- 英雄：居中单柱，具有最大的喘息空间
+- 功能部分：交替不对称布局（代码左/文本右，然后反转）
+- Logo跑马灯：全角水平滚动，打破容器约束
+- 卡片网格：2-3 列用于功能展示
+- 集成网格：合作伙伴/集成图标的响应式多列
 
-### Whitespace Philosophy
-- **Cinematic breathing room between sections**: Massive vertical gaps create a "scroll-through-chapters" experience — each section feels like a new scene.
-- **Dense within components**: Cards and code blocks are internally compact, with tight line-heights and controlled padding. Information is concentrated, not spread thin.
-- **Border-defined separation**: Rather than relying solely on whitespace, VoltAgent uses the Warm Charcoal border system (`#3d3a39`) to delineate content zones. The border IS the whitespace signal.
-- **Hero-first hierarchy**: The top of the page commands the most space — the "AI Agent Engineering Platform" headline and npm command get maximum vertical runway before the first content section appears.
+### 空白哲学
+- **各部分之间的电影呼吸空间**：巨大的垂直间隙创造了一种“滚动章节”体验 - 每个部分都感觉像是一个新场景。
+- **组件内密集**：卡片和代码块内部紧凑，具有严格的行高和受控的填充。信息是集中的，而不是分散的。
+- **边界定义的分隔**：VoltAgent 使用 Warm Charcoal 边框系统 (`#3d3a39`) 来划分内容区域，而不是仅仅依赖空白。边界是空白信号。
+- **英雄优先的层次结构**：页面顶部占据了最大的空间 - “AI Agent Engineering Platform”标题和 npm 命令在第一个内容部分出现之前获得最大的垂直跑道。
 
-### Border Radius Scale
-- Nearly squared (4px): Small inline elements, SVG containers, code spans — the sharpest treatment, conveying technical precision
-- Subtly rounded (6px): Buttons, links, clipboard actions — the workhorse radius for interactive elements
-- Code-specific (6.4px): Code blocks, `pre` elements, clipboard copy targets — a deliberate micro-distinction from standard 6px
-- Comfortably rounded (8px): Content cards, feature containers, emphasized buttons — the standard containment radius
-- Pill-shaped (9999px): Tags, badges, status indicators, pill-shaped navigation elements — the roundest treatment for small categorical labels
+### 边界半径比例
+- 近乎正方形 (4px)：小型内联元素、SVG 容器、代码跨度 — 最锐利的处理，传达技术精度
+- 巧妙的圆形（6px）：按钮、链接、剪贴板操作——交互元素的主力半径
+- 特定于代码 (6.4px)：代码块、“pre”元素、剪贴板复制目标 — 与标准 6px 的故意微观区别
+- 舒适的圆形 (8px)：内容卡、功能容器、强调按钮 - 标准包含半径
+- 药丸状（9999px）：标签、徽章、状态指示器、药丸状导航元素——对小分类标签的最全面处理
 
-## 6. Depth & Elevation
+## 6. 深度和高度
 
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Flat (Level 0) | No shadow, no border | Page background (`#050507`), inline text |
-| Contained (Level 1) | `1px solid #3d3a39`, no shadow | Standard cards, nav bar, code blocks |
-| Emphasized (Level 2) | `3px solid #3d3a39`, no shadow | Large interactive buttons, emphasized containers |
-| Accent (Level 3) | `2px solid #00d992`, no shadow | Active/highlighted feature cards, selected states |
-| Ambient Glow (Level 4) | `rgba(92, 88, 85, 0.2) 0px 0px 15px` | Elevated cards, hover states, soft atmospheric lift |
-| Dramatic Float (Level 5) | `rgba(0, 0, 0, 0.7) 0px 20px 60px` + `rgba(148, 163, 184, 0.1) 1px inset` | Hero feature showcase, modals, maximum-elevation content |
+|水平|治疗 |使用 |
+|--------|------------|-----|
+|公寓（0 级）|无阴影，无边框 |页面背景 (`#050507`)，内嵌文本 |
+|收容（1 级）| `1px 实心 #3d3a39`，无阴影 |标准卡、导航栏、代码块 |
+|强调（2 级）| `3px 实心 #3d3a39`，没有阴影 |大型交互按钮，强调容器|
+|口音（3 级）| `2px 实心 #00d992`，无阴影 |活动/突出显示的功能卡，选定的状态 |
+|环境光（4 级）| `rgba(92, 88, 85, 0.2) 0 像素 0 像素 15 像素` |高架卡片、悬停状态、柔和的大气升力 |
+|戏剧性的漂浮（5级）| `rgba(0, 0, 0, 0.7) 0px 20px 60px` + `rgba(148, 163, 184, 0.1) 1px 插入` |英雄功能展示、模态、最大高度内容 |
 
-**Shadow Philosophy**: VoltAgent communicates depth primarily through **border weight and color**, not shadows. The standard `1px solid #3d3a39` border IS the elevation — adding a `3px` border weight or switching to green (`#00d992`) communicates importance more than adding shadow does. When shadows do appear, they're either warm and diffused (Level 4) or cinematic and dramatic (Level 5) — never medium or generic.
+**阴影原理**：VoltAgent 主要通过**边框粗细和颜色**而不是阴影来传达深度。标准的“1px 实心#3d3a39”边框是标高——添加“3px”边框​​粗细或切换为绿色（“#00d992”）比添加阴影更能传达重要性。当阴影确实出现时，它们要么是温暖且弥散的（4级），要么是电影般的和戏剧性的（5级）——绝不是中等或普通的。
 
-### Decorative Depth
-- **Green Signal Glow**: The VoltAgent bolt logo pulses with a `drop-shadow` animation cycling between 2px and 8px blur radius in Emerald Signal Green. This is the most distinctive decorative element — it makes the logo feel "powered on."
-- **Warm Charcoal Containment Lines**: The warm tone of `#3d3a39` borders creates a subtle visual warmth against the cool black, as if the cards are faintly heated from within.
-- **Dashed Workflow Lines**: `1px dashed rgba(79, 93, 117, 0.4)` creates a blueprint-like aesthetic for architecture diagrams, visually distinct from solid content borders.
+### 装饰深度
+- **绿色信号发光**：VoltAgent 螺栓徽标以翠绿色信号绿色在 2 像素和 8 像素模糊半径之间循环的“投影”动画进行脉冲。这是最独特的装饰元素——它让标志感觉“通电”。
+- **暖木炭遏制线**：“#3d3a39”边框的暖色调在冷黑色的衬托下营造出微妙的视觉温暖感，就好像卡片从内部微弱地加热一样。
+- **工作流程虚线**：`1px 虚线 rgba(79, 93, 117, 0.4)` 为架构图创建了类似蓝图的美感，在视觉上与实体内容边框不同。
 
-## 7. Do's and Don'ts
+## 7. 该做和不该做的事情
 
-### Do
-- Use Abyss Black (`#050507`) as the landing page background and Carbon Surface (`#101010`) for all contained elements — the two-shade dark system is essential
-- Reserve Emerald Signal Green (`#00d992`) exclusively for high-signal moments: active borders, glow effects, and the most important interactive accents
-- Use VoltAgent Mint (`#2fd6a1`) for button text on dark surfaces — it's more readable than pure Signal Green
-- Keep heading line-heights compressed (1.0–1.11) with negative letter-spacing for dense, authoritative text blocks
-- Use the warm gray palette (`#3d3a39`, `#8b949e`, `#b8b3b0`) for borders and secondary text — warmth prevents the dark theme from feeling sterile
-- Present code snippets as primary content — they're hero elements, not supporting illustrations
-- Use border weight (1px → 2px → 3px) and color shifts (`#3d3a39` → `#00d992`) to communicate depth and importance, rather than relying on shadows
-- Pair system-ui for headings with Inter for body text — the speed/authority of native fonts combined with the precision of a geometric sans
-- Use SFMono-Regular for all code content — it's the developer credibility signal
-- Apply `"calt"` and `"rlig"` OpenType features across all text
+### 做
+- 使用深渊黑色（`#050507`）作为登陆页面背景，并使用碳表面（`#101010`）作为所有包含的元素 - 两色深色系统是必不可少的
+- 专为高信号时刻保留翡翠信号绿 (`#00d992`)：活动边框、发光效果和最重要的交互口音
+- 在深色表面上使用 VoltAgent Mint (`#2fd6a1`) 作为按钮文本 — 它比纯 Signal Green 更具可读性
+- 保持标题行高压缩 (1.0–1.11)，并使用负字母间距来形成密集、权威的文本块
+- 使用暖灰色调色板（`#3d3a39`、`#8b949e`、`#b8b3b0`）作为边框和辅助文本 - 温暖可以防止黑暗主题感觉枯燥
+- 将代码片段作为主要内容 - 它们是英雄元素，而不是支持插图
+- 使用边框粗细 (1px → 2px → 3px) 和颜色偏移 (`#3d3a39` → `#00d992`) 来传达深度和重要性，而不是依赖阴影
+- 将标题的 system-ui 与正文的 Inter 配对 — 原生字体的速度/权威与几何 sans 的精度相结合
+- 对所有代码内容使用 SFMano-Regular — 这是开发人员可信度信号
+- 在所有文本中应用“calt”和“rlig”OpenType 功能
 
-### Don't
-- Don't use bright or light backgrounds as primary surfaces — the entire identity lives on near-black
-- Don't introduce warm colors (orange, red, yellow) as decorative accents — the palette is strictly green + warm neutrals on black. Warm colors are reserved for semantic states (warning, error) only
-- Don't use Emerald Signal Green (`#00d992`) on large surfaces or as background fills — it's an accent, never a surface
-- Don't increase heading line-heights beyond 1.33 — the compressed density is core to the engineering-platform identity
-- Don't use heavy shadows generously — depth comes from border treatment, not box-shadow. Shadows are reserved for Level 4–5 elevation only
-- Don't use pure white (`#ffffff`) as default body text — Snow White (`#f2f2f2`) is the standard. Pure white is reserved for maximum-emphasis headings and button text
-- Don't mix in serif or decorative fonts — the entire system is geometric sans + monospace
-- Don't use border-radius larger than 8px on content cards — 9999px (pill) is only for small tags and badges
-- Don't skip the warm-gray border system — cards without `#3d3a39` borders lose their containment and float ambiguously on the dark canvas
-- Don't animate aggressively — animations are slow and subtle (25–100s durations for marquee, gentle glow pulses). Fast motion contradicts the "engineering precision" atmosphere
+### 不要
+- 不要使用明亮或浅色背景作为主要表面 - 整个形象接近黑色
+- 不要引入暖色（橙色、红色、黄色）作为装饰色调——调色板严格是绿色+黑色上的暖中性色。暖色仅保留用于语义状态（警告、错误）
+- 不要在大表面上使用翡翠信号绿 (`#00d992`) 或作为背景填充 - 这是一种强调，而不是表面
+- 不要将标题线高度增加到超过 1.33 — 压缩密度是工程平台标识的核心
+- 不要大量使用重阴影——深度来自边框处理，而不是盒阴影。阴影仅适用于 4-5 级标高
+- 不要使用纯白色（`#ffffff`）作为默认正文文本 - 白雪公主（`#f2f2f2`）是标准。纯白色保留用于最强调的标题和按钮文本
+- 不要混合衬线或装饰字体 - 整个系统是几何无字体 + 等宽字体
+- 不要在内容卡上使用大于 8 像素的边框半径 — 9999 像素（药丸）仅适用于小标签和徽章
+- 不要跳过暖灰色边框系统 - 没有“#3d3a39”边框的卡片会失去其遏制并模糊地漂浮在深色画布上
+- 不要激进地设置动画 - 动画缓慢而微妙（选框持续时间为 25-100 秒，柔和的发光脉冲）。快速运动与“工程精密”氛围相矛盾
 
-## 8. Responsive Behavior
+## 8. 响应行为
 
-### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Small Mobile | <420px | Minimum layout, stacked everything, reduced hero text to ~24px |
-| Mobile | 420–767px | Single column, hamburger nav, full-width cards, hero text ~36px |
-| Tablet | 768–1024px | 2-column grids begin, condensed nav, medium hero text |
-| Desktop | 1025–1440px | Full multi-column layout, expanded nav with dropdowns, large hero (60px) |
-| Large Desktop | >1440px | Max-width container centered (est. 1280–1440px), generous horizontal margins |
+### 断点
+|名称 |宽度|关键变化|
+|------|--------|-------------|
+|小型手机| <420 像素 |最小布局，堆叠所有内容，将英雄文本减少到~24px |
+|手机 | 420–767 像素 |单栏、汉堡导航、全角卡片、英雄文本 ~36px |
+|平板电脑| 768–1024 像素 | 2 列网格开始，压缩导航，中等英雄文本 |
+|桌面| 1025–1440 像素 |完整的多列布局，带有下拉菜单的扩展导航，大英雄（60px）|
+|大型桌面 | >1440 像素 |最大宽度容器居中（预计 1280–1440 像素），宽大的水平边距 |
 
-*23 breakpoints detected in total, ranging from 360px to 1992px — indicating a fluid, heavily responsive grid system rather than fixed breakpoint snapping.*
+*总共检测到 23 个断点，范围从 360 像素到 1992 像素 - 表明是一个流动的、高度响应的网格系统，而不是固定的断点捕捉。*
 
-### Touch Targets
-- Buttons use comfortable padding (12px 16px minimum) ensuring adequate touch area
-- Navigation links spaced with sufficient gap for thumb navigation
-- Interactive card surfaces are large enough to serve as full touch targets
-- Minimum recommended touch target: 44x44px
+### 触摸目标
+- 按钮使用舒适的填充（最小 12 像素 16 像素），确保足够的触摸区域
+- 导航链接之间有足够的间隙以进行拇指导航
+- 交互式卡片表面足够大，可以作为全触摸目标
+- 建议的最小触摸目标：44x44px
 
-### Collapsing Strategy
-- **Navigation**: Full horizontal nav with dropdowns collapses to hamburger menu on mobile
-- **Feature grids**: 3-column → 2-column → single-column vertical stacking
-- **Hero text**: 60px → 36px → 24px progressive scaling with maintained compression ratios
-- **Logo marquee**: Adjusts scroll speed and item sizing; maintains infinite loop
-- **Code blocks**: Horizontal scroll on smaller viewports rather than wrapping — preserving code readability
-- **Section padding**: Reduces proportionally but maintains generous vertical rhythm between chapters
-- **Cards**: Stack vertically on mobile with full-width treatment and maintained internal padding
+### 崩溃策略
+- **导航**：带有下拉菜单的完整水平导航在移动设备上折叠为汉堡菜单
+- **特征网格**：3列→2列→单列垂直堆叠
+- **英雄文本**：60px → 36px → 24px 渐进缩放并保持压缩比
+- **徽标选取框**：调整滚动速度和项目大小；保持无限循环
+- **代码块**：在较小的视口上水平滚动而不是换行 - 保持代码可读性
+- **章节填充**：按比例减少，但在章节之间保持慷慨的垂直节奏
+- **卡片**：在移动设备上垂直堆叠，进行全宽处理并保留内部填充
 
-### Image Behavior
-- Dark-themed screenshots and diagrams scale proportionally within containers
-- Agent flow diagrams simplify or scroll horizontally on narrow viewports
-- Dot-pattern decorative backgrounds scale with viewport
-- No visible art direction changes between breakpoints — same crops, proportional scaling
-- Lazy loading for below-fold images (Docusaurus default behavior)
+### 图像行为
+- 深色主题的屏幕截图和图表在容器内按比例缩放
+- 代理流程图简化或在狭窄视口上水平滚动
+- 点图案装饰背景随视口缩放
+- 断点之间没有可见的艺术方向变化 - 相同的裁剪、按比例缩放
+- 延迟加载下屏图像（Docusaurus 默认行为）
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
-- Brand Accent: "Emerald Signal Green (#00d992)"
-- Button Text: "VoltAgent Mint (#2fd6a1)"
-- Page Background: "Abyss Black (#050507)"
-- Card Surface: "Carbon Surface (#101010)"
-- Border / Containment: "Warm Charcoal (#3d3a39)"
-- Primary Text: "Snow White (#f2f2f2)"
-- Secondary Text: "Warm Parchment (#b8b3b0)"
-- Tertiary Text: "Steel Slate (#8b949e)"
+### 快速颜色参考
+- 品牌口音：“翡翠信号绿 (#00d992)”
+- 按钮文字：“VoltAgent Mint (#2fd6a1)”
+- 页面背景：“深渊黑色 (#050507)”
+- 卡面：“碳面 (#101010)”
+- 边界/遏制：“温暖木炭（#3d3a39）”
+- 主要文本：“白雪公主 (#f2f2f2)”
+- 辅助文本：“温暖的羊皮纸 (#b8b3b0)”
+- 第三级文本：“钢石板 (#8b949e)”
 
-### Example Component Prompts
-- "Create a feature card on Carbon Surface (#101010) with a 1px solid Warm Charcoal (#3d3a39) border, comfortably rounded corners (8px). Use Snow White (#f2f2f2) for the title in system-ui at 24px weight 700, and Warm Parchment (#b8b3b0) for the description in Inter at 16px. Add a subtle Warm Ambient shadow (rgba(92, 88, 85, 0.2) 0px 0px 15px)."
-- "Design a ghost button with transparent background, Snow White (#f2f2f2) text in Inter at 16px, a 1px solid Warm Charcoal (#3d3a39) border, and subtly rounded corners (6px). Padding: 12px vertical, 16px horizontal. On hover, background shifts to rgba(0, 0, 0, 0.2)."
-- "Build a hero section on Abyss Black (#050507) with a massive heading at 60px system-ui, line-height 1.0, letter-spacing -0.65px. The word 'Platform' should be colored in Emerald Signal Green (#00d992). Below the heading, place a code block showing 'npm create voltagent-app@latest' in SFMono-Regular at 14px on Carbon Surface (#101010) with a copy button."
-- "Create a highlighted feature card using a 2px solid Emerald Signal Green (#00d992) border instead of the standard Warm Charcoal. Keep Carbon Surface background, comfortably rounded corners (8px), and include a code snippet on the left with feature description text on the right."
-- "Design a navigation bar on Abyss Black (#050507) with the VoltAgent logo (bolt icon with animated green glow) on the left, nav links in Inter at 14px weight 500 in Snow White, and a green CTA button (Carbon Surface bg, VoltAgent Mint text) on the right. Add a 1px solid Warm Charcoal bottom border."
+### 组件提示示例
+- “在 Carbon Surface (#101010) 上创建一张功能卡，带有 1px 实心暖木炭 (#3d3a39) 边框、舒适的圆角 (8px)。在系统 ui 中使用 Snow White (#f2f2f2) 作为标题，重量为 24px 700，在 Inter 中使用 Warm Parchment (#b8b3b0) 作为 16px 的描述。添加微妙的温暖环境阴影(rgba(92, 88, 85, 0.2) 0 像素 0 像素 15 像素)。”
+- “设计一个具有透明背景的幽灵按钮，Inter 中的雪白 (#f2f2f2) 文本为 16 像素，1 像素实心暖木炭 (#3d3a39) 边框，​​以及巧妙的圆角 (6 像素)。填充：垂直 12 像素，水平 16 像素。悬停时，背景切换为 rgba(0, 0, 0, 0.2)。”
+- “在 Abyss Black (#050507) 上构建一个大标题，系统 UI 60 像素，行高 1.0，字母间距 -0.65 像素。“平台”一词应使用翡翠信号绿 (#00d992) 着色。在标题下方，放置一个代码块，在 SFMono-Regular 中以 14 像素显示在碳表面上(#101010) 带有复制按钮。”
+- “使用 2 像素实心翡翠信号绿 (#00d992) 边框而不是标准暖木炭创建突出显示的功能卡。保留碳表面背景、舒适的圆角 (8 像素)，并在左侧包含代码片段，右侧包含功能描述文本。”
+- “在 Abyss Black (#050507) 上设计一个导航栏，左侧带有 VoltAgent 徽标（带动画绿光的螺栓图标），Inter 中的导航链接为白雪公主，尺寸为 14 像素，重量为 500，右侧为绿色 CTA 按钮（Carbon Surface bg，VoltAgent Mint 文本）。添加 1 像素实心暖木炭底部边框。”
 
-### Iteration Guide
-When refining existing screens generated with this design system:
-1. Focus on ONE component at a time
-2. Reference specific color names and hex codes — "use Warm Parchment (#b8b3b0)" not "make it lighter"
-3. Use border treatment to communicate elevation: "change the border to 2px solid Emerald Signal Green (#00d992)" for emphasis
-4. Describe the desired "feel" alongside measurements — "compressed and authoritative heading at 36px with line-height 1.11 and -0.9px letter-spacing"
-5. For glow effects, specify "Emerald Signal Green (#00d992) as a drop-shadow with 2–8px blur radius"
-6. Always specify which font — system-ui for headings, Inter for body/UI, SFMono-Regular for code
-7. Keep animations slow and subtle — marquee scrolls at 25–80s, glow pulses gently
+### 迭代指南
+当优化使用此设计系统生成的现有屏幕时：
+1. 一次专注于一个组件
+2. 参考特定的颜色名称和十六进制代码 - “使用温暖的羊皮纸 (#b8b3b0)”而不是“使其更亮”
+3. 使用边框处理来表达高度：“将边框更改为 2px 实心翡翠信号绿色 (#00d992)”以进行强调
+4. 描述所需的“感觉”以及尺寸 - “压缩且权威的标题为 36 像素，行高 1.11 和 -0.9 像素字母间距”
+5. 对于发光效果，指定“Emerald Signal Green (#00d992) 作为具有 2–8px 模糊半径的投影”
+6. 始终指定哪种字体 - system-ui 用于标题，Inter 用于正文/UI，SFMono-Regular 用于代码
+7. 保持动画缓慢而微妙——字幕滚动 25-80 秒，发光脉冲柔和

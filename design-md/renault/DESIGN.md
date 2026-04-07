@@ -1,311 +1,311 @@
-# Design System Inspiration of Renault
+# 雷诺的设计系统灵感
 
-## 1. Visual Theme & Atmosphere
+## 1.视觉主题和氛围
 
-Renault's website is a vibrant digital showroom that balances French automotive elegance with bold, forward-leaning energy — a departure from the monochromatic austerity of German or Italian luxury brands. The page opens with a full-screen hero that washes the viewport in a sweeping aurora gradient — ribbons of magenta, violet, and teal bleeding across the frame behind a dramatically lit vehicle. This chromatic expressiveness is the site's signature: while the interface structure is disciplined (NouvelR typography, black-and-white CTA framework, zero-radius buttons), the content is alive with color — gradient washes on hero slides, saturated vehicle photography, and splashes of Renault Yellow (`#EFDF00`) on accent CTAs. The effect is a showroom that feels energized rather than hushed.
+雷诺的网站是一个充满活力的数字展厅，平衡了法式汽车的优雅与大胆、前瞻的活力，这与德国或意大利奢侈品牌的单色朴素风格不同。页面打开时，全屏英雄以极光渐变的方式清洗视口——洋红色、紫罗兰色和青色的丝带在一辆明亮的车辆后面的框架上流淌。这种色彩表现力是该网站的标志：虽然界面结构严谨（NouvelR 版式、黑白 CTA 框架、零半径按钮），但内容却充满色彩 — 英雄幻灯片上的渐变水洗、饱和的车辆摄影以及重点 CTA 上的雷诺黄 (#EFDF00`) 飞溅。其效果是让陈列室感觉充满活力而不是安静。
 
-The layout follows a card-based editorial rhythm. Below the hero carousel, content is organized into a grid of PromoCards — each a full-bleed photographic panel with a dark gradient overlay at top (fading from `rgba(0,0,0,0.6)` to transparent) to ensure white heading text remains legible over vivid imagery. These cards alternate between light and dark modes: white editorial panels with black text sit beside black `is-alternative-mode` sections with white text, creating a chessboard-like visual cadence. The grid is generous — large card formats dominate, giving each vehicle or campaign its own visual territory. The lower sections shift to a fully dark canvas (Absolute Black backgrounds) for the E-Tech electric and technology showcases, establishing a deliberate mood shift: electrification lives in darkness, tradition in light.
+布局遵循基于卡片的编辑节奏。在英雄轮播下方，内容被组织成 PromoCards 网格 - 每个都是全出血摄影面板，顶部有深色渐变覆盖层（从“rgba(0,0,0,0.6)”淡入透明），以确保白色标题文本在生动的图像上保持清晰。这些卡片在浅色和深色模式之间交替：带有黑色文本的白色编辑面板位于带有白色文本的黑色“替代模式”部分旁边，创造了一种棋盘般的视觉节奏。网格很宽敞——大卡片格式占主导地位，为每辆车或每场战役提供了自己的视觉领域。下部部分转向全黑画布（绝对黑色背景），用于 E-Tech 电气和技术展示，建立了有意的情绪转变：电气化生活在黑暗中，传统生活在光明中。
 
-Typography is unified under NouvelR — a proprietary geometric sans-serif designed by Black[Foundry] exclusively for Renault's rebrand. The typeface features a distinctive "radical r" with a terminal cut at 28 degrees to echo the Renault diamond logo's angles. Available in 6 weights from Light to Extrabold, the site primarily uses Bold (700) for headings and Regular (400) for body. Display headlines run large — 56px/0.95 line-height for hero titles, creating dense, impactful text blocks that sit tight against each other. The font supports Latin, Greek, Cyrillic, Hebrew, Arabic, and Korean, reflecting Renault's global market reach. All text rendering feels precise and engineered, with the geometric proportions lending a sense of modernity that aligns with Renault's electric-first brand positioning.
+版式在 NouvelR 下统一，NouvelR 是 Black[Foundry] 专门为雷诺品牌重塑设计的专有几何无衬线字体。该字体采用独特的“激进 r”，末端切割成 28 度，以呼应雷诺钻石标志的角度。该网站提供从 Light 到 Extrabold 的 6 种粗细，主要使用 Bold (700) 作为标题，使用 Regular (400) 作为正文。显示标题较大 — 56 像素/0.95 行高的英雄标题，创建密集、有影响力的文本块，彼此紧密结合。该字体支持拉丁语、希腊语、西里尔语、希伯来语、阿拉伯语和韩语，反映了雷诺的全球市场影响力。所有文本渲染都感觉精确且经过精心设计，几何比例营造出现代感，与雷诺电动优先的品牌定位相一致。
 
-**Key Characteristics:**
-- Full-screen hero carousel with vivid aurora gradient backgrounds (magenta/violet/teal) behind vehicle imagery
-- NouvelR proprietary typeface with 28-degree "radical r" cut matching the diamond logo geometry
-- Renault Yellow (`#EFDF00`) as the super-primary accent — used sparingly for highest-priority CTAs
-- Zero border-radius on all buttons — sharp rectangular forms expressing precision engineering
-- Card-based editorial grid with full-bleed photography and dark gradient overlays
-- Binary black/white CTA system: primary (black bg/white text) and ghost (transparent/white border)
-- PromoCard dark-mode alternation creating a chessboard rhythm between light and dark sections
-- PrimeReact (21 components) + Element Plus (19 components) powering interactive elements
-- Link hover state in Renault Blue (`#1883FD`) — the sole chromatic interaction color
+**主要特征：**
+- 全屏英雄轮播，车辆图像后面带有生动的极光渐变背景（洋红色/紫色/青色）
+- NouvelR 专有字体，具有 28 度“激进 R”切割，与钻石徽标几何形状相匹配
+- 雷诺黄 (`#EFDF00`) 作为超级主要口音 — 很少用于最高优先级的 CTA
+- 所有按钮上的零边框半径 - 锐利的矩形形式表达了精密工程
+- 基于卡片的编辑网格，具有全出血摄影和深色渐变叠加
+- 二元黑白 CTA 系统：主要（黑色背景/白色文本）和重影（透明/白色边框）
+- PromoCard 暗模式交替在明暗部分之间创建棋盘节奏
+- PrimeReact（21 个组件）+ Element Plus（19 个组件）为交互式元素提供动力
+- 雷诺蓝 (`#1883FD`) 中的链接悬停状态 — 唯一的彩色交互颜色
 
-## 2. Color Palette & Roles
+## 2. 调色板和角色
 
-### Primary
-- **Renault Yellow** (`#EFDF00`): The brand's signature Pantone — a vivid, saturated yellow used for super-primary CTAs and the highest-priority action buttons. Appears as `--CtaLink-background-color` on `.is-cta-super-primary` class. Carries the energy of the diamond logo
-- **Absolute Black** (`#000000`): Primary button background, heading text on light surfaces, and the dominant dark section surface. The structural anchor of the entire interface
-- **Pure White** (`#FFFFFF`): Primary surface for editorial content, inverted button backgrounds, hero text color, and the dominant light-mode canvas (--rt-color-white)
+### 小学
+- **雷诺黄** (`#EFDF00`)：该品牌的标志性 Pantone — 一种鲜艳、饱和的黄色，用于超主 CTA 和最高优先级的操作按钮。在“.is-cta-super-primary”类上显示为“--CtaLink-background-color”。承载着钻石标志的能量
+- **绝对黑色** (`#000000`)：主要按钮背景、浅色表面上的标题文本以及主要的深色部分表面。整个界面的结构锚点
+- **纯白色** (`#FFFFFF`)：编辑内容的主要表面、倒置按钮背景、英雄文本颜色和主要灯光模式画布 (--rt-color-white)
 
-### Secondary & Accent
-- **Soft Yellow** (`#F8EB4C`): Lighter, warmer variant of Renault Yellow — used for hover/pressed states on yellow CTAs and secondary accent contexts
-- **Renault Blue** (`#1883FD`): Link hover color across all link variants — a bright, confident blue that signals interactivity without competing with the yellow brand accent
-- **Warm Gray** (`#D9D9D6`): Subtle warm neutral used for disabled states, inactive UI elements, and soft borders — carries a slight warmth that distinguishes it from cold grays
+### 次要和口音
+- **软黄色** (`#F8EB4C`)：雷诺黄的更轻、更温暖的变体 - 用于黄色 CTA 和次要重音上下文上的悬停/按下状态
+- **雷诺蓝** (`#1883FD`)：所有链接变体的链接悬停颜色 - 明亮、自信的蓝色，表示互动性，而不与黄色品牌口音竞争
+- **暖灰色** (`#D9D9D6`)：微妙的暖中性，用于禁用状态、不活动的 UI 元素和软边框 - 带有轻微的暖色，与冷灰色不同
 
-### Surface & Background
-- **Pure White** (`#FFFFFF`): Page background, light editorial sections, navigation bar, and footer
-- **Absolute Black** (`#000000`): Hero backgrounds, PromoCard dark-mode sections (`is-alternative-mode`), and E-Tech showcase areas
-- **Charcoal** (`#222222`): Secondary dark surface for text-heavy dark sections and footer sub-regions (--rt-color-dark)
-- **Pale Silver** (`#F2F2F2`): Subtle alternate light surface for section differentiation and card borders
+### 表面和背景
+- **纯白色** (`#FFFFFF`)：页面背景、浅色编辑部分、导航栏和页脚
+- **绝对黑色** (`#000000`)：英雄背景、PromoCard 黑暗模式部分 (`is-alternative-mode`) 和电子技术展示区域
+- **木炭** (`#222222`)：用于文本密集的深色部分和页脚子区域的辅助深色表面 (--rt-color-dark)
+- **淡银色** (`#F2F2F2`)：微妙的交替光表面，用于区分部分和卡片边框
 
-### Neutrals & Text
-- **Absolute Black** (`#000000`): Primary heading and body text on light surfaces — Renault uses true black rather than near-black
-- **Pure White** (`#FFFFFF`): Primary text on dark surfaces — hero headlines, dark-section headings, and inverted button labels
-- **Warm Gray** (`#D9D9D6`): Tertiary text, metadata, and subdued labels
-- **Border Gray** (`#D1D1D1`): Input field borders and subtle separators
+### 中性色和文字
+- **绝对黑色** (`#000000`)：浅色表面上的主标题和正文文本 - 雷诺使用纯黑色而不是接近黑色
+- **纯白色** (`#FFFFFF`)：深色表面上的主要文本 — 英雄标题、深色部分标题和倒置按钮标签
+- **暖灰色** (`#D9D9D6`)：第三级文本、元数据和柔和的标签
+- **边框灰色** (`#D1D1D1`)：输入字段边框和细微分隔符
 
-### Semantic & Accent
-- **Success Green** (`#8DC572`): Positive status indicators and confirmation messages (--rt-color-success)
-- **Error Rose** (`#BE6464`): Form validation errors and warning states (--rt-color-error)
-- **Warning Amber** (`#F0AD4E`): Cautionary alerts and attention-requiring states (--rt-color-warning)
-- **Info Blue** (`#337AB7`): Informational callouts and neutral status messaging (--rt-color-info)
+### 语义和口音
+- **成功绿色** (`#8DC572`)：积极的状态指示器和确认消息 (--rt-color-success)
+- **Error Rose** (`#BE6464`)：表单验证错误和警告状态 (--rt-color-error)
+- **警告琥珀色** (`#F0AD4E`)：警告警报和需要注意的状态 (--rt-color-warning)
+- **信息蓝色** (`#337AB7`)：信息标注和中性状态消息 (--rt-color-info)
 
-### Gradient System
-- **Hero Aurora**: Sweeping multi-color gradients (magenta → violet → teal) applied to hero slide backgrounds — the site's most distinctive visual element. These are photographic/composited rather than CSS gradients
-- **PromoCard Overlay**: `linear-gradient(rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 40%)` — applied to card tops to ensure heading text legibility over photography
-- No flat CSS gradients on surfaces — depth comes from photographic treatment and the black/white alternation
+### 渐变系统
+- **英雄极光**：应用于英雄幻灯片背景的多色渐变（洋红色→紫色→青色）——该网站最独特的视觉元素。这些是摄影/合成的而不是 CSS 渐变
+- **促销卡覆盖**：`线性渐变(rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 40%)` — 应用于卡片顶部，以确保标题文本在摄影上的易读性
+- 表面上没有平坦的 CSS 渐变 - 深度来自摄影处理和黑/白交替
 
-## 3. Typography Rules
+## 3. 版式规则
 
-### Font Family
-- **NouvelR**: The sole typeface. A proprietary geometric sans-serif designed by Black[Foundry] for Renault's 2021+ rebrand. Features a distinctive "radical r" with a 28-degree terminal cut matching the diamond logo angle. Available in 6 weights (Light to Extrabold), supports 6 writing systems. Fallback: `sans-serif`. Declared as `"NouvelR, sans-serif"` in CSS
-- **No secondary typeface**: Unlike Ferrari (FerrariSans + Body-Font) or Lamborghini (LamboType + Open Sans), Renault uses a single font family for all text — headings, body, buttons, captions, and navigation
+### 字体系列
+- **NouvelR**：唯一的字体。由 Black[Foundry] 为雷诺 2021+ 品牌重塑设计的专有几何无衬线字体。具有独特的“激进 r”和 28 度终端切割，与钻石徽标角度相匹配。有 6 种粗细可供选择（Light 到 Extrabold），支持 6 种书写系统。后备：“无衬线”。在 CSS 中声明为“NouvelR，sans-serif”
+- **没有辅助字体**：与法拉利（FerrariSans + Body-Font）或兰博基尼（LamboType + Open Sans）不同，雷诺对所有文本使用单一字体系列 - 标题、正文、按钮、标题和导航
 
-### Hierarchy
+### 层次结构
 
-| Role | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|--------|-------------|----------------|-------|
-| Hero Title | 56px (3.50rem) | 700 | 0.95 (53.2px) | normal | NouvelR, white on dark hero, all-caps model names |
-| Section Heading | 40px (2.50rem) | 700 | 0.95 (38px) | normal | NouvelR, PromoCard headings on dark/light sections |
-| Card Heading | 32px (2.00rem) | 700 | 0.95 | normal | NouvelR, medium-scale card headings |
-| Subheading | 24px (1.50rem) | 700 | 0.95 | normal | NouvelR, section sub-titles |
-| Module Title | 21.92px (1.37rem) | 600 | 1.20 | normal | NouvelR, component headings |
-| Content Title | 20px (1.25rem) | 700 | 0.95 | normal | NouvelR, smaller section titles |
-| UI Heading | 19.2px (1.20rem) | 600 | 1.30 | normal | NouvelR, card UI headings |
-| Emphasis | 18px (1.13rem) | 700 | 1.00 | normal | NouvelR, emphasized inline text and links |
-| Body Heading | 16px (1.00rem) | 700 | 1.40 | normal | NouvelR, paragraph-level headings |
-| Body Text | 14px (0.88rem) | 400 | 1.40 | normal | NouvelR, paragraph and descriptive content |
-| Body Bold | 14px (0.88rem) | 700 | 1.57 | normal | NouvelR, emphasized body text |
-| Button Label | 14.4px (0.90rem) | 700 | 1.00 | 0.144px | NouvelR, primary button text |
-| Nav Link | 13px (0.81rem) | 700 | 1.50 | normal | NouvelR, navigation and footer links |
-| Caption | 12.8px (0.80rem) | 400 | 1.10 | normal | NouvelR, small descriptive text |
-| Small Label | 12px (0.75rem) | 700 | 1.00 | normal | NouvelR, labels and tags |
-| Micro Text | 10px (0.63rem) | 700 | 1.45 | normal | NouvelR, smallest UI text, legal fine print |
-| Micro Caption | 8.5px (0.53rem) | 400 | normal | normal | NouvelR, absolute smallest text (legal) |
+|角色 |尺寸|重量 |行高|字母间距 |笔记|
+|------|------|--------|-------------|----------------|--------|
+|英雄称号 | 56 像素（3.50 雷姆）| 700 | 0.95（53.2 像素）|正常 | NouvelR，黑底白字英雄，全大写型号名称 |
+|章节标题 | 40 像素（2.50 雷姆）| 700 | 0.95（38 像素）|正常 | NouvelR，深色/浅色部分的 PromoCard 标题 |
+|卡片标题| 32 像素（2.00 雷姆）| 700 | 0.95 | 0.95正常 | NouvelR，中型卡片标题 |
+|副标题| 24 像素（1.50 雷姆）| 700 | 0.95 | 0.95正常 | NouvelR，部分副标题 |
+|模块标题 | 21.92 像素（1.37 雷姆）| 600 | 1.20 | 1.20正常 | NouvelR，组件标题 |
+|内容标题 | 20 像素（1.25 雷姆）| 700 | 0.95 | 0.95正常 | NouvelR，较小的章节标题 |
+| UI 标题 | 19.2 像素（1.20 雷姆）| 600 | 1.30 | 1.30正常 | NouvelR，卡片 UI 标题 |
+|强调 | 18 像素（1.13 雷姆）| 700 | 1.00 |正常 | NouvelR，强调内嵌文本和链接 |
+|正文标题 | 16 像素（1.00 雷姆）| 700 | 1.40 | 1.40正常 | NouvelR，段落级标题 |
+|正文 | 14 像素（0.88 雷姆）| 400 | 1.40 | 1.40正常 | NouvelR，段落和描述性内容 |
+|身体粗体| 14 像素（0.88 雷姆）| 700 | 1.57 | 1.57正常 | NouvelR，强调正文 |
+|按钮标签| 14.4 像素（0.90 雷姆）| 700 | 1.00 | 0.144 像素 | NouvelR，主按钮文本 |
+|导航链接 | 13 像素（0.81 雷姆）| 700 | 1.50 | 1.50正常 | NouvelR、导航和页脚链接 |
+|标题| 12.8 像素（0.80 雷姆）| 400 | 1.10 | 1.10正常 | NouvelR，小型描述性文字 |
+|小标签| 12 像素（0.75 雷姆）| 700 | 1.00 |正常 | NouvelR、标签和标记|
+|微信 | 10 像素（0.63 雷姆）| 700 | 1.45 | 1.45正常 | NouvelR，最小的 UI 文本，合法细则 |
+|微标题| 8.5 像素（0.53 雷姆）| 400 |正常 |正常 | NouvelR，绝对最小的文本（合法）|
 
-### Principles
-- **Single-family discipline**: NouvelR handles everything from 56px hero headlines to 8.5px legal captions — the font's geometric precision allows it to scale across this extreme range without losing character
-- **Bold-default headings**: Weight 700 dominates the heading hierarchy. Unlike brands that use medium (500) for headings, Renault's Bold weight creates a more assertive, energetic reading experience
-- **Ultra-tight display line-heights**: 0.95 line-height on hero and section headings — the lines nearly collide, creating a compressed, punchy typographic texture that feels urgent and modern
-- **28-degree radical r**: The typeface's signature detail — the lowercase "r" terminal is cut at precisely 28 degrees to mirror the angles of the Renault diamond logo, embedding brand identity into every word
-- **Capitalize transform on captions**: Some caption text uses `text-transform: capitalize` for editorial labeling, while micro text uses `lowercase` — a deliberate inversion for hierarchy signaling
+### 原则
+- **单一系列规则**：NouvelR 可以处理从 56px 英雄标题到 8.5px 合法标题的所有内容 - 字体的几何精度使其能够在这个极端范围内缩放而不会丢失字符
+- **粗体默认标题**：权重 700 在标题层次结构中占主导地位。与使用中号 (500) 作为标题的品牌不同，雷诺的粗体字体营造出更加自信、充满活力的阅读体验
+- **超紧显示行高**：英雄和章节标题的行高为 0.95 — 线条几乎碰撞，创造出压缩、有力的印刷纹理，给人紧迫而现代的感觉
+- **28 度根 r**：字体的标志性细节 - 小写“r”末端精确地以 28 度切割，以反映雷诺钻石标志的角度，将品牌标识嵌入到每个单词中
+- **标题上的大写转换**：一些标题文本使用“text-transform：capitalize”进行编辑标签，而微文本使用“lowercase” - 层次结构信号的故意反转
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
-Renault's buttons are sharp-edged rectangles with zero border-radius — the industrial precision of a pressed metal body panel.
+### 按钮
+雷诺的按钮是边缘锐利的矩形，边框半径为零——冲压金属车身面板的工业精度。
 
-**Super Primary (Yellow)** — The highest-emphasis CTA:
-- Default: bg `#EFDF00` (Renault Yellow), text `#000000`, borderRadius 0px, padding 10px 15px, border 1px solid `#EFDF00`
-- Inverted: bg `#EFDF00`, text `#000000` — same yellow on dark backgrounds
-- fontSize 16px (NouvelR), fontWeight 700, minHeight 46px, minWidth 46px
-- Used for: Primary conversion actions (configure, buy now)
+**超级初级（黄色）** — 最受重视的 CTA：
+- 默认：背景`#EFDF00`（雷诺黄），文本`#000000`，borderRadius 0px，填充10px 15px，边框1px实心`#EFDF00`
+- 反转：bg `#EFDF00`，文本`#000000` — 深色背景上相同的黄色
+- 字体大小 16 像素 (NouvelR)，字体粗细 700，最小高度 46 像素，最小宽度 46 像素
+- 用于：主要转化操作（配置、立即购买）
 
-**Primary (Black)** — The default action button:
-- Default: bg `#000000`, text `#FFFFFF`, borderRadius 0px, padding 10px 15px, border 1px solid `#000000`
-- Inverted: bg `#FFFFFF`, text `#000000`, border 1px solid `#FFFFFF` — white fill on dark backgrounds
-- fontSize 16px (NouvelR), fontWeight 700
-- Used for: "keşfedin" (explore), secondary conversion actions
+**主要（黑色）** — 默认操作按钮：
+- 默认：bg `#000000`，文本`#FFFFFF`，borderRadius 0px，padding 10px 15px，边框1pxsolid`#000000`
+- 反转：bg `#FFFFFF`，文本`#000000`，边框 1px 实线`#FFFFFF` — 深色背景上的白色填充
+- 字体大小 16px (NouvelR)，字体粗细 700
+- 用于：“keşfedin”（探索）、二次转化操作
 
-**Ghost** — Transparent outline button:
-- Default (on dark): bg transparent, text `#FFFFFF`, border 1px solid `#FFFFFF`, borderRadius 0px, padding 10px 15px
-- Default (on light): bg transparent, text `#000000`, border 1px solid `#000000`
-- fontSize 16px (NouvelR), fontWeight 700
-- Used for: "ilk sen öğren" (be the first to know), "satın alın" (buy), secondary actions
+**幽灵** — 透明轮廓按钮：
+- 默认（深色）：bg透明，文本`#FFFFFF`，边框1px实心`#FFFFFF`，borderRadius 0px，填充10px 15px
+- 默认（亮灯）：背景透明，文本“#000000”，边框 1px 实心“#000000”
+- 字体大小 16px (NouvelR)，字体粗细 700
+- 用于：“ilk sen öğren”（第一个知道）、“satın alın”（购买）、次要操作
 
-**Text Link** — Inline navigation:
-- Default (light): text `#000000`, no border, no background
-- Default (dark): text `#FFFFFF`
-- Hover: color shifts to `#1883FD` (Renault Blue), text-decoration none
-- All link variants hover to the same blue — consistent interactive feedback
+**文本链接** — 内联导航：
+- 默认（浅色）：文本“#000000”，无边框，无背景
+- 默认（深色）：文本“#FFFFFF”
+- 悬停：颜色变为“#1883FD”（雷诺蓝），无文本装饰
+- 所有链接变体悬停为相同的蓝色 - 一致的交互式反馈
 
-### Cards & Containers
+### 卡片和容器
 
-**PromoCard (Light)** — Editorial content card:
-- Background: white or transparent
-- Full-bleed photography with dark gradient overlay at top: `linear-gradient(rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 40%)`
-- Heading: NouvelR 40px/700, white text positioned over gradient
-- Border-radius: 0px — sharp rectangular containers
-- No shadow, no visible border
+**促销卡（浅色）** — 编辑内容卡：
+- 背景：白色或透明
+- 顶部带有深色渐变叠加的全出血摄影：“线性渐变(rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 40%)”
+- 标题：NouvelR 40px/700，白色文本位于渐变上方
+- 边框半径：0px — 锐利的矩形容器
+- 无阴影，无可见边框
 
-**PromoCard (Dark / `is-alternative-mode`)** — Cinematic card:
-- Background: `#000000` (Absolute Black)
-- Same gradient overlay treatment
-- Heading: white NouvelR text
-- CTA buttons: inverted primary (white bg) or ghost (white border)
+**PromoCard（深色/`is-alternative-mode`）** — 电影卡：
+- 背景：`#000000`（绝对黑色）
+- 相同渐变叠加处理
+- 标题：白色 NouvelR 文本
+- CTA 按钮：倒置主按钮（白色背景）或重影按钮（白色边框）
 
-**VehicleRangeCard** — Vehicle showcase:
-- Background: transparent
-- Vehicle image above, model name and price/spec below
-- No shadow, no border, clean flat treatment
-- Spacing between cards via grid gap
+**VehicleRangeCard** — 车辆展示：
+- 背景：透明
+- 上面是车辆图片，下面是型号名称和价格/规格
+- 无阴影、无边框、干净平整处理
+- 通过网格间隙卡之间的间距
 
-### Inputs & Forms
+### 输入和表格
 
-**Search/Text Input:**
-- Background: `#FFFFFF`
-- Text: `#000000`
-- Border: 1px solid `#D1D1D1` (Border Gray)
-- Border-radius: 50px (pill-shaped — unusual deviation from the zero-radius button system)
-- Padding: 6px 35px 6px 15px (extra right padding for search icon)
-- Font: NouvelR, 12.8px
-- Focus: standard browser focus ring
+**搜索/文本输入：**
+- 背景：`#FFFFFF`
+- 文本：`#000000`
+- 边框：1px实线`#D1D1D1`（边框灰色）
+- 边框半径：50px（药丸形状 - 与零半径按钮系统的异常偏差）
+- 内边距：6px 35px 6px 15px（搜索图标的额外右内边距）
+- 字体：NouvelR，12.8px
+- 焦点：标准浏览器焦点环
 
-### Navigation
-- **Desktop**: Renault diamond logo centered/left, horizontal nav links, sticky positioning
-- **Background**: white, no shadow at rest
-- **Links**: NouvelR, 13px, weight 700, black text
-- **Hover**: color shifts to `#1883FD` (Renault Blue)
-- **Mobile**: Hamburger collapse to full-screen navigation drawer
-- **CTA in nav**: Primary black button for main conversion action
+### 导航
+- **桌面**：雷诺菱形标志居中/左侧，水平导航链接，粘性定位
+- **背景**：白色，静止时无阴影
+- **链接**：NouvelR，13px，粗细700，黑色文本
+- **悬停**：颜色变为“#1883FD”（雷诺蓝）
+- **移动**：汉堡包折叠到全屏导航抽屉
+- **导航中的 CTA**：用于主要转化操作的主要黑色按钮
 
-### Image Treatment
-- **Hero**: Full-viewport carousel with dramatic aurora-gradient backgrounds and art-directed vehicle photography — edge-to-edge, no padding
-- **PromoCards**: Full-bleed photography within card bounds, dark gradient overlay at top for text legibility
-- **Vehicle images**: Transparent-background renders on neutral/gradient backgrounds
-- **Aspect ratios**: Mixed — hero at roughly 16:9 viewport, promo cards at various ratios from square to wide panoramic
-- **Lazy loading**: Below-fold sections use lazy loading (framework-handled)
+### 图像处理
+- **英雄**：全视口轮播，具有戏剧性的极光渐变背景和艺术指导的车辆摄影 - 边缘到边缘，无填充
+- **PromoCards**：卡片边界内的全出血摄影，顶部的深色渐变覆盖以提高文本清晰度
+- **车辆图像**：透明背景在中性/渐变背景上渲染
+- **纵横比**：混合 — 英雄的视口比例约为 16:9，促销卡的比例从方形到宽幅全景
+- **延迟加载**：下方折叠部分使用延迟加载（框架处理）
 
-### Carousel Component
-- Full-screen hero carousel with auto-advancing slides
-- Each slide: background gradient/photo + vehicle image + headline + CTA buttons
-- Dot indicators for slide position
-- Navigation arrows at edges
+### 轮播组件
+- 带自动前进幻灯片的全屏英雄轮播
+- 每张幻灯片：背景渐变/照片+车辆图像+标题+CTA按钮
+- 滑动位置的点指示器
+- 边缘有导航箭头
 
-## 5. Layout Principles
+## 5.布局原则
 
-### Spacing System
-- **Base unit**: 8px (detected system base)
-- **Scale**: 1px, 4px, 5px, 6px, 6.25px, 8px, 10px, 12px, 13px, 15px, 16px, 20px, 24px, 32px, 40px
-- **Button padding**: 10px 15px — consistent across all button variants
-- **Section padding**: Generous vertical spacing (40–80px) between major content blocks
-- **Card gaps**: 16–24px between grid items
-- **Minimum interactive size**: 46px (minWidth and minHeight on all buttons)
+### 间距系统
+- **基础单元**：8px（检测到的系统基础）
+- **比例**：1 像素、4 像素、5 像素、6 像素、6.25 像素、8 像素、10 像素、12 像素、13 像素、15 像素、16 像素、20 像素、24 像素、32 像素、40 像素
+- **按钮填充**：10px 15px — 在所有按钮变体中保持一致
+- **部分填充**：主要内容块之间的垂直间距 (40–80px)
+- **卡片间隙**：网格项目之间的距离为 16–24px
+- **最小交互尺寸**：46px（所有按钮上的 minWidth 和 minHeight）
 
-### Grid & Container
-- **Max width**: 1440px (largest defined breakpoint)
-- **Hero**: Full-bleed, edge-to-edge, viewport-height
-- **PromoCard grid**: 2-up and 3-up layouts with mixed card sizes
-- **Vehicle range**: Horizontal scrollable card row or grid
-- **Footer**: Multi-column layout on white background
+### 网格和容器
+- **最大宽度**：1440px（最大定义断点）
+- **英雄**：全出血、边到边、视口高度
+- **PromoCard 网格**：具有混合卡片尺寸的 2-up 和 3-up 布局
+- **车辆范围**：水平可滚动卡行或网格
+- **页脚**：白色背景上的多列布局
 
-### Whitespace Philosophy
-Renault uses whitespace moderately — more generously than Ferrari but less extremely than Tesla. The card-based layout means content is organized into defined containers rather than floating in void. The visual breathing room comes primarily from the large card formats and the full-bleed hero carousel, which gives each vehicle its own cinematic moment. Between sections, spacing is consistent (32–40px) creating a rhythmic scroll experience. The alternation between light and dark sections also creates perceived whitespace — the mode switch itself acts as a visual separator.
+### 空白哲学
+雷诺适度使用空白——比法拉利更慷慨，但比特斯拉不那么极端。基于卡片的布局意味着内容被组织到定义的容器中，而不是漂浮在空中。视觉呼吸空间主要来自大卡片格式和全出血英雄轮播，这给每辆车带来了自己的电影时刻。各部分之间的间距是一致的（32-40 像素），创造出有节奏的滚动体验。明暗部分之间的交替也会产生感知的空白——模式开关本身充当视觉分隔符。
 
-### Border Radius Scale
-| Value | Context |
-|-------|---------|
-| 0px | All buttons, PromoCards, most containers — the zero-radius default |
-| 2px | Small UI elements (region controls) |
-| 3px | Content panels (div, tabpanel) |
-| 4px | Labels and tag elements |
-| 46px | Pill-shaped elements (search input, filter chips) |
-| 50px | Full pill for search/input fields |
+### 边界半径比例
+|价值|背景 |
+|--------|---------|
+| 0 像素 |所有按钮、促销卡、大多数容器 - 零半径默认值 |
+| 2 像素 |小型 UI 元素（区域控件）|
+| 3 像素 |内容面板（div、tabpanel）|
+| 4 像素 |标签和标记元素 |
+| 46 像素 |药丸状元件（搜索输入、过滤芯片）|
+| 50 像素 |搜索/输入字段的完整药丸 |
 
-## 6. Depth & Elevation
+## 6. 深度和高度
 
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Level 0 (Flat) | No shadow | Default for PromoCards, buttons, most containers |
-| Level 1 (Soft) | `rgba(0,0,0,0.2) 0px 4px 8px` | Card hover states, subtle lift effect |
-| Level 2 (Medium) | `rgba(0,0,0,0.2) 0px 0px 18px` | Floating UI elements, dropdown menus |
-| Level 3 (Layered) | `rgba(0,0,0,0) 0px 2px 4px, rgba(50,50,93,0.1) 0px 7px 14px` | Compound shadow for elevated cards and modals |
-| Level 4 (Deep) | `rgba(0,0,0,0.15) 0px 40px 80px` | Large floating panels, configurator overlays |
-| Level 5 (Directional) | `rgba(0,0,0,0.2) 5px 5px 8px` | Offset directional shadow for specific components |
-| Level 6 (Ambient) | `rgb(199,197,199) 0px 0px 12px 2px` | Ambient glow effect for highlighted elements |
+|水平|治疗 |使用 |
+|--------|------------|-----|
+| 0 级（平）|没有影子| PromoCards、按钮、大多数容器的默认设置 |
+| 1 级（软）| `rgba(0,0,0,0.2) 0px 4px 8px` |卡片悬停状态，微妙的升降效果|
+| 2 级（中）| `rgba(0,0,0,0.2) 0px 0px 18px` |浮动 UI 元素、下拉菜单 |
+| 3 级（分层）| `rgba(0,0,0,0) 0px 2px 4px, rgba(50,50,93,0.1) 0px 7px 14px` |提升卡片和模态的复合阴影 |
+| 4 级（深）| `rgba(0,0,0,0.15) 0px 40px 80px` |大型浮动面板、配置器覆盖 |
+| 5 级（定向）| `rgba(0,0,0,0.2) 5px 5px 8px` |特定组件的偏移定向阴影 |
+| 6 级（环境）| `rgb(199,197,199) 0px 0px 12px 2px` |突出显示元素的环境发光效果 |
 
-### Shadow Philosophy
-Renault uses a richer shadow system than Ferrari or Tesla — seven distinct shadow tokens reflecting a more layered, dimensional interface. The shadows progress from subtle 4px hover lifts to dramatic 80px deep panels. The compound shadow (Level 3) with its dual-layer approach (a tight dark shadow plus a wider purple-tinted one from `rgba(50,50,93,0.1)`) is particularly refined — it creates a photorealistic floating effect. The ambient glow (Level 6) in warm gray adds a unique touch that connects to Renault's warmer color personality.
+### 影子哲学
+雷诺使用比法拉利或特斯拉更丰富的影子系统——七个不同的影子标记，反映了更加分层、立体的界面。阴影从微妙的 4 像素悬停提升发展到戏剧性的 80 像素深度面板。复合阴影（3 级）及其双层方法（紧密的深色阴影加上来自“rgba(50,50,93,0.1)”的更宽的紫色阴影）特别精致 - 它创建了一种逼真的浮动效果。暖灰色的环境光（6 级）增添了独特的触感，与雷诺温暖的色彩个性相呼应。
 
-### Decorative Depth
-- **Hero aurora gradients**: The primary decorative depth element — vivid color gradients create atmospheric depth behind vehicle imagery
-- **PromoCard overlays**: `linear-gradient(rgba(0,0,0,0.6) → transparent)` creates depth within cards through transparency
-- **No blur effects** on UI elements — depth is communicated through shadow and color contrast
+### 装饰深度
+- **英雄极光渐变**：主要装饰深度元素 - 生动的颜色渐变在车辆图像背后营造大气深度
+- **PromoCard 覆盖**：“线性渐变（rgba（0,0,0,0.6）→透明）”通过透明度创建卡片内的深度
+- UI 元素上**无模糊效果** — 深度通过阴影和颜色对比来传达
 
-## 7. Do's and Don'ts
+## 7. 该做和不该做的事情
 
-### Do
-- Use Renault Yellow (`#EFDF00`) exclusively for super-primary CTAs — it carries the full weight of the diamond logo's identity
-- Maintain zero border-radius on all buttons — sharp edges are non-negotiable in the Renault system
-- Use NouvelR Bold (700) as the default heading weight — the assertive weight is central to the brand's energetic personality
-- Apply the dark gradient overlay (`rgba(0,0,0,0.6) → transparent`) on PromoCards to ensure text legibility over photography
-- Keep hero line-heights ultra-tight (0.95) for display text — the compressed texture feels urgent and modern
-- Alternate between black and white sections to create the signature chessboard rhythm
-- Use `#1883FD` (Renault Blue) consistently for all link hover states — one interactive color signal
-- Set minimum interactive size at 46×46px for all buttons — accessibility built into the component spec
-- Reserve pill-shaped radius (46–50px) exclusively for search inputs and filter elements — never for buttons
-- Use the PromoCard gradient overlay on every card that has text over photography
+### 做
+- 专用于超主 CTA 的雷诺黄 (`#EFDF00`) — 它承载着钻石标志身份的全部分量
+- 保持所有按钮的边框半径为零——锐利的边缘在雷诺系统中是不可协商的
+- 使用 NouvelR Bold (700) 作为默认标题粗细 — 自信的粗细是品牌充满活力的个性的核心
+- 在 PromoCard 上应用深色渐变叠加（`rgba(0,0,0,0.6) → 透明`），以确保摄影时的文本易读性
+- 保持显示文本的英雄行高超紧（0.95）——压缩的纹理感觉紧迫而现代
+- 在黑白部分之间交替以创建标志性的棋盘节奏
+- 对所有链接悬停状态一致使用“#1883FD”（雷诺蓝）——一种交互式颜色信号
+- 将所有按钮的最小交互尺寸设置为 46×46px — 组件规范中内置了可访问性
+- 专门为搜索输入和过滤元素保留药丸形半径（46–50px）——绝不用于按钮
+- 在每张有文字覆盖照片的卡片上使用 PromoCard 渐变叠加层
 
-### Don't
-- Apply Renault Yellow as a background color for sections or surfaces — it's a CTA signal, not an atmosphere color
-- Add border-radius to buttons — the zero-radius rectangle is a core brand marker
-- Use any typeface besides NouvelR — the single-family discipline is a brand pillar
-- Mix multiple chromatic accent colors in a single section — the palette is monochrome-plus-yellow
-- Soften heading weights to 400 or 500 — NouvelR Bold is the brand voice, lighter weights read as off-brand
-- Add decorative borders to PromoCards or content containers — separation comes from background color alternation
-- Use the semantic colors (Success Green, Error Rose) for decorative purposes — they're reserved for form states
-- Apply the 56px hero size to anything below the fold — hero typography scale is reserved for the carousel
-- Create rounded-pill buttons — pill shapes are reserved for inputs, never for action elements
-- Use flat CSS gradients on UI surfaces — the only gradients should be the photographic hero auroras and the text-legibility overlays
+### 不要
+- 应用雷诺黄作为部分或表面的背景颜色 - 这是 CTA 信号，而不是气氛颜色
+- 为按钮添加边框半径 - 零半径矩形是核心品牌标记
+- 使用 NouvelR 以外的任何字体——单一家族纪律是品牌支柱
+- 在一个部分中混合多种彩色强调色 - 调色板是单色加黄色
+- 将标题字重软化至 400 或 500 — NouvelR Bold 是品牌声音，较轻的字重被视为非品牌
+- 向 PromoCards 或内容容器添加装饰边框 - 分离来自背景颜色交替
+- 使用语义颜色（成功绿色、错误玫瑰色）用于装饰目的 - 它们保留用于表单状态
+- 将 56 像素的英雄尺寸应用于首屏以下的任何内容 - 英雄版式比例为轮播保留
+- 创建圆形药丸按钮 - 药丸形状保留用于输入，而不是用于操作元素
+- 在 UI 表面上使用平面 CSS 渐变 - 唯一的渐变应该是摄影英雄极光和文本易读覆盖层
 
-## 8. Responsive Behavior
+## 8. 响应行为
 
-### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile Small | ≤425px | Single-column, full-width cards, hero text scales to ~32px, stacked CTAs, hamburger nav |
-| Mobile | 426–640px | Single-column, slightly larger cards, hero text at 32–40px |
-| Tablet Small | 641–768px | 2-column PromoCard grid begins, hero maintains full-width |
-| Tablet | 769–896px | Full 2-column layout, vehicle range shows 2–3 cards |
-| Desktop Small | 897–1024px | Navigation fully expanded, hero at 56px, 2-up card grid |
-| Desktop | 1025–1280px | Full layout, 3-up card grid, generous whitespace |
-| Large Desktop | 1281–1440px | Maximum content width, centered container, hero at full cinematic scale |
+### 断点
+|名称 |宽度|关键变化|
+|------|--------|-------------|
+|移动小| ≤425 像素 |单栏、全角卡片、英雄文本缩放至约 32 像素、堆叠 CTA、汉堡导航 |
+|手机 | 426–640 像素 |单列、稍大的卡片、英雄文本为 32–40 像素 |
+|小型平板电脑 | 641–768 像素 | 2 列 PromoCard 网格开始，英雄保持全角 |
+|平板电脑| 769–896 像素 |全2栏布局，车辆范围显示2-3张卡片 |
+|桌面小| 897–1024 像素 |导航完全展开，英雄为 56 像素，2-up 卡片网格 |
+|桌面| 1025–1280 像素 |完整布局，三合一卡片网格，宽敞的空白 |
+|大型桌面 | 1281–1440 像素 |最大内容宽度、居中容器、全电影尺寸的英雄 |
 
-### Touch Targets
-- All buttons: minimum 46×46px (`minWidth: 46px, minHeight: 46px`) — exceeds WCAG AAA 44×44px requirement
-- Search input pill: adequate touch target with 50px border-radius creating a large tappable area
-- Navigation links: NouvelR 13px with adequate spacing between items
-- Carousel navigation: large arrow targets at viewport edges
+### 触摸目标
+- 所有按钮：最小 46×46 像素（`minWidth: 46px, minHeight: 46px`） — 超过 WCAG AAA 44×44px 要求
+- 搜索输入药丸：足够的触摸目标，边框半径为 50 像素，创建较大的可点击区域
+- 导航链接：NouvelR 13px，项目之间有足够的间距
+- 轮播导航：大箭头目标位于视口边缘
 
-### Collapsing Strategy
-- **Navigation**: Full horizontal nav collapses to Renault diamond logo + hamburger menu on mobile
-- **Hero carousel**: Full-width at all breakpoints, headline scales from 56px (desktop) to ~32px (mobile)
-- **PromoCard grid**: 3-up → 2-up → single-column as viewport narrows
-- **Vehicle range**: Horizontal scroll maintained at all sizes, visible cards reduce
-- **CTA pairs**: Side-by-side buttons stack vertically on mobile
-- **Footer**: Multi-column collapses to single-column accordion on mobile
+### 崩溃策略
+- **导航**：完整的水平导航折叠为雷诺钻石标志+移动设备上的汉堡菜单
+- **英雄轮播**：所有断点处全宽，标题范围从 56 像素（桌面）到 ~ 32 像素（移动）
+- **PromoCard 网格**：视口变窄时 3 幅 → 2 幅 → 单列
+- **车辆范围**：在所有尺寸下保持水平滚动，可见卡片减少
+- **CTA 对**：并排按钮在移动设备上垂直堆叠
+- **页脚**：在移动设备上多列折叠为单列折叠式
 
-### Image Behavior
-- Hero images: full-bleed at all breakpoints with `object-fit: cover`
-- PromoCard images: responsive within card containers, gradient overlay scales proportionally
-- Vehicle images: transparent-background renders scale proportionally within grid cells
-- Art direction: mobile may crop to tighter vehicle views, reducing environmental context
+### 图像行为
+- 英雄图像：使用“object-fit: cover”在所有断点处全出血
+- PromoCard 图像：在卡片容器内响应，渐变叠加按比例缩放
+- 车辆图像：透明背景在网格单元内按比例渲染比例
+- 艺术指导：移动设备可能会裁剪出更紧凑的车辆视图，从而减少环境背景
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
-- Primary CTA (Super): "Renault Yellow (#EFDF00)"
-- Primary CTA (Default): "Absolute Black (#000000)"
-- Background Light: "Pure White (#FFFFFF)"
-- Background Dark: "Absolute Black (#000000)"
-- Secondary Dark: "Charcoal (#222222)"
-- Heading text (light bg): "Absolute Black (#000000)"
-- Body text: "Absolute Black (#000000)"
-- Link Hover: "Renault Blue (#1883FD)"
-- Border: "Pale Silver (#F2F2F2)"
-- Semantic Error: "Error Rose (#BE6464)"
+### 快速颜色参考
+- 主要 CTA（超级）：“雷诺黄 (#EFDF00)”
+- 主要 CTA（默认）：“绝对黑色 (#000000)”
+- 背景光：“纯白色（#FFFFFF）”
+- 深色背景：“绝对黑色 (#000000)”
+- 次暗：“木炭 (#222222)”
+- 标题文本（浅色背景）：“绝对黑色 (#000000)”
+- 正文：“绝对黑色 (#000000)”
+- 链接悬停：“雷诺蓝 (#1883FD)”
+- 边框：“淡银色 (#F2F2F2)”
+- 语义错误：“错误玫瑰 (#BE6464)”
 
-### Example Component Prompts
-- "Create a hero section with a full-viewport aurora gradient background (magenta to violet to teal), a centered vehicle image, a NouvelR Bold headline at 56px with 0.95 line-height in white, and two buttons: a Primary (white bg, black text, 0px radius) 'Explore' and a Ghost (transparent bg, white border, white text, 0px radius) 'Learn More'"
-- "Design a PromoCard with a full-bleed photography background, a dark gradient overlay (rgba(0,0,0,0.6) top to transparent at 40%), a NouvelR Bold 40px white heading, a 14px body text line in white, and a Primary inverted button (white bg, black text, 0px radius, 10px 15px padding)"
-- "Build a vehicle range grid with 3 columns on white background, each card showing a transparent-background car render above a NouvelR Bold 24px model name in black, a 14px price caption, and a ghost button (black border, black text, 0px radius) labeled 'Configure'"
-- "Create a dark E-Tech section on Absolute Black (#000000) with a NouvelR Bold 40px white heading 'E-Tech electric powertrain', a 14px subtitle in white, and a Renault Yellow (#EFDF00) super-primary button with black text, 0px radius, and 10px 15px padding"
-- "Design a search input as a pill-shaped field (50px border-radius) with white background, 1px solid #D1D1D1 border, NouvelR 12.8px text, 6px 35px 6px 15px padding, and a search icon positioned inside the right padding area"
+### 组件提示示例
+- “创建一个英雄部分，其中包含全视口极光渐变背景（洋红到紫罗兰色到青色）、居中车辆图像、56 像素的 NouvelR 粗体标题，白色行高为 0.95，以及两个按钮：一个主要按钮（白色背景，黑色文本，0 像素半径）“探索”和一个幽灵（透明背景，白色边框，白色文本，0 像素半径）“了解更多””
+- “设计一张带有全出血摄影背景、深色渐变覆盖（rgba(0,0,0,0.6) 顶部到 40% 透明）、NouvelR Bold 40px 白色标题、白色 14px 正文文本行和主要倒置按钮（白色背景、黑色文本、0px 半径、10px 15px 填充）的 PromoCard”
+- “在白色背景上构建一个包含 3 列的车辆范围网格，每张卡在 NouvelR Bold 24px 黑色车型名称上方显示透明背景汽车渲染，14px 价格标题，以及标记为“配置”的幽灵按钮（黑色边框、黑色文本、0px 半径）”
+- “在 Absolute Black (#000000) 上创建一个深色 E-Tech 部分，其中包含 NouvelR Bold 40px 白色标题“E-Tech electric powertrain”、14px 白色副标题以及带有黑色文本、0px 半径和 10px 15px 填充的 Renault Yellow (#EFDF00) 超级主按钮”
+- “将搜索输入设计为药丸状字段（50px 边框半径），具有白色背景、1px 实线 #D1D1D1 边框、NouvelR 12.8px 文本、6px 35px 6px 15px 填充以及位于右侧填充区域内的搜索图标”
 
-### Iteration Guide
-When refining existing screens generated with this design system:
-1. Focus on ONE component at a time — Renault's system has clear component boundaries (PromoCard, VehicleRangeCard, CTA variants)
-2. Reference specific color names and hex codes — the palette is small but each color has a precise function
-3. Use natural language descriptions, not CSS values — "sharp zero-radius rectangle" conveys intent better than "border-radius: 0"
-4. Describe the desired "feel" alongside specific measurements — "assertive automotive energy" communicates the NouvelR Bold heading personality better than "font-weight: 700"
-5. Always check whether a section should be light or dark — the chessboard alternation is a core pattern
-6. Reserve Renault Yellow for ONE button per screen — if yellow appears in more than one CTA, the hierarchy collapses
+### 迭代指南
+当优化使用此设计系统生成的现有屏幕时：
+1. 一次专注于一个组件——雷诺系统具有清晰的组件边界（PromoCard、VehicleRangeCard、CTA 变体）
+2. 参考具体的颜色名称和十六进制代码——调色板虽小，但每种颜色都有精确的功能
+3. 使用自然语言描述，而不是CSS值——“尖锐的零半径矩形”比“border-radius: 0”更能传达意图
+4. 描述所需的“感觉”以及具体的测量值——“自信的汽车能量”比“字体粗细：700”更好地传达了 NouvelR Bold 标题的个性
+5. 始终检查某个部分应该是浅色还是深色——棋盘交替是核心模式
+6. 为每个屏幕一个按钮保留雷诺黄色 — 如果黄色出现在多个 CTA 中，则层次结构会崩溃

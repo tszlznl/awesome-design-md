@@ -1,125 +1,125 @@
-# Design System Inspiration of Kraken
+# Kraken 的设计系统灵感
 
-## 1. Visual Theme & Atmosphere
+## 1.视觉主题和氛围
 
-Kraken's website is a clean, trustworthy crypto exchange that uses purple as its commanding brand color. The design operates on white backgrounds with Kraken Purple (`#7132f5`, `#5741d8`, `#5b1ecf`) creating a distinctive, professional crypto identity. The proprietary Kraken-Brand font handles display headings with bold (700) weight and negative tracking, while Kraken-Product (with IBM Plex Sans fallback) serves as the UI workhorse.
+Kraken 的网站是一个干净、值得信赖的加密货币交易所，使用紫色作为其主导品牌颜色。该设计在白色背景上运行，并使用 Kraken Purple（“#7132f5”、“#5741d8”、“#5b1ecf”）创建独特、专业的加密身份。专有的 Kraken-Brand 字体以粗体 (700) 粗细和负跟踪处理显示标题，而 Kraken-Product（使用 IBM Plex Sans 后备）则充当 UI 主力。
 
-**Key Characteristics:**
-- Kraken Purple (`#7132f5`) as primary brand with darker variants (`#5741d8`, `#5b1ecf`)
-- Kraken-Brand (display) + Kraken-Product (UI) dual font system
-- Near-black (`#101114`) text with cool blue-gray neutral scale
-- 12px radius buttons (rounded but not pill)
-- Subtle shadows (`rgba(0,0,0,0.03) 0px 4px 24px`) — whisper-level
-- Green accent (`#149e61`) for positive/success states
+**主要特征：**
+- Kraken Purple (`#7132f5`) 作为主要品牌，具有深色变体 (`#5741d8`、`#5b1ecf`)
+- Kraken-品牌（展示）+ Kraken-产品（UI）双字体系统
+- 近乎黑色（`#101114`）文本，带有凉爽的蓝灰色中性比例
+- 12px 半径按钮（圆形但不是丸状）
+- 微妙的阴影 (`rgba(0,0,0,0.03) 0px 4px 24px`) — 耳语级别
+- 绿色口音（`#149e61`）表示积极/成功状态
 
-## 2. Color Palette & Roles
+## 2. 调色板和角色
 
-### Primary
-- **Kraken Purple** (`#7132f5`): Primary CTA, brand accent, links
-- **Purple Dark** (`#5741d8`): Button borders, outlined variants
-- **Purple Deep** (`#5b1ecf`): Deepest purple
-- **Purple Subtle** (`rgba(133,91,251,0.16)`): Purple at 16% — subtle button backgrounds
-- **Near Black** (`#101114`): Primary text
+### 小学
+- **Kraken Purple** (`#7132f5`)：主要 CTA、品牌口音、链接
+- **紫色深色** (`#5741d8`)：按钮边框，轮廓变体
+- **深紫色** (`#5b1ecf`)：最深的紫色
+- **Purple Subtle** (`rgba(133,91,251,0.16)`)：紫色 16% — 微妙的按钮背景
+- **近黑色** (`#101114`)：主要文本
 
-### Neutral
-- **Cool Gray** (`#686b82`): Primary neutral, borders at 24% opacity
-- **Silver Blue** (`#9497a9`): Secondary text, muted elements
-- **White** (`#ffffff`): Primary surface
-- **Border Gray** (`#dedee5`): Divider borders
+### 中性
+- **冷灰色** (`#686b82`)：主要中性，边框不透明度为 24%
+- **银蓝色** (`#9497a9`)：辅助文本，静音元素
+- **白色** (`#ffffff`)：主表面
+- **边框灰色** (`#dedee5`)：分隔线边框
 
-### Semantic
-- **Green** (`#149e61`): Success/positive at 16% opacity for badges
-- **Green Dark** (`#026b3f`): Badge text
+### 语义
+- **绿色** (`#149e61`)：徽章不透明度为 16% 时成功/积极
+- **绿暗** (`#026b3f`)：徽章文本
 
-## 3. Typography Rules
+## 3. 版式规则
 
-### Font Families
-- **Display**: `Kraken-Brand`, fallbacks: `IBM Plex Sans, Helvetica, Arial`
-- **UI / Body**: `Kraken-Product`, fallbacks: `Helvetica Neue, Helvetica, Arial`
+### 字体系列
+- **显示**：`Kraken-Brand`，后备：`IBM Plex Sans、Helvetica、Arial`
+- **UI / Body**：`Kraken-Product`，后备：`Helvetica Neue、Helvetica、Arial`
 
-### Hierarchy
+### 层次结构
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing |
+|角色 |字体|尺寸|重量 |行高|字母间距 |
 |------|------|------|--------|-------------|----------------|
-| Display Hero | Kraken-Brand | 48px | 700 | 1.17 | -1px |
-| Section Heading | Kraken-Brand | 36px | 700 | 1.22 | -0.5px |
-| Sub-heading | Kraken-Brand | 28px | 700 | 1.29 | -0.5px |
-| Feature Title | Kraken-Product | 22px | 600 | 1.20 | normal |
-| Body | Kraken-Product | 16px | 400 | 1.38 | normal |
-| Body Medium | Kraken-Product | 16px | 500 | 1.38 | normal |
-| Button | Kraken-Product | 16px | 500–600 | 1.38 | normal |
-| Caption | Kraken-Product | 14px | 400–700 | 1.43–1.71 | normal |
-| Small | Kraken-Product | 12px | 400–500 | 1.33 | normal |
-| Micro | Kraken-Product | 7px | 500 | 1.00 | uppercase |
+|显示英雄 | Kraken-品牌| 48 像素 | 700 | 1.17 | 1.17 -1 像素 |
+|章节标题 | Kraken-品牌| 36 像素 | 700 | 1.22 | 1.22 -0.5 像素 |
+|副标题| Kraken-品牌| 28 像素 | 700 | 1.29 | 1.29 -0.5 像素 |
+|专题标题 | Kraken-产品 | 22 像素 | 600 | 1.20 | 1.20正常 |
+|身体| Kraken-产品 | 16 像素 | 400 | 1.38 | 1.38正常 |
+|身体中等| Kraken-产品 | 16 像素 | 500 | 500 1.38 | 1.38正常 |
+|按钮| Kraken-产品 | 16 像素 | 500–600 | 1.38 | 1.38正常 |
+|标题| Kraken-产品 | 14 像素 | 400–700 | 1.43–1.71 |正常 |
+|小| Kraken-产品 | 12 像素 | 400–500 | 1.33 | 1.33正常 |
+|微| Kraken-产品 | 7 像素 | 500 | 500 1.00 |大写 |
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
-**Primary Purple**
-- Background: `#7132f5`
-- Text: `#ffffff`
-- Padding: 13px 16px
-- Radius: 12px
+**原色紫色**
+- 背景：`#7132f5`
+- 文本：`#ffffff`
+- 内边距：13 像素 16 像素
+- 半径：12px
 
-**Purple Outlined**
-- Background: `#ffffff`
-- Text: `#5741d8`
-- Border: `1px solid #5741d8`
-- Radius: 12px
+**紫色轮廓**
+- 背景：`#ffffff`
+- 文本：`#5741d8`
+- 边框：`1px 实线 #5741d8`
+- 半径：12px
 
-**Purple Subtle**
-- Background: `rgba(133,91,251,0.16)`
-- Text: `#7132f5`
-- Padding: 8px
-- Radius: 12px
+**紫色微妙**
+- 背景：`rgba(133,91,251,0.16)`
+- 文本：`#7132f5`
+- 内边距：8px
+- 半径：12px
 
-**White Button**
-- Background: `#ffffff`
-- Text: `#101114`
-- Radius: 10px
-- Shadow: `rgba(0,0,0,0.03) 0px 4px 24px`
+**白色按钮**
+- 背景：`#ffffff`
+- 文本：`#101114`
+- 半径：10px
+- 阴影：`rgba(0,0,0,0.03) 0px 4px 24px`
 
-**Secondary Gray**
-- Background: `rgba(148,151,169,0.08)`
-- Text: `#101114`
-- Radius: 12px
+**二级灰色**
+- 背景：`rgba(148,151,169,0.08)`
+- 文本：`#101114`
+- 半径：12px
 
-### Badges
-- Success: `rgba(20,158,97,0.16)` bg, `#026b3f` text, 6px radius
-- Neutral: `rgba(104,107,130,0.12)` bg, `#484b5e` text, 8px radius
+### 徽章
+- 成功：`rgba(20,158,97,0.16)`背景，`#026b3f`文本，6px半径
+- 中性：`rgba(104,107,130,0.12)` bg，`#484b5e`文本，8px半径
 
-## 5. Layout Principles
+## 5.布局原则
 
-### Spacing: 1px, 2px, 3px, 4px, 5px, 6px, 8px, 10px, 12px, 13px, 15px, 16px, 20px, 24px, 25px
-### Border Radius: 3px, 6px, 8px, 10px, 12px, 16px, 9999px, 50%
+### 间距：1 像素、2 像素、3 像素、4 像素、5 像素、6 像素、8 像素、10 像素、12 像素、13 像素、15 像素、16 像素、20 像素、24 像素、25 像素
+### 边框半径：3px、6px、8px、10px、12px、16px、9999px、50%
 
-## 6. Depth & Elevation
-- Subtle: `rgba(0,0,0,0.03) 0px 4px 24px`
-- Micro: `rgba(16,24,40,0.04) 0px 1px 4px`
+## 6. 深度和高度
+- 微妙：`rgba(0,0,0,0.03) 0px 4px 24px`
+- 微：`rgba(16,24,40,0.04) 0px 1px 4px`
 
-## 7. Do's and Don'ts
+## 7. 该做和不该做的事情
 
-### Do
-- Use Kraken Purple (#7132f5) for CTAs and links
-- Apply 12px radius on all buttons
-- Use Kraken-Brand for headings, Kraken-Product for body
+### 做
+- 使用 Kraken Purple (#7132f5) 作为 CTA 和链接
+- 对所有按钮应用 12px 半径
+- 使用 Kraken-Brand 作为标题，使用 Kraken-Product 作为正文
 
-### Don't
-- Don't use pill buttons — 12px is the max radius for buttons
-- Don't use other purples outside the defined scale
+### 不要
+- 不要使用药丸按钮 - 12px 是按钮的最大半径
+- 不要使用定义范围之外的其他紫色
 
-## 8. Responsive Behavior
-Breakpoints: 375px, 425px, 640px, 768px, 1024px, 1280px, 1536px
+## 8. 响应行为
+断点：375px、425px、640px、768px、1024px、1280px、1536px
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
-- Brand: Kraken Purple (`#7132f5`)
-- Dark variant: `#5741d8`
-- Text: Near Black (`#101114`)
-- Secondary text: `#9497a9`
-- Background: White (`#ffffff`)
+### 快速颜色参考
+- 品牌：Kraken Purple (`#7132f5`)
+- 深色变体：`#5741d8`
+- 文本：近黑色 (`#101114`)
+- 辅助文本：`#9497a9`
+- 背景：白色（`#ffffff`）
 
-### Example Component Prompts
-- "Create hero: white background. Kraken-Brand 48px weight 700, letter-spacing -1px. Purple CTA (#7132f5, 12px radius, 13px 16px padding)."
+### 组件提示示例
+- “创建英雄：白色背景。Kraken-Brand 48px 粗细 700，字母间距 -1px。紫色 CTA（#7132f5，12px 半径，13px 16px 填充）。”

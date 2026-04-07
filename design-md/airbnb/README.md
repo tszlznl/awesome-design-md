@@ -1,23 +1,23 @@
-# Airbnb Inspired Design System
+# Airbnb 启发的设计系统
 
-[DESIGN.md](https://github.com/VoltAgent/awesome-design-md/blob/main/design-md/airbnb/DESIGN.md) extracted from the public [Airbnb](https://airbnb.com/) website. This is not the official design system. Colors, fonts, and spacing may not be 100% accurate. But it's a good starting point for building something similar.
+[DESIGN.md](https://github.com/VoltAgent/awesome-design-md/blob/main/design-md/airbnb/DESIGN.md) 摘自公共 [Airbnb](https://airbnb.com/) 网站。这不是官方的设计系统。颜色、字体和间距可能不是 100% 准确。但这是构建类似东西的一个很好的起点。
 
-## Files
+## 文件
 
-| File | Description |
+|文件|描述 |
 |------|-------------|
-| `DESIGN.md` | Complete design system documentation (9 sections) |
-| `preview.html` | Interactive design token catalog (light) |
-| `preview-dark.html` | Interactive design token catalog (dark) |
+| `设计.md` |完整的设计系统文档（9 部分）|
+| `preview.html` |交互设计代币目录（轻）|
+| `预览-dark.html` |互动设计代币目录（深色）|
 
-Use [DESIGN.md](https://github.com/VoltAgent/awesome-design-md/blob/main/design-md/airbnb/DESIGN.md) to use as a reference for AI agents (Claude, Cursor, Stitch) to generate UI that looks like the Airbnb design language.
+使用 [DESIGN.md](https://github.com/VoltAgent/awesome-design-md/blob/main/design-md/airbnb/DESIGN.md) 用作 AI 代理（Claude、Cursor、Stitch）的参考，以生成看起来像 Airbnb 设计语言的 UI。
 
-## Preview
+## 预览
 
-A sample landing page built with DESIGN.md. It shows the actual colors, typography, buttons, cards, spacing, and elevation, all in one page.
+使用 DESIGN.md 构建的示例登陆页面。它在一页中显示了实际的颜色、版式、按钮、卡片、间距和高度。
 
-### Dark Mode
-![Airbnb Design System — Dark Mode](https://pub-2e4ecbcbc9b24e7b93f1a6ab5b2bc71f.r2.dev/designs/airbnb/preview-dark-screenshot.png)
+### 深色模式
+![Airbnb 设计系统 — 深色模式](https://pub-2e4ecbcbc9b24e7b93f1a6ab5b2bc71f.r2.dev/designs/airbnb/preview-dark-screenshot.png)
 
-### Light Mode
-![Airbnb Design System — Light Mode](https://pub-2e4ecbcbc9b24e7b93f1a6ab5b2bc71f.r2.dev/designs/airbnb/preview-screenshot.png)
+### 灯光模式
+![Airbnb 设计系统 — 灯光模式](https://pub-2e4ecbcbc9b24e7b93f1a6ab5b2bc71f.r2.dev/designs/airbnb/preview-screenshot.png)

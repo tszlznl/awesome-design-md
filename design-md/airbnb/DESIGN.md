@@ -1,246 +1,246 @@
-# Design System Inspiration of Airbnb
+# Airbnb 的设计系统灵感
 
-## 1. Visual Theme & Atmosphere
+## 1.视觉主题和氛围
 
-Airbnb's website is a warm, photography-forward marketplace that feels like flipping through a travel magazine where every page invites you to book. The design operates on a foundation of pure white (`#ffffff`) with the iconic Rausch Red (`#ff385c`) — named after Airbnb's first street address — serving as the singular brand accent. The result is a clean, airy canvas where listing photography, category icons, and the red CTA button are the only sources of color.
+Airbnb 的网站是一个热情、注重摄影的市场，感觉就像翻阅一本旅行杂志，每一页都邀请您预订。该设计以纯白色（“#ffffff”）为基础，并以标志性的劳施红（“#ff385c”）（以 Airbnb 的第一个街道地址命名）作为独特的品牌口音。结果是一个干净、通风的画布，其中列出的照片、类别图标和红色 CTA 按钮是唯一的颜色来源。
 
-The typography uses Airbnb Cereal VF — a custom variable font that's warm and approachable, with rounded terminals that echo the brand's "belong anywhere" philosophy. The font operates in a tight weight range: 500 (medium) for most UI, 600 (semibold) for emphasis, and 700 (bold) for primary headings. Slight negative letter-spacing (-0.18px to -0.44px) on headings creates a cozy, intimate reading experience rather than the compressed efficiency of tech companies.
+排版使用 Airbnb Cereal VF——一种定制的可变字体，温暖且平易近人，其圆形终端呼应了该品牌“属于任何地方”的理念。该字体在严格的粗细范围内运行：大多数 UI 为 500（中），强调为 600（半粗体），主标题为 700（粗体）。标题上的轻微负字母间距（-0.18px 到 -0.44px）创造了舒适、亲密的阅读体验，而不是科技公司压缩的效率。
 
-What distinguishes Airbnb is its palette-based token system (`--palette-*`) and multi-layered shadow approach. The primary card shadow uses a three-layer stack (`rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px, rgba(0,0,0,0.1) 0px 4px 8px`) that creates a subtle, warm lift. Combined with generous border-radius (8px–32px), circular navigation controls (50%), and a category pill bar with horizontal scrolling, the interface feels tactile and inviting — designed for browsing, not commanding.
+Airbnb 的独特之处在于其基于调色板的代币系统（`--palette-*`）和多层影子方法。主卡片阴影使用三层堆栈（`rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px, rgba(0,0,0,0.1) 0px 4px 8px`），创造出微妙、温暖的升力。结合宽大的边框半径 (8px–32px)、圆形导航控件 (50%) 和水平滚动的类别药丸栏，该界面给人一种触感和吸引力 - 专为浏览而不是命令而设计。
 
-**Key Characteristics:**
-- Pure white canvas with Rausch Red (`#ff385c`) as singular brand accent
-- Airbnb Cereal VF — custom variable font with warm, rounded terminals
-- Palette-based token system (`--palette-*`) for systematic color management
-- Three-layer card shadows: border ring + soft blur + stronger blur
-- Generous border-radius: 8px buttons, 14px badges, 20px cards, 32px large elements
-- Circular navigation controls (50% radius)
-- Photography-first listing cards — images are the hero content
-- Near-black text (`#222222`) — warm, not cold
-- Luxe Purple (`#460479`) and Plus Magenta (`#92174d`) for premium tiers
+**主要特征：**
+- 纯白色帆布，劳施红 (`#ff385c`) 作为独特的品牌口音
+- Airbnb Cereal VF — 自定义可变字体，带有温暖的圆形终端
+- 基于调色板的令牌系统（`--palette-*`）用于系统化的色彩管理
+- 三层卡片阴影：边框环+柔和模糊+更强模糊
+- 宽大的边框半径：8px 按钮、14px 徽章、20px 卡片、32px 大元素
+- 圆形导航控件（50% 半径）
+- 摄影优先的列表卡——图像是主要内容
+- 接近黑色的文本 (`#222222`) — 温暖，不冷
+- 高级紫色 (`#460479`) 和加洋红色 (`#92174d`)
 
-## 2. Color Palette & Roles
+## 2. 调色板和角色
 
-### Primary Brand
-- **Rausch Red** (`#ff385c`): `--palette-bg-primary-core`, primary CTA, brand accent, active states
-- **Deep Rausch** (`#e00b41`): `--palette-bg-tertiary-core`, pressed/dark variant of brand red
-- **Error Red** (`#c13515`): `--palette-text-primary-error`, error text on light
-- **Error Dark** (`#b32505`): `--palette-text-secondary-error-hover`, error hover
+### 主要品牌
+- **Rausch Red** (`#ff385c`)：`--palette-bg-primary-core`，主要 CTA，品牌口音，活动状态
+- **Deep Rausch** (`#e00b41`)：`--palette-bg-tertiary-core`，品牌红色的压制/深色变体
+- **红色错误** (`#c13515`)：`--palette-text-primary-error`，错误文本亮起
+- **Error Dark** (`#b32505`)：`--palette-text-secondary-error-hover`，错误悬停
 
-### Premium Tiers
-- **Luxe Purple** (`#460479`): `--palette-bg-primary-luxe`, Airbnb Luxe tier branding
-- **Plus Magenta** (`#92174d`): `--palette-bg-primary-plus`, Airbnb Plus tier branding
+### 高级等级
+- **Luxe Purple** (`#460479`)：`--palette-bg-primary-luxe`，Airbnb Luxe 品牌
+- **Plus Magenta** (`#92174d`)：`--palette-bg-primary-plus`，Airbnb Plus 层级品牌
 
-### Text Scale
-- **Near Black** (`#222222`): `--palette-text-primary`, primary text — warm, not cold
-- **Focused Gray** (`#3f3f3f`): `--palette-text-focused`, focused state text
-- **Secondary Gray** (`#6a6a6a`): Secondary text, descriptions
-- **Disabled** (`rgba(0,0,0,0.24)`): `--palette-text-material-disabled`, disabled state
-- **Link Disabled** (`#929292`): `--palette-text-link-disabled`, disabled links
+### 文本比例
+- **近黑色** (`#222222`)：`--palette-text-primary`，主要文本 — 暖色，而不是冷色
+- **聚焦灰色** (`#3f3f3f`)：`--palette-text-focused`，聚焦状态文本
+- **次要灰色** (`#6a6a6a`)：次要文本、描述
+- **禁用** (`rgba(0,0,0,0.24)`): `--palette-text-material-disabled`，禁用状态
+- **链接已禁用** (`#929292`)：`--palette-text-link-disabled`，禁用链接
 
-### Interactive
-- **Legal Blue** (`#428bff`): `--palette-text-legal`, legal links, informational
-- **Border Gray** (`#c1c1c1`): Border color for cards and dividers
-- **Light Surface** (`#f2f2f2`): Circular navigation buttons, secondary surfaces
+### 互动
+- **Legal Blue** (`#428bff`)：`--palette-text-legal`，法律链接，信息
+- **边框灰色** (`#c1c1c1`)：卡片和分隔线的边框颜色
+- **浅色表面** (`#f2f2f2`)：圆形导航按钮、辅助表面
 
-### Surface & Shadows
-- **Pure White** (`#ffffff`): Page background, card surfaces
-- **Card Shadow** (`rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px, rgba(0,0,0,0.1) 0px 4px 8px`): Three-layer warm lift
-- **Hover Shadow** (`rgba(0,0,0,0.08) 0px 4px 12px`): Button hover elevation
+### 表面和阴影
+- **纯白色** (`#ffffff`)：页面背景、卡片表面
+- **卡片阴影** (`rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px, rgba(0,0,0,0.1) 0px 4px 8px`): 三层暖升
+- **悬停阴影** (`rgba(0,0,0,0.08) 0px 4px 12px`)：按钮悬停高度
 
-## 3. Typography Rules
+## 3. 版式规则
 
-### Font Family
-- **Primary**: `Airbnb Cereal VF`, fallbacks: `Circular, -apple-system, system-ui, Roboto, Helvetica Neue`
-- **OpenType Features**: `"salt"` (stylistic alternates) on specific caption elements
+### 字体系列
+- **主要**：`Airbnb Cereal VF`，备用：`Circular、-apple-system、system-ui、Roboto、Helvetica Neue`
+- **OpenType 功能**：特定标题元素上的“salt”（风格替代）
 
-### Hierarchy
+### 层次结构
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|------|--------|-------------|----------------|-------|
-| Section Heading | Airbnb Cereal VF | 28px (1.75rem) | 700 | 1.43 | normal | Primary headings |
-| Card Heading | Airbnb Cereal VF | 22px (1.38rem) | 600 | 1.18 (tight) | -0.44px | Category/card titles |
-| Card Heading Medium | Airbnb Cereal VF | 22px (1.38rem) | 500 | 1.18 (tight) | -0.44px | Lighter variant |
-| Sub-heading | Airbnb Cereal VF | 21px (1.31rem) | 700 | 1.43 | normal | Bold sub-headings |
-| Feature Title | Airbnb Cereal VF | 20px (1.25rem) | 600 | 1.20 (tight) | -0.18px | Feature headings |
-| UI Medium | Airbnb Cereal VF | 16px (1.00rem) | 500 | 1.25 (tight) | normal | Nav, emphasized text |
-| UI Semibold | Airbnb Cereal VF | 16px (1.00rem) | 600 | 1.25 (tight) | normal | Strong emphasis |
-| Button | Airbnb Cereal VF | 16px (1.00rem) | 500 | 1.25 (tight) | normal | Button labels |
-| Body / Link | Airbnb Cereal VF | 14px (0.88rem) | 400 | 1.43 | normal | Standard body |
-| Body Medium | Airbnb Cereal VF | 14px (0.88rem) | 500 | 1.29 (tight) | normal | Medium body |
-| Caption Salt | Airbnb Cereal VF | 14px (0.88rem) | 600 | 1.43 | normal | `"salt"` feature |
-| Small | Airbnb Cereal VF | 13px (0.81rem) | 400 | 1.23 (tight) | normal | Descriptions |
-| Tag | Airbnb Cereal VF | 12px (0.75rem) | 400–700 | 1.33 | normal | Tags, prices |
-| Badge | Airbnb Cereal VF | 11px (0.69rem) | 600 | 1.18 (tight) | normal | `"salt"` feature |
-| Micro Uppercase | Airbnb Cereal VF | 8px (0.50rem) | 700 | 1.25 (tight) | 0.32px | `text-transform: uppercase` |
+|角色 |字体|尺寸|重量 |行高|字母间距 |笔记|
+|------|------|------|--------|-------------|----------------|--------|
+|章节标题 | Airbnb 谷物 VF | 28 像素（1.75 雷姆）| 700 | 1.43 | 1.43正常 |主标题|
+|卡片标题| Airbnb 谷物 VF | 22 像素（1.38 雷姆）| 600 | 1.18（紧）| -0.44 像素 |类别/卡片标题 |
+|卡片标题中| Airbnb 谷物 VF | 22 像素（1.38 雷姆）| 500 | 500 1.18（紧）| -0.44 像素 |打火机版本|
+|副标题| Airbnb 谷物 VF | 21 像素（1.31 雷姆）| 700 | 1.43 | 1.43正常 |粗体副标题|
+|专题标题 | Airbnb 谷物 VF | 20 像素（1.25 雷姆）| 600 | 1.20（紧）| -0.18 像素 |专题标题|
+| UI 媒体 | Airbnb 谷物 VF | 16 像素（1.00 雷姆）| 500 | 500 1.25（紧）|正常 |导航，强调文本 |
+| UI 半粗体 | Airbnb 谷物 VF | 16 像素（1.00 雷姆）| 600 | 1.25（紧）|正常 |强烈强调 |
+|按钮| Airbnb 谷物 VF | 16 像素（1.00 雷姆）| 500 | 500 1.25（紧）|正常 |按钮标签|
+|正文/链接| Airbnb 谷物 VF | 14 像素（0.88 雷姆）| 400 | 1.43 | 1.43正常 |标准机身|
+|身体中等| Airbnb 谷物 VF | 14 像素（0.88 雷姆）| 500 | 500 1.29（紧）|正常 |中等身材 |
+|标题盐| Airbnb 谷物 VF | 14 像素（0.88 雷姆）| 600 | 1.43 | 1.43正常 | `“盐”`功能 |
+|小| Airbnb 谷物 VF | 13 像素（0.81 雷姆）| 400 | 1.23（紧）|正常 |描述 |
+|标签 | Airbnb 谷物 VF | 12 像素（0.75 雷姆）| 400–700 | 1.33 | 1.33正常 |标签、价格 |
+|徽章| Airbnb 谷物 VF | 11 像素 (0.69 雷姆) | 600 | 1.18（紧）|正常 | `“盐”`功能 |
+|微型大写| Airbnb 谷物 VF | 8 像素（0.50 雷姆）| 700 | 1.25（紧）| 0.32 像素 | `文本转换：大写` |
 
-### Principles
-- **Warm weight range**: 500–700 dominate. No weight 300 or 400 for headings — Airbnb's type is always at least medium weight, creating a warm, confident voice.
-- **Negative tracking on headings**: -0.18px to -0.44px letter-spacing on display creates intimate, cozy headings rather than cold, compressed ones.
-- **"salt" OpenType feature**: Stylistic alternates on specific UI elements (badges, captions) create subtle glyph variations that add visual interest.
-- **Variable font precision**: Cereal VF enables continuous weight interpolation, though the design system uses discrete stops at 500, 600, and 700.
+### 原则
+- **温暖体重范围**：500–700 占主导地位。标题的权重不为 300 或 400 — Airbnb 的类型始终至少为中等权重，营造出温暖、自信的声音。
+- **标题上的负跟踪**：显示的 -0.18px 到 -0.44px 字母间距创建亲密、舒适的标题，而不是冷漠、压缩的标题。
+- **“盐”OpenType 功能**：特定 UI 元素（徽章、标题）上的风格替换可创建微妙的字形变化，增加视觉趣味。
+- **可变字体精度**：Cereal VF 支持连续重量插值，尽管设计系统在 500、600 和 700 处使用离散停止点。
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
-**Primary Dark**
-- Background: `#222222` (near-black, not pure black)
-- Text: `#ffffff`
-- Padding: 0px 24px
-- Radius: 8px
-- Hover: transitions to error/brand accent via `var(--accent-bg-error)`
-- Focus: `0 0 0 2px var(--palette-grey1000)` ring + scale(0.92)
+**原色深色**
+- 背景：`#222222`（接近黑色，不是纯黑色）
+- 文本：`#ffffff`
+- 内边距：0px 24px
+- 半径：8px
+- 悬停：通过 `var(--accent-bg-error)` 转换为错误/品牌重音
+- 焦点：`0 0 0 2px var(--palette-grey1000)`环+刻度(0.92)
 
-**Circular Nav**
-- Background: `#f2f2f2`
-- Text: `#222222`
-- Radius: 50% (circle)
-- Hover: shadow `rgba(0,0,0,0.08) 0px 4px 12px` + translateX(50%)
-- Active: 4px white border ring + focus shadow
-- Focus: scale(0.92) shrink animation
+**圆形导航**
+- 背景：`#f2f2f2`
+- 文本：`#222222`
+- 半径：50%（圆形）
+- 悬停：阴影`rgba（0,0,0,0.08）0px 4px 12px`+translateX（50％）
+- 活动：4px白色边框环+焦点阴影
+- 焦点：缩放（0.92）缩小动画
 
-### Cards & Containers
-- Background: `#ffffff`
-- Radius: 14px (badges), 20px (cards/buttons), 32px (large)
-- Shadow: `rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px, rgba(0,0,0,0.1) 0px 4px 8px` (three-layer)
-- Listing cards: full-width photography on top, details below
-- Carousel controls: circular 50% buttons
+### 卡片和容器
+- 背景：`#ffffff`
+- 半径：14px（徽章）、20px（卡片/按钮）、32px（大）
+- 阴影： `rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px, rgba(0,0,0,0.1) 0px 4px 8px` (三层)
+- 列表卡：顶部为全角照片，下面为详细信息
+- 轮播控件：圆形 50% 按钮
 
-### Inputs
-- Search: `#222222` text
-- Focus: `var(--palette-bg-primary-error)` background tint + `0 0 0 2px` ring
-- Radius: depends on context (search bar uses pill-like rounding)
+### 输入
+- 搜索：“#222222”文本
+- 焦点：`var(--palette-bg-primary-error)`背景色调+`0 0 0 2px`环
+- 半径：取决于上下文（搜索栏使用药丸状舍入）
 
-### Navigation
-- White sticky header with search bar centered
-- Airbnb logo (Rausch Red) left-aligned
-- Category filter pills: horizontal scroll below search
-- Circular nav controls for carousel navigation
-- "Become a Host" text link, avatar/menu right-aligned
+### 导航
+- 白色粘性标题，搜索栏居中
+- Airbnb 徽标（Rausch Red）左对齐
+- 类别过滤药丸：搜索下方水平滚动
+- 用于轮播导航的圆形导航控件
+- “成为主持人”文本链接，头像/菜单右对齐
 
-### Image Treatment
-- Listing photography fills card top with generous height
-- Image carousel with dot indicators
-- Heart/wishlist icon overlay on images
-- 8px–14px radius on contained images
+### 图像处理
+- 列表摄影以宽敞的高度填充卡片顶部
+- 带点指示器的图像轮播
+- 心形/心愿单图标叠加在图像上
+- 所包含图像的半径为 8px–14px
 
-## 5. Layout Principles
+## 5.布局原则
 
-### Spacing System
-- Base unit: 8px
-- Scale: 2px, 3px, 4px, 6px, 8px, 10px, 11px, 12px, 15px, 16px, 22px, 24px, 32px
+### 间距系统
+- 基本单位：8px
+- 比例：2 像素、3 像素、4 像素、6 像素、8 像素、10 像素、11 像素、12 像素、15 像素、16 像素、22 像素、24 像素、32 像素
 
-### Grid & Container
-- Full-width header with centered search
-- Category pill bar: horizontal scrollable row
-- Listing grid: responsive multi-column (3–5 columns on desktop)
-- Full-width footer with link columns
+### 网格和容器
+- 带居中搜索的全角标题
+- 类别药丸栏：水平滚动行
+- 列表网格：响应式多列（桌面上为 3-5 列）
+- 带链接列的全宽页脚
 
-### Whitespace Philosophy
-- **Travel-magazine spacing**: Generous vertical padding between sections creates a leisurely browsing pace — you're meant to scroll slowly, like browsing a magazine.
-- **Photography density**: Listing cards are packed relatively tightly, but each image is large enough to feel immersive.
-- **Search bar prominence**: The search bar gets maximum vertical space in the header — finding your destination is the primary action.
+### 空白哲学
+- **旅行杂志间距**：各部分之间宽大的垂直填充营造出悠闲的浏览节奏 - 您应该慢慢滚动，就像浏览杂志一样。
+- **摄影密度**：列表卡排列得相对紧凑，但每张图像都足够大，让人感觉身临其境。
+- **搜索栏突出**：搜索栏在标题中获得最大的垂直空间 - 找到目的地是主要操作。
 
-### Border Radius Scale
-- Subtle (4px): Small links
-- Standard (8px): Buttons, tabs, search elements
-- Badge (14px): Status badges, labels
-- Card (20px): Feature cards, large buttons
-- Large (32px): Large containers, hero elements
-- Circle (50%): Nav controls, avatars, icons
+### 边界半径比例
+- 微妙（4px）：小链接
+- 标准 (8px)：按钮、选项卡、搜索元素
+- 徽章 (14px)：状态徽章、标签
+- 卡片（20px）：功能卡片、大按钮
+- 大（32px）：大容器，英雄元素
+- 圆圈 (50%)：导航控件、头像、图标
 
-## 6. Depth & Elevation
+## 6. 深度和高度
 
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Flat (Level 0) | No shadow | Page background, text blocks |
-| Card (Level 1) | `rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px, rgba(0,0,0,0.1) 0px 4px 8px` | Listing cards, search bar |
-| Hover (Level 2) | `rgba(0,0,0,0.08) 0px 4px 12px` | Button hover, interactive lift |
-| Active Focus (Level 3) | `rgb(255,255,255) 0px 0px 0px 4px` + focus ring | Active/focused elements |
+|水平|治疗 |使用 |
+|--------|------------|-----|
+|公寓（0 级）|没有影子|页面背景、文本块|
+|卡（1 级）| `rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px, rgba(0,0,0,0.1) 0px 4px 8px` |列表卡、搜索栏 |
+|悬停（2 级）| `rgba(0,0,0,0.08) 0px 4px 12px` |按钮悬停、交互升降|
+|主动聚焦（3 级）| `rgb(255,255,255) 0px 0px 0px 4px` + 对焦环 |活跃/集中的元素 |
 
-**Shadow Philosophy**: Airbnb's three-layer shadow system creates a warm, natural lift. Layer 1 (`0px 0px 0px 1px` at 0.02 opacity) is an ultra-subtle border. Layer 2 (`0px 2px 6px` at 0.04) provides soft ambient shadow. Layer 3 (`0px 4px 8px` at 0.1) adds the primary lift. This graduated approach creates shadows that feel like natural light rather than CSS effects.
+**阴影哲学**：Airbnb 的三层阴影系统创造了温暖、自然的升力。第 1 层（不透明度为 0.02 的“0px 0px 0px 1px”）是一个超微妙的边框。第 2 层（0.04 处的“0px 2px 6px”）提供柔和的环境阴影。第 3 层（0.1 处的“0px 4px 8px”）添加了主要提升。这种渐变方法创建的阴影感觉像是自然光而不是 CSS 效果。
 
-## 7. Do's and Don'ts
+## 7. 该做和不该做的事情
 
-### Do
-- Use `#222222` (warm near-black) for text — never pure `#000000`
-- Apply Rausch Red (`#ff385c`) only for primary CTAs and brand moments — it's the singular accent
-- Use Airbnb Cereal VF at weight 500–700 — the warm weight range is intentional
-- Apply the three-layer card shadow for all elevated surfaces
-- Use generous border-radius: 8px for buttons, 20px for cards, 50% for controls
-- Use photography as the primary visual content — listings are image-first
-- Apply negative letter-spacing (-0.18px to -0.44px) on headings for intimacy
-- Use circular (50%) buttons for carousel/navigation controls
+### 做
+- 使用“#222222”（暖色近乎黑色）作为文本——绝不是纯粹的“#000000”
+- 仅在主要 CTA 和品牌时刻应用 Rausch Red (`#ff385c`) - 这是独特的口音
+- 使用重量为 500–700 的 Airbnb Cereal VF — 温暖的重量范围是有意为之
+- 在所有高架表面应用三层卡片阴影
+- 使用慷慨的边框半径：按钮 8 像素，卡片 20 像素，控件 50%
+- 使用摄影作为主要视觉内容 - 列表以图像为先
+- 在标题上应用负字母间距（-0.18px 到 -0.44px）以增加亲密感
+- 使用圆形 (50%) 按钮进行轮播/导航控制
 
-### Don't
-- Don't use pure black (`#000000`) for text — always `#222222` (warm)
-- Don't apply Rausch Red to backgrounds or large surfaces — it's an accent only
-- Don't use thin font weights (300, 400) for headings — 500 minimum
-- Don't use heavy shadows (>0.1 opacity as primary layer) — keep them warm and graduated
-- Don't use sharp corners (0–4px) on cards — the generous rounding (20px+) is core
-- Don't introduce additional brand colors beyond the Rausch/Luxe/Plus system
-- Don't override the palette token system — use `--palette-*` variables consistently
+### 不要
+- 不要使用纯黑色（`#000000`）作为文本 - 始终使用`#222222`（暖色）
+- 不要将劳施红应用于背景或大表面 - 这只是一种强调
+- 标题不要使用较细的字体粗细（300、400）——至少 500
+- 不要使用浓重的阴影（>0.1 不透明度作为主要层）——保持它们温暖并渐变
+- 不要在卡片上使用尖角 (0–4px) - 慷慨的圆角 (20px+) 是核心
+- 不要引入 Rausch/Luxe/Plus 系统之外的其他品牌颜色
+- 不要覆盖调色板标记系统 - 一致使用 `--palette-*` 变量
 
-## 8. Responsive Behavior
+## 8. 响应行为
 
-### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile Small | <375px | Single column, compact search |
-| Mobile | 375–550px | Standard mobile listing grid |
-| Tablet Small | 550–744px | 2-column listings |
-| Tablet | 744–950px | Search bar expansion |
-| Desktop Small | 950–1128px | 3-column listings |
-| Desktop | 1128–1440px | 4-column grid, full header |
-| Large Desktop | 1440–1920px | 5-column grid |
-| Ultra-wide | >1920px | Maximum grid width |
+### 断点
+|名称 |宽度|关键变化|
+|------|--------|-------------|
+|移动小| <375 像素 |单列、紧凑搜索 |
+|手机 | 375–550 像素 |标准移动列表网格 |
+|小型平板电脑 | 550–744 像素 | 2 列列表 |
+|平板电脑| 744–950 像素 |搜索栏扩展 |
+|桌面小| 950–1128 像素 | 3 列列表 |
+|桌面| 1128–1440 像素 | 4 列网格，完整标题 |
+|大型桌面 | 1440–1920 像素 | 5 列网格 |
+|超广角| >1920 像素 |最大网格宽度|
 
-*Note: Airbnb has 61 detected breakpoints — one of the most granular responsive systems observed, reflecting their obsession with layout at every possible screen size.*
+*注：Airbnb 有 61 个检测到的断点——这是观察到的最精细的响应系统之一，反映了他们对每种可能的屏幕尺寸的布局的痴迷。 *
 
-### Touch Targets
-- Circular nav buttons: adequate 50% radius sizing
-- Listing cards: full-card tap target on mobile
-- Search bar: prominently sized for thumb interaction
-- Category pills: horizontally scrollable with generous padding
+### 触摸目标
+- 圆形导航按钮：足够的 50% 半径大小
+- 列出卡片：移动设备上的全卡点击目标
+- 搜索栏：尺寸明显适合拇指交互
+- 药丸类别：水平滚动，填充丰富
 
-### Collapsing Strategy
-- Listing grid: 5 → 4 → 3 → 2 → 1 columns
-- Search: expanded bar → compact bar → overlay
-- Category pills: horizontal scroll at all sizes
-- Navigation: full header → mobile simplified
-- Map: side panel → overlay/toggle
+### 崩溃策略
+- 列表网格：5 → 4 → 3 → 2 → 1 列
+- 搜索：扩展栏 → 紧凑栏 → 覆盖
+- 药丸类别：所有尺寸的水平滚动
+- 导航：完整标题 → 移动简化
+- 地图：侧面板→覆盖/切换
 
-### Image Behavior
-- Listing photos: carousel with swipe on mobile
-- Responsive image sizing with aspect ratio maintained
-- Heart overlay positioned consistently across sizes
-- Photo quality adjusts based on viewport
+### 图像行为
+- 列出照片：在移动设备上滑动轮播
+- 保持长宽比的响应式图像大小调整
+- 心形覆盖层在不同尺寸上保持一致
+- 照片质量根据视口进行调整
 
-## 9. Agent Prompt Guide
+## 9. 代理提示指南
 
-### Quick Color Reference
-- Background: Pure White (`#ffffff`)
-- Text: Near Black (`#222222`)
-- Brand accent: Rausch Red (`#ff385c`)
-- Secondary text: `#6a6a6a`
-- Disabled: `rgba(0,0,0,0.24)`
-- Card border: `rgba(0,0,0,0.02) 0px 0px 0px 1px`
-- Card shadow: full three-layer stack
-- Button surface: `#f2f2f2`
+### 快速颜色参考
+- 背景：纯白色（`#ffffff`）
+- 文本：近黑色 (`#222222`)
+- 品牌口音：Rausch Red (`#ff385c`)
+- 辅助文本：`#6a6a6a`
+- 禁用：`rgba(0,0,0,0.24)`
+- 卡片边框：`rgba(0,0,0,0.02) 0px 0px 0px 1px`
+- 卡影：全三层堆叠
+- 按钮表面：`#f2f2f2`
 
-### Example Component Prompts
-- "Create a listing card: white background, 20px radius. Three-layer shadow: rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px, rgba(0,0,0,0.1) 0px 4px 8px. Photo area on top (16:10 ratio), details below: 16px Airbnb Cereal VF weight 600 title, 14px weight 400 description in #6a6a6a."
-- "Design search bar: white background, full card shadow, 32px radius on container. Search text at 14px Cereal VF weight 400. Red search button (#ff385c, 50% radius, white icon)."
-- "Build category pill bar: horizontal scrollable row. Each pill: 14px Cereal VF weight 600, #222222 text, bottom border on active. Circular prev/next arrows (#f2f2f2 bg, 50% radius)."
-- "Create a CTA button: #222222 background, white text, 8px radius, 16px Cereal VF weight 500, 0px 24px padding. Hover: brand red accent."
-- "Design a heart/wishlist button: transparent background, 50% radius, white heart icon with dark shadow outline."
+### 组件提示示例
+-》创建列表卡：白色背景，半径20px。三层阴影：rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px, rgba(0,0,0,0.1) 0px 4px 8px。顶部照片区域（16:10比例），详情如下： 16px Airbnb Cereal VF 权重 600 标题，14px 权重 400 描述在 #6a6a6a 中。 ”
+- “设计搜索栏：白色背景，全卡片阴影，容器上的半径为 32 像素。在 14 像素谷物 VF 权重 400 处搜索文本。红色搜索按钮（#ff385c，50% 半径，白色图标）。 ”
+- “构建类别药丸栏：水平可滚动行。每个药丸：14px 谷物 VF 重量 600，#222222 文本，底部边框处于活动状态。圆形上一个/下一个箭头（#f2f2f2 bg，50% 半径）。 ”
+- “创建一个 CTA 按钮：#222222 背景，白色文本，8 像素半径，16 像素谷物 VF 重量 500，0 像素 24 像素填充。悬停：品牌红色口音。 ”
+- “设计一个心形/心愿单按钮：透明背景，50% 半径，带有深色阴影轮廓的白色心形图标。 ”
 
-### Iteration Guide
-1. Start with white — the photography provides all the color
-2. Rausch Red (#ff385c) is the singular accent — use sparingly for CTAs only
-3. Near-black (#222222) for text — the warmth matters
-4. Three-layer shadows create natural, warm lift — always use all three layers
-5. Generous radius: 8px buttons, 20px cards, 50% controls
-6. Cereal VF at 500–700 weight — no thin weights for any heading
-7. Photography is hero — every listing card is image-first
+### 迭代指南
+1. 从白色开始——摄影提供了所有的颜色
+2. Rausch Red (#ff385c) 是单一的重音——仅在 CTA 中谨慎使用
+3. 文本接近黑色（#222222）——温暖很重要
+4. 三层阴影创造自然、温暖的提升效果——始终使用所有三层
+5. 宽大的半径：8px按钮，20px卡片，50%控件
+6. 谷物 VF 为 500–700 重量 — 任何标题均无细重量
+7. 摄影是英雄——每张列表卡都以图像为先
